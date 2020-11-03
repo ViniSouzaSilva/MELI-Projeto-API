@@ -1,0 +1,7 @@
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.xml
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.deps.json
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.dll
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.pdb
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.dll
+C:\Users\Usuario\Desktop\net-sdk-master\net-sdk-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.pdb

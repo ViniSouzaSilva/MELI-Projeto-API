@@ -1,0 +1,3066 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MeliLibTools</name>
+    </assembly>
+    <members>
+        <member name="T:MeliLibTools.Client.CustomJsonCodec">
+            <summary>
+            Allows RestSharp to Serialize/Deserialize JSON using our custom logic, but only when ContentType is JSON. 
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.CustomJsonCodec.Deserialize(RestSharp.IRestResponse,System.Type)">
+            <summary>
+            Deserialize the JSON string into a proper object.
+            </summary>
+            <param name="response">The HTTP response.</param>
+            <param name="type">Object type.</param>
+            <returns>Object representation of the JSON string.</returns>
+        </member>
+        <member name="T:MeliLibTools.Client.ApiClient">
+            <summary>
+            Provides a default implementation of an Api client (both synchronous and asynchronous implementatios),
+            encapsulating general REST accessor use cases.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiClient" />, defaulting to the global configurations' base url.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiClient" />
+            </summary>
+            <param name="basePath">The target service's base path in URL format.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Method(MeliLibTools.Client.HttpMethod)">
+            <summary>
+            Constructs the RestSharp version of an http method
+            </summary>
+            <param name="method">Swagger Client Custom HttpMethod</param>
+            <returns>RestSharp's HttpMethod instance.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.NewRequest(MeliLibTools.Client.HttpMethod,System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Provides all logic for constructing a new RestSharp <see cref="T:RestSharp.RestRequest"/>.
+            At this point, all information for querying the service is known. Here, it is simply
+            mapped into the RestSharp request.
+            </summary>
+            <param name="method">The http verb.</param>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>[private] A new RestRequest instance.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.GetAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP GET request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.PostAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP POST request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.PutAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PUT request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.DeleteAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP DELETE request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.HeadAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP HEAD request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.OptionsAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP OPTION request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.PatchAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PATCH request (async).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Get``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP GET request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Post``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP POST request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Put``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PUT request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Delete``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP DELETE request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Head``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP HEAD request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Options``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP OPTION request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiClient.Patch``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Make a HTTP PATCH request (synchronous).
+            </summary>
+            <param name="path">The target path (or resource).</param>
+            <param name="options">The additional request options.</param>
+            <param name="configuration">A per-request configuration object. It is assumed that any merge with
+            GlobalConfiguration has been done before calling this method.</param>
+            <returns>A Task containing ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.Client.ApiException">
+            <summary>
+            API Exception
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiException.ErrorCode">
+            <summary>
+            Gets or sets the error code (HTTP status code)
+            </summary>
+            <value>The error code (HTTP status code).</value>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiException.ErrorContent">
+            <summary>
+            Gets or sets the error content (body json object)
+            </summary>
+            <value>The error content (Http response body).</value>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiException"/> class.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiException.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiException.#ctor(System.Int32,System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+            <param name="errorContent">Error content.</param>
+        </member>
+        <member name="T:MeliLibTools.Client.IApiResponse">
+            <summary>
+            Provides a non-generic contract for the ApiResponse wrapper.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.ResponseType">
+            <summary>
+            The data type of <see cref="P:MeliLibTools.Client.IApiResponse.Content"/>
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.Content">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiResponse.RawContent">
+            <summary>
+            The raw content of this response
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.Client.ApiResponse`1">
+            <summary>
+            API Response
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.Data">
+            <summary>
+            Gets or sets the data (parsed HTTP body)
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.ErrorText">
+            <summary>
+            Gets or sets any error text defined by the calling client.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.Cookies">
+            <summary>
+            Gets or sets any cookies passed along on the response.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.ResponseType">
+            <summary>
+            The content of this response
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.Content">
+            <summary>
+            The data type of <see cref="P:MeliLibTools.Client.ApiResponse`1.Content"/>
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.ApiResponse`1.RawContent">
+            <summary>
+            The raw content
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,MeliLibTools.Client.Multimap{System.String,System.String},`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,MeliLibTools.Client.Multimap{System.String,System.String},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+            <param name="rawContent">Raw content.</param>
+        </member>
+        <member name="M:MeliLibTools.Client.ApiResponse`1.#ctor(System.Net.HttpStatusCode,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.ApiResponse`1" /> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="T:MeliLibTools.Client.ClientUtils">
+            <summary>
+            Utility functions providing some benefit to API client consumers.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.SanitizeFilename(System.String)">
+            <summary>
+            Sanitize filename by removing the path
+            </summary>
+            <param name="filename">Filename</param>
+            <returns>Filename</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.ParameterToMultiMap(System.String,System.String,System.Object)">
+            <summary>
+            Convert params to key/value pairs. 
+            Use collectionFormat to properly format lists and collections.
+            </summary>
+            <param name="collectionFormat">The swagger-supported collection format, one of: csv, tsv, ssv, pipes, multi</param>
+            <param name="name">Key name.</param>
+            <param name="value">Value object.</param>
+            <returns>A multimap of keys with 1..n associated values.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.ParameterToString(System.Object,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
+            If parameter is a list, join the list with ",".
+            Otherwise just return the string.
+            </summary>
+            <param name="obj">The parameter (header, path, query, form).</param>
+            <param name="configuration">An optional configuration instance, providing formatting options used in processing.</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.UrlEncode(System.String)">
+            <summary>
+            URL encode a string
+            Credit/Ref: https://github.com/restsharp/RestSharp/blob/master/RestSharp/Extensions/StringExtensions.cs#L50
+            </summary>
+            <param name="input">String to be URL encoded</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.Base64Encode(System.String)">
+            <summary>
+            Encode string in base64 format.
+            </summary>
+            <param name="text">String to be encoded.</param>
+            <returns>Encoded string.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.ReadAsBytes(System.IO.Stream)">
+            <summary>
+            Convert stream to byte array
+            </summary>
+            <param name="inputStream">Input stream to be converted</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.SelectHeaderContentType(System.String[])">
+            <summary>
+            Select the Content-Type header's value from the given content-type array:
+            if JSON type exists in the given array, use it;
+            otherwise use the first one defined in 'consumes'
+            </summary>
+            <param name="contentTypes">The Content-Type array to select from.</param>
+            <returns>The Content-Type header to use.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.SelectHeaderAccept(System.String[])">
+            <summary>
+            Select the Accept header's value from the given accepts array:
+            if JSON exists in the given array, use it;
+            otherwise use all of them (joining into a string)
+            </summary>
+            <param name="accepts">The accepts array to select from.</param>
+            <returns>The Accept header to use.</returns>
+        </member>
+        <member name="F:MeliLibTools.Client.ClientUtils.JsonRegex">
+            <summary>
+            Provides a case-insensitive check that a provided content type is a known JSON-like content type.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ClientUtils.IsJsonMime(System.String)">
+            <summary>
+            Check if the given MIME is a JSON MIME.
+            JSON MIME examples:
+               application/json
+               application/json; charset=UTF8
+               APPLICATION/JSON
+               application/vnd.company+json
+            </summary>
+            <param name="mime">MIME</param>
+            <returns>Returns True if MIME type is json.</returns>
+        </member>
+        <member name="T:MeliLibTools.Client.Configuration">
+            <summary>
+            Represents a set of configuration settings
+            </summary>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration.Version">
+            <summary>
+            Version of the package.
+            </summary>
+            <value>Version of the package.</value>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration.ISO8601_DATETIME_FORMAT">
+            <summary>
+            Identifier for ISO 8601 DateTime Format
+            </summary>
+            <remarks>See https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx#Anchor_8 for more information.</remarks>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration.DefaultExceptionFactory">
+            <summary>
+            Default creation of exceptions for a given method name and response object
+            </summary>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration._basePath">
+            <summary>
+            Defines the base path of the target API server.
+            Example: http://localhost:3000/v1/
+            </summary>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration._apiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            This is the key and value comprising the "secret" for acessing an API.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="F:MeliLibTools.Client.Configuration._apiKeyPrefix">
+            <summary>
+            Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            </summary>
+            <value>The prefix of the API key.</value>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.Configuration" /> class
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.BasePath">
+            <summary>
+            Gets or sets the base path for API access.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.DefaultHeader">
+            <summary>
+            Gets or sets the default header.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.DefaultHeaders">
+            <summary>
+            Gets or sets the default headers.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.Timeout">
+            <summary>
+            Gets or sets the HTTP timeout (milliseconds) of ApiClient. Default to 100000 milliseconds.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.UserAgent">
+            <summary>
+            Gets or sets the HTTP user agent.
+            </summary>
+            <value>Http user agent.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.Username">
+            <summary>
+            Gets or sets the username (HTTP basic authentication).
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.Password">
+            <summary>
+            Gets or sets the password (HTTP basic authentication).
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.ClientCertificates">
+            <summary>
+            Gets or sets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.AccessToken">
+            <summary>
+            Gets or sets the access token for OAuth2 authentication.
+            
+            This helper property simplifies code generation.
+            </summary>
+            <value>The access token.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.TempFolderPath">
+            <summary>
+            Gets or sets the temporary folder path to store the files downloaded from the server.
+            </summary>
+            <value>Folder path.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.DateTimeFormat">
+            <summary>
+            Gets or sets the date time format used when serializing in the ApiClient
+            By default, it's set to ISO 8601 - "o", for others see:
+            https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx
+            and https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx
+            No validation is done to ensure that the string you're providing is valid
+            </summary>
+            <value>The DateTimeFormat string</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.ApiKeyPrefix">
+             <summary>
+             Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            
+             Whatever you set here will be prepended to the value defined in AddApiKey.
+             
+             An example invocation here might be:
+             <example>
+             ApiKeyPrefix["Authorization"] = "Bearer";
+             </example>
+             … where ApiKey["Authorization"] would then be used to set the value of your bearer token.
+             
+             <remarks>
+             OAuth2 workflows should set tokens via AccessToken.
+             </remarks>
+             </summary>
+             <value>The prefix of the API key.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.Configuration.ApiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.ToDebugReport">
+            <summary>
+            Returns a string with essential information for debugging.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.AddApiKey(System.String,System.String)">
+            <summary>
+            Add Api Key Header.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.AddApiKeyPrefix(System.String,System.String)">
+            <summary>
+            Sets the API key prefix.
+            </summary>
+            <param name="key">Api Key name.</param>
+            <param name="value">Api Key value.</param>
+        </member>
+        <member name="M:MeliLibTools.Client.Configuration.MergeConfigurations(MeliLibTools.Client.IReadableConfiguration,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Merge configurations.
+            </summary>
+            <param name="first">First configuration.</param>
+            <param name="second">Second configuration.</param>
+            <return>Merged configuration.</return>
+        </member>
+        <member name="T:MeliLibTools.Client.ExceptionFactory">
+            <summary>
+            A delegate to ExceptionFactory method
+            </summary>
+            <param name="methodName">Method name</param>
+            <param name="response">Response</param>
+            <returns>Exceptions</returns>
+        </member>
+        <member name="T:MeliLibTools.Client.GlobalConfiguration">
+            <summary>
+            <see cref="T:MeliLibTools.Client.GlobalConfiguration"/> provides a compile-time extension point for globally configuring
+            API Clients.
+            </summary>
+            <remarks>
+            A customized implementation via partial class may reside in another file and may
+            be excluded from automatic generation via a .openapi-generator-ignore file.
+            </remarks>
+        </member>
+        <member name="M:MeliLibTools.Client.GlobalConfiguration.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:MeliLibTools.Client.GlobalConfiguration.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:MeliLibTools.Client.GlobalConfiguration.Instance">
+            <summary>
+            Gets or sets the default Configuration.
+            </summary>
+            <value>Configuration.</value>
+        </member>
+        <member name="T:MeliLibTools.Client.HttpMethod">
+            <summary>
+            Http methods supported by swagger
+            </summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Get">
+            <summary>HTTP GET request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Post">
+            <summary>HTTP POST request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Put">
+            <summary>HTTP PUT request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Delete">
+            <summary>HTTP DELETE request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Head">
+            <summary>HTTP HEAD request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Options">
+            <summary>HTTP OPTIONS request.</summary>
+        </member>
+        <member name="F:MeliLibTools.Client.HttpMethod.Patch">
+            <summary>HTTP PATCH request.</summary>
+        </member>
+        <member name="T:MeliLibTools.Client.IApiAccessor">
+            <summary>
+            Represents configuration aspects required to interact with the API endpoints.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiAccessor.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="M:MeliLibTools.Client.IApiAccessor.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IApiAccessor.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.Client.IAsynchronousClient">
+            <summary>
+            Contract for Asynchronous RESTful API interactions.
+            
+            This interface allows consumers to provide a custom API accessor client.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.GetAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.PostAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.PutAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.DeleteAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.HeadAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.OptionsAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.IAsynchronousClient.PatchAsync``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a non-blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>A task eventually representing the response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:MeliLibTools.Client.IReadableConfiguration">
+            <summary>
+            Represents a readable-only configuration contract.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.AccessToken">
+            <summary>
+            Gets the access token.
+            </summary>
+            <value>Access token.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.ApiKey">
+            <summary>
+            Gets the API key.
+            </summary>
+            <value>API key.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.ApiKeyPrefix">
+            <summary>
+            Gets the API key prefix.
+            </summary>
+            <value>API key prefix.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.BasePath">
+            <summary>
+            Gets the base path.
+            </summary>
+            <value>Base path.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.DateTimeFormat">
+            <summary>
+            Gets the date time format.
+            </summary>
+            <value>Date time foramt.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.DefaultHeader">
+            <summary>
+            Gets the default header.
+            </summary>
+            <value>Default header.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.DefaultHeaders">
+            <summary>
+            Gets the default headers.
+            </summary>
+            <value>Default headers.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.TempFolderPath">
+            <summary>
+            Gets the temp folder path.
+            </summary>
+            <value>Temp folder path.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.Timeout">
+            <summary>
+            Gets the HTTP connection timeout (in milliseconds)
+            </summary>
+            <value>HTTP connection timeout.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.UserAgent">
+            <summary>
+            Gets the user agent.
+            </summary>
+            <value>User agent.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.Username">
+            <summary>
+            Gets the username.
+            </summary>
+            <value>Username.</value>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.Password">
+            <summary>
+            Gets the password.
+            </summary>
+            <value>Password.</value>
+        </member>
+        <member name="M:MeliLibTools.Client.IReadableConfiguration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Gets the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="P:MeliLibTools.Client.IReadableConfiguration.ClientCertificates">
+            <summary>
+            Gets certificate collection to be sent with requests.
+            </summary>
+            <value>X509 Certificate collection.</value>
+        </member>
+        <member name="T:MeliLibTools.Client.ISynchronousClient">
+            <summary>
+            Contract for Synchronous RESTful API interactions.
+            
+            This interface allows consumers to provide a custom API accessor client.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Get``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the GET http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Post``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the POST http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Put``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PUT http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Delete``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the DELETE http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Head``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the HEAD http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Options``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the OPTIONS http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="M:MeliLibTools.Client.ISynchronousClient.Patch``1(System.String,MeliLibTools.Client.RequestOptions,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Executes a blocking call to some <paramref name="path"/> using the PATCH http verb.
+            </summary>
+            <param name="path">The relative path to invoke.</param>
+            <param name="options">The request parameters to pass along to the client.</param>
+            <param name="configuration">Per-request configurable settings.</param>
+            <typeparam name="T">The return type.</typeparam>
+            <returns>The response data, decorated with <see cref="T:MeliLibTools.Client.ApiResponse`1"/></returns>
+        </member>
+        <member name="T:MeliLibTools.Client.Multimap`2">
+            <summary>
+            A dictionary in which one key has many associated values.
+            </summary>
+            <typeparam name="TKey">The type of the key</typeparam>
+            <typeparam name="TValue">The type of the value associated with the key.</typeparam>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.#ctor">
+            <summary>
+            Empty Constructor.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            Constructor with comparer.
+            </summary>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            To get the enumerator.
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Add(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Add values to Multimap
+            </summary>
+            <param name="item">Key value pair</param>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Add(MeliLibTools.Client.Multimap{`0,`1})">
+            <summary>
+            Add Multimap to Multimap
+            </summary>
+            <param name="multimap">Multimap</param>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Clear">
+            <summary>
+            Clear Multimap
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Contains(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Determines whether Multimap contains the specified item.
+            </summary>
+            <param name="item">Key value pair</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+            <returns>true if the Multimap contains the item; otherwise, false.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}}[],System.Int32)">
+            <summary>
+             Copy items of the Multimap to an array,
+                starting at a particular array index.
+            </summary>
+            <param name="array">The array that is the destination of the items copied
+                from Multimap. The array must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Remove(System.Collections.Generic.KeyValuePair{`0,System.Collections.Generic.IList{`1}})">
+            <summary>
+            Removes the specified item from the Multimap.
+            </summary>
+            <param name="item">Key value pair</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+            <exception cref="T:System.NotImplementedException">Method needs to be implemented</exception>
+        </member>
+        <member name="P:MeliLibTools.Client.Multimap`2.Count">
+            <summary>
+            Gets the number of items contained in the Multimap.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Multimap`2.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the Multimap is read-only.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Add(`0,System.Collections.Generic.IList{`1})">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add the value to Multimap.</exception>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.ContainsKey(`0)">
+            <summary>
+            Determines whether the Multimap contains an item with the specified key.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the Multimap contains an item with
+                the key; otherwise, false.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Remove(`0)">
+            <summary>
+            Removes item with the specified key from the Multimap.
+            </summary>
+            <param name="key">The key to locate in the Multimap.</param>
+            <returns>true if the item is successfully removed; otherwise, false.</returns>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.TryGetValue(`0,System.Collections.Generic.IList{`1}@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">When this method returns, the value associated with the specified key, if the
+                key is found; otherwise, the default value for the type of the value parameter.
+                This parameter is passed uninitialized.</param>
+            <returns> true if the object that implements Multimap contains
+                an item with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="P:MeliLibTools.Client.Multimap`2.Item(`0)">
+            <summary>
+            Gets or sets the item with the specified key.
+            </summary>
+            <param name="key">The key of the item to get or set.</param>
+            <returns>The value of the specified key.</returns>
+        </member>
+        <member name="P:MeliLibTools.Client.Multimap`2.Keys">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the keys of the Multimap.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.Multimap`2.Values">
+            <summary>
+            Gets a System.Collections.Generic.ICollection containing the values of the Multimap.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.CopyTo(System.Array,System.Int32)">
+            <summary>
+             Copy the items of the Multimap to an System.Array,
+                starting at a particular System.Array index.
+            </summary>
+            <param name="array">The one-dimensional System.Array that is the destination of the items copied
+                from Multimap. The System.Array must have zero-based indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.Add(`0,`1)">
+            <summary>
+            Adds an item with the provided key and value to the Multimap.
+            </summary>
+            <param name="key">The object to use as the key of the item to add.</param>
+            <param name="value">The object to use as the value of the item to add.</param>
+            <exception cref="T:System.InvalidOperationException">Thrown when couldn't add value to Multimap.</exception>
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.TryRemove(`0,System.Collections.Generic.IList{`1}@)">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="M:MeliLibTools.Client.Multimap`2.TryAdd(`0,System.Collections.Generic.IList{`1})">
+            Helper method to encapsulate generator differences between dictionary types.
+        </member>
+        <member name="T:MeliLibTools.Client.OpenAPIDateConverter">
+            <summary>
+            Formatter for 'date' openapi formats ss defined by full-date - RFC3339
+            see https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#data-types
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.OpenAPIDateConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Client.OpenAPIDateConverter" /> class.
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.Client.RequestOptions">
+            <summary>
+            A container for generalized request inputs. This type allows consumers to extend the request functionality
+            by abstracting away from the default (built-in) request framework (e.g. RestSharp).
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.PathParameters">
+            <summary>
+            Parameters to be bound to path parts of the Request's URL
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.QueryParameters">
+            <summary>
+            Query parameters to be applied to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.HeaderParameters">
+            <summary>
+            Header parameters to be applied to to the request.
+            Keys may have 1 or more values associated.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.FormParameters">
+            <summary>
+            Form parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.FileParameters">
+            <summary>
+            File parameters to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.Cookies">
+            <summary>
+            Cookies to be sent along with the request.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Client.RequestOptions.Data">
+            <summary>
+            Any data associated with a request body.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Client.RequestOptions.#ctor">
+            <summary>
+            Constructs a new instance of <see cref="T:MeliLibTools.Client.RequestOptions"/>
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.ICategoriesApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.CategoriesCategoryIdGet(System.String)">
+            <summary>
+            Return by category.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.CategoriesCategoryIdGetWithHttpInfo(System.String)">
+            <summary>
+            Return by category.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.SitesSiteIdCategoriesGet(System.String)">
+            <summary>
+            Return a categories by site.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.SitesSiteIdCategoriesGetWithHttpInfo(System.String)">
+            <summary>
+            Return a categories by site.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.SitesSiteIdDomainDiscoverySearchGet(System.String,System.String,System.String)">
+            <summary>
+            Predictor
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiSync.SitesSiteIdDomainDiscoverySearchGetWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Predictor
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.ICategoriesApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.CategoriesCategoryIdGetAsync(System.String)">
+            <summary>
+            Return by category.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.CategoriesCategoryIdGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return by category.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.SitesSiteIdCategoriesGetAsync(System.String)">
+            <summary>
+            Return a categories by site.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.SitesSiteIdCategoriesGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return a categories by site.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.SitesSiteIdDomainDiscoverySearchGetAsync(System.String,System.String,System.String)">
+            <summary>
+            Predictor
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ICategoriesApiAsync.SitesSiteIdDomainDiscoverySearchGetAsyncWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Predictor
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.ICategoriesApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.CategoriesApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.CategoriesApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.CategoriesApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.#ctor(MeliLibTools.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.CategoriesApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.#ctor(MeliLibTools.Client.ISynchronousClient,MeliLibTools.Client.IAsynchronousClient,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.CategoriesApi"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.CategoriesApi.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.CategoriesApi.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.CategoriesApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.CategoriesApi.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.CategoriesCategoryIdGet(System.String)">
+            <summary>
+            Return by category. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.CategoriesCategoryIdGetWithHttpInfo(System.String)">
+            <summary>
+            Return by category. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.CategoriesCategoryIdGetAsync(System.String)">
+            <summary>
+            Return by category. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.CategoriesCategoryIdGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return by category. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="categoryId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdCategoriesGet(System.String)">
+            <summary>
+            Return a categories by site. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdCategoriesGetWithHttpInfo(System.String)">
+            <summary>
+            Return a categories by site. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdCategoriesGetAsync(System.String)">
+            <summary>
+            Return a categories by site. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdCategoriesGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return a categories by site. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdDomainDiscoverySearchGet(System.String,System.String,System.String)">
+            <summary>
+            Predictor 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdDomainDiscoverySearchGetWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Predictor 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdDomainDiscoverySearchGetAsync(System.String,System.String,System.String)">
+            <summary>
+            Predictor 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.CategoriesApi.SitesSiteIdDomainDiscoverySearchGetAsyncWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Predictor 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <param name="q"></param>
+            <param name="limit"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsIdGet(System.String)">
+            <summary>
+            Return a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsIdGetWithHttpInfo(System.String)">
+            <summary>
+            Return a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsIdPut(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsIdPutWithHttpInfo(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsPost(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiSync.ItemsPostWithHttpInfo(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsIdGetAsync(System.String)">
+            <summary>
+            Return a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsIdGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsIdPutAsync(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsIdPutAsyncWithHttpInfo(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsPostAsync(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsApiAsync.ItemsPostAsyncWithHttpInfo(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.ItemsApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.#ctor(MeliLibTools.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.#ctor(MeliLibTools.Client.ISynchronousClient,MeliLibTools.Client.IAsynchronousClient,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsApi"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsApi.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsApi.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsApi.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdGet(System.String)">
+            <summary>
+            Return a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdGetWithHttpInfo(System.String)">
+            <summary>
+            Return a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdGetAsync(System.String)">
+            <summary>
+            Return a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdPut(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdPutWithHttpInfo(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdPutAsync(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsIdPutAsyncWithHttpInfo(System.String,System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Update a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsPost(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsPostWithHttpInfo(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsPostAsync(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsApi.ItemsPostAsyncWithHttpInfo(System.String,MeliLibTools.Model.Item)">
+            <summary>
+            Create a Item. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="accessToken"></param>
+            <param name="item"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsHealthApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.ItemsIdHealthActionsGet(System.String,System.String)">
+            <summary>
+            Return item health actions by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.ItemsIdHealthActionsGetWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return item health actions by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.ItemsIdHealthGet(System.String,System.String)">
+            <summary>
+            Return health by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.ItemsIdHealthGetWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return health by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.SitesSiteIdHealthLevelsGet(System.String)">
+            <summary>
+            Return health levels.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiSync.SitesSiteIdHealthLevelsGetWithHttpInfo(System.String)">
+            <summary>
+            Return health levels.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsHealthApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.ItemsIdHealthActionsGetAsync(System.String,System.String)">
+            <summary>
+            Return item health actions by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.ItemsIdHealthActionsGetAsyncWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return item health actions by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.ItemsIdHealthGetAsync(System.String,System.String)">
+            <summary>
+            Return health by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.ItemsIdHealthGetAsyncWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return health by id.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.SitesSiteIdHealthLevelsGetAsync(System.String)">
+            <summary>
+            Return health levels.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IItemsHealthApiAsync.SitesSiteIdHealthLevelsGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return health levels.
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IItemsHealthApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.ItemsHealthApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsHealthApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsHealthApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.#ctor(MeliLibTools.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsHealthApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.#ctor(MeliLibTools.Client.ISynchronousClient,MeliLibTools.Client.IAsynchronousClient,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.ItemsHealthApi"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsHealthApi.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsHealthApi.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsHealthApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.ItemsHealthApi.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthActionsGet(System.String,System.String)">
+            <summary>
+            Return item health actions by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthActionsGetWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return item health actions by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthActionsGetAsync(System.String,System.String)">
+            <summary>
+            Return item health actions by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthActionsGetAsyncWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return item health actions by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthGet(System.String,System.String)">
+            <summary>
+            Return health by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthGetWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return health by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthGetAsync(System.String,System.String)">
+            <summary>
+            Return health by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.ItemsIdHealthGetAsyncWithHttpInfo(System.String,System.String)">
+            <summary>
+            Return health by id. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="id"></param>
+            <param name="accessToken"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.SitesSiteIdHealthLevelsGet(System.String)">
+            <summary>
+            Return health levels. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.SitesSiteIdHealthLevelsGetWithHttpInfo(System.String)">
+            <summary>
+            Return health levels. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.SitesSiteIdHealthLevelsGetAsync(System.String)">
+            <summary>
+            Return health levels. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.ItemsHealthApi.SitesSiteIdHealthLevelsGetAsyncWithHttpInfo(System.String)">
+            <summary>
+            Return health levels. 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="siteId"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IOAuth20ApiSync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiSync.Auth(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiSync.AuthWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiSync.GetToken(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token
+            </summary>
+            <remarks>
+            Partner makes a request to the token endpoint by adding the following parameters described below
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Token</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiSync.GetTokenWithHttpInfo(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token
+            </summary>
+            <remarks>
+            Partner makes a request to the token endpoint by adding the following parameters described below
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>ApiResponse of Token</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IOAuth20ApiAsync">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiAsync.AuthAsync(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiAsync.AuthAsyncWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiAsync.GetTokenAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token
+            </summary>
+            <remarks>
+            Partner makes a request to the token endpoint by adding the following parameters described below
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Task of Token</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.IOAuth20ApiAsync.GetTokenAsyncWithHttpInfo(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token
+            </summary>
+            <remarks>
+            Partner makes a request to the token endpoint by adding the following parameters described below
+            </remarks>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Task of ApiResponse (Token)</returns>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.IOAuth20Api">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="T:MeliLibTools.MeliLibApi.OAuth20Api">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.OAuth20Api"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.OAuth20Api"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.#ctor(MeliLibTools.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.OAuth20Api"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.#ctor(MeliLibTools.Client.ISynchronousClient,MeliLibTools.Client.IAsynchronousClient,MeliLibTools.Client.IReadableConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.MeliLibApi.OAuth20Api"/> class
+            using a Configuration object and client instance.
+            </summary>
+            <param name="client">The client interface for synchronous API access.</param>
+            <param name="asyncClient">The client interface for asynchronous API access.</param>
+            <param name="configuration">The configuration object.</param>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.OAuth20Api.AsynchronousClient">
+            <summary>
+            The client for accessing this underlying API asynchronously.
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.OAuth20Api.Client">
+            <summary>
+            The client for accessing this underlying API synchronously.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.OAuth20Api.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="P:MeliLibTools.MeliLibApi.OAuth20Api.ExceptionFactory">
+            <summary>
+            Provides a factory method hook for the creation of exceptions.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.Auth(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.AuthWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>ApiResponse of Object(void)</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.AuthAsync(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>Task of void</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.AuthAsyncWithHttpInfo(System.String,System.String,System.String)">
+            <summary>
+            Authentication Endpoint 
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="responseType"></param>
+            <param name="clientId"></param>
+            <param name="redirectUri"></param>
+            <returns>Task of ApiResponse</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.GetToken(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token Partner makes a request to the token endpoint by adding the following parameters described below
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Token</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.GetTokenWithHttpInfo(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token Partner makes a request to the token endpoint by adding the following parameters described below
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>ApiResponse of Token</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.GetTokenAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token Partner makes a request to the token endpoint by adding the following parameters described below
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Task of Token</returns>
+        </member>
+        <member name="M:MeliLibTools.MeliLibApi.OAuth20Api.GetTokenAsyncWithHttpInfo(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Request Access Token Partner makes a request to the token endpoint by adding the following parameters described below
+            </summary>
+            <exception cref="T:MeliLibTools.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="grantType">Value MUST be set to \&quot;authorization_code\&quot;</param>
+            <param name="clientId"></param>
+            <param name="clientSecret"></param>
+            <param name="redirectUri"></param>
+            <param name="code">The code received in the query string when redirected from authorization page  (optional)</param>
+            <param name="refreshToken">The refresh_token received in the query string when redirected from authorization page  (optional)</param>
+            <returns>Task of ApiResponse (Token)</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.Attributes">
+            <summary>
+            Attributes
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.#ctor(System.String,System.String,System.String,System.String,MeliLibTools.Model.AttributesValueStruct,System.Collections.Generic.List{MeliLibTools.Model.AttributesValues},System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.Attributes" /> class.
+            </summary>
+            <param name="id">id.</param>
+            <param name="name">name.</param>
+            <param name="valueId">valueId.</param>
+            <param name="valueName">valueName.</param>
+            <param name="valueStruct">valueStruct.</param>
+            <param name="values">values.</param>
+            <param name="attributeGroupId">attributeGroupId.</param>
+            <param name="attributeGroupName">attributeGroupName.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.Id">
+            <summary>
+            Gets or Sets Id
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.ValueId">
+            <summary>
+            Gets or Sets ValueId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.ValueName">
+            <summary>
+            Gets or Sets ValueName
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.ValueStruct">
+            <summary>
+            Gets or Sets ValueStruct
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.Values">
+            <summary>
+            Gets or Sets Values
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.AttributeGroupId">
+            <summary>
+            Gets or Sets AttributeGroupId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Attributes.AttributeGroupName">
+            <summary>
+            Gets or Sets AttributeGroupName
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.Equals(MeliLibTools.Model.Attributes)">
+            <summary>
+            Returns true if Attributes instances are equal
+            </summary>
+            <param name="input">Instance of Attributes to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Attributes.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.AttributesValues">
+            <summary>
+            AttributesValues
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.#ctor(System.String,System.String,MeliLibTools.Model.AttributesValueStruct)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.AttributesValues" /> class.
+            </summary>
+            <param name="id">id.</param>
+            <param name="name">name.</param>
+            <param name="_struct">_struct.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.AttributesValues.Id">
+            <summary>
+            Gets or Sets Id
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.AttributesValues.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.AttributesValues.Struct">
+            <summary>
+            Gets or Sets Struct
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.Equals(MeliLibTools.Model.AttributesValues)">
+            <summary>
+            Returns true if AttributesValues instances are equal
+            </summary>
+            <param name="input">Instance of AttributesValues to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValues.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.AttributesValueStruct">
+            <summary>
+            AttributesValueStruct
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.#ctor(System.Decimal,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.AttributesValueStruct" /> class.
+            </summary>
+            <param name="number">number.</param>
+            <param name="unit">unit.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.AttributesValueStruct.Number">
+            <summary>
+            Gets or Sets Number
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.AttributesValueStruct.Unit">
+            <summary>
+            Gets or Sets Unit
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.Equals(MeliLibTools.Model.AttributesValueStruct)">
+            <summary>
+            Returns true if AttributesValueStruct instances are equal
+            </summary>
+            <param name="input">Instance of AttributesValueStruct to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.AttributesValueStruct.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.Item">
+            <summary>
+            Item
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.Item" /> class.
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.List{MeliLibTools.Model.ItemPictures},System.Collections.Generic.List{MeliLibTools.Model.Attributes},System.Collections.Generic.List{MeliLibTools.Model.Variations})">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.Item" /> class.
+            </summary>
+            <param name="title">title (required).</param>
+            <param name="categoryId">categoryId (required).</param>
+            <param name="price">price (required).</param>
+            <param name="currencyId">currencyId (required).</param>
+            <param name="availableQuantity">availableQuantity (required).</param>
+            <param name="buyingMode">buyingMode (required).</param>
+            <param name="listingTypeId">listingTypeId (required).</param>
+            <param name="condition">condition (required).</param>
+            <param name="description">description (required).</param>
+            <param name="videoId">videoId (required).</param>
+            <param name="warranty">warranty (required).</param>
+            <param name="pictures">pictures (required).</param>
+            <param name="attributes">attributes.</param>
+            <param name="variations">variations.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Title">
+            <summary>
+            Gets or Sets Title
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.CategoryId">
+            <summary>
+            Gets or Sets CategoryId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Price">
+            <summary>
+            Gets or Sets Price
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.CurrencyId">
+            <summary>
+            Gets or Sets CurrencyId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.AvailableQuantity">
+            <summary>
+            Gets or Sets AvailableQuantity
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.BuyingMode">
+            <summary>
+            Gets or Sets BuyingMode
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.ListingTypeId">
+            <summary>
+            Gets or Sets ListingTypeId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Condition">
+            <summary>
+            Gets or Sets Condition
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Description">
+            <summary>
+            Gets or Sets Description
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.VideoId">
+            <summary>
+            Gets or Sets VideoId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Warranty">
+            <summary>
+            Gets or Sets Warranty
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Pictures">
+            <summary>
+            Gets or Sets Pictures
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Attributes">
+            <summary>
+            Gets or Sets Attributes
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Item.Variations">
+            <summary>
+            Gets or Sets Variations
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.Equals(MeliLibTools.Model.Item)">
+            <summary>
+            Returns true if Item instances are equal
+            </summary>
+            <param name="input">Instance of Item to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Item.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.ItemPictures">
+            <summary>
+            ItemPictures
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.ItemPictures" /> class.
+            </summary>
+            <param name="source">source.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.ItemPictures.Source">
+            <summary>
+            Gets or Sets Source
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.Equals(MeliLibTools.Model.ItemPictures)">
+            <summary>
+            Returns true if ItemPictures instances are equal
+            </summary>
+            <param name="input">Instance of ItemPictures to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.ItemPictures.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.#ctor(System.String,System.String,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.Token" /> class.
+            </summary>
+            <param name="accessToken">accessToken.</param>
+            <param name="tokenType">tokenType.</param>
+            <param name="expiresIn">expiresIn.</param>
+            <param name="scope">scope.</param>
+            <param name="userId">userId.</param>
+            <param name="refreshToken">refreshToken.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.AccessToken">
+            <summary>
+            Gets or Sets AccessToken
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.TokenType">
+            <summary>
+            Gets or Sets TokenType
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.ExpiresIn">
+            <summary>
+            Gets or Sets ExpiresIn
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.Scope">
+            <summary>
+            Gets or Sets Scope
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.UserId">
+            <summary>
+            Gets or Sets UserId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Token.RefreshToken">
+            <summary>
+            Gets or Sets RefreshToken
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.Equals(MeliLibTools.Model.Token)">
+            <summary>
+            Returns true if Token instances are equal
+            </summary>
+            <param name="input">Instance of Token to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Token.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.Variations">
+            <summary>
+            Variations
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.#ctor(System.Int32,System.Collections.Generic.List{MeliLibTools.Model.VariationsAttributeCombinations},System.Int32,System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.Variations" /> class.
+            </summary>
+            <param name="price">price.</param>
+            <param name="attributeCombinations">attributeCombinations.</param>
+            <param name="availableQuantity">availableQuantity.</param>
+            <param name="soldQuantity">soldQuantity.</param>
+            <param name="pictureIds">pictureIds.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.Variations.Price">
+            <summary>
+            Gets or Sets Price
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Variations.AttributeCombinations">
+            <summary>
+            Gets or Sets AttributeCombinations
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Variations.AvailableQuantity">
+            <summary>
+            Gets or Sets AvailableQuantity
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Variations.SoldQuantity">
+            <summary>
+            Gets or Sets SoldQuantity
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.Variations.PictureIds">
+            <summary>
+            Gets or Sets PictureIds
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.Equals(MeliLibTools.Model.Variations)">
+            <summary>
+            Returns true if Variations instances are equal
+            </summary>
+            <param name="input">Instance of Variations to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.Variations.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+        <member name="T:MeliLibTools.Model.VariationsAttributeCombinations">
+            <summary>
+            VariationsAttributeCombinations
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:MeliLibTools.Model.VariationsAttributeCombinations" /> class.
+            </summary>
+            <param name="name">name.</param>
+            <param name="valueId">valueId.</param>
+            <param name="valueName">valueName.</param>
+        </member>
+        <member name="P:MeliLibTools.Model.VariationsAttributeCombinations.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.VariationsAttributeCombinations.ValueId">
+            <summary>
+            Gets or Sets ValueId
+            </summary>
+        </member>
+        <member name="P:MeliLibTools.Model.VariationsAttributeCombinations.ValueName">
+            <summary>
+            Gets or Sets ValueName
+            </summary>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="input">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.Equals(MeliLibTools.Model.VariationsAttributeCombinations)">
+            <summary>
+            Returns true if VariationsAttributeCombinations instances are equal
+            </summary>
+            <param name="input">Instance of VariationsAttributeCombinations to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="M:MeliLibTools.Model.VariationsAttributeCombinations.System#ComponentModel#DataAnnotations#IValidatableObject#Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            To validate all properties of the instance
+            </summary>
+            <param name="validationContext">Validation context</param>
+            <returns>Validation Result</returns>
+        </member>
+    </members>
+</doc>
