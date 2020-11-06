@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="7.5.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ArquivoTG.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="MELIdataset.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>MELIdataset.Designer.cs</LastGenOutput>

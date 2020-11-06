@@ -293,6 +293,8 @@ namespace ModuloML {
             
             private global::System.Data.DataColumn columnDT_TOKEN;
             
+            private global::System.Data.DataColumn columnREFRESH_TOKEN;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TB_MELIDataTable() {
@@ -384,6 +386,14 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn REFRESH_TOKENColumn {
+                get {
+                    return this.columnREFRESH_TOKEN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +429,7 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TB_MELIRow AddTB_MELIRow(int ID, string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE, string TOKEN, System.DateTime DT_TOKEN) {
+            public TB_MELIRow AddTB_MELIRow(int ID, string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE, string TOKEN, System.DateTime DT_TOKEN, string REFRESH_TOKEN) {
                 TB_MELIRow rowTB_MELIRow = ((TB_MELIRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
@@ -428,10 +438,18 @@ namespace ModuloML {
                         URL_REDIRECT,
                         TG_CODE,
                         TOKEN,
-                        DT_TOKEN};
+                        DT_TOKEN,
+                        REFRESH_TOKEN};
                 rowTB_MELIRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTB_MELIRow);
                 return rowTB_MELIRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TB_MELIRow FindByID(int ID) {
+                return ((TB_MELIRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -458,6 +476,7 @@ namespace ModuloML {
                 this.columnTG_CODE = base.Columns["TG_CODE"];
                 this.columnTOKEN = base.Columns["TOKEN"];
                 this.columnDT_TOKEN = base.Columns["DT_TOKEN"];
+                this.columnREFRESH_TOKEN = base.Columns["REFRESH_TOKEN"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,11 +496,18 @@ namespace ModuloML {
                 base.Columns.Add(this.columnTOKEN);
                 this.columnDT_TOKEN = new global::System.Data.DataColumn("DT_TOKEN", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDT_TOKEN);
+                this.columnREFRESH_TOKEN = new global::System.Data.DataColumn("REFRESH_TOKEN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREFRESH_TOKEN);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
                 this.columnID_APP.MaxLength = 100;
                 this.columnAPP_SECRET.MaxLength = 100;
                 this.columnURL_REDIRECT.MaxLength = 200;
                 this.columnTG_CODE.MaxLength = 150;
                 this.columnTOKEN.MaxLength = 200;
+                this.columnREFRESH_TOKEN.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -626,12 +652,7 @@ namespace ModuloML {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int ID {
                 get {
-                    try {
-                        return ((int)(this[this.tableTB_MELI.IDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ID\' na tabela \'TB_MELI\' é DBNull.", e);
-                    }
+                    return ((int)(this[this.tableTB_MELI.IDColumn]));
                 }
                 set {
                     this[this.tableTB_MELI.IDColumn] = value;
@@ -736,14 +757,18 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tableTB_MELI.IDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetIDNull() {
-                this[this.tableTB_MELI.IDColumn] = global::System.Convert.DBNull;
+            public string REFRESH_TOKEN {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_MELI.REFRESH_TOKENColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'REFRESH_TOKEN\' na tabela \'TB_MELI\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_MELI.REFRESH_TOKENColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -816,6 +841,18 @@ namespace ModuloML {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetDT_TOKENNull() {
                 this[this.tableTB_MELI.DT_TOKENColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsREFRESH_TOKENNull() {
+                return this.IsNull(this.tableTB_MELI.REFRESH_TOKENColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetREFRESH_TOKENNull() {
+                this[this.tableTB_MELI.REFRESH_TOKENColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -957,14 +994,140 @@ namespace ModuloML.MELIdatasetTableAdapters {
             tableMapping.ColumnMappings.Add("TG_CODE", "TG_CODE");
             tableMapping.ColumnMappings.Add("TOKEN", "TOKEN");
             tableMapping.ColumnMappings.Add("DT_TOKEN", "DT_TOKEN");
+            tableMapping.ColumnMappings.Add("REFRESH_TOKEN", "REFRESH_TOKEN");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""TB_MELI"" WHERE ((""ID"" = @Original_ID) AND ((@IsNull_ID_APP = 1 AND ""ID_APP"" IS NULL) OR (""ID_APP"" = @Original_ID_APP)) AND ((@IsNull_APP_SECRET = 1 AND ""APP_SECRET"" IS NULL) OR (""APP_SECRET"" = @Original_APP_SECRET)) AND ((@IsNull_URL_REDIRECT = 1 AND ""URL_REDIRECT"" IS NULL) OR (""URL_REDIRECT"" = @Original_URL_REDIRECT)) AND ((@IsNull_TG_CODE = 1 AND ""TG_CODE"" IS NULL) OR (""TG_CODE"" = @Original_TG_CODE)) AND ((@IsNull_TOKEN = 1 AND ""TOKEN"" IS NULL) OR (""TOKEN"" = @Original_TOKEN)) AND ((@IsNull_DT_TOKEN = 1 AND ""DT_TOKEN"" IS NULL) OR (""DT_TOKEN"" = @Original_DT_TOKEN)) AND ((@IsNull_REFRESH_TOKEN = 1 AND ""REFRESH_TOKEN"" IS NULL) OR (""REFRESH_TOKEN"" = @Original_REFRESH_TOKEN)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_ID_APP";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_APP_SECRET";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "APP_SECRET";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_APP_SECRET";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "APP_SECRET";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_URL_REDIRECT";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "URL_REDIRECT";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_URL_REDIRECT";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "URL_REDIRECT";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_TG_CODE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_TG_CODE";
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_TOKEN";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_DT_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_DT_TOKEN";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_REFRESH_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_REFRESH_TOKEN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO \"TB_MELI\" (\"ID\", \"ID_APP\", \"APP_SECRET\", \"URL_REDIRECT\", \"TG_CODE\", \"" +
-                "TOKEN\", \"DT_TOKEN\") VALUES (@ID, @ID_APP, @APP_SECRET, @URL_REDIRECT, @TG_CODE, " +
-                "@TOKEN, @DT_TOKEN)";
+                "TOKEN\", \"DT_TOKEN\", \"REFRESH_TOKEN\") VALUES (@ID, @ID_APP, @APP_SECRET, @URL_RED" +
+                "IRECT, @TG_CODE, @TOKEN, @DT_TOKEN, @REFRESH_TOKEN)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
@@ -1008,6 +1171,187 @@ namespace ModuloML.MELIdatasetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "DT_TOKEN";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@REFRESH_TOKEN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            this._adapter.UpdateCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE ""TB_MELI"" SET ""ID"" = @ID, ""ID_APP"" = @ID_APP, ""APP_SECRET"" = @APP_SECRET, ""URL_REDIRECT"" = @URL_REDIRECT, ""TG_CODE"" = @TG_CODE, ""TOKEN"" = @TOKEN, ""DT_TOKEN"" = @DT_TOKEN, ""REFRESH_TOKEN"" = @REFRESH_TOKEN WHERE ((""ID"" = @Original_ID) AND ((@IsNull_ID_APP = 1 AND ""ID_APP"" IS NULL) OR (""ID_APP"" = @Original_ID_APP)) AND ((@IsNull_APP_SECRET = 1 AND ""APP_SECRET"" IS NULL) OR (""APP_SECRET"" = @Original_APP_SECRET)) AND ((@IsNull_URL_REDIRECT = 1 AND ""URL_REDIRECT"" IS NULL) OR (""URL_REDIRECT"" = @Original_URL_REDIRECT)) AND ((@IsNull_TG_CODE = 1 AND ""TG_CODE"" IS NULL) OR (""TG_CODE"" = @Original_TG_CODE)) AND ((@IsNull_TOKEN = 1 AND ""TOKEN"" IS NULL) OR (""TOKEN"" = @Original_TOKEN)) AND ((@IsNull_DT_TOKEN = 1 AND ""DT_TOKEN"" IS NULL) OR (""DT_TOKEN"" = @Original_DT_TOKEN)) AND ((@IsNull_REFRESH_TOKEN = 1 AND ""REFRESH_TOKEN"" IS NULL) OR (""REFRESH_TOKEN"" = @Original_REFRESH_TOKEN)))";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@APP_SECRET";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "APP_SECRET";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@URL_REDIRECT";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "URL_REDIRECT";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TG_CODE";
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TOKEN";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DT_TOKEN";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@REFRESH_TOKEN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_ID_APP";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_APP_SECRET";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "APP_SECRET";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_APP_SECRET";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "APP_SECRET";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_URL_REDIRECT";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "URL_REDIRECT";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_URL_REDIRECT";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "URL_REDIRECT";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_TG_CODE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_TG_CODE";
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_TOKEN";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_DT_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_DT_TOKEN";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_REFRESH_TOKEN";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_REFRESH_TOKEN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1021,15 +1365,16 @@ namespace ModuloML.MELIdatasetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[2];
+            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[6];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        TB_MELI.*\r\nFROM            TB_MELI";
+            this._commandCollection[0].CommandText = "SELECT        ID, ID_APP, APP_SECRET, URL_REDIRECT, TG_CODE, TOKEN, DT_TOKEN, REF" +
+                "RESH_TOKEN\r\nFROM            TB_MELI";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "INSERT INTO TB_MELI\r\n                         (ID_APP, APP_SECRET, URL_REDIRECT)\r" +
-                "\nVALUES        (@ID_APP, @APP_SECRET, @URL_REDIRECT)";
+            this._commandCollection[1].CommandText = "INSERT INTO TB_MELI\r\n                         (ID_APP, APP_SECRET, URL_REDIRECT, " +
+                "TG_CODE)\r\nVALUES        (@ID_APP, @APP_SECRET, @URL_REDIRECT, @TG_CODE)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_APP";
@@ -1049,6 +1394,77 @@ namespace ModuloML.MELIdatasetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "URL_REDIRECT";
             this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TG_CODE";
+            param.Size = 150;
+            param.IsNullable = true;
+            param.SourceColumn = "TG_CODE";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT APP_SECRET, DT_TOKEN, ID, ID_APP, REFRESH_TOKEN, TG_CODE, TOKEN, URL_REDIR" +
+                "ECT FROM TB_MELI";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT APP_SECRET, DT_TOKEN, ID, ID_APP, REFRESH_TOKEN, TG_CODE, TOKEN, URL_REDIR" +
+                "ECT FROM TB_MELI WHERE (ID_APP = @ID_APP)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE       TB_MELI\r\nSET                TOKEN = @TOKEN, DT_TOKEN = @DT_TOKEN, RE" +
+                "FRESH_TOKEN = @REFRESH_TOKEN\r\nWHERE        (ID_APP = @ID_APP)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TOKEN";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DT_TOKEN";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DT_TOKEN";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@REFRESH_TOKEN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "REFRESH_TOKEN";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[4].Parameters.Add(param);
+            this._commandCollection[5] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "UPDATE       TB_MELI\r\nSET                TOKEN = @TOKEN\r\nWHERE        (ID_APP = @" +
+                "ID_APP)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TOKEN";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "TOKEN";
+            this._commandCollection[5].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_APP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_APP";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[5].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1070,6 +1486,34 @@ namespace ModuloML.MELIdatasetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual MELIdataset.TB_MELIDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            MELIdataset.TB_MELIDataTable dataTable = new MELIdataset.TB_MELIDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual MELIdataset.TB_MELIDataTable PegaTodosOsValores() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            MELIdataset.TB_MELIDataTable dataTable = new MELIdataset.TB_MELIDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual MELIdataset.TB_MELIDataTable RetornaInfo(string ID_APP) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((ID_APP == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(ID_APP));
+            }
             MELIdataset.TB_MELIDataTable dataTable = new MELIdataset.TB_MELIDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -1107,14 +1551,87 @@ namespace ModuloML.MELIdatasetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> ID, string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE, string TOKEN, global::System.Nullable<global::System.DateTime> DT_TOKEN) {
-            if ((ID.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID.Value));
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_ID, string Original_ID_APP, string Original_APP_SECRET, string Original_URL_REDIRECT, string Original_TG_CODE, string Original_TOKEN, global::System.Nullable<global::System.DateTime> Original_DT_TOKEN, string Original_REFRESH_TOKEN) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
+            if ((Original_ID_APP == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_ID_APP));
             }
+            if ((Original_APP_SECRET == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_APP_SECRET));
+            }
+            if ((Original_URL_REDIRECT == null)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_URL_REDIRECT));
+            }
+            if ((Original_TG_CODE == null)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_TG_CODE));
+            }
+            if ((Original_TOKEN == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_TOKEN));
+            }
+            if ((Original_DT_TOKEN.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_DT_TOKEN.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_REFRESH_TOKEN == null)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_REFRESH_TOKEN));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int ID, string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE, string TOKEN, global::System.Nullable<global::System.DateTime> DT_TOKEN, string REFRESH_TOKEN) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID));
             if ((ID_APP == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -1151,6 +1668,12 @@ namespace ModuloML.MELIdatasetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
+            if ((REFRESH_TOKEN == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(REFRESH_TOKEN));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1170,8 +1693,153 @@ namespace ModuloML.MELIdatasetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int ID, 
+                    string ID_APP, 
+                    string APP_SECRET, 
+                    string URL_REDIRECT, 
+                    string TG_CODE, 
+                    string TOKEN, 
+                    global::System.Nullable<global::System.DateTime> DT_TOKEN, 
+                    string REFRESH_TOKEN, 
+                    int Original_ID, 
+                    string Original_ID_APP, 
+                    string Original_APP_SECRET, 
+                    string Original_URL_REDIRECT, 
+                    string Original_TG_CODE, 
+                    string Original_TOKEN, 
+                    global::System.Nullable<global::System.DateTime> Original_DT_TOKEN, 
+                    string Original_REFRESH_TOKEN) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID));
+            if ((ID_APP == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(ID_APP));
+            }
+            if ((APP_SECRET == null)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(APP_SECRET));
+            }
+            if ((URL_REDIRECT == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(URL_REDIRECT));
+            }
+            if ((TG_CODE == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(TG_CODE));
+            }
+            if ((TOKEN == null)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(TOKEN));
+            }
+            if ((DT_TOKEN.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(DT_TOKEN.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((REFRESH_TOKEN == null)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(REFRESH_TOKEN));
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_ID));
+            if ((Original_ID_APP == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_ID_APP));
+            }
+            if ((Original_APP_SECRET == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_APP_SECRET));
+            }
+            if ((Original_URL_REDIRECT == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_URL_REDIRECT));
+            }
+            if ((Original_TG_CODE == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_TG_CODE));
+            }
+            if ((Original_TOKEN == null)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_TOKEN));
+            }
+            if ((Original_DT_TOKEN.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_DT_TOKEN.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((Original_REFRESH_TOKEN == null)) {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_REFRESH_TOKEN));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE, string TOKEN, global::System.Nullable<global::System.DateTime> DT_TOKEN, string REFRESH_TOKEN, int Original_ID, string Original_ID_APP, string Original_APP_SECRET, string Original_URL_REDIRECT, string Original_TG_CODE, string Original_TOKEN, global::System.Nullable<global::System.DateTime> Original_DT_TOKEN, string Original_REFRESH_TOKEN) {
+            return this.Update(Original_ID, ID_APP, APP_SECRET, URL_REDIRECT, TG_CODE, TOKEN, DT_TOKEN, REFRESH_TOKEN, Original_ID, Original_ID_APP, Original_APP_SECRET, Original_URL_REDIRECT, Original_TG_CODE, Original_TOKEN, Original_DT_TOKEN, Original_REFRESH_TOKEN);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsereInfo(string ID_APP, string APP_SECRET, string URL_REDIRECT) {
+        public virtual int InsereInfo(string ID_APP, string APP_SECRET, string URL_REDIRECT, string TG_CODE) {
             global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[1];
             if ((ID_APP == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
@@ -1190,6 +1858,94 @@ namespace ModuloML.MELIdatasetTableAdapters {
             }
             else {
                 command.Parameters[2].Value = ((string)(URL_REDIRECT));
+            }
+            if ((TG_CODE == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(TG_CODE));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int SalvaToken(string TOKEN, global::System.Nullable<global::System.DateTime> DT_TOKEN, string REFRESH_TOKEN, string ID_APP) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[4];
+            if ((TOKEN == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(TOKEN));
+            }
+            if ((DT_TOKEN.HasValue == true)) {
+                command.Parameters[1].Value = ((System.DateTime)(DT_TOKEN.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((REFRESH_TOKEN == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(REFRESH_TOKEN));
+            }
+            if ((ID_APP == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(ID_APP));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateToken(string TOKEN, string ID_APP) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[5];
+            if ((TOKEN == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(TOKEN));
+            }
+            if ((ID_APP == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(ID_APP));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
