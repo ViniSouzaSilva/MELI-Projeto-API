@@ -2,9 +2,11 @@
 using MeliLibTools.MeliLibApi;
 using MeliLibTools.Model;
 using ModuloML.Objetos;
+using ModuloML.Servicos;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Chrome;
 using RestSharp;
+using RestSharp.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -34,10 +36,7 @@ namespace ModuloML
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<Result> results { get { return RetornaVenda(); } }
-        public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
-        MELIdataset.TB_MELIDataTable TB_MELIdatatable;
-        ChromeDriver chrome = new ChromeDriver();
+        
         public MainWindow()
         {
 
@@ -45,25 +44,24 @@ namespace ModuloML
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             var enc1252 = Encoding.GetEncoding(1252);
             VerificaValidadeToken();
+            //RetornaDadosEmitente();
             PopulaComboBox();
-            RefreshTodosToken();
+            //RefreshTodosToken();
 
 
             // RefreshTodosToken();
         }
+        #region Atributos
+        public List<Result> results { get { return RetornaVenda(); } }
+        public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
+        MELIdataset.TB_MELIDataTable TB_MELIdatatable;
+        ChromeDriver chrome = new ChromeDriver();
+        DadosDoEmitente.Root DadosEmitente = new DadosDoEmitente.Root();
+        RetornaVendaML retorno = new RetornaVendaML();
         string token = "";
         string id_cliente = "664147756";
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AcessaUrlAutenticadora();
-
-
-            //WebBrowser web = new WebBrowser();
-            // web.Navigate("https://www.youtube.com/");
-            // web.Source
-            // string a =  Navegador.Source.ToString();
-            // int a;
-        }
+        #endregion
+        #region Métodos
         public void AcessaUrlAutenticadora()
         {
             if (!ID_txb.Text.Equals("") || !ID_txb.Text.Equals(null) || !URL_txb.Text.Equals("") || !URL_txb.Text.Equals(null))
@@ -87,16 +85,6 @@ namespace ModuloML
             }
 
         }
-
-        private void GerarCodTG_btn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void geraToken_btn_Click(object sender, RoutedEventArgs e)
-        {
-            //GeraToken();
-        }
         public string GeraRefreshToken(string clientId, string clientSecret, string redirectUri, string refreshToken)
         {
 
@@ -117,9 +105,9 @@ namespace ModuloML
                     // id_cliente = result.UserId.ToString();
                     File.WriteAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt", result.AccessToken);
                     var info = seleciona.RetornaInfo(clientId);
-                    
-                        seleciona.SalvaToken(result.AccessToken, DateTime.Now, result.RefreshToken, result.AccessToken.Substring(8, 16));
-                    
+
+                    seleciona.SalvaToken(result.AccessToken, DateTime.Now, result.RefreshToken, result.AccessToken.Substring(8, 16));
+
                     return result.AccessToken;
                     // To see output in console
                     // var refresh = apiInstance.GetTokenWithHttpInfo(grantType, clientId, clientSecret, redirectUri, null, refreshToken);
@@ -135,8 +123,6 @@ namespace ModuloML
                 return e.Message;
             }
         }
-
-
         public string GeraToken()
         {
             using (var seleciona = new MELIdatasetTableAdapters.TB_MELITableAdapter())
@@ -190,55 +176,41 @@ namespace ModuloML
 
             }
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RefreshToken_btn_Click(object sender, RoutedEventArgs e)
-        {
-            //GeraRefreshToken();
-        }
-
-        private void PuxarVendas_btn_Click(object sender, RoutedEventArgs e)
-        {
-            // RetornaVenda();
-            batatagrid.ItemsSource = results;
-        }
         public List<Result> RetornaVenda()
         {
-            var a = chrome.Url;
+            RetornaDadosEmitente();
             VerificaValidadeToken();
             if (lojas_cxb.SelectedItem.Equals(""))
             {
                 MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
-                return results ;
+                return results;
             }
             else
             {
                 using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
                 {
                     var loja = consulta.RetornaInfo(lojas_cxb.Text);
-                    var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + loja[0].ID_APP + "&access_token=" + loja[0].TOKEN);
+                    var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + loja[0].TOKEN.Substring(loja[0].TOKEN.Length - 9, 9) + "&access_token=" + loja[0].TOKEN); ;
                     client.Timeout = -1;
                     var request = new RestRequest(Method.GET);
                     request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
                     IRestResponse response = client.Execute(request);
                     audit("vendas", response.Content);
                     RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
-
+                    retorno = myDeserializedClass;
+                    //batatagrid.Items.Add(results);
+                    //results = myDeserializedClass.results;
                     return myDeserializedClass.results;
                 }
             }
-            // results = myDeserializedClass.results;
+            // 
 
-            // batatagrid.Items.Add(results);
+
         }
-
         public List<Result> RetornaVendaPorStatusDesc()
         {
-            var a = chrome.Url;
+            //var a = chrome.Url;
+            RetornaDadosEmitente();
             VerificaValidadeToken();
             var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.status=" + Status_cxb.Text + "&sort=date_desc&access_token=" + token);
             //var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&access_token=" + token);
@@ -248,50 +220,12 @@ namespace ModuloML
             IRestResponse response = client.Execute(request);
             audit("vendas", response.Content);
             RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
-
+            //batatagrid.Items.Add(results);
             return myDeserializedClass.results;
 
-            // results = myDeserializedClass.results;
+            //results = myDeserializedClass.results;
 
             // batatagrid.Items.Add(results);
-        }
-
-        private void PuxarVendasfiltradas_btn_Click(object sender, RoutedEventArgs e)
-        {
-            batatagrid.ItemsSource = resultsFiltrados;
-            /// RetornaVendaPorStatusDesc();
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Add_btn_Click(object sender, RoutedEventArgs e)
-        {
-            //GeraTGcode(ID_txb.Text, URL_txb.Text);
-            using (var registra = new MELIdatasetTableAdapters.TB_MELITableAdapter())
-            {
-                if (!CodTG_txb.Text.Equals(""))
-                {
-                    try
-                    {
-                        registra.InsereInfo(ID_txb.Text.ToString(), AppSecret_txb.Text.ToString(), URL_txb.Text.ToString(), CodTG_txb.Text.ToString());
-
-                        GeraToken();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Atenção", ex.Message);
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("Atenção", "Digite o TGCODE");
-
-                }
-            }
         }
         public void GeraTGcode(string clientId, string redirectUri)
         {
@@ -376,5 +310,202 @@ namespace ModuloML
                 }
             }
         }
+        public void RetornaInfoVenda(string userId, string orderId, string Token)
+        {
+            try
+            {
+                //var client = new RestClient("http://api.mercadolibre.com/users/"+userId+"/invoices/orders/"+orderId+"?access_token="+Token);
+                var client = new RestClient("http://api.mercadolibre.com/users/" + userId + "/invoices/" + orderId + "?access_token=" + Token);
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine(response.Content);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public void RetornaXmlVenda(string userId, string orderId, string Token)
+        {
+            try
+            {
+                //var client = new RestClient("http://api.mercadolibre.com/users/"+userId+"/invoices/orders/"+orderId+"?access_token="+Token);
+                var client = new RestClient("https://api.mercadolibre.com/users/" + userId + "/invoices/documents/xml/" + orderId + "/authorized");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine(response.Content);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public void RetornaInfoUser()
+        {
+
+            VerificaValidadeToken();
+            if (lojas_cxb.SelectedItem.Equals(""))
+            {
+                MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
+                //return results;
+            }
+            else
+            {
+                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                {
+                    var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                    var client = new RestClient("https://api.mercadolibre.com/users/$USER_ID/addresses?access_token=$ACCESS_TOKEN");
+                    client.Timeout = -1;
+                    var request = new RestRequest(Method.GET);
+                    request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                    IRestResponse response = client.Execute(request);
+                    //Console.WriteLine(response.Content);
+                    RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
+
+                    //return myDeserializedClass.results;
+                }
+            }
+            // results = myDeserializedClass.results;
+
+            // batatagrid.Items.Add(results);
+        }
+        public void RetornaDadosEmitente()
+        {
+
+            VerificaValidadeToken();
+            if (lojas_cxb.SelectedItem.Equals(""))
+            {
+                MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
+                // return results;
+            }
+            else
+            {
+                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                {
+                    var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                    var client = new RestClient("https://api.mercadolibre.com/users/me?access_token=" + loja[0].TOKEN);
+                    client.Timeout = -1;
+                    var request = new RestRequest(Method.GET);
+                    request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                    IRestResponse response = client.Execute(request);
+
+                    DadosDoEmitente.Root myDeserializedClass = JsonConvert.DeserializeObject<DadosDoEmitente.Root>(response.Content.ToString());
+
+                    DadosEmitente = myDeserializedClass;
+                    
+                    
+                    //return myDeserializedClass.results;
+                }
+            }
+            // results = myDeserializedClass.results;
+
+            // batatagrid.Items.Add(results);
+        }
+
+        #endregion
+        #region Métodos Click
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AcessaUrlAutenticadora();
+
+
+            //WebBrowser web = new WebBrowser();
+            // web.Navigate("https://www.youtube.com/");
+            // web.Source
+            // string a =  Navegador.Source.ToString();
+            // int a;
+        }
+        
+        private void GerarCodTG_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void geraToken_btn_Click(object sender, RoutedEventArgs e)
+        {
+            //GeraToken();
+        }
+              
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RefreshToken_btn_Click(object sender, RoutedEventArgs e)
+        {
+            //GeraRefreshToken();
+        }
+
+        private void PuxarVendas_btn_Click(object sender, RoutedEventArgs e)
+        {
+            // RetornaVenda();
+            batatagrid.ItemsSource = results;
+        }
+        
+        private void PuxarVendasfiltradas_btn_Click(object sender, RoutedEventArgs e)
+        {
+            batatagrid.ItemsSource = resultsFiltrados;
+            /// RetornaVendaPorStatusDesc();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add_btn_Click(object sender, RoutedEventArgs e)
+        {
+            //GeraTGcode(ID_txb.Text, URL_txb.Text);
+            using (var registra = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            {
+                if (!CodTG_txb.Text.Equals(""))
+                {
+                    try
+                    {
+                        registra.InsereInfo(ID_txb.Text.ToString(), AppSecret_txb.Text.ToString(), URL_txb.Text.ToString(), CodTG_txb.Text.ToString());
+
+                        GeraToken();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Atenção", ex.Message);
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Atenção", "Digite o TGCODE");
+
+                }
+            }
+        }
+       
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+            using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            {
+                var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                RetornoVendaML.Result id = (RetornoVendaML.Result)batatagrid.SelectedItem;
+
+                var IdSeller = id.seller.id;
+                var IdOrder = id.payments[0].id;
+                ConversaoML.Conversao(retorno,DadosEmitente);
+                // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
+               // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);
+            }
+           // RetornoVendaML.Result a = (RetornoVendaML.RetornaVendaML)id;
+
+        }
+
+        private void Row_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
