@@ -1,0 +1,45 @@
+11:18:54.449	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-111314-fec31cfcac5ee09494ad079f90a8ed25-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+11:19:00.241	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-111314-aea5f1a4f9aa35b4a119e62d0f822d97-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+11:20:12.015	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-111314-2af41047514a57bd9972866c4d70075e-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+11:22:31.800	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-111314-ebee69f26f2ba88528821960415f4548-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+11:24:24.015	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-111314-d11ab30d57d41035543063293189b27f-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+

@@ -54,7 +54,7 @@ namespace ModuloML
         #region Atributos
         public List<Result> results { get { return RetornaVenda(); } }
         public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
-        MELIdataset.TB_MELIDataTable TB_MELIdatatable;
+        MELIDataSet.TB_MELIDataTable TB_MELIdatatable;
         ChromeDriver chrome = new ChromeDriver();
         DadosDoEmitente.Root DadosEmitente = new DadosDoEmitente.Root();
         RetornaVendaML retorno = new RetornaVendaML();
@@ -96,7 +96,7 @@ namespace ModuloML
 
             try
             {
-                using (var seleciona = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                using (var seleciona = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
                     // Request Access Token
                     Token result = apiInstance.GetToken(grantType, clientId, clientSecret, redirectUri, null, refreshToken);
@@ -125,7 +125,7 @@ namespace ModuloML
         }
         public string GeraToken()
         {
-            using (var seleciona = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            using (var seleciona = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
                 //var info = seleciona.RetornaInfo(ID_APP);
                 //  if (info is null)
@@ -187,7 +187,7 @@ namespace ModuloML
             }
             else
             {
-                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
                     var loja = consulta.RetornaInfo(lojas_cxb.Text);
                     var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + loja[0].TOKEN.Substring(loja[0].TOKEN.Length - 9, 9) + "&access_token=" + loja[0].TOKEN); ;
@@ -254,9 +254,9 @@ namespace ModuloML
         {
             try
             {
-                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
-                    foreach (MELIdataset.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
+                    foreach (MELIDataSet.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
                     {
                         if (row.IsREFRESH_TOKENNull())
                         {
@@ -279,9 +279,9 @@ namespace ModuloML
         public void VerificaValidadeToken()
         {
             bool ExisteTokenVencido = false;
-            using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
-                foreach (MELIdataset.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
+                foreach (MELIDataSet.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
                 {
                     DateTime DateToken = row.DT_TOKEN;
                     System.TimeSpan diferenca = DateTime.Now.Subtract(DateToken);
@@ -300,9 +300,9 @@ namespace ModuloML
         }
         public void PopulaComboBox()
         {
-            using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
-                foreach (MELIdataset.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
+                foreach (MELIDataSet.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
                 {
 
                     lojas_cxb.Items.Add(row.ID_APP);
@@ -355,7 +355,7 @@ namespace ModuloML
             }
             else
             {
-                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
                     var loja = consulta.RetornaInfo(lojas_cxb.Text);
                     var client = new RestClient("https://api.mercadolibre.com/users/$USER_ID/addresses?access_token=$ACCESS_TOKEN");
@@ -384,7 +384,7 @@ namespace ModuloML
             }
             else
             {
-                using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
                     var loja = consulta.RetornaInfo(lojas_cxb.Text);
                     var client = new RestClient("https://api.mercadolibre.com/users/me?access_token=" + loja[0].TOKEN);
@@ -404,6 +404,25 @@ namespace ModuloML
             // results = myDeserializedClass.results;
 
             // batatagrid.Items.Add(results);
+        }
+        public DadosAdicionaisProd.Root RetornaDadosProd(string IdMeli)
+        {
+            try
+            {
+                var client = new RestClient("https://api.mercadolibre.com/items/" + IdMeli + "?include_attributes=all");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                IRestResponse response = client.Execute(request);
+                DadosAdicionaisProd.Root myDeserializedClass = JsonConvert.DeserializeObject<DadosAdicionaisProd.Root>(response.Content);
+                return myDeserializedClass;
+            }
+            catch (Exception ex) 
+            {
+                return null;
+            }
+           // Console.WriteLine(response.Content);
+
         }
 
         #endregion
@@ -460,7 +479,7 @@ namespace ModuloML
         private void Add_btn_Click(object sender, RoutedEventArgs e)
         {
             //GeraTGcode(ID_txb.Text, URL_txb.Text);
-            using (var registra = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            using (var registra = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
                 if (!CodTG_txb.Text.Equals(""))
                 {
@@ -487,19 +506,19 @@ namespace ModuloML
         private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
         {
 
-            using (var consulta = new MELIdatasetTableAdapters.TB_MELITableAdapter())
+            using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
                 var loja = consulta.RetornaInfo(lojas_cxb.Text);
                 RetornoVendaML.Result id = (RetornoVendaML.Result)batatagrid.SelectedItem;
 
                 var IdSeller = id.seller.id;
                 var IdOrder = id.payments[0].id;
-                ConversaoML.Conversao(retorno,DadosEmitente);
+                //ConversaoML.Conversao(retorno,DadosEmitente);
                 // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
                // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);
             }
            // RetornoVendaML.Result a = (RetornoVendaML.RetornaVendaML)id;
-
+            
         }
 
         private void Row_Click(object sender, RoutedEventArgs e)

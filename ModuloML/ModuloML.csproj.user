@@ -12,7 +12,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="MELIdataset.xsd">
+    <None Update="MELIDataSet.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

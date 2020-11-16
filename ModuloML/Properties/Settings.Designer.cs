@@ -23,6 +23,136 @@ namespace ModuloML.Properties {
             }
         }
         
-      
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CNPJ {
+            get {
+                return ((string)(this["CNPJ"]));
+            }
+            set {
+                this["CNPJ"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RAZAO_SOCIAL {
+            get {
+                return ((string)(this["RAZAO_SOCIAL"]));
+            }
+            set {
+                this["RAZAO_SOCIAL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NOME_FANTASIA {
+            get {
+                return ((string)(this["NOME_FANTASIA"]));
+            }
+            set {
+                this["NOME_FANTASIA"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LOGRADOURO {
+            get {
+                return ((string)(this["LOGRADOURO"]));
+            }
+            set {
+                this["LOGRADOURO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NUMERO {
+            get {
+                return ((string)(this["NUMERO"]));
+            }
+            set {
+                this["NUMERO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string BAIRRO {
+            get {
+                return ((string)(this["BAIRRO"]));
+            }
+            set {
+                this["BAIRRO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CODMUNICIPIO {
+            get {
+                return ((string)(this["CODMUNICIPIO"]));
+            }
+            set {
+                this["CODMUNICIPIO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NOMEMUN {
+            get {
+                return ((string)(this["NOMEMUN"]));
+            }
+            set {
+                this["NOMEMUN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UF {
+            get {
+                return ((string)(this["UF"]));
+            }
+            set {
+                this["UF"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CEP {
+            get {
+                return ((string)(this["CEP"]));
+            }
+            set {
+                this["CEP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string IE {
+            get {
+                return ((string)(this["IE"]));
+            }
+            set {
+                this["IE"] = value;
+            }
+        }
     }
 }
