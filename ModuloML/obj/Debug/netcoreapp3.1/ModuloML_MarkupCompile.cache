@@ -1,5 +1,5 @@
 ﻿ModuloML
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\App.xaml
-2347221741
+3-1028321428
 
-17-1611925864
+17-1385431400
 198-2081688237
-MainWindow.xaml;ModuloBling.xaml;
+CadastroNF.xaml;MainWindow.xaml;ModuloBling.xaml;
 
-True
+False
 

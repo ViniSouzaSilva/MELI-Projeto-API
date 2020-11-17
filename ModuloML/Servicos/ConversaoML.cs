@@ -14,7 +14,7 @@ namespace ModuloML.Servicos
    public static class ConversaoML
     {
 
-        public static void Conversao(RetornoVendaML.RetornaVendaML Resultado,DadosDoEmitente.Root Emitente, string cnpj)       
+        public static void Conversao(RetornoVendaML.RetornaVendaML Resultado,DadosDoEmitente.Root Emitente, DadosAdicionaisProd.Root dadosAdicionaisProd)       
         {
             File.WriteAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt", String.Empty);
             string valorSalvo = File.ReadAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt");
@@ -204,7 +204,11 @@ namespace ModuloML.Servicos
                     Tx2.AppendLine("INCLUIRITEM");
                     Tx2.AppendLine($"nItem_H02={indiceProd}");
                     Tx2.AppendLine($"cProd_I02={Resultado.results[item].order_items[item].item.seller_sku}");
-                   // Tx2.AppendLine($"cEAN_I03={}");
+
+                    var dadosProd = ((dadosAdicionaisProd.attributes.Select(x => x).Where(x => x.id.Equals("GTIN")).FirstOrDefault()) ?? (new DadosAdicionaisProd.Attribute())).value_name;
+                    Tx2.AppendLine($"cEAN_I03={dadosProd}");
+                    Tx2.AppendLine($"xProd_I04={Resultado.results[item].order_items[item].item.title}");
+                    Tx2.AppendLine($"");
                 }
 
 
@@ -212,7 +216,7 @@ namespace ModuloML.Servicos
 
 
 
-
+                
 
             }
 
