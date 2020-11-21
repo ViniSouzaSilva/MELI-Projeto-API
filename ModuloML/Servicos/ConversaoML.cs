@@ -11,10 +11,10 @@ using ModuloML.Properties;
 
 namespace ModuloML.Servicos
 {
-   public static class ConversaoML
+    public static class ConversaoML
     {
 
-        public static void Conversao(RetornoVendaML.RetornaVendaML Resultado,DadosDoEmitente.Root Emitente, DadosAdicionaisProd.Root dadosAdicionaisProd)       
+        public  static void Conversao(RetornoVendaML.RetornaVendaML Resultado,DadosDoEmitente.Root Emitente, DadosAdicionaisProd.Root dadosAdicionaisProd)       
         {
             File.WriteAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt", String.Empty);
             string valorSalvo = File.ReadAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt");

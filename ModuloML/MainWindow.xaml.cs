@@ -3,6 +3,7 @@ using MeliLibTools.MeliLibApi;
 using MeliLibTools.Model;
 using ModuloML.Objetos;
 using ModuloML.Servicos;
+using ModuloML.Telas;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Chrome;
 using RestSharp;
@@ -348,6 +349,7 @@ namespace ModuloML
 
                     var IdSeller = id.seller.id;
                     var IdOrder = id.payments[0].id;
+                    CadastroNF tela = new CadastroNF(id);
                     //ConversaoML.Conversao(retorno,DadosEmitente);
                     // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
                     // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);

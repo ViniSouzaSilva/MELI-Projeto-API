@@ -53,7 +53,7 @@ namespace ModuloML {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ModuloML;component/modulobling.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ModuloML_r51srk34_wpftmp;component/modulobling.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ModuloBling.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
