@@ -1738,6 +1738,8 @@ namespace ModuloML {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class TB_CLIENTESDataTable : global::System.Data.TypedTableBase<TB_CLIENTESRow> {
             
+            private global::System.Data.DataColumn columnID_CLIENTE;
+            
             private global::System.Data.DataColumn columnCPF_CNPJ;
             
             private global::System.Data.DataColumn columnNOME_RAZAO;
@@ -1795,6 +1797,14 @@ namespace ModuloML {
             protected TB_CLIENTESDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ID_CLIENTEColumn {
+                get {
+                    return this.columnID_CLIENTE;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1938,9 +1948,10 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TB_CLIENTESRow AddTB_CLIENTESRow(int CPF_CNPJ, string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE) {
+            public TB_CLIENTESRow AddTB_CLIENTESRow(int ID_CLIENTE, string CPF_CNPJ, string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE) {
                 TB_CLIENTESRow rowTB_CLIENTESRow = ((TB_CLIENTESRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        ID_CLIENTE,
                         CPF_CNPJ,
                         NOME_RAZAO,
                         LOGRADOURO,
@@ -1961,9 +1972,9 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TB_CLIENTESRow FindByCPF_CNPJ(int CPF_CNPJ) {
+            public TB_CLIENTESRow FindByID_CLIENTE(int ID_CLIENTE) {
                 return ((TB_CLIENTESRow)(this.Rows.Find(new object[] {
-                            CPF_CNPJ})));
+                            ID_CLIENTE})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1983,6 +1994,7 @@ namespace ModuloML {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+                this.columnID_CLIENTE = base.Columns["ID_CLIENTE"];
                 this.columnCPF_CNPJ = base.Columns["CPF_CNPJ"];
                 this.columnNOME_RAZAO = base.Columns["NOME_RAZAO"];
                 this.columnLOGRADOURO = base.Columns["LOGRADOURO"];
@@ -2001,7 +2013,9 @@ namespace ModuloML {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnCPF_CNPJ = new global::System.Data.DataColumn("CPF_CNPJ", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnID_CLIENTE = new global::System.Data.DataColumn("ID_CLIENTE", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_CLIENTE);
+                this.columnCPF_CNPJ = new global::System.Data.DataColumn("CPF_CNPJ", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCPF_CNPJ);
                 this.columnNOME_RAZAO = new global::System.Data.DataColumn("NOME_RAZAO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNOME_RAZAO);
@@ -2028,9 +2042,10 @@ namespace ModuloML {
                 this.columnIE = new global::System.Data.DataColumn("IE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnCPF_CNPJ}, true));
-                this.columnCPF_CNPJ.AllowDBNull = false;
-                this.columnCPF_CNPJ.Unique = true;
+                                this.columnID_CLIENTE}, true));
+                this.columnID_CLIENTE.AllowDBNull = false;
+                this.columnID_CLIENTE.Unique = true;
+                this.columnCPF_CNPJ.MaxLength = 100;
                 this.columnNOME_RAZAO.MaxLength = 300;
                 this.columnLOGRADOURO.MaxLength = 100;
                 this.columnNUMERO.MaxLength = 100;
@@ -3293,9 +3308,25 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int CPF_CNPJ {
+            public int ID_CLIENTE {
                 get {
-                    return ((int)(this[this.tableTB_CLIENTES.CPF_CNPJColumn]));
+                    return ((int)(this[this.tableTB_CLIENTES.ID_CLIENTEColumn]));
+                }
+                set {
+                    this[this.tableTB_CLIENTES.ID_CLIENTEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CPF_CNPJ {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_CLIENTES.CPF_CNPJColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CPF_CNPJ\' na tabela \'TB_CLIENTES\' é DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableTB_CLIENTES.CPF_CNPJColumn] = value;
@@ -3492,6 +3523,18 @@ namespace ModuloML {
                 set {
                     this[this.tableTB_CLIENTES.IEColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCPF_CNPJNull() {
+                return this.IsNull(this.tableTB_CLIENTES.CPF_CNPJColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCPF_CNPJNull() {
+                this[this.tableTB_CLIENTES.CPF_CNPJColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8068,6 +8111,7 @@ WHERE        (CPROD = @CPROD)";
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "TB_CLIENTES";
+            tableMapping.ColumnMappings.Add("ID_CLIENTE", "ID_CLIENTE");
             tableMapping.ColumnMappings.Add("CPF_CNPJ", "CPF_CNPJ");
             tableMapping.ColumnMappings.Add("NOME_RAZAO", "NOME_RAZAO");
             tableMapping.ColumnMappings.Add("LOGRADOURO", "LOGRADOURO");
@@ -8084,12 +8128,28 @@ WHERE        (CPROD = @CPROD)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""TB_CLIENTES"" WHERE ((""CPF_CNPJ"" = @Original_CPF_CNPJ) AND ((@IsNull_NOME_RAZAO = 1 AND ""NOME_RAZAO"" IS NULL) OR (""NOME_RAZAO"" = @Original_NOME_RAZAO)) AND ((@IsNull_LOGRADOURO = 1 AND ""LOGRADOURO"" IS NULL) OR (""LOGRADOURO"" = @Original_LOGRADOURO)) AND ((@IsNull_NUMERO = 1 AND ""NUMERO"" IS NULL) OR (""NUMERO"" = @Original_NUMERO)) AND ((@IsNull_COMPLEMENTO = 1 AND ""COMPLEMENTO"" IS NULL) OR (""COMPLEMENTO"" = @Original_COMPLEMENTO)) AND ((@IsNull_BAIRRO = 1 AND ""BAIRRO"" IS NULL) OR (""BAIRRO"" = @Original_BAIRRO)) AND ((@IsNull_COD_MUNICIPIO = 1 AND ""COD_MUNICIPIO"" IS NULL) OR (""COD_MUNICIPIO"" = @Original_COD_MUNICIPIO)) AND ((@IsNull_NOME_MUNICIPIO = 1 AND ""NOME_MUNICIPIO"" IS NULL) OR (""NOME_MUNICIPIO"" = @Original_NOME_MUNICIPIO)) AND ((@IsNull_UF = 1 AND ""UF"" IS NULL) OR (""UF"" = @Original_UF)) AND ((@IsNull_CEP = 1 AND ""CEP"" IS NULL) OR (""CEP"" = @Original_CEP)) AND ((@IsNull_TELEFONE = 1 AND ""TELEFONE"" IS NULL) OR (""TELEFONE"" = @Original_TELEFONE)) AND ((@IsNull_INDICADOR_IE = 1 AND ""INDICADOR_IE"" IS NULL) OR (""INDICADOR_IE"" = @Original_INDICADOR_IE)) AND ((@IsNull_IE = 1 AND ""IE"" IS NULL) OR (""IE"" = @Original_IE)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""TB_CLIENTES"" WHERE ((""ID_CLIENTE"" = @Original_ID_CLIENTE) AND ((@IsNull_CPF_CNPJ = 1 AND ""CPF_CNPJ"" IS NULL) OR (""CPF_CNPJ"" = @Original_CPF_CNPJ)) AND ((@IsNull_NOME_RAZAO = 1 AND ""NOME_RAZAO"" IS NULL) OR (""NOME_RAZAO"" = @Original_NOME_RAZAO)) AND ((@IsNull_LOGRADOURO = 1 AND ""LOGRADOURO"" IS NULL) OR (""LOGRADOURO"" = @Original_LOGRADOURO)) AND ((@IsNull_NUMERO = 1 AND ""NUMERO"" IS NULL) OR (""NUMERO"" = @Original_NUMERO)) AND ((@IsNull_COMPLEMENTO = 1 AND ""COMPLEMENTO"" IS NULL) OR (""COMPLEMENTO"" = @Original_COMPLEMENTO)) AND ((@IsNull_BAIRRO = 1 AND ""BAIRRO"" IS NULL) OR (""BAIRRO"" = @Original_BAIRRO)) AND ((@IsNull_COD_MUNICIPIO = 1 AND ""COD_MUNICIPIO"" IS NULL) OR (""COD_MUNICIPIO"" = @Original_COD_MUNICIPIO)) AND ((@IsNull_NOME_MUNICIPIO = 1 AND ""NOME_MUNICIPIO"" IS NULL) OR (""NOME_MUNICIPIO"" = @Original_NOME_MUNICIPIO)) AND ((@IsNull_UF = 1 AND ""UF"" IS NULL) OR (""UF"" = @Original_UF)) AND ((@IsNull_CEP = 1 AND ""CEP"" IS NULL) OR (""CEP"" = @Original_CEP)) AND ((@IsNull_TELEFONE = 1 AND ""TELEFONE"" IS NULL) OR (""TELEFONE"" = @Original_TELEFONE)) AND ((@IsNull_INDICADOR_IE = 1 AND ""INDICADOR_IE"" IS NULL) OR (""INDICADOR_IE"" = @Original_INDICADOR_IE)) AND ((@IsNull_IE = 1 AND ""IE"" IS NULL) OR (""IE"" = @Original_IE)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@Original_CPF_CNPJ";
+            param.ParameterName = "@Original_ID_CLIENTE";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_CLIENTE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_CPF_CNPJ";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CPF_CNPJ";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -8288,12 +8348,18 @@ WHERE        (CPROD = @CPROD)";
             this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""TB_CLIENTES"" (""CPF_CNPJ"", ""NOME_RAZAO"", ""LOGRADOURO"", ""NUMERO"", ""COMPLEMENTO"", ""BAIRRO"", ""COD_MUNICIPIO"", ""NOME_MUNICIPIO"", ""UF"", ""CEP"", ""TELEFONE"", ""INDICADOR_IE"", ""IE"") VALUES (@CPF_CNPJ, @NOME_RAZAO, @LOGRADOURO, @NUMERO, @COMPLEMENTO, @BAIRRO, @COD_MUNICIPIO, @NOME_MUNICIPIO, @UF, @CEP, @TELEFONE, @INDICADOR_IE, @IE)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""TB_CLIENTES"" (""ID_CLIENTE"", ""CPF_CNPJ"", ""NOME_RAZAO"", ""LOGRADOURO"", ""NUMERO"", ""COMPLEMENTO"", ""BAIRRO"", ""COD_MUNICIPIO"", ""NOME_MUNICIPIO"", ""UF"", ""CEP"", ""TELEFONE"", ""INDICADOR_IE"", ""IE"") VALUES (@ID_CLIENTE, @CPF_CNPJ, @NOME_RAZAO, @LOGRADOURO, @NUMERO, @COMPLEMENTO, @BAIRRO, @COD_MUNICIPIO, @NOME_MUNICIPIO, @UF, @CEP, @TELEFONE, @INDICADOR_IE, @IE)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@CPF_CNPJ";
+            param.ParameterName = "@ID_CLIENTE";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_CLIENTE";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -8371,12 +8437,37 @@ WHERE        (CPROD = @CPROD)";
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""TB_CLIENTES"" SET ""CPF_CNPJ"" = @CPF_CNPJ, ""NOME_RAZAO"" = @NOME_RAZAO, ""LOGRADOURO"" = @LOGRADOURO, ""NUMERO"" = @NUMERO, ""COMPLEMENTO"" = @COMPLEMENTO, ""BAIRRO"" = @BAIRRO, ""COD_MUNICIPIO"" = @COD_MUNICIPIO, ""NOME_MUNICIPIO"" = @NOME_MUNICIPIO, ""UF"" = @UF, ""CEP"" = @CEP, ""TELEFONE"" = @TELEFONE, ""INDICADOR_IE"" = @INDICADOR_IE, ""IE"" = @IE WHERE ((""CPF_CNPJ"" = @Original_CPF_CNPJ) AND ((@IsNull_NOME_RAZAO = 1 AND ""NOME_RAZAO"" IS NULL) OR (""NOME_RAZAO"" = @Original_NOME_RAZAO)) AND ((@IsNull_LOGRADOURO = 1 AND ""LOGRADOURO"" IS NULL) OR (""LOGRADOURO"" = @Original_LOGRADOURO)) AND ((@IsNull_NUMERO = 1 AND ""NUMERO"" IS NULL) OR (""NUMERO"" = @Original_NUMERO)) AND ((@IsNull_COMPLEMENTO = 1 AND ""COMPLEMENTO"" IS NULL) OR (""COMPLEMENTO"" = @Original_COMPLEMENTO)) AND ((@IsNull_BAIRRO = 1 AND ""BAIRRO"" IS NULL) OR (""BAIRRO"" = @Original_BAIRRO)) AND ((@IsNull_COD_MUNICIPIO = 1 AND ""COD_MUNICIPIO"" IS NULL) OR (""COD_MUNICIPIO"" = @Original_COD_MUNICIPIO)) AND ((@IsNull_NOME_MUNICIPIO = 1 AND ""NOME_MUNICIPIO"" IS NULL) OR (""NOME_MUNICIPIO"" = @Original_NOME_MUNICIPIO)) AND ((@IsNull_UF = 1 AND ""UF"" IS NULL) OR (""UF"" = @Original_UF)) AND ((@IsNull_CEP = 1 AND ""CEP"" IS NULL) OR (""CEP"" = @Original_CEP)) AND ((@IsNull_TELEFONE = 1 AND ""TELEFONE"" IS NULL) OR (""TELEFONE"" = @Original_TELEFONE)) AND ((@IsNull_INDICADOR_IE = 1 AND ""INDICADOR_IE"" IS NULL) OR (""INDICADOR_IE"" = @Original_INDICADOR_IE)) AND ((@IsNull_IE = 1 AND ""IE"" IS NULL) OR (""IE"" = @Original_IE)))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE \"TB_CLIENTES\" SET \"ID_CLIENTE\" = @ID_CLIENTE, \"CPF_CNPJ\" = @CPF_CNPJ, \"NOM" +
+                "E_RAZAO\" = @NOME_RAZAO, \"LOGRADOURO\" = @LOGRADOURO, \"NUMERO\" = @NUMERO, \"COMPLEM" +
+                "ENTO\" = @COMPLEMENTO, \"BAIRRO\" = @BAIRRO, \"COD_MUNICIPIO\" = @COD_MUNICIPIO, \"NOM" +
+                "E_MUNICIPIO\" = @NOME_MUNICIPIO, \"UF\" = @UF, \"CEP\" = @CEP, \"TELEFONE\" = @TELEFONE" +
+                ", \"INDICADOR_IE\" = @INDICADOR_IE, \"IE\" = @IE WHERE ((\"ID_CLIENTE\" = @Original_ID" +
+                "_CLIENTE) AND ((@IsNull_CPF_CNPJ = 1 AND \"CPF_CNPJ\" IS NULL) OR (\"CPF_CNPJ\" = @O" +
+                "riginal_CPF_CNPJ)) AND ((@IsNull_NOME_RAZAO = 1 AND \"NOME_RAZAO\" IS NULL) OR (\"N" +
+                "OME_RAZAO\" = @Original_NOME_RAZAO)) AND ((@IsNull_LOGRADOURO = 1 AND \"LOGRADOURO" +
+                "\" IS NULL) OR (\"LOGRADOURO\" = @Original_LOGRADOURO)) AND ((@IsNull_NUMERO = 1 AN" +
+                "D \"NUMERO\" IS NULL) OR (\"NUMERO\" = @Original_NUMERO)) AND ((@IsNull_COMPLEMENTO " +
+                "= 1 AND \"COMPLEMENTO\" IS NULL) OR (\"COMPLEMENTO\" = @Original_COMPLEMENTO)) AND (" +
+                "(@IsNull_BAIRRO = 1 AND \"BAIRRO\" IS NULL) OR (\"BAIRRO\" = @Original_BAIRRO)) AND " +
+                "((@IsNull_COD_MUNICIPIO = 1 AND \"COD_MUNICIPIO\" IS NULL) OR (\"COD_MUNICIPIO\" = @" +
+                "Original_COD_MUNICIPIO)) AND ((@IsNull_NOME_MUNICIPIO = 1 AND \"NOME_MUNICIPIO\" I" +
+                "S NULL) OR (\"NOME_MUNICIPIO\" = @Original_NOME_MUNICIPIO)) AND ((@IsNull_UF = 1 A" +
+                "ND \"UF\" IS NULL) OR (\"UF\" = @Original_UF)) AND ((@IsNull_CEP = 1 AND \"CEP\" IS NU" +
+                "LL) OR (\"CEP\" = @Original_CEP)) AND ((@IsNull_TELEFONE = 1 AND \"TELEFONE\" IS NUL" +
+                "L) OR (\"TELEFONE\" = @Original_TELEFONE)) AND ((@IsNull_INDICADOR_IE = 1 AND \"IND" +
+                "ICADOR_IE\" IS NULL) OR (\"INDICADOR_IE\" = @Original_INDICADOR_IE)) AND ((@IsNull_" +
+                "IE = 1 AND \"IE\" IS NULL) OR (\"IE\" = @Original_IE)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@CPF_CNPJ";
+            param.ParameterName = "@ID_CLIENTE";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_CLIENTE";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -8453,9 +8544,25 @@ WHERE        (CPROD = @CPROD)";
             param.SourceColumn = "IE";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@Original_CPF_CNPJ";
+            param.ParameterName = "@Original_ID_CLIENTE";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_CLIENTE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IsNull_CPF_CNPJ";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CPF_CNPJ";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@Original_CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -8673,25 +8780,23 @@ WHERE        (CPROD = @CPROD)";
             this._commandCollection[1] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "SELECT        COUNT(*) AS Expr1\r\nFROM            TB_CLIENTES\r\nWHERE        (CPF_C" +
-                "NPJ = @CPF)";
+                "NPJ = @CPF_CNPJ)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@CPF";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.Size = 4;
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT BAIRRO, CEP, COD_MUNICIPIO, COMPLEMENTO, CPF_CNPJ, IE, INDICADOR_IE, LOGRA" +
-                "DOURO, NOME_MUNICIPIO, NOME_RAZAO, NUMERO, TELEFONE, UF FROM TB_CLIENTES WHERE (" +
-                "CPF_CNPJ = @CPF)";
+            this._commandCollection[2].CommandText = "SELECT        ID_CLIENTE, CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, " +
+                "BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE\r\nFROM" +
+                "            TB_CLIENTES\r\nWHERE        (CPF_CNPJ = @CPF_CNPJ)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
-            param.ParameterName = "@CPF";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.Size = 4;
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             this._commandCollection[2].Parameters.Add(param);
@@ -8725,9 +8830,14 @@ WHERE        (CPROD = @CPROD)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual MELIDataSet.TB_CLIENTESDataTable RetornaInfoCliente(int CPF) {
+        public virtual MELIDataSet.TB_CLIENTESDataTable RetornaInfoCliente(string CPF_CNPJ) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(CPF));
+            if ((CPF_CNPJ == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(CPF_CNPJ));
+            }
             MELIDataSet.TB_CLIENTESDataTable dataTable = new MELIDataSet.TB_CLIENTESDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -8766,103 +8876,111 @@ WHERE        (CPROD = @CPROD)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_CPF_CNPJ, string Original_NOME_RAZAO, string Original_LOGRADOURO, string Original_NUMERO, string Original_COMPLEMENTO, string Original_BAIRRO, string Original_COD_MUNICIPIO, string Original_NOME_MUNICIPIO, string Original_UF, string Original_CEP, string Original_TELEFONE, string Original_INDICADOR_IE, string Original_IE) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_CPF_CNPJ));
-            if ((Original_NOME_RAZAO == null)) {
+        public virtual int Delete(int Original_ID_CLIENTE, string Original_CPF_CNPJ, string Original_NOME_RAZAO, string Original_LOGRADOURO, string Original_NUMERO, string Original_COMPLEMENTO, string Original_BAIRRO, string Original_COD_MUNICIPIO, string Original_NOME_MUNICIPIO, string Original_UF, string Original_CEP, string Original_TELEFONE, string Original_INDICADOR_IE, string Original_IE) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_CLIENTE));
+            if ((Original_CPF_CNPJ == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_NOME_RAZAO));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_CPF_CNPJ));
             }
-            if ((Original_LOGRADOURO == null)) {
+            if ((Original_NOME_RAZAO == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_LOGRADOURO));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_NOME_RAZAO));
             }
-            if ((Original_NUMERO == null)) {
+            if ((Original_LOGRADOURO == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_NUMERO));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_LOGRADOURO));
             }
-            if ((Original_COMPLEMENTO == null)) {
+            if ((Original_NUMERO == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_COMPLEMENTO));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_NUMERO));
             }
-            if ((Original_BAIRRO == null)) {
+            if ((Original_COMPLEMENTO == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_BAIRRO));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_COMPLEMENTO));
             }
-            if ((Original_COD_MUNICIPIO == null)) {
+            if ((Original_BAIRRO == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_COD_MUNICIPIO));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_BAIRRO));
             }
-            if ((Original_NOME_MUNICIPIO == null)) {
+            if ((Original_COD_MUNICIPIO == null)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_NOME_MUNICIPIO));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_COD_MUNICIPIO));
             }
-            if ((Original_UF == null)) {
+            if ((Original_NOME_MUNICIPIO == null)) {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_UF));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_NOME_MUNICIPIO));
             }
-            if ((Original_CEP == null)) {
+            if ((Original_UF == null)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_CEP));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_UF));
             }
-            if ((Original_TELEFONE == null)) {
+            if ((Original_CEP == null)) {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_TELEFONE));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_CEP));
             }
-            if ((Original_INDICADOR_IE == null)) {
+            if ((Original_TELEFONE == null)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_INDICADOR_IE));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_TELEFONE));
             }
-            if ((Original_IE == null)) {
+            if ((Original_INDICADOR_IE == null)) {
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_IE));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_INDICADOR_IE));
+            }
+            if ((Original_IE == null)) {
+                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_IE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8884,79 +9002,85 @@ WHERE        (CPROD = @CPROD)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int CPF_CNPJ, string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(CPF_CNPJ));
-            if ((NOME_RAZAO == null)) {
+        public virtual int Insert(int ID_CLIENTE, string CPF_CNPJ, string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID_CLIENTE));
+            if ((CPF_CNPJ == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(NOME_RAZAO));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(CPF_CNPJ));
             }
-            if ((LOGRADOURO == null)) {
+            if ((NOME_RAZAO == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(LOGRADOURO));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(NOME_RAZAO));
             }
-            if ((NUMERO == null)) {
+            if ((LOGRADOURO == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(NUMERO));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(LOGRADOURO));
             }
-            if ((COMPLEMENTO == null)) {
+            if ((NUMERO == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(COMPLEMENTO));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(NUMERO));
             }
-            if ((BAIRRO == null)) {
+            if ((COMPLEMENTO == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(BAIRRO));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(COMPLEMENTO));
             }
-            if ((COD_MUNICIPIO == null)) {
+            if ((BAIRRO == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(COD_MUNICIPIO));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(BAIRRO));
             }
-            if ((NOME_MUNICIPIO == null)) {
+            if ((COD_MUNICIPIO == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(NOME_MUNICIPIO));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(COD_MUNICIPIO));
             }
-            if ((UF == null)) {
+            if ((NOME_MUNICIPIO == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(UF));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(NOME_MUNICIPIO));
             }
-            if ((CEP == null)) {
+            if ((UF == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(CEP));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(UF));
             }
-            if ((TELEFONE == null)) {
+            if ((CEP == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(TELEFONE));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(CEP));
             }
-            if ((INDICADOR_IE == null)) {
+            if ((TELEFONE == null)) {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(INDICADOR_IE));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(TELEFONE));
             }
-            if ((IE == null)) {
+            if ((INDICADOR_IE == null)) {
                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(IE));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(INDICADOR_IE));
+            }
+            if ((IE == null)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(IE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -8979,7 +9103,8 @@ WHERE        (CPROD = @CPROD)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    int CPF_CNPJ, 
+                    int ID_CLIENTE, 
+                    string CPF_CNPJ, 
                     string NOME_RAZAO, 
                     string LOGRADOURO, 
                     string NUMERO, 
@@ -8992,7 +9117,8 @@ WHERE        (CPROD = @CPROD)";
                     string TELEFONE, 
                     string INDICADOR_IE, 
                     string IE, 
-                    int Original_CPF_CNPJ, 
+                    int Original_ID_CLIENTE, 
+                    string Original_CPF_CNPJ, 
                     string Original_NOME_RAZAO, 
                     string Original_LOGRADOURO, 
                     string Original_NUMERO, 
@@ -9005,175 +9131,189 @@ WHERE        (CPROD = @CPROD)";
                     string Original_TELEFONE, 
                     string Original_INDICADOR_IE, 
                     string Original_IE) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(CPF_CNPJ));
-            if ((NOME_RAZAO == null)) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID_CLIENTE));
+            if ((CPF_CNPJ == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(NOME_RAZAO));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(CPF_CNPJ));
             }
-            if ((LOGRADOURO == null)) {
+            if ((NOME_RAZAO == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(LOGRADOURO));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(NOME_RAZAO));
             }
-            if ((NUMERO == null)) {
+            if ((LOGRADOURO == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(NUMERO));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(LOGRADOURO));
             }
-            if ((COMPLEMENTO == null)) {
+            if ((NUMERO == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(COMPLEMENTO));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(NUMERO));
             }
-            if ((BAIRRO == null)) {
+            if ((COMPLEMENTO == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(BAIRRO));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(COMPLEMENTO));
             }
-            if ((COD_MUNICIPIO == null)) {
+            if ((BAIRRO == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(COD_MUNICIPIO));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(BAIRRO));
             }
-            if ((NOME_MUNICIPIO == null)) {
+            if ((COD_MUNICIPIO == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(NOME_MUNICIPIO));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(COD_MUNICIPIO));
             }
-            if ((UF == null)) {
+            if ((NOME_MUNICIPIO == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(UF));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(NOME_MUNICIPIO));
             }
-            if ((CEP == null)) {
+            if ((UF == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(CEP));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(UF));
             }
-            if ((TELEFONE == null)) {
+            if ((CEP == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(TELEFONE));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(CEP));
             }
-            if ((INDICADOR_IE == null)) {
+            if ((TELEFONE == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(INDICADOR_IE));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(TELEFONE));
             }
-            if ((IE == null)) {
+            if ((INDICADOR_IE == null)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(IE));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(INDICADOR_IE));
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_CPF_CNPJ));
-            if ((Original_NOME_RAZAO == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            if ((IE == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_NOME_RAZAO));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(IE));
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_ID_CLIENTE));
+            if ((Original_CPF_CNPJ == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_CPF_CNPJ));
+            }
+            if ((Original_NOME_RAZAO == null)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_NOME_RAZAO));
             }
             if ((Original_LOGRADOURO == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_LOGRADOURO));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_LOGRADOURO));
             }
             if ((Original_NUMERO == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_NUMERO));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_NUMERO));
             }
             if ((Original_COMPLEMENTO == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_COMPLEMENTO));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_COMPLEMENTO));
             }
             if ((Original_BAIRRO == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_BAIRRO));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_BAIRRO));
             }
             if ((Original_COD_MUNICIPIO == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_COD_MUNICIPIO));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_COD_MUNICIPIO));
             }
             if ((Original_NOME_MUNICIPIO == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_NOME_MUNICIPIO));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_NOME_MUNICIPIO));
             }
             if ((Original_UF == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_UF));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_UF));
             }
             if ((Original_CEP == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_CEP));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_CEP));
             }
             if ((Original_TELEFONE == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_TELEFONE));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_TELEFONE));
             }
             if ((Original_INDICADOR_IE == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_INDICADOR_IE));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_INDICADOR_IE));
             }
             if ((Original_IE == null)) {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[40].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_IE));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_IE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -9196,6 +9336,7 @@ WHERE        (CPROD = @CPROD)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
+                    string CPF_CNPJ, 
                     string NOME_RAZAO, 
                     string LOGRADOURO, 
                     string NUMERO, 
@@ -9208,7 +9349,8 @@ WHERE        (CPROD = @CPROD)";
                     string TELEFONE, 
                     string INDICADOR_IE, 
                     string IE, 
-                    int Original_CPF_CNPJ, 
+                    int Original_ID_CLIENTE, 
+                    string Original_CPF_CNPJ, 
                     string Original_NOME_RAZAO, 
                     string Original_LOGRADOURO, 
                     string Original_NUMERO, 
@@ -9221,15 +9363,20 @@ WHERE        (CPROD = @CPROD)";
                     string Original_TELEFONE, 
                     string Original_INDICADOR_IE, 
                     string Original_IE) {
-            return this.Update(Original_CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE, Original_CPF_CNPJ, Original_NOME_RAZAO, Original_LOGRADOURO, Original_NUMERO, Original_COMPLEMENTO, Original_BAIRRO, Original_COD_MUNICIPIO, Original_NOME_MUNICIPIO, Original_UF, Original_CEP, Original_TELEFONE, Original_INDICADOR_IE, Original_IE);
+            return this.Update(Original_ID_CLIENTE, CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE, Original_ID_CLIENTE, Original_CPF_CNPJ, Original_NOME_RAZAO, Original_LOGRADOURO, Original_NUMERO, Original_COMPLEMENTO, Original_BAIRRO, Original_COD_MUNICIPIO, Original_NOME_MUNICIPIO, Original_UF, Original_CEP, Original_TELEFONE, Original_INDICADOR_IE, Original_IE);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object ExisteCliente(int CPF) {
+        public virtual global::System.Nullable<int> ExisteCliente(string CPF_CNPJ) {
             global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[1];
-            command.Parameters[0].Value = ((int)(CPF));
+            if ((CPF_CNPJ == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(CPF_CNPJ));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -9246,10 +9393,10 @@ WHERE        (CPROD = @CPROD)";
             }
             if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return null;
+                return new global::System.Nullable<int>();
             }
             else {
-                return ((object)(returnValue));
+                return new global::System.Nullable<int>(((int)(returnValue)));
             }
         }
     }

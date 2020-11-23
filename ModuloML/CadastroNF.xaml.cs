@@ -36,15 +36,15 @@ namespace ModuloML.Telas
             using (var consulta = new MELIDataSetTableAdapters.TB_CLIENTESTableAdapter())
             {
                 try {
-                    int existe = (int)consulta.ExisteCliente(Convert.ToInt32(Resultado.buyer.billing_info.doc_number));
+                    int existe = (int)consulta.ExisteCliente(Resultado.buyer.billing_info.doc_number);
                     if (existe == 0)
                     {
-                        MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção");
+                        MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
 
                     }
                     else if (existe == 1)
                     {
-                        var result = consulta.RetornaInfoCliente(Convert.ToInt32(Resultado.buyer.billing_info.doc_number));
+                        var result = consulta.RetornaInfoCliente(Resultado.buyer.billing_info.doc_number);
 
                         NaturezaOP_txb.Text = "Venda de Mercadoria";
                         NomeComprador_txb.Text = result[0].NOME_RAZAO;
@@ -365,6 +365,16 @@ namespace ModuloML.Telas
 
 
         }
+
+        public void SalvaInfoCliente()
+        {
+            
         
+        
+        }
+        private void Salvar_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
