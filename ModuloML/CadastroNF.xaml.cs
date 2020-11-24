@@ -39,6 +39,35 @@ namespace ModuloML.Telas
                     int existe = (int)consulta.ExisteCliente(Resultado.buyer.billing_info.doc_number);
                     if (existe == 0)
                     {
+                        NomeComprador_txb.Text = Resultado.buyer.first_name + " " + Resultado.buyer.last_name;
+                        if (Resultado.buyer.billing_info.doc_number.Length == 11)
+                        {
+                            TipoPessoa_cxb.SelectedItem = "Física";
+                            TipoPessoa_cxb.IsReadOnly = true;
+
+                        }
+                        else
+                        if (Resultado.buyer.billing_info.doc_number.Length == 14)
+                        {
+                            TipoPessoa_cxb.SelectedItem = "Jurídica";
+                            TipoPessoa_cxb.IsReadOnly = true;
+
+                        }
+                        else
+                        {
+                            TipoPessoa_cxb.SelectedItem = "Estrangeiro";
+                            TipoPessoa_cxb.IsReadOnly = true;
+                        }
+                        CPF_txb.Text = Resultado.buyer.billing_info.doc_number;
+                        CPF_txb.IsReadOnly = true;
+                        List<RetornoVendaML.OrderItem> orderItems = new List<RetornoVendaML.OrderItem>();
+                        foreach (var a in Resultado.order_items)
+                        {
+                            orderItems.Add(new RetornoVendaML.OrderItem() { item = Resultado.order_items[0].item });
+
+                        }
+
+                        Produ_datagrid.ItemsSource = orderItems;
                         MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
 
                     }
@@ -368,12 +397,44 @@ namespace ModuloML.Telas
 
         public void SalvaInfoCliente()
         {
+            using (var Insere = new MELIDataSetTableAdapters.TB_CLIENTESTableAdapter()) 
+            {
+                try
+                {
+                    var codmuni = "";
+                    int existe = (int)Insere.ExisteCliente(CPF_txb.Text);
+                    if (existe == 1)
+                    {
+                        //MessageBox.Show("Usuário já cadastrado", "Atenção", MessageBoxButton.OK, MessageBoxImage.Information);
+                        Insere.UpdateCliente(NomeComprador_txb.Text, Endereco_txb.Text, Numero_txb.Text, Complemento_txb.Text, Bairro_txb.Text, codmuni, Municipio_txb.Text, UF_txb.Text, CEP_txb.Text, Telefone_txb.Text, Contribuinte_cxb.SelectedIndex.ToString(), IE_txb.Text, CPF_txb.Text);
+                    }
+                    else if (existe == 0)
+                    {
+                        
+                        Insere.InsereInfoCliente(CPF_txb.Text, NomeComprador_txb.Text, Endereco_txb.Text, Numero_txb.Text, Complemento_txb.Text, Bairro_txb.Text, codmuni, Municipio_txb.Text, UF_txb.Text, CEP_txb.Text, Telefone_txb.Text, Contribuinte_cxb.SelectedIndex.ToString(), IE_txb.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mais de um usuário cadastrado com mesmo CPF, consulte sua área de suporte.", "Atenção");
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    //throw;
+                }
+                
+                
+
             
+            }
         
         
         }
         private void Salvar_btn_Click(object sender, RoutedEventArgs e)
         {
+            SalvaInfoCliente();
 
         }
     }

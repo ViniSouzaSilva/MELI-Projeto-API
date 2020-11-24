@@ -350,6 +350,7 @@ namespace ModuloML
                     var IdSeller = id.seller.id;
                     var IdOrder = id.payments[0].id;
                     CadastroNF tela = new CadastroNF(id);
+                    tela.ShowDialog();
                     //ConversaoML.Conversao(retorno,DadosEmitente);
                     // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
                     // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);

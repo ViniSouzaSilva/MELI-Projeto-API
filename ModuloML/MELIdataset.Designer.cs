@@ -8772,7 +8772,7 @@ WHERE        (CPROD = @CPROD)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[3];
+            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[5];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        TB_CLIENTES.*\r\nFROM            TB_CLIENTES";
@@ -8790,9 +8790,9 @@ WHERE        (CPROD = @CPROD)";
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        ID_CLIENTE, CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, " +
-                "BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE\r\nFROM" +
-                "            TB_CLIENTES\r\nWHERE        (CPF_CNPJ = @CPF_CNPJ)";
+            this._commandCollection[2].CommandText = @"INSERT INTO TB_CLIENTES
+                         (CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE)
+VALUES        (@CPF_CNPJ, @NOME_RAZAO, @LOGRADOURO, @NUMERO, @COMPLEMENTO, @BAIRRO, @COD_MUNICIPIO, @NOME_MUNICIPIO, @UF, @CEP, @TELEFONE, @INDICADOR_IE, @IE)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@CPF_CNPJ";
@@ -8800,6 +8800,176 @@ WHERE        (CPROD = @CPROD)";
             param.IsNullable = true;
             param.SourceColumn = "CPF_CNPJ";
             this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NOME_RAZAO";
+            param.Size = 300;
+            param.IsNullable = true;
+            param.SourceColumn = "NOME_RAZAO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@LOGRADOURO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "LOGRADOURO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NUMERO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "NUMERO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@COMPLEMENTO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "COMPLEMENTO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@BAIRRO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "BAIRRO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@COD_MUNICIPIO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "COD_MUNICIPIO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NOME_MUNICIPIO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "NOME_MUNICIPIO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@UF";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "UF";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CEP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CEP";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TELEFONE";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "TELEFONE";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@INDICADOR_IE";
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = "INDICADOR_IE";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IE";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "IE";
+            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT        ID_CLIENTE, CPF_CNPJ, NOME_RAZAO, LOGRADOURO, NUMERO, COMPLEMENTO, " +
+                "BAIRRO, COD_MUNICIPIO, NOME_MUNICIPIO, UF, CEP, TELEFONE, INDICADOR_IE, IE\r\nFROM" +
+                "            TB_CLIENTES\r\nWHERE        (CPF_CNPJ = @CPF_CNPJ)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CPF_CNPJ";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"UPDATE       TB_CLIENTES
+SET                NOME_RAZAO = @NOME_RAZAO, LOGRADOURO = @LOGRADOURO, NUMERO = @NUMERO, COMPLEMENTO = @COMPLEMENTO, BAIRRO = @BAIRRO, COD_MUNICIPIO = @COD_MUNICIPIO, 
+                         NOME_MUNICIPIO = @NOME_MUNICIPIO, UF = @UF, CEP = @CEP, TELEFONE = @TELEFONE, INDICADOR_IE = @INDICADOR_IE, IE = @IE
+WHERE        (CPF_CNPJ = @CPF_CNPJ)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NOME_RAZAO";
+            param.Size = 300;
+            param.IsNullable = true;
+            param.SourceColumn = "NOME_RAZAO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@LOGRADOURO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "LOGRADOURO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NUMERO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "NUMERO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@COMPLEMENTO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "COMPLEMENTO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@BAIRRO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "BAIRRO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@COD_MUNICIPIO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "COD_MUNICIPIO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NOME_MUNICIPIO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "NOME_MUNICIPIO";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@UF";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "UF";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CEP";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CEP";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@TELEFONE";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "TELEFONE";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@INDICADOR_IE";
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = "INDICADOR_IE";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@IE";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "IE";
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CPF_CNPJ";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CPF_CNPJ";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._commandCollection[4].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8831,7 +9001,7 @@ WHERE        (CPROD = @CPROD)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual MELIDataSet.TB_CLIENTESDataTable RetornaInfoCliente(string CPF_CNPJ) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             if ((CPF_CNPJ == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -9398,6 +9568,208 @@ WHERE        (CPROD = @CPROD)";
             else {
                 return new global::System.Nullable<int>(((int)(returnValue)));
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsereInfoCliente(string CPF_CNPJ, string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[2];
+            if ((CPF_CNPJ == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(CPF_CNPJ));
+            }
+            if ((NOME_RAZAO == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(NOME_RAZAO));
+            }
+            if ((LOGRADOURO == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(LOGRADOURO));
+            }
+            if ((NUMERO == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(NUMERO));
+            }
+            if ((COMPLEMENTO == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(COMPLEMENTO));
+            }
+            if ((BAIRRO == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(BAIRRO));
+            }
+            if ((COD_MUNICIPIO == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(COD_MUNICIPIO));
+            }
+            if ((NOME_MUNICIPIO == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(NOME_MUNICIPIO));
+            }
+            if ((UF == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(UF));
+            }
+            if ((CEP == null)) {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[9].Value = ((string)(CEP));
+            }
+            if ((TELEFONE == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(TELEFONE));
+            }
+            if ((INDICADOR_IE == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(INDICADOR_IE));
+            }
+            if ((IE == null)) {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[12].Value = ((string)(IE));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateCliente(string NOME_RAZAO, string LOGRADOURO, string NUMERO, string COMPLEMENTO, string BAIRRO, string COD_MUNICIPIO, string NOME_MUNICIPIO, string UF, string CEP, string TELEFONE, string INDICADOR_IE, string IE, string CPF_CNPJ) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[4];
+            if ((NOME_RAZAO == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NOME_RAZAO));
+            }
+            if ((LOGRADOURO == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(LOGRADOURO));
+            }
+            if ((NUMERO == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(NUMERO));
+            }
+            if ((COMPLEMENTO == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(COMPLEMENTO));
+            }
+            if ((BAIRRO == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(BAIRRO));
+            }
+            if ((COD_MUNICIPIO == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(COD_MUNICIPIO));
+            }
+            if ((NOME_MUNICIPIO == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(NOME_MUNICIPIO));
+            }
+            if ((UF == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(UF));
+            }
+            if ((CEP == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(CEP));
+            }
+            if ((TELEFONE == null)) {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[9].Value = ((string)(TELEFONE));
+            }
+            if ((INDICADOR_IE == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(INDICADOR_IE));
+            }
+            if ((IE == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(IE));
+            }
+            if ((CPF_CNPJ == null)) {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[12].Value = ((string)(CPF_CNPJ));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
 }
