@@ -6861,24 +6861,228 @@ namespace ModuloML.MELIDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[2];
+            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[3];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        TB_PRODUTOS.*\r\nFROM            TB_PRODUTOS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        ID, CPROD, CEAN, XPROD, NCM, CEST, INDESCALA, CFOP, UCOM, QCOM, VUNCOM, VPROD, UTRIB, QTRIB, VUNTRIB, INDTOT, ORIG, CST, MODBC, VBC, PICMS, VICMS, PPIS, VPIS, PCOFINS, VCOFINS, NLOTE, QLOTE, DFAB, 
-                         DVAL
-FROM            TB_PRODUTOS
-WHERE        (CPROD = @CPROD)";
+            this._commandCollection[1].CommandText = @"INSERT INTO ""TB_PRODUTOS"" (""ID"", ""CPROD"", ""CEAN"", ""XPROD"", ""NCM"", ""CEST"", ""INDESCALA"", ""CFOP"", ""UCOM"", ""QCOM"", ""VUNCOM"", ""VPROD"", ""UTRIB"", ""QTRIB"", ""VUNTRIB"", ""INDTOT"", ""ORIG"", ""CST"", ""MODBC"", ""VBC"", ""PICMS"", ""VICMS"", ""PPIS"", ""VPIS"", ""PCOFINS"", ""VCOFINS"", ""NLOTE"", ""QLOTE"", ""DFAB"", ""DVAL"") VALUES (@ID, @CPROD, @CEAN, @XPROD, @NCM, @CEST, @INDESCALA, @CFOP, @UCOM, @QCOM, @VUNCOM, @VPROD, @UTRIB, @QTRIB, @VUNTRIB, @INDTOT, @ORIG, @CST, @MODBC, @VBC, @PICMS, @VICMS, @PPIS, @VPIS, @PCOFINS, @VCOFINS, @NLOTE, @QLOTE, @DFAB, @DVAL)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ID";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@CPROD";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPROD";
             this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CEAN";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CEAN";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@XPROD";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "XPROD";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NCM";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "NCM";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CEST";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CEST";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@INDESCALA";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "INDESCALA";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CFOP";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "CFOP";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@UCOM";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "UCOM";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@QCOM";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "QCOM";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VUNCOM";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VUNCOM";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VPROD";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VPROD";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@UTRIB";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "UTRIB";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@QTRIB";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "QTRIB";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VUNTRIB";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VUNTRIB";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@INDTOT";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "INDTOT";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ORIG";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "ORIG";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CST";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CST";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@MODBC";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "MODBC";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VBC";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VBC";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@PICMS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "PICMS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VICMS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VICMS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@PPIS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "PPIS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VPIS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VPIS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@PCOFINS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "PCOFINS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@VCOFINS";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "VCOFINS";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@NLOTE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "NLOTE";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@QLOTE";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "QLOTE";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DFAB";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DFAB";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DVAL";
+            param.DbType = global::System.Data.DbType.DateTime;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "DVAL";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        ID, CPROD, CEAN, XPROD, NCM, CEST, INDESCALA, CFOP, UCOM, QCOM, VUNCOM, VPROD, UTRIB, QTRIB, VUNTRIB, INDTOT, ORIG, CST, MODBC, VBC, PICMS, VICMS, PPIS, VPIS, PCOFINS, VCOFINS, NLOTE, QLOTE, DFAB, 
+                         DVAL
+FROM            TB_PRODUTOS
+WHERE        (CPROD = @CPROD)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CPROD";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "CPROD";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6910,7 +7114,7 @@ WHERE        (CPROD = @CPROD)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual MELIDataSet.TB_PRODUTOSDataTable RetornaProduto(string CPROD) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((CPROD == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -8015,6 +8219,234 @@ WHERE        (CPROD = @CPROD)";
                     global::System.Nullable<global::System.DateTime> Original_DFAB, 
                     global::System.Nullable<global::System.DateTime> Original_DVAL) {
             return this.Update(Original_ID, CPROD, CEAN, XPROD, NCM, CEST, INDESCALA, CFOP, UCOM, QCOM, VUNCOM, VPROD, UTRIB, QTRIB, VUNTRIB, INDTOT, ORIG, CST, MODBC, VBC, PICMS, VICMS, PPIS, VPIS, PCOFINS, VCOFINS, NLOTE, QLOTE, DFAB, DVAL, Original_ID, Original_CPROD, Original_CEAN, Original_XPROD, Original_NCM, Original_CEST, Original_INDESCALA, Original_CFOP, Original_UCOM, Original_QCOM, Original_VUNCOM, Original_VPROD, Original_UTRIB, Original_QTRIB, Original_VUNTRIB, Original_INDTOT, Original_ORIG, Original_CST, Original_MODBC, Original_VBC, Original_PICMS, Original_VICMS, Original_PPIS, Original_VPIS, Original_PCOFINS, Original_VCOFINS, Original_NLOTE, Original_QLOTE, Original_DFAB, Original_DVAL);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsereProdu(
+                    int ID, 
+                    string CPROD, 
+                    string CEAN, 
+                    string XPROD, 
+                    string NCM, 
+                    string CEST, 
+                    string INDESCALA, 
+                    global::System.Nullable<int> CFOP, 
+                    string UCOM, 
+                    global::System.Nullable<decimal> QCOM, 
+                    global::System.Nullable<decimal> VUNCOM, 
+                    global::System.Nullable<decimal> VPROD, 
+                    string UTRIB, 
+                    global::System.Nullable<decimal> QTRIB, 
+                    global::System.Nullable<decimal> VUNTRIB, 
+                    string INDTOT, 
+                    global::System.Nullable<int> ORIG, 
+                    string CST, 
+                    global::System.Nullable<int> MODBC, 
+                    global::System.Nullable<decimal> VBC, 
+                    global::System.Nullable<decimal> PICMS, 
+                    global::System.Nullable<decimal> VICMS, 
+                    global::System.Nullable<decimal> PPIS, 
+                    global::System.Nullable<decimal> VPIS, 
+                    global::System.Nullable<decimal> PCOFINS, 
+                    global::System.Nullable<decimal> VCOFINS, 
+                    global::System.Nullable<int> NLOTE, 
+                    global::System.Nullable<decimal> QLOTE, 
+                    global::System.Nullable<global::System.DateTime> DFAB, 
+                    global::System.Nullable<global::System.DateTime> DVAL) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(ID));
+            if ((CPROD == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(CPROD));
+            }
+            if ((CEAN == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(CEAN));
+            }
+            if ((XPROD == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(XPROD));
+            }
+            if ((NCM == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(NCM));
+            }
+            if ((CEST == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(CEST));
+            }
+            if ((INDESCALA == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(INDESCALA));
+            }
+            if ((CFOP.HasValue == true)) {
+                command.Parameters[7].Value = ((int)(CFOP.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((UCOM == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(UCOM));
+            }
+            if ((QCOM.HasValue == true)) {
+                command.Parameters[9].Value = ((decimal)(QCOM.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((VUNCOM.HasValue == true)) {
+                command.Parameters[10].Value = ((decimal)(VUNCOM.Value));
+            }
+            else {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((VPROD.HasValue == true)) {
+                command.Parameters[11].Value = ((decimal)(VPROD.Value));
+            }
+            else {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((UTRIB == null)) {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[12].Value = ((string)(UTRIB));
+            }
+            if ((QTRIB.HasValue == true)) {
+                command.Parameters[13].Value = ((decimal)(QTRIB.Value));
+            }
+            else {
+                command.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((VUNTRIB.HasValue == true)) {
+                command.Parameters[14].Value = ((decimal)(VUNTRIB.Value));
+            }
+            else {
+                command.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((INDTOT == null)) {
+                command.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[15].Value = ((string)(INDTOT));
+            }
+            if ((ORIG.HasValue == true)) {
+                command.Parameters[16].Value = ((int)(ORIG.Value));
+            }
+            else {
+                command.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((CST == null)) {
+                command.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[17].Value = ((string)(CST));
+            }
+            if ((MODBC.HasValue == true)) {
+                command.Parameters[18].Value = ((int)(MODBC.Value));
+            }
+            else {
+                command.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((VBC.HasValue == true)) {
+                command.Parameters[19].Value = ((decimal)(VBC.Value));
+            }
+            else {
+                command.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((PICMS.HasValue == true)) {
+                command.Parameters[20].Value = ((decimal)(PICMS.Value));
+            }
+            else {
+                command.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((VICMS.HasValue == true)) {
+                command.Parameters[21].Value = ((decimal)(VICMS.Value));
+            }
+            else {
+                command.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            if ((PPIS.HasValue == true)) {
+                command.Parameters[22].Value = ((decimal)(PPIS.Value));
+            }
+            else {
+                command.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((VPIS.HasValue == true)) {
+                command.Parameters[23].Value = ((decimal)(VPIS.Value));
+            }
+            else {
+                command.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((PCOFINS.HasValue == true)) {
+                command.Parameters[24].Value = ((decimal)(PCOFINS.Value));
+            }
+            else {
+                command.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((VCOFINS.HasValue == true)) {
+                command.Parameters[25].Value = ((decimal)(VCOFINS.Value));
+            }
+            else {
+                command.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            if ((NLOTE.HasValue == true)) {
+                command.Parameters[26].Value = ((int)(NLOTE.Value));
+            }
+            else {
+                command.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            if ((QLOTE.HasValue == true)) {
+                command.Parameters[27].Value = ((decimal)(QLOTE.Value));
+            }
+            else {
+                command.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            if ((DFAB.HasValue == true)) {
+                command.Parameters[28].Value = ((System.DateTime)(DFAB.Value));
+            }
+            else {
+                command.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((DVAL.HasValue == true)) {
+                command.Parameters[29].Value = ((System.DateTime)(DVAL.Value));
+            }
+            else {
+                command.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

@@ -140,14 +140,27 @@
                     <DataGridTextColumn Header="NCM"/>
                     <DataGridTextColumn Header="CST"/>
                     <DataGridTextColumn Header="CFOP"/>
-                    <DataGridTextColumn Header="Med"/>
-                    <DataGridTextColumn Header="CFOP"/>
+                    <DataGridTextColumn Header="Medi"/>
                     <DataGridTextColumn Header="Quantidade"/>
                     <DataGridTextColumn Header="Vlr. Unitário"/>
                     <DataGridTextColumn Header="Vlr. Desconto"/>
                     <DataGridTextColumn Header="Vlr. Total"/>
                     
                 </DataGrid.Columns>
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridRow">
+
+                        
+                        <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                        <Style.Triggers>
+
+
+
+
+                        </Style.Triggers>
+                    </Style>
+
+                </DataGrid.Resources>
             </DataGrid>
         </GroupBox>
 

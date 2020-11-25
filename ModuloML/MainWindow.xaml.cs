@@ -57,7 +57,7 @@ namespace ModuloML
         public List<Result> results { get { return RetornaVenda(); } }
         public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
         MELIDataSet.TB_MELIDataTable TB_MELIdatatable;
-        ChromeDriver chrome = new ChromeDriver();
+        //ChromeDriver chrome = new ChromeDriver();
         DadosDoEmitente.Root DadosEmitente = new DadosDoEmitente.Root();
         RetornaVendaML retorno = new RetornaVendaML();
         string token = "";
@@ -70,7 +70,7 @@ namespace ModuloML
             {
                 try
                 {
-                    // var chrome = new ChromeDriver();
+                     var chrome = new ChromeDriver();
 
                     chrome.Navigate().GoToUrl("https://auth.mercadolivre.com.br/authorization?response_type=code&client_id=" + ID_txb.Text + "&redirect_uri=" + URL_txb.Text);
                     //System.Diagnostics.Process.Start("chrome.exe", "https://pt.stackoverflow.com");
@@ -359,10 +359,7 @@ namespace ModuloML
 
             }
 
-            private void Row_Click(object sender, RoutedEventArgs e)
-            {
-
-            }
+            
             #endregion
         }
     } 

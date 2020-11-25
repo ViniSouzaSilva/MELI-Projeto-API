@@ -33,6 +33,7 @@ namespace ModuloML.Telas
 
         public void VisualizaDados(RetornoVendaML.Result Resultado)
         {
+            using (var produ = new MELIDataSetTableAdapters.TB_PRODUTOSTableAdapter())
             using (var consulta = new MELIDataSetTableAdapters.TB_CLIENTESTableAdapter())
             {
                 try {
@@ -40,23 +41,30 @@ namespace ModuloML.Telas
                     if (existe == 0)
                     {
                         NomeComprador_txb.Text = Resultado.buyer.first_name + " " + Resultado.buyer.last_name;
-                        if (Resultado.buyer.billing_info.doc_number.Length == 11)
+                        if (Resultado.buyer.billing_info.doc_number is null)
                         {
-                            TipoPessoa_cxb.SelectedItem = "Física";
-                            TipoPessoa_cxb.IsReadOnly = true;
-
-                        }
-                        else
-                        if (Resultado.buyer.billing_info.doc_number.Length == 14)
-                        {
-                            TipoPessoa_cxb.SelectedItem = "Jurídica";
-                            TipoPessoa_cxb.IsReadOnly = true;
-
+                            MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                         else
                         {
-                            TipoPessoa_cxb.SelectedItem = "Estrangeiro";
-                            TipoPessoa_cxb.IsReadOnly = true;
+                            if (Resultado.buyer.billing_info.doc_number.Length == 11)
+                            {
+                                TipoPessoa_cxb.SelectedItem = "Física";
+                                TipoPessoa_cxb.IsReadOnly = true;
+
+                            }
+                            else
+                            if (Resultado.buyer.billing_info.doc_number.Length == 14)
+                            {
+                                TipoPessoa_cxb.SelectedItem = "Jurídica";
+                                TipoPessoa_cxb.IsReadOnly = true;
+
+                            }
+                            else
+                            {
+                                TipoPessoa_cxb.SelectedItem = "Estrangeiro";
+                                TipoPessoa_cxb.IsReadOnly = true;
+                            }
                         }
                         CPF_txb.Text = Resultado.buyer.billing_info.doc_number;
                         CPF_txb.IsReadOnly = true;
@@ -68,7 +76,7 @@ namespace ModuloML.Telas
                         }
 
                         Produ_datagrid.ItemsSource = orderItems;
-                        MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
+                       // MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
 
                     }
                     else if (existe == 1)
@@ -130,11 +138,14 @@ namespace ModuloML.Telas
                         Municipio_txb.Text = result[0].NOME_MUNICIPIO;
                         UF_txb.Text = result[0].UF;
                         Telefone_txb.Text = result[0].TELEFONE;
-                        List<RetornoVendaML.OrderItem> orderItems = new List<RetornoVendaML.OrderItem>();
+                        // inicio do processamento dos produtos
+
+                        List<Produtos> orderItems = new List<Produtos>();
+
                         foreach (var a in Resultado.order_items)
                         {
-                            orderItems.Add(new RetornoVendaML.OrderItem() { item = Resultado.order_items[0].item });
-
+                            orderItems.Add(new Produtos() { CodProdu = Resultado.order_items[0].item.id, Descricao = Resultado.order_items[0].item.title, NCM = Resultado.order_items[0]. }) ;
+                           
                         }
 
                         Produ_datagrid.ItemsSource = orderItems;
@@ -435,6 +446,13 @@ namespace ModuloML.Telas
         private void Salvar_btn_Click(object sender, RoutedEventArgs e)
         {
             SalvaInfoCliente();
+
+        }
+
+
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
 
         }
     }

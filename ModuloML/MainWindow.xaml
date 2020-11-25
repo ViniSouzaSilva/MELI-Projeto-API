@@ -57,7 +57,7 @@
             <DataGrid.Resources>
                 <Style TargetType="DataGridRow">
 
-                    <EventSetter Event="Selected" Handler="Row_Click"/>
+                   
                     <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
                     <Style.Triggers>
 

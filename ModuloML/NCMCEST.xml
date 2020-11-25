@@ -1,0 +1,4868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <NCM>38151210</NCM>
+    <CEST>100100</CEST>
+    <DESCRIÇÃO>Catalisadores em colmeia cerâmica ou metálica para conversão catalítica de gases de escape de veículos e outros catalisadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>38151290</NCM>
+    <CEST>100100</CEST>
+    <DESCRIÇÃO>Catalisadores em colmeia cerâmica ou metálica para conversão catalítica de gases de escape de veículos e outros catalisadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3917</NCM>
+    <CEST>100200</CEST>
+    <DESCRIÇÃO>Tubos e seus acessórios (por exemplo, juntas, cotovelos, flanges, uniões), de plásticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39181000</NCM>
+    <CEST>100300</CEST>
+    <DESCRIÇÃO>Protetores de caçamba</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39233000</NCM>
+    <CEST>100400</CEST>
+    <DESCRIÇÃO>Reservatórios de óleo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39263000</NCM>
+    <CEST>100500</CEST>
+    <DESCRIÇÃO>Frisos, decalques, molduras e acabamentos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40103</NCM>
+    <CEST>100600</CEST>
+    <DESCRIÇÃO>Correias de transmissão de borracha vulcanizada, de matérias têxteis, mesmo impregnadas, revestidas ou recobertas, de plástico, ou estratificadas com plástico ou reforçadas com metal ou com outras matérias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>59100000</NCM>
+    <CEST>100600</CEST>
+    <DESCRIÇÃO>Correias de transmissão de borracha vulcanizada, de matérias têxteis, mesmo impregnadas, revestidas ou recobertas, de plástico, ou estratificadas com plástico ou reforçadas com metal ou com outras matérias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40169300</NCM>
+    <CEST>100700</CEST>
+    <DESCRIÇÃO>Juntas, gaxetas e outros elementos com função semelhante de vedação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4823909</NCM>
+    <CEST>100700</CEST>
+    <DESCRIÇÃO>Juntas, gaxetas e outros elementos com função semelhante de vedação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40161010</NCM>
+    <CEST>100800</CEST>
+    <DESCRIÇÃO>Partes de veículos automóveis, tratores e máquinas autopropulsadas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40169990</NCM>
+    <CEST>100900</CEST>
+    <DESCRIÇÃO>Tapetes, revestimentos, mesmo confeccionados, batentes, buchas e coxins</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>57050000</NCM>
+    <CEST>100900</CEST>
+    <DESCRIÇÃO>Tapetes, revestimentos, mesmo confeccionados, batentes, buchas e coxins</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>59039000</NCM>
+    <CEST>101000</CEST>
+    <DESCRIÇÃO>Tecidos impregnados, revestidos, recobertos ou estratificados, com plástico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>59090000</NCM>
+    <CEST>101100</CEST>
+    <DESCRIÇÃO>Mangueiras e tubos semelhantes, de matérias têxteis, mesmo com reforço ou acessórios de outras matérias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>63061</NCM>
+    <CEST>101200</CEST>
+    <DESCRIÇÃO>Encerados e toldos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>65061000</NCM>
+    <CEST>101300</CEST>
+    <DESCRIÇÃO>Capacetes e artefatos de uso semelhante, de proteção, para uso em motocicletas, incluídos ciclomotores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6813</NCM>
+    <CEST>101400</CEST>
+    <DESCRIÇÃO>Guarnições de fricção (por exemplo, placas, rolos, tiras, segmentos, discos, anéis, pastilhas), não montadas, para freios, embreagens ou qualquer outro mecanismo de fricção, à base de amianto, de outras substâncias minerais ou de celulose, mesmo combinadas com têxteis ou outras matérias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70071100</NCM>
+    <CEST>101500</CEST>
+    <DESCRIÇÃO>Vidros de dimensões e formatos que permitam aplicação automotiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70072100</NCM>
+    <CEST>101500</CEST>
+    <DESCRIÇÃO>Vidros de dimensões e formatos que permitam aplicação automotiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70091000</NCM>
+    <CEST>101600</CEST>
+    <DESCRIÇÃO>Espelhos retrovisores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70140000</NCM>
+    <CEST>101700</CEST>
+    <DESCRIÇÃO>Lentes de faróis, lanternas e outros utensílios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73110000</NCM>
+    <CEST>101800</CEST>
+    <DESCRIÇÃO>Cilindro de aço para GNV (gás natural veicular)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73110000</NCM>
+    <CEST>101900</CEST>
+    <DESCRIÇÃO>Recipientes para gases comprimidos ou liquefeitos, de ferro fundido, ferro ou aço, exceto o descrito no item 18.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7320</NCM>
+    <CEST>102000</CEST>
+    <DESCRIÇÃO>Molas e folhas de molas, de ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7325</NCM>
+    <CEST>102100</CEST>
+    <DESCRIÇÃO>Obras moldadas, de ferro fundido, ferro ou aço, exceto as do código 7325.91.00</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7806</NCM>
+    <CEST>102200</CEST>
+    <DESCRIÇÃO>Peso de chumbo para balanceamento de roda</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>80070090</NCM>
+    <CEST>102300</CEST>
+    <DESCRIÇÃO>Peso para balanceamento de roda e outros utensílios de estanho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83012</NCM>
+    <CEST>102400</CEST>
+    <DESCRIÇÃO>Fechaduras e partes de fechaduras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83016</NCM>
+    <CEST>102400</CEST>
+    <DESCRIÇÃO>Fechaduras e partes de fechaduras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83017</NCM>
+    <CEST>102500</CEST>
+    <DESCRIÇÃO>Chaves apresentadas isoladamente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83021000</NCM>
+    <CEST>102600</CEST>
+    <DESCRIÇÃO>Dobradiças, guarnições, ferragens e artigos semelhantes de metais comuns</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83023000</NCM>
+    <CEST>102600</CEST>
+    <DESCRIÇÃO>Dobradiças, guarnições, ferragens e artigos semelhantes de metais comuns</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8310</NCM>
+    <CEST>102700</CEST>
+    <DESCRIÇÃO>Triângulo de segurança</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84073</NCM>
+    <CEST>102800</CEST>
+    <DESCRIÇÃO>Motores de pistão alternativo dos tipos utilizados para propulsão de veículos do Capítulo 87</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84082</NCM>
+    <CEST>102900</CEST>
+    <DESCRIÇÃO>Motores dos tipos utilizados para propulsão de veículos automotores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84099</NCM>
+    <CEST>103000</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusiva ou principalmente destinadas aos motores das posições 8407 ou 8408</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84122</NCM>
+    <CEST>103100</CEST>
+    <DESCRIÇÃO>Motores hidráulicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84133</NCM>
+    <CEST>103200</CEST>
+    <DESCRIÇÃO>Bombas para combustíveis, lubrificantes ou líquidos de arrefecimento, próprias para motores de ignição por centelha ou por compressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84141000</NCM>
+    <CEST>103300</CEST>
+    <DESCRIÇÃO>Bombas de vácuo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8414801</NCM>
+    <CEST>103400</CEST>
+    <DESCRIÇÃO>Compressores e turbocompressores de ar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8414802</NCM>
+    <CEST>103400</CEST>
+    <DESCRIÇÃO>Compressores e turbocompressores de ar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84139190</NCM>
+    <CEST>103500</CEST>
+    <DESCRIÇÃO>Partes das bombas, compressores e turbocompressores dos itens 32.0, 33.0 e 34.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84149010</NCM>
+    <CEST>103500</CEST>
+    <DESCRIÇÃO>Partes das bombas, compressores e turbocompressores dos itens 32.0, 33.0 e 34.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8414903</NCM>
+    <CEST>103500</CEST>
+    <DESCRIÇÃO>Partes das bombas, compressores e turbocompressores dos itens 32.0, 33.0 e 34.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84149039</NCM>
+    <CEST>103500</CEST>
+    <DESCRIÇÃO>Partes das bombas, compressores e turbocompressores dos itens 32.0, 33.0 e 34.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84152</NCM>
+    <CEST>103600</CEST>
+    <DESCRIÇÃO>Máquinas e aparelhos de ar condicionado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84212300</NCM>
+    <CEST>103700</CEST>
+    <DESCRIÇÃO>Aparelhos para filtrar óleos minerais nos motores de ignição por centelha ou por compressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84212990</NCM>
+    <CEST>103800</CEST>
+    <DESCRIÇÃO>Filtros a vácuo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84219</NCM>
+    <CEST>103900</CEST>
+    <DESCRIÇÃO>Partes dos aparelhos para filtrar ou depurar líquidos ou gases</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84241000</NCM>
+    <CEST>104000</CEST>
+    <DESCRIÇÃO>Extintores, mesmo carregados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84213100</NCM>
+    <CEST>104100</CEST>
+    <DESCRIÇÃO>Filtros de entrada de ar para motores de ignição por centelha ou por compressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84213920</NCM>
+    <CEST>104200</CEST>
+    <DESCRIÇÃO>Depuradores por conversão catalítica de gases de escape</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84254200</NCM>
+    <CEST>104300</CEST>
+    <DESCRIÇÃO>Macacos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84311010</NCM>
+    <CEST>104400</CEST>
+    <DESCRIÇÃO>Partes para macacos do item 43.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8431492</NCM>
+    <CEST>104500</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusiva ou principalmente destinadas às máquinas agrícolas ou rodoviárias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84339090</NCM>
+    <CEST>104500</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusiva ou principalmente destinadas às máquinas agrícolas ou rodoviárias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84811000</NCM>
+    <CEST>104600</CEST>
+    <DESCRIÇÃO>Válvulas redutoras de pressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84812</NCM>
+    <CEST>104700</CEST>
+    <DESCRIÇÃO>Válvulas para transmissão óleo-hidráulicas ou pneumáticas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84818092</NCM>
+    <CEST>104800</CEST>
+    <DESCRIÇÃO>Válvulas solenóides</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8482</NCM>
+    <CEST>104900</CEST>
+    <DESCRIÇÃO>Rolamentos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8483</NCM>
+    <CEST>105000</CEST>
+    <DESCRIÇÃO>Árvores de transmissão (incluídas as árvores de “cames”e virabrequins) e manivelas; mancais e “bronzes”; engrenagens e rodas de fricção; eixos de esferas ou de roletes; redutores, multiplicadores, caixas de transmissão e variadores de velocidade, incluídos os conversores de torque; volantes e polias, incluídas as polias para cadernais; embreagens e dispositivos de acoplamento, incluídas as juntas de articulação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8484</NCM>
+    <CEST>105100</CEST>
+    <DESCRIÇÃO>Juntas metaloplásticas; jogos ou sortidos de juntas de composições diferentes, apresentados em bolsas, envelopes ou embalagens semelhantes; juntas de vedação mecânicas (selos mecânicos)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85052</NCM>
+    <CEST>105200</CEST>
+    <DESCRIÇÃO>Acoplamentos, embreagens, variadores de velocidade e freios, eletromagnéticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85071</NCM>
+    <CEST>105300</CEST>
+    <DESCRIÇÃO>Acumuladores elétricos de chumbo, do tipo utilizado para o arranque dos motores de pistão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8511</NCM>
+    <CEST>105400</CEST>
+    <DESCRIÇÃO>Aparelhos e dispositivos elétricos de ignição ou de arranque para motores de ignição por centelha ou por compressão (por exemplo, magnetos, dínamos-magnetos, bobinas de ignição, velas de ignição ou de aquecimento, motores de arranque); geradores (dínamos e alternadores, por exemplo) e conjuntores-disjuntores utilizados com estes motores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85122</NCM>
+    <CEST>105500</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de iluminação ou de sinalização (exceto os da posição 8539), limpadores de para-brisas, degeladores e desembaçadores (desembaciadores) elétricos e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85124</NCM>
+    <CEST>105500</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de iluminação ou de sinalização (exceto os da posição 8539), limpadores de para-brisas, degeladores e desembaçadores (desembaciadores) elétricos e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85129000</NCM>
+    <CEST>105500</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de iluminação ou de sinalização (exceto os da posição 8539), limpadores de para-brisas, degeladores e desembaçadores (desembaciadores) elétricos e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85171213</NCM>
+    <CEST>105600</CEST>
+    <DESCRIÇÃO>Telefones móveis do tipo dos utilizados em veículos automóveis.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8518</NCM>
+    <CEST>105700</CEST>
+    <DESCRIÇÃO>Alto-falantes, amplificadores elétricos de audiofrequência e partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85185000</NCM>
+    <CEST>105800</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de amplificação de som para veículos automotores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>851981</NCM>
+    <CEST>105900</CEST>
+    <DESCRIÇÃO>Aparelhos de reprodução de som</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8525501</NCM>
+    <CEST>106000</CEST>
+    <DESCRIÇÃO>Aparelhos transmissores (emissores) de radiotelefonia ou radiotelegrafia (rádio receptor/transmissor)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85256010</NCM>
+    <CEST>106000</CEST>
+    <DESCRIÇÃO>Aparelhos transmissores (emissores) de radiotelefonia ou radiotelegrafia (rádio receptor/transmissor)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85272</NCM>
+    <CEST>106100</CEST>
+    <DESCRIÇÃO>Aparelhos receptores de radiodifusão que só funcionam com fonte externa de energia, exceto os classificados na posição 8527.21.90</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85272190 85219090</NCM>
+    <CEST>106200</CEST>
+    <DESCRIÇÃO>Outros aparelhos receptores de radiodifusão que funcionem com fonte externa de energia; outros aparelhos videofônicos de gravação ou de reprodução, mesmo incorporando um receptor de sinais videofônicos, dos tipos utilizados exclusivamente em veículos automotores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85291090</NCM>
+    <CEST>106300</CEST>
+    <DESCRIÇÃO>Antenas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85340000</NCM>
+    <CEST>106400</CEST>
+    <DESCRIÇÃO>Circuitos impressos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85353</NCM>
+    <CEST>106500</CEST>
+    <DESCRIÇÃO>Interruptores e seccionadores e comutadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85365</NCM>
+    <CEST>106500</CEST>
+    <DESCRIÇÃO>Interruptores e seccionadores e comutadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85361000</NCM>
+    <CEST>106600</CEST>
+    <DESCRIÇÃO>Fusíveis e corta-circuitos de fusíveis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85362000</NCM>
+    <CEST>106700</CEST>
+    <DESCRIÇÃO>Disjuntores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85364</NCM>
+    <CEST>106800</CEST>
+    <DESCRIÇÃO>Relés</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8538</NCM>
+    <CEST>106900</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusivas ou principalmente destinados aos aparelhos dos itens 65.0, 66.0, 67.0 e 68.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85391</NCM>
+    <CEST>107000</CEST>
+    <DESCRIÇÃO>Faróis e projetores, em unidades seladas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85392</NCM>
+    <CEST>107100</CEST>
+    <DESCRIÇÃO>Lâmpadas e tubos de incandescência, exceto de raios ultravioleta ou infravermelhos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85442000</NCM>
+    <CEST>107200</CEST>
+    <DESCRIÇÃO>Cabos coaxiais e outros condutores elétricos coaxiais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85443000</NCM>
+    <CEST>107300</CEST>
+    <DESCRIÇÃO>Jogos de fios para velas de ignição e outros jogos de fios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8707</NCM>
+    <CEST>107400</CEST>
+    <DESCRIÇÃO>Carroçarias para os veículos automóveis das posições 8701 a 8705, incluídas as cabinas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8708</NCM>
+    <CEST>107500</CEST>
+    <DESCRIÇÃO>Partes e acessórios dos veículos automóveis das posições 8701 a 8705</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>87141</NCM>
+    <CEST>107600</CEST>
+    <DESCRIÇÃO>Parte e acessórios de motocicletas (incluídos os ciclomotores)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>87169090</NCM>
+    <CEST>107700</CEST>
+    <DESCRIÇÃO>Engates para reboques e semi-reboques</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90261</NCM>
+    <CEST>107800</CEST>
+    <DESCRIÇÃO>Medidores de nível; Medidores de vazão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90262</NCM>
+    <CEST>107900</CEST>
+    <DESCRIÇÃO>Aparelhos para medida ou controle da pressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9029</NCM>
+    <CEST>108000</CEST>
+    <DESCRIÇÃO>Contadores, indicadores de velocidade e tacômetros, suas partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90303321</NCM>
+    <CEST>108100</CEST>
+    <DESCRIÇÃO>Amperímetros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90318040</NCM>
+    <CEST>108200</CEST>
+    <DESCRIÇÃO>Aparelhos digitais, de uso em veículos automóveis, para medida e indicação de múltiplas grandezas tais como: velocidade média, consumos instantâneo e médio e autonomia (computador de bordo)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9032892</NCM>
+    <CEST>108300</CEST>
+    <DESCRIÇÃO>Controladores eletrônicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>91040000</NCM>
+    <CEST>108400</CEST>
+    <DESCRIÇÃO>Relógios para painéis de instrumentos e relógios semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>94012000</NCM>
+    <CEST>108500</CEST>
+    <DESCRIÇÃO>Assentos e partes de assentos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>94019090</NCM>
+    <CEST>108500</CEST>
+    <DESCRIÇÃO>Assentos e partes de assentos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96138000</NCM>
+    <CEST>108600</CEST>
+    <DESCRIÇÃO>Acendedores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4009</NCM>
+    <CEST>108700</CEST>
+    <DESCRIÇÃO>Tubos de borracha vulcanizada não endurecida, mesmo providos de seus acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>45049000 68129910</NCM>
+    <CEST>108800</CEST>
+    <DESCRIÇÃO>Juntas de vedação de cortiça natural e de amianto</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48234000</NCM>
+    <CEST>108900</CEST>
+    <DESCRIÇÃO>Papel-diagrama para tacógrafo, em disco</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39191000 39199000 87082999</NCM>
+    <CEST>109000</CEST>
+    <DESCRIÇÃO>Fitas, tiras, adesivos, auto-colantes, de plástico, refletores, mesmo em rolos; placas metálicas com película de plástico refletora, próprias para colocação em carrocerias, para-choques de veículos de carga, motocicletas, ciclomotores, capacetes, bonés de agentes de trânsito e de condutores de veículos, atuando como dispositivos refletivos de segurança rodoviários</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84123110</NCM>
+    <CEST>109100</CEST>
+    <DESCRIÇÃO>Cilindros pneumáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84131900 84135090 84138100</NCM>
+    <CEST>109200</CEST>
+    <DESCRIÇÃO>Bomba elétrica de lavador de para-brisa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84136019 84137010</NCM>
+    <CEST>109300</CEST>
+    <DESCRIÇÃO>Bomba de assistência de direção hidráulica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84145910 84145990</NCM>
+    <CEST>109400</CEST>
+    <DESCRIÇÃO>Motoventiladores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84213990</NCM>
+    <CEST>109500</CEST>
+    <DESCRIÇÃO>Filtros de pólen do ar-condicionado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85011019</NCM>
+    <CEST>109600</CEST>
+    <DESCRIÇÃO>“Máquina” de vidro elétrico de porta</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85013110</NCM>
+    <CEST>109700</CEST>
+    <DESCRIÇÃO>Motor de limpador de para-brisa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85045000</NCM>
+    <CEST>109800</CEST>
+    <DESCRIÇÃO>Bobinas de reatância e de auto-indução</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85072</NCM>
+    <CEST>109900</CEST>
+    <DESCRIÇÃO>Baterias de chumbo e de níquel-cádmio</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85073</NCM>
+    <CEST>109900</CEST>
+    <DESCRIÇÃO>Baterias de chumbo e de níquel-cádmio</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85123000</NCM>
+    <CEST>110000</CEST>
+    <DESCRIÇÃO>Aparelhos de sinalização acústica (buzina)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9032898</NCM>
+    <CEST>110100</CEST>
+    <DESCRIÇÃO>Instrumentos para regulação de grandezas não elétricas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9032899</NCM>
+    <CEST>110100</CEST>
+    <DESCRIÇÃO>Instrumentos para regulação de grandezas não elétricas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90271000</NCM>
+    <CEST>110200</CEST>
+    <DESCRIÇÃO>Analisadores de gases ou de fumaça (sonda lambda)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40081100</NCM>
+    <CEST>110300</CEST>
+    <DESCRIÇÃO>Perfilados de borracha vulcanizada não endurecida</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>56012219</NCM>
+    <CEST>110400</CEST>
+    <DESCRIÇÃO>Artefatos de pasta de fibra de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>57032000</NCM>
+    <CEST>110500</CEST>
+    <DESCRIÇÃO>Tapetes/carpetes – nailón</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>57033000</NCM>
+    <CEST>110600</CEST>
+    <DESCRIÇÃO>Tapetes de matérias têxteis sintéticas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>59119000</NCM>
+    <CEST>110700</CEST>
+    <DESCRIÇÃO>Forração interior capacete</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69039099</NCM>
+    <CEST>110800</CEST>
+    <DESCRIÇÃO>Outros para-brisas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70072900</NCM>
+    <CEST>110900</CEST>
+    <DESCRIÇÃO>Moldura com espelho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73145000</NCM>
+    <CEST>111000</CEST>
+    <DESCRIÇÃO>Corrente de transmissão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73151100</NCM>
+    <CEST>111100</CEST>
+    <DESCRIÇÃO>Corrente transmissão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73151210</NCM>
+    <CEST>111200</CEST>
+    <DESCRIÇÃO>Outras correntes de transmissão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84189900</NCM>
+    <CEST>111300</CEST>
+    <DESCRIÇÃO>Condensador tubular metálico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84195</NCM>
+    <CEST>111400</CEST>
+    <DESCRIÇÃO>Trocadores de calor</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84249090</NCM>
+    <CEST>111500</CEST>
+    <DESCRIÇÃO>Partes de aparelhos mecânicos de pulverizar ou dispersar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84254910</NCM>
+    <CEST>111600</CEST>
+    <DESCRIÇÃO>Macacos manuais para veículos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84314100</NCM>
+    <CEST>111700</CEST>
+    <DESCRIÇÃO>Caçambas, pás, ganchos e tenazes para máquinas rodoviárias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85016100</NCM>
+    <CEST>111800</CEST>
+    <DESCRIÇÃO>Geradores de corrente alternada de potência não superior a 75 kva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85311090</NCM>
+    <CEST>111900</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos para alarme de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90141000</NCM>
+    <CEST>112000</CEST>
+    <DESCRIÇÃO>Bússolas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90251990</NCM>
+    <CEST>112100</CEST>
+    <DESCRIÇÃO>Indicadores de temperatura</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90259010</NCM>
+    <CEST>112200</CEST>
+    <DESCRIÇÃO>Partes de indicadores de temperatura</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90269</NCM>
+    <CEST>112300</CEST>
+    <DESCRIÇÃO>Partes de aparelhos de medida ou controle</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90321010</NCM>
+    <CEST>112400</CEST>
+    <DESCRIÇÃO>Termostatos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90321090</NCM>
+    <CEST>112500</CEST>
+    <DESCRIÇÃO>Instrumentos e aparelhos para regulação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90322000</NCM>
+    <CEST>112600</CEST>
+    <DESCRIÇÃO>Pressostatos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>87169</NCM>
+    <CEST>112700</CEST>
+    <DESCRIÇÃO>Peças para reboques e semi-reboques</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73229010</NCM>
+    <CEST>112800</CEST>
+    <DESCRIÇÃO>Geradores de ar quente a combustível líquido, com capacidade superior ou igual a 1.500 kcal/h, mas inferior ou igual a 10.400 kcal/h, do tipo dos utilizados em veículos automóveis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73229010</NCM>
+    <CEST>112900</CEST>
+    <DESCRIÇÃO>Outras peças, partes e acessórios para veículos automotores não relacionados nos demais itens deste anexo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>200100</CEST>
+    <DESCRIÇÃO>Aperitivos, amargos, bitter e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200100</CEST>
+    <DESCRIÇÃO>Aperitivos, amargos, bitter e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200200</CEST>
+    <DESCRIÇÃO>Batida e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200300</CEST>
+    <DESCRIÇÃO>Bebida ice</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22072</NCM>
+    <CEST>200400</CEST>
+    <DESCRIÇÃO>Cachaça e aguardentes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22084000</NCM>
+    <CEST>200400</CEST>
+    <DESCRIÇÃO>Cachaça e aguardentes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>200500</CEST>
+    <DESCRIÇÃO>Catuaba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060090</NCM>
+    <CEST>200500</CEST>
+    <DESCRIÇÃO>Catuaba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200500</CEST>
+    <DESCRIÇÃO>Catuaba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22082000</NCM>
+    <CEST>200600</CEST>
+    <DESCRIÇÃO>Conhaque, brandy e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060090</NCM>
+    <CEST>200700</CEST>
+    <DESCRIÇÃO>Cooler</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200700</CEST>
+    <DESCRIÇÃO>Cooler</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22085000</NCM>
+    <CEST>200800</CEST>
+    <DESCRIÇÃO>Gim (gin) e genebra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>200900</CEST>
+    <DESCRIÇÃO>Jurubeba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060090</NCM>
+    <CEST>200900</CEST>
+    <DESCRIÇÃO>Jurubeba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>200900</CEST>
+    <DESCRIÇÃO>Jurubeba e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22087000</NCM>
+    <CEST>201000</CEST>
+    <DESCRIÇÃO>Licores e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22082000</NCM>
+    <CEST>201100</CEST>
+    <DESCRIÇÃO>Pisco</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22084000</NCM>
+    <CEST>201200</CEST>
+    <DESCRIÇÃO>Rum</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060090</NCM>
+    <CEST>201300</CEST>
+    <DESCRIÇÃO>Saque</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>201400</CEST>
+    <DESCRIÇÃO>Steinhaeger</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>201500</CEST>
+    <DESCRIÇÃO>Tequila</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22083</NCM>
+    <CEST>201600</CEST>
+    <DESCRIÇÃO>Uísque</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>201700</CEST>
+    <DESCRIÇÃO>Vermute e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22086000</NCM>
+    <CEST>201800</CEST>
+    <DESCRIÇÃO>Vodka</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>201900</CEST>
+    <DESCRIÇÃO>Derivados de vodka</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>202000</CEST>
+    <DESCRIÇÃO>Arak</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22082000</NCM>
+    <CEST>202100</CEST>
+    <DESCRIÇÃO>Aguardente vínica / grappa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060010</NCM>
+    <CEST>202200</CEST>
+    <DESCRIÇÃO>Sidra e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>202300</CEST>
+    <DESCRIÇÃO>Sangrias e coquetéis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22060090</NCM>
+    <CEST>202300</CEST>
+    <DESCRIÇÃO>Sangrias e coquetéis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>202300</CEST>
+    <DESCRIÇÃO>Sangrias e coquetéis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2204</NCM>
+    <CEST>202400</CEST>
+    <DESCRIÇÃO>Vinhos de uvas frescas, incluindo os vinhos enriquecidos com álcool; mostos de uvas.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2205</NCM>
+    <CEST>202500</CEST>
+    <DESCRIÇÃO>Outras bebidas alcoólicas não especificadas nos itens anteriores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2206</NCM>
+    <CEST>202500</CEST>
+    <DESCRIÇÃO>Outras bebidas alcoólicas não especificadas nos itens anteriores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2207</NCM>
+    <CEST>202500</CEST>
+    <DESCRIÇÃO>Outras bebidas alcoólicas não especificadas nos itens anteriores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2208</NCM>
+    <CEST>202500</CEST>
+    <DESCRIÇÃO>Outras bebidas alcoólicas não especificadas nos itens anteriores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300100</CEST>
+    <DESCRIÇÃO>Água mineral, gasosa ou não, ou potável, naturais, em garrafa de vidro, retornável ou não, com capacidade de até 500 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300200</CEST>
+    <DESCRIÇÃO>Água mineral, gasosa ou não, ou potável, naturais, em embalagem com capacidade igual ou superior a 5.000 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300300</CEST>
+    <DESCRIÇÃO>Água mineral, gasosa ou não, ou potável, naturais, em embalagem de vidro, não retornável, com capacidade de até 300 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300400</CEST>
+    <DESCRIÇÃO>Água mineral, gasosa ou não, ou potável, naturais, em garrafa plástica de 1.500 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300500</CEST>
+    <DESCRIÇÃO>Água mineral, gasosa ou não, ou potável, naturais, em copos plásticos e embalagem plástica com capacidade de até 500 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300600</CEST>
+    <DESCRIÇÃO>Outras águas minerais, potáveis ou naturais, gasosas ou não, inclusive gaseificadas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22011000</NCM>
+    <CEST>300700</CEST>
+    <DESCRIÇÃO>Águas minerais, potáveis ou naturais, gasosas ou não, inclusive gaseificadas ou aromatizadas artificialmente, refrescos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>300800</CEST>
+    <DESCRIÇÃO>Outras águas minerais, potáveis ou naturais, gasosas ou não, inclusive gaseificadas ou aromatizadas artificialmente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>300900</CEST>
+    <DESCRIÇÃO>Néctares de frutas e outras bebidas não alcoólicas prontas para beber, exceto isotônicos e energéticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2202</NCM>
+    <CEST>301000</CEST>
+    <DESCRIÇÃO>Refrigerante em garrafa com capacidade igual ou superior a 600 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2202</NCM>
+    <CEST>301100</CEST>
+    <DESCRIÇÃO>Demais refrigerantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21069010</NCM>
+    <CEST>301200</CEST>
+    <DESCRIÇÃO>Xarope ou extrato concentrado destinados ao preparo de refrigerante em máquina “pré-mix”ou “post-mix”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>301300</CEST>
+    <DESCRIÇÃO>Bebidas energéticas em embalagem com capacidade inferior a 600ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>301400</CEST>
+    <DESCRIÇÃO>Bebidas energéticas em embalagem com capacidade igual ou superior a 600ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21069090</NCM>
+    <CEST>301500</CEST>
+    <DESCRIÇÃO>Bebidas hidroeletrolíticas (isotônicas) em embalagem com capacidade inferior a 600ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21069090</NCM>
+    <CEST>301600</CEST>
+    <DESCRIÇÃO>Bebidas hidroeletrolíticas (isotônicas) em embalagem com capacidade igual ou superior a 600ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21012</NCM>
+    <CEST>301700</CEST>
+    <DESCRIÇÃO>Bebidas prontas à base de mate ou chá</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>301700</CEST>
+    <DESCRIÇÃO>Bebidas prontas à base de mate ou chá</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>301800</CEST>
+    <DESCRIÇÃO>Bebidas prontas à base de café</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22021000</NCM>
+    <CEST>301900</CEST>
+    <DESCRIÇÃO>Refrescos e outras bebidas prontas para beber à base de chá e mate</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>302000</CEST>
+    <DESCRIÇÃO>Bebidas alimentares prontas à base de soja, leite ou cacau, inclusive os produtos denominados bebidas lácteas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22030000</NCM>
+    <CEST>302100</CEST>
+    <DESCRIÇÃO>Cerveja</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22029000</NCM>
+    <CEST>302200</CEST>
+    <DESCRIÇÃO>Cerveja sem álcool</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22030000</NCM>
+    <CEST>302300</CEST>
+    <DESCRIÇÃO>Chope</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2402</NCM>
+    <CEST>400100</CEST>
+    <DESCRIÇÃO>Charutos, cigarrilhas e cigarros, de tabaco ou dos seus sucedâneos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>24031</NCM>
+    <CEST>400200</CEST>
+    <DESCRIÇÃO>Tabaco para fumar, mesmo contendo sucedâneos de tabaco em qualquer proporção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2523</NCM>
+    <CEST>500100</CEST>
+    <DESCRIÇÃO>Cimento</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>24031</NCM>
+    <CEST>400200</CEST>
+    <DESCRIÇÃO>Tabaco para fumar, mesmo contendo sucedâneos de tabaco em qualquer proporção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22071</NCM>
+    <CEST>600100</CEST>
+    <DESCRIÇÃO>Álcool etílico não desnaturado, com um teor alcoólico em volume igual ou superior a 80% vol (álcool etílico anidro combustível e álcool etílico hidratado combustível)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27101259</NCM>
+    <CEST>600200</CEST>
+    <DESCRIÇÃO>Gasolinas, exceto de aviação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27101251</NCM>
+    <CEST>600300</CEST>
+    <DESCRIÇÃO>Gasolina de aviação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27101919</NCM>
+    <CEST>600400</CEST>
+    <DESCRIÇÃO>Querosenes, exceto de aviação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27101911</NCM>
+    <CEST>600500</CEST>
+    <DESCRIÇÃO>Querosene de aviação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2710192</NCM>
+    <CEST>600600</CEST>
+    <DESCRIÇÃO>Óleos combustíveis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2710193</NCM>
+    <CEST>600700</CEST>
+    <DESCRIÇÃO>Óleos lubrificantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2710199</NCM>
+    <CEST>600800</CEST>
+    <DESCRIÇÃO>Outros óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70% ou mais, em peso, de óleos de petróleo ou de inerais betuminosos, exceto os que contenham biodiesel e exceto os resíduos de óleos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27109</NCM>
+    <CEST>600900</CEST>
+    <DESCRIÇÃO>Resíduos de óleos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2711</NCM>
+    <CEST>601000</CEST>
+    <DESCRIÇÃO>Gás de petróleo e outros hidrocarbonetos gasosos, exceto GLP, GLGN e Gás Natural</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27111910</NCM>
+    <CEST>601100</CEST>
+    <DESCRIÇÃO>Gás Liquefeito de Petróleo (GLP)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27111100</NCM>
+    <CEST>601200</CEST>
+    <DESCRIÇÃO>Gás Liquefeito de Gás Natural (GLGN)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27112100</NCM>
+    <CEST>601300</CEST>
+    <DESCRIÇÃO>Gás Natural</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27112100</NCM>
+    <CEST>601300</CEST>
+    <DESCRIÇÃO>Gás Natural</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2713</NCM>
+    <CEST>601400</CEST>
+    <DESCRIÇÃO>Coque de petróleo e outros resíduos de óleo de petróleo ou de minerais betuminosos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>38260000</NCM>
+    <CEST>601500</CEST>
+    <DESCRIÇÃO>Biodiesel e suas misturas, que não contenham ou que contenham menos de 70%, em peso, de óleos de petróleo ou de óleos minerais betuminosos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3403</NCM>
+    <CEST>601600</CEST>
+    <DESCRIÇÃO>Preparações lubrificantes, exceto as contendo, como constituintes de base, 70% ou mais, em peso, de óleos de petróleo ou de minerais betuminosos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27102000</NCM>
+    <CEST>601700</CEST>
+    <DESCRIÇÃO>Óleos de petróleo ou de minerais betuminosos (exceto óleos brutos) e preparações não especificadas nem compreendidas noutras posições, que contenham, como constituintes básicos, 70% ou mais, em peso, de óleos de petróleo ou de minerais betuminosos, que contenham biodiesel, exceto os resíduos de óleos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27160000</NCM>
+    <CEST>700100</CEST>
+    <DESCRIÇÃO>Energia elétrica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40169990</NCM>
+    <CEST>800100</CEST>
+    <DESCRIÇÃO>Ferramentas de borracha vulcanizada não endurecida</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>44170010 44170090</NCM>
+    <CEST>800200</CEST>
+    <DESCRIÇÃO>Ferramentas, armações e cabos de ferramentas, de madeira</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6804</NCM>
+    <CEST>800300</CEST>
+    <DESCRIÇÃO>Mós e artefatos semelhantes, sem armação, para moer, desfibrar, triturar, amolar, polir, retificar ou cortar; pedras para amolar ou para polir, manualmente, e suas partes, de pedras naturais, de abrasivos naturais ou artificiais aglomerados ou de cerâmica, mesmo com partes de outras matérias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8201</NCM>
+    <CEST>800400</CEST>
+    <DESCRIÇÃO>Pás, alviões, picaretas, enxadas, sachos, forcados e forquilhas, ancinhos e raspadeiras; machados, podões e ferramentas semelhantes com gume; tesouras de podar de todos os tipos; foices e foicinhas, facas para feno ou para palha, tesouras para sebes, cunhas e outras ferramentas manuais para agricultura, horticultura ou silvicultura</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82022000</NCM>
+    <CEST>800500</CEST>
+    <DESCRIÇÃO>Folhas de serras de fita</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82029100</NCM>
+    <CEST>800600</CEST>
+    <DESCRIÇÃO>Lâminas de serras máquinas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8202</NCM>
+    <CEST>800700</CEST>
+    <DESCRIÇÃO>Serras manuais e outras folhas de serras (incluídas as fresas-serras e as folhas não dentadas para serrar), exceto as classificadas nas posições 8202.20.00 e 8202.91.00</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8203</NCM>
+    <CEST>800800</CEST>
+    <DESCRIÇÃO>Limas, grosas, alicates (mesmo cortantes), tenazes, pinças, cisalhas para metais, corta-tubos, corta-pinos, saca-bocados e ferramentas semelhantes, manuais, exceto as pinças para sobrancelhas classificadas na posição 8203.20.90</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8204</NCM>
+    <CEST>800900</CEST>
+    <DESCRIÇÃO>Chaves de porcas, manuais (incluídas as chaves dinamométricas); chaves de caixa intercambiáveis, mesmo com cabos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8205</NCM>
+    <CEST>801000</CEST>
+    <DESCRIÇÃO>Ferramentas manuais (incluídos os diamantes de vidraceiro) não especificadas nem compreendidas em outras posições, lamparinas ou lâmpadas de soldar (maçaricos) e semelhantes; tornos de apertar, sargentos e semelhantes, exceto os acessórios ou partes de máquinas-ferramentas; bigornas; forjas-portáteis; mós com armação, manuais ou de pedal</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8206</NCM>
+    <CEST>801100</CEST>
+    <DESCRIÇÃO>Ferramentas de pelo menos duas das posições 8202 a 8205, acondicionadas em sortidos para venda a retalho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82074</NCM>
+    <CEST>801200</CEST>
+    <DESCRIÇÃO>Ferramentas de roscar interior ou exteriormente; de mandrilar ou de brochar; e de fresar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82076</NCM>
+    <CEST>801200</CEST>
+    <DESCRIÇÃO>Ferramentas de roscar interior ou exteriormente; de mandrilar ou de brochar; e de fresar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82077</NCM>
+    <CEST>801200</CEST>
+    <DESCRIÇÃO>Ferramentas de roscar interior ou exteriormente; de mandrilar ou de brochar; e de fresar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8207</NCM>
+    <CEST>801300</CEST>
+    <DESCRIÇÃO>Outras ferramentas intercambiáveis para ferramentas manuais, mesmo mecânicas, ou para máquinas-ferramentas (por exemplo, de embutir, estampar, puncionar, furar, tornear, aparafusar), incluídas as fieiras de estiragem ou de extrusão, para metais, e as ferramentas de perfuração ou de sondagem, exceto forma ou gabarito de produtos em epoxy, exceto as classificadas nas posições 8207.40, 8207.60 e 8207.70</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8208</NCM>
+    <CEST>801400</CEST>
+    <DESCRIÇÃO>Facas e lâminas cortantes, para máquinas ou para aparelhos mecânicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82090011</NCM>
+    <CEST>801500</CEST>
+    <DESCRIÇÃO>Plaquetas ou pastilhas intercambiáveis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8209</NCM>
+    <CEST>801600</CEST>
+    <DESCRIÇÃO>Outras plaquetas, varetas, pontas e objetos semelhantes para ferramentas, não montados, de ceramais (“cermets”), exceto as classificadas na posição 8209.00.11</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8211</NCM>
+    <CEST>801700</CEST>
+    <DESCRIÇÃO>Facas (exceto as da posição 8208) de lâmina cortante ou serrilhada, incluídas as podadeiras de lâmina móvel, e suas lâminas, exceto as de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8213</NCM>
+    <CEST>801800</CEST>
+    <DESCRIÇÃO>Tesouras e suas lâminas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8467</NCM>
+    <CEST>801900</CEST>
+    <DESCRIÇÃO>Ferramentas pneumáticas, hidráulicas ou com motor (elétrico ou não elétrico) incorporado, de uso manual</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9015</NCM>
+    <CEST>802000</CEST>
+    <DESCRIÇÃO>Instrumentos e aparelhos de geodésia, topografia, agrimensura, nivelamento, fotogrametria, hidrografia, oceanografia, hidrologia, meteorologia ou de geofísica, exceto bussolas; telêmetros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9015</NCM>
+    <CEST>802000</CEST>
+    <DESCRIÇÃO>Instrumentos e aparelhos de geodésia, topografia, agrimensura, nivelamento, fotogrametria, hidrografia, oceanografia, hidrologia, meteorologia ou de geofísica, exceto bussolas; telêmetros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90172000</NCM>
+    <CEST>802100</CEST>
+    <DESCRIÇÃO>Instrumentos de desenho, de traçado ou de cálculo; metros, micrômetros, paquímetros, calibres e semelhantes; partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90173</NCM>
+    <CEST>802100</CEST>
+    <DESCRIÇÃO>Instrumentos de desenho, de traçado ou de cálculo; metros, micrômetros, paquímetros, calibres e semelhantes; partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90178</NCM>
+    <CEST>802100</CEST>
+    <DESCRIÇÃO>Instrumentos de desenho, de traçado ou de cálculo; metros, micrômetros, paquímetros, calibres e semelhantes; partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90179090</NCM>
+    <CEST>802100</CEST>
+    <DESCRIÇÃO>Instrumentos de desenho, de traçado ou de cálculo; metros, micrômetros, paquímetros, calibres e semelhantes; partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90251190</NCM>
+    <CEST>802200</CEST>
+    <DESCRIÇÃO>Termômetros, suas partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90259010</NCM>
+    <CEST>802200</CEST>
+    <DESCRIÇÃO>Termômetros, suas partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>902519</NCM>
+    <CEST>802300</CEST>
+    <DESCRIÇÃO>Pirômetros, suas partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90259090</NCM>
+    <CEST>802300</CEST>
+    <DESCRIÇÃO>Pirômetros, suas partes e acessórios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8539</NCM>
+    <CEST>900100</CEST>
+    <DESCRIÇÃO>Lâmpadas elétricas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8540</NCM>
+    <CEST>900200</CEST>
+    <DESCRIÇÃO>Lâmpadas eletrônicas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85041000</NCM>
+    <CEST>900300</CEST>
+    <DESCRIÇÃO>Reatores para lâmpadas ou tubos de descargas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85365</NCM>
+    <CEST>900400</CEST>
+    <DESCRIÇÃO>“Starter”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85437099</NCM>
+    <CEST>900500</CEST>
+    <DESCRIÇÃO>Lâmpadas de LED (Diodos Emissores de Luz)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2522</NCM>
+    <CEST>1000100</CEST>
+    <DESCRIÇÃO>Cal</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3816001</NCM>
+    <CEST>1000200</CEST>
+    <DESCRIÇÃO>Argamassas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>38245000</NCM>
+    <CEST>1000200</CEST>
+    <DESCRIÇÃO>Argamassas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>32149000</NCM>
+    <CEST>1000300</CEST>
+    <DESCRIÇÃO>Outras argamassas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3910</NCM>
+    <CEST>1000400</CEST>
+    <DESCRIÇÃO>Silicones em formas primárias, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3916</NCM>
+    <CEST>1000500</CEST>
+    <DESCRIÇÃO>Revestimentos de PVC e outros plásticos; forro, sancas e afins de PVC, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3917</NCM>
+    <CEST>1000600</CEST>
+    <DESCRIÇÃO>Tubos, e seus acessórios (por exemplo, juntas, cotovelos, flanges, uniões), de plásticos, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3918</NCM>
+    <CEST>1000700</CEST>
+    <DESCRIÇÃO>Revestimento de pavimento de PVC e outros plásticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3919</NCM>
+    <CEST>1000800</CEST>
+    <DESCRIÇÃO>Chapas, folhas, tiras, fitas, películas e outras formas planas, auto-adesivas, de plásticos, mesmo em rolos, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3919</NCM>
+    <CEST>1000900</CEST>
+    <DESCRIÇÃO>Veda rosca, lona plástica para uso na construção, fitas isolantes e afins</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3920</NCM>
+    <CEST>1000900</CEST>
+    <DESCRIÇÃO>Veda rosca, lona plástica para uso na construção, fitas isolantes e afins</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3921</NCM>
+    <CEST>1000900</CEST>
+    <DESCRIÇÃO>Veda rosca, lona plástica para uso na construção, fitas isolantes e afins</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3921</NCM>
+    <CEST>1001000</CEST>
+    <DESCRIÇÃO>Telha de plástico, mesmo reforçada com fibra de vidro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3921</NCM>
+    <CEST>1001100</CEST>
+    <DESCRIÇÃO>Cumeeira de plástico, mesmo reforçada com fibra de vidro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3921</NCM>
+    <CEST>1001200</CEST>
+    <DESCRIÇÃO>Chapas, laminados plásticos em bobina, para uso na construção, exceto os descritos nos itens 10.0 e 11.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3922</NCM>
+    <CEST>1001300</CEST>
+    <DESCRIÇÃO>Banheiras, boxes para chuveiros, pias, lavatórios, bidês, sanitários e seus assentos e tampas, caixas de descarga e artigos semelhantes para usos sanitários ou higiênicos, de plásticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3924</NCM>
+    <CEST>1001400</CEST>
+    <DESCRIÇÃO>Artefatos de higiene/toucador de plástico, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39251000</NCM>
+    <CEST>1001500</CEST>
+    <DESCRIÇÃO>Caixa d’água, inclusive sua tampa, de plástico, mesmo reforçadas com fibra de vidro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39259</NCM>
+    <CEST>1001600</CEST>
+    <DESCRIÇÃO>Outras telhas, cumeeira e caixa d’água, inclusive sua tampa, de plástico, mesmo reforçadas com fibra de vidro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39251000</NCM>
+    <CEST>1001700</CEST>
+    <DESCRIÇÃO>Artefatos para apetrechamento de construções, de plásticos, não especificados nem compreendidos em outras posições, incluindo persianas, sancas, molduras, apliques e rosetas, caixilhos de polietileno e outros plásticos, exceto os descritos nos itens 15.0 e 16.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39259</NCM>
+    <CEST>1001700</CEST>
+    <DESCRIÇÃO>Artefatos para apetrechamento de construções, de plásticos, não especificados nem compreendidos em outras posições, incluindo persianas, sancas, molduras, apliques e rosetas, caixilhos de polietileno e outros plásticos, exceto os descritos nos itens 15.0 e 16.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39252000</NCM>
+    <CEST>1001800</CEST>
+    <DESCRIÇÃO>Portas, janelas e seus caixilhos, alizares e soleiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39253000</NCM>
+    <CEST>1001900</CEST>
+    <DESCRIÇÃO>Postigos, estores (incluídas as venezianas) e artefatos semelhantes e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39269</NCM>
+    <CEST>1002000</CEST>
+    <DESCRIÇÃO>Outras obras de plástico, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4814</NCM>
+    <CEST>1002100</CEST>
+    <DESCRIÇÃO>Papel de parede e revestimentos de parede semelhantes; papel para vitrais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>68101900</NCM>
+    <CEST>1002200</CEST>
+    <DESCRIÇÃO>Telhas de concreto</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6811</NCM>
+    <CEST>1002300</CEST>
+    <DESCRIÇÃO>Telha, cumeeira e caixa d’água, inclusive sua tampa, de fibrocimento, cimento-celulose</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6811</NCM>
+    <CEST>1002400</CEST>
+    <DESCRIÇÃO>Caixas d’água, tanques e reservatórios e suas tampas, telhas, calhas, cumeeiras e afins, de fibrocimento, cimento-celulose ou semelhantes, contendo ou não amianto, exceto os descritos no item 23.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69010000</NCM>
+    <CEST>1002500</CEST>
+    <DESCRIÇÃO>Tijolos, placas (lajes), ladrilhos e outras peças cerâmicas de farinhas siliciosas fósseis (“kieselghur”, tripolita, diatomita, por exemplo) ou de terras siliciosas semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6902</NCM>
+    <CEST>1002600</CEST>
+    <DESCRIÇÃO>Tijolos, placas (lajes), ladrilhos e peças cerâmicas semelhantes, para uso na construção, refratários, que não sejam de farinhas siliciosas fósseis nem de terras siliciosas semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6904</NCM>
+    <CEST>1002700</CEST>
+    <DESCRIÇÃO>Tijolos para construção, tijoleiras, tapa-vigas e produtos semelhantes, de cerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6905</NCM>
+    <CEST>1002800</CEST>
+    <DESCRIÇÃO>Telhas, elementos de chaminés, condutores de fumaça, ornamentos arquitetônicos, de cerâmica, e outros produtos cerâmicos para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69060000</NCM>
+    <CEST>1002900</CEST>
+    <DESCRIÇÃO>Tubos, calhas ou algerozes e acessórios para canalizações, de cerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6907</NCM>
+    <CEST>1003000</CEST>
+    <DESCRIÇÃO>Ladrilhos e placas de cerâmica, exclusivamente para pavimentação ou revestimento</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6908</NCM>
+    <CEST>1003000</CEST>
+    <DESCRIÇÃO>Ladrilhos e placas de cerâmica, exclusivamente para pavimentação ou revestimento</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6907</NCM>
+    <CEST>1003001</CEST>
+    <DESCRIÇÃO>Cubos, pastilhas e artigos semelhantes de cerâmica, mesmo com suporte.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6908</NCM>
+    <CEST>1003001</CEST>
+    <DESCRIÇÃO>Cubos, pastilhas e artigos semelhantes de cerâmica, mesmo com suporte.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>6910</NCM>
+    <CEST>1003100</CEST>
+    <DESCRIÇÃO>Pias, lavatórios, colunas para lavatórios, banheiras, bidês, sanitários, caixas de descarga, mictórios e aparelhos fixos semelhantes para usos sanitários, de cerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69120000</NCM>
+    <CEST>1003200</CEST>
+    <DESCRIÇÃO>Artefatos de higiene/toucador de cerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7003</NCM>
+    <CEST>1003300</CEST>
+    <DESCRIÇÃO>Vidro vazado ou laminado, em chapas, folhas ou perfis, mesmo com camada absorvente, refletora ou não, mas sem qualquer outro trabalho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7004</NCM>
+    <CEST>1003400</CEST>
+    <DESCRIÇÃO>Vidro estirado ou soprado, em folhas, mesmo com camada absorvente, refletora ou não, mas sem qualquer outro trabalho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7005</NCM>
+    <CEST>1003500</CEST>
+    <DESCRIÇÃO>Vidro flotado e vidro desbastado ou polido em uma ou em ambas as faces, em chapas ou em folhas, mesmo com camada absorvente, refletora ou não, mas sem qualquer outro trabalho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70071900</NCM>
+    <CEST>1003600</CEST>
+    <DESCRIÇÃO>Vidros temperados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70072900</NCM>
+    <CEST>1003700</CEST>
+    <DESCRIÇÃO>Vidros laminados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7008</NCM>
+    <CEST>1003800</CEST>
+    <DESCRIÇÃO>Vidros isolantes de paredes múltiplas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7016</NCM>
+    <CEST>1003900</CEST>
+    <DESCRIÇÃO>Blocos, placas, tijolos, ladrilhos, telhas e outros artefatos, de vidro prensado ou moldado, mesmo armado, para uso na construção; cubos, pastilhas e outros artigos semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>72142000</NCM>
+    <CEST>1004000</CEST>
+    <DESCRIÇÃO>Barras próprias para construções, exceto vergalhões</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73089010</NCM>
+    <CEST>1004100</CEST>
+    <DESCRIÇÃO>Outras barras próprias para construções, exceto vergalhões</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>72142000</NCM>
+    <CEST>1004200</CEST>
+    <DESCRIÇÃO>Vergalhões</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7213</NCM>
+    <CEST>1004300</CEST>
+    <DESCRIÇÃO>Outros vergalhões</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73089010</NCM>
+    <CEST>1004300</CEST>
+    <DESCRIÇÃO>Outros vergalhões</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>72171090</NCM>
+    <CEST>1004400</CEST>
+    <DESCRIÇÃO>Fios de ferro ou aço não ligados, não revestidos, mesmo polidos; cordas, cabos, tranças (entrançados), lingas e artefatos semelhantes, de ferro ou aço, não isolados para usos elétricos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7312</NCM>
+    <CEST>1004400</CEST>
+    <DESCRIÇÃO>Fios de ferro ou aço não ligados, não revestidos, mesmo polidos; cordas, cabos, tranças (entrançados), lingas e artefatos semelhantes, de ferro ou aço, não isolados para usos elétricos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>72172</NCM>
+    <CEST>1004500</CEST>
+    <DESCRIÇÃO>Outros fios de ferro ou aço, não ligados, galvanizados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7307</NCM>
+    <CEST>1004600</CEST>
+    <DESCRIÇÃO>Acessórios para tubos (inclusive uniões, cotovelos, luvas ou mangas), de ferro fundido, ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73083000</NCM>
+    <CEST>1004700</CEST>
+    <DESCRIÇÃO>Portas e janelas, e seus caixilhos, alizares e soleiras de ferro fundido, ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73084000</NCM>
+    <CEST>1004800</CEST>
+    <DESCRIÇÃO>Material para andaimes, para armações (cofragens) e para escoramentos, (inclusive armações prontas, para estruturas de concreto armado ou argamassa armada), eletrocalhas e perfilados de ferro fundido, ferro ou aço, próprios para construção, exceto treliças de aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73089</NCM>
+    <CEST>1004800</CEST>
+    <DESCRIÇÃO>Material para andaimes, para armações (cofragens) e para escoramentos, (inclusive armações prontas, para estruturas de concreto armado ou argamassa armada), eletrocalhas e perfilados de ferro fundido, ferro ou aço, próprios para construção, exceto treliças de aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73084000</NCM>
+    <CEST>1004900</CEST>
+    <DESCRIÇÃO>Treliças de aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73089090</NCM>
+    <CEST>1005000</CEST>
+    <DESCRIÇÃO>Telhas metálicas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7310</NCM>
+    <CEST>1005100</CEST>
+    <DESCRIÇÃO>Caixas diversas (tais como caixa de correio, de entrada de água, de energia, de instalação) de ferro, ferro fundido ou aço; próprias para a construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73130000</NCM>
+    <CEST>1005200</CEST>
+    <DESCRIÇÃO>Arame farpado, de ferro ou aço, arames ou tiras, retorcidos, mesmo farpados, de ferro ou aço, dos tipos utilizados em cercas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7314</NCM>
+    <CEST>1005300</CEST>
+    <DESCRIÇÃO>Telas metálicas, grades e redes, de fios de ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73151100</NCM>
+    <CEST>1005400</CEST>
+    <DESCRIÇÃO>Correntes de rolos, de ferro fundido, ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73151290</NCM>
+    <CEST>1005500</CEST>
+    <DESCRIÇÃO>Outras correntes de elos articulados, de ferro fundido, ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73158200</NCM>
+    <CEST>1005600</CEST>
+    <DESCRIÇÃO>Correntes de elos soldados, de ferro fundido, de ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7317</NCM>
+    <CEST>1005700</CEST>
+    <DESCRIÇÃO>Tachas, pregos, percevejos, escápulas, grampos ondulados ou biselados e artefatos semelhantes, de ferro fundido, ferro ou aço, mesmo com a cabeça de outra matéria, exceto cobre</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7318</NCM>
+    <CEST>1005800</CEST>
+    <DESCRIÇÃO>Parafusos, pinos ou pernos, roscados, porcas, tira-fundos, ganchos roscados, rebites, chavetas, cavilhas, contrapinos, arruelas (incluídas as de pressão) e artefatos semelhantes, de ferro fundido, ferro ou aço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7323</NCM>
+    <CEST>1005900</CEST>
+    <DESCRIÇÃO>Palha de ferro ou aço; esponjas, esfregões, luvas e artefatos semelhantes para limpeza, polimento e usos semelhantes, de ferro ou aço, exceto os de uso doméstico classificados na posição 7323.10.00</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7324</NCM>
+    <CEST>1006000</CEST>
+    <DESCRIÇÃO>Artefatos de higiene ou de toucador, e suas partes, de ferro fundido, ferro ou aço, incluídas as pias, banheiras, lavatórios, cubas, mictórios, tanques e afins de ferro fundido, ferro ou aço, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7325</NCM>
+    <CEST>1006100</CEST>
+    <DESCRIÇÃO>Outras obras moldadas, de ferro fundido, ferro ou aço, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7326</NCM>
+    <CEST>1006200</CEST>
+    <DESCRIÇÃO>Abraçadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7407</NCM>
+    <CEST>1006300</CEST>
+    <DESCRIÇÃO>Barras de cobre</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>74111010</NCM>
+    <CEST>1006400</CEST>
+    <DESCRIÇÃO>Tubos de cobre e suas ligas, para instalações de água quente e gás, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7412</NCM>
+    <CEST>1006500</CEST>
+    <DESCRIÇÃO>Acessórios para tubos (por exemplo, uniões, cotovelos, luvas ou mangas) de cobre e suas ligas, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7415</NCM>
+    <CEST>1006600</CEST>
+    <DESCRIÇÃO>Tachas, pregos, percevejos, escápulas e artefatos semelhantes, de cobre, ou de ferro ou aço com cabeça de cobre, parafusos, pinos ou pernos, roscados, porcas, ganchos roscados, rebites, chavetas, cavilhas, contrapinos, arruelas (incluídas as de pressão), e artefatos semelhantes, de cobre</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>74182000</NCM>
+    <CEST>1006700</CEST>
+    <DESCRIÇÃO>Artefatos de higiene/toucador de cobre, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>76071990</NCM>
+    <CEST>1006800</CEST>
+    <DESCRIÇÃO>Manta de subcobertura aluminizada</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7608</NCM>
+    <CEST>1006900</CEST>
+    <DESCRIÇÃO>Tubos de alumínio e suas ligas, para refrigeração e ar condicionado, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>76090000</NCM>
+    <CEST>1007000</CEST>
+    <DESCRIÇÃO>Acessórios para tubos (por exemplo, uniões, cotovelos, luvas ou mangas), de alumínio, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7610</NCM>
+    <CEST>1007100</CEST>
+    <DESCRIÇÃO>Construções e suas partes (por exemplo, pontes e elementos de pontes, torres, pórticos ou pilones, pilares, colunas, armações, estruturas para telhados, portas e janelas, e seus caixilhos, alizares e soleiras, balaustradas), de alumínio, exceto as construções pré-fabricadas da posição 9406; chapas, barras, perfis, tubos e semelhantes, de alumínio, próprios para construções</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>76152000</NCM>
+    <CEST>1007200</CEST>
+    <DESCRIÇÃO>Artefatos de higiene/toucador de alumínio, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7616</NCM>
+    <CEST>1007300</CEST>
+    <DESCRIÇÃO>Outras obras de alumínio, próprias para construções, incluídas as persianas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83024100</NCM>
+    <CEST>1007400</CEST>
+    <DESCRIÇÃO>Outras guarnições, ferragens e artigos semelhantes de metais comuns, para construções, inclusive puxadores.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83024100</NCM>
+    <CEST>1007400</CEST>
+    <DESCRIÇÃO>Outras guarnições, ferragens e artigos semelhantes de metais comuns, para construções, inclusive puxadores.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8301</NCM>
+    <CEST>1007500</CEST>
+    <DESCRIÇÃO>Fechaduras e ferrolhos (de chave, de segredo ou elétricos), de metais comuns, incluídas as suas partes fechos e armações com fecho, com fechadura, de metais comuns chaves para estes artigos, de metais comuns; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>83021000</NCM>
+    <CEST>1007600</CEST>
+    <DESCRIÇÃO>Dobradiças de metais comuns, de qualquer tipo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8307</NCM>
+    <CEST>1007700</CEST>
+    <DESCRIÇÃO>Tubos flexíveis de metais comuns, mesmo com acessórios, para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8311</NCM>
+    <CEST>1007800</CEST>
+    <DESCRIÇÃO>Fios, varetas, tubos, chapas, eletrodos e artefatos semelhantes, de metais comuns ou de carbonetos metálicos, revestidos exterior ou interiormente de decapantes ou de fundentes, para soldagem (soldadura) ou depósito de metal ou de carbonetos metálicos fios e varetas de pós de metais comuns aglomerados, para metalização por projeção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8481</NCM>
+    <CEST>1007900</CEST>
+    <DESCRIÇÃO>Torneiras, válvulas (incluídas as redutoras de pressão e as termostáticas) e dispositivos semelhantes, para canalizações, caldeiras, reservatórios, cubas e outros recipientes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>28289011</NCM>
+    <CEST>1100100</CEST>
+    <DESCRIÇÃO>Água sanitária, branqueador e outros alvejantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>28289019</NCM>
+    <CEST>1100100</CEST>
+    <DESCRIÇÃO>Água sanitária, branqueador e outros alvejantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>32064100</NCM>
+    <CEST>1100100</CEST>
+    <DESCRIÇÃO>Água sanitária, branqueador e outros alvejantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>38089419</NCM>
+    <CEST>1100100</CEST>
+    <DESCRIÇÃO>Água sanitária, branqueador e outros alvejantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34012090</NCM>
+    <CEST>1100200</CEST>
+    <DESCRIÇÃO>Sabões em pó, flocos, palhetas, grânulos ou outras formas semelhantes, para lavar roupas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34012090</NCM>
+    <CEST>1100300</CEST>
+    <DESCRIÇÃO>Sabões líquidos para lavar roupas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34022000</NCM>
+    <CEST>1100400</CEST>
+    <DESCRIÇÃO>Detergentes em pó, flocos, palhetas, grânulos ou outras formas semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34022000</NCM>
+    <CEST>1100500</CEST>
+    <DESCRIÇÃO>Detergentes líquidos, exceto para lavar roupa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34022000</NCM>
+    <CEST>1100600</CEST>
+    <DESCRIÇÃO>Detergente líquido para lavar roupa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3402</NCM>
+    <CEST>1100700</CEST>
+    <DESCRIÇÃO>Outros agentes orgânicos de superfície (exceto sabões); preparações tensoativas, preparações para lavagem (incluídas as preparações auxiliares para lavagem) e preparações para limpeza (inclusive multiuso e limpadores), mesmo contendo sabão, exceto as da posição 3401 e os produtos descritos nos itens 3 a 5; em embalagem de conteúdo inferior ou igual a 50 litros ou 50 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>38099190</NCM>
+    <CEST>1100800</CEST>
+    <DESCRIÇÃO>Amaciante/suavizante</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39241000</NCM>
+    <CEST>1100900</CEST>
+    <DESCRIÇÃO>Esponjas para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39249000</NCM>
+    <CEST>1100900</CEST>
+    <DESCRIÇÃO>Esponjas para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>68053010</NCM>
+    <CEST>1100900</CEST>
+    <DESCRIÇÃO>Esponjas para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>68053090</NCM>
+    <CEST>1100900</CEST>
+    <DESCRIÇÃO>Esponjas para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2207</NCM>
+    <CEST>1101000</CEST>
+    <DESCRIÇÃO>Álcool etílico para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>22089000</NCM>
+    <CEST>1101000</CEST>
+    <DESCRIÇÃO>Álcool etílico para limpeza</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73231000</NCM>
+    <CEST>1101100</CEST>
+    <DESCRIÇÃO>Esponjas e palhas de aço; esponjas para limpeza, polimento ou uso semelhantes; todas de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8504</NCM>
+    <CEST>1200100</CEST>
+    <DESCRIÇÃO>Transformadores, bobinas de reatância e de auto indução, inclusive os transformadores de potência superior a 16 KVA, classificados nas posições 8504.33.00 e 8504.34.00; exceto os demais transformadores da subposição 8504.3, os reatores para lâmpadas elétricas de descarga classificados no código 8504.10.00, os carregadores de acumuladores do código 8504.40.10, os equipamentos de alimentação ininterrupta de energia (UPS ou “no break”), no código 8504.40.40 e os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8516</NCM>
+    <CEST>1200200</CEST>
+    <DESCRIÇÃO>Aquecedores elétricos de água, incluídos os de imersão, chuveiros ou duchas elétricos, torneiras elétricas, resistências de aquecimento, inclusive as de duchas e chuveiros elétricos e suas partes; exceto outros fornos, fogareiros (incluídas as chapas de cocção), grelhas e assadeiras, classificados na posição 8516.60.00</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8535</NCM>
+    <CEST>1200300</CEST>
+    <DESCRIÇÃO>Aparelhos para interrupção, seccionamento, proteção, derivação, ligação ou conexão de circuitos elétricos (por exemplo, interruptores, comutadores, corta-circuitos, para-raios, limitadores de tensão, eliminadores de onda, tomadas de corrente e outros conectores, caixas de junção), para tensão superior a 1.000V, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8536</NCM>
+    <CEST>1200400</CEST>
+    <DESCRIÇÃO>Aparelhos para interrupção, seccionamento, proteção, derivação, ligação ou conexão de circuitos elétricos (por exemplo, interruptores, comutadores, relés, corta-circuitos, eliminadores de onda, plugues e tomadas de corrente, suportes para lâmpadas e outros conectores, caixas de junção), para uma tensão não superior a 1.000V; conectores para fibras ópticas, feixes ou cabos de fibras ópticas; exceto “starter” classificado na subposição 8536.50 e os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8538</NCM>
+    <CEST>1200500</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusiva ou principalmente destinadas aos aparelhos das posições 8535 e 8536</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>74130000</NCM>
+    <CEST>1200600</CEST>
+    <DESCRIÇÃO>Cabos, tranças e semelhantes, de cobre, não isolados para usos elétricos, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8544</NCM>
+    <CEST>1200700</CEST>
+    <DESCRIÇÃO>Fios, cabos (incluídos os cabos coaxiais) e outros condutores, isolados ou não, para usos elétricos (incluídos os de cobre ou alumínio, envernizados ou oxidados anodicamente), mesmo com peças de conexão, inclusive fios e cabos elétricos, para tensão não superior a 1000V, para uso na construção; fios e cabos telefônicos e para transmissão de dados; cabos de fibras ópticas, constituídos de fibras embainhadas individualmente, mesmo com condutores elétricos ou munidos de peças de conexão; cordas, cabos, tranças e semelhantes, de alumínio, não isolados para uso elétricos; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7605</NCM>
+    <CEST>1200700</CEST>
+    <DESCRIÇÃO>Fios, cabos (incluídos os cabos coaxiais) e outros condutores, isolados ou não, para usos elétricos (incluídos os de cobre ou alumínio, envernizados ou oxidados anodicamente), mesmo com peças de conexão, inclusive fios e cabos elétricos, para tensão não superior a 1000V, para uso na construção; fios e cabos telefônicos e para transmissão de dados; cabos de fibras ópticas, constituídos de fibras embainhadas individualmente, mesmo com condutores elétricos ou munidos de peças de conexão; cordas, cabos, tranças e semelhantes, de alumínio, não isolados para uso elétricos; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7614</NCM>
+    <CEST>1200700</CEST>
+    <DESCRIÇÃO>Fios, cabos (incluídos os cabos coaxiais) e outros condutores, isolados ou não, para usos elétricos (incluídos os de cobre ou alumínio, envernizados ou oxidados anodicamente), mesmo com peças de conexão, inclusive fios e cabos elétricos, para tensão não superior a 1000V, para uso na construção; fios e cabos telefônicos e para transmissão de dados; cabos de fibras ópticas, constituídos de fibras embainhadas individualmente, mesmo com condutores elétricos ou munidos de peças de conexão; cordas, cabos, tranças e semelhantes, de alumínio, não isolados para uso elétricos; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8546</NCM>
+    <CEST>1200800</CEST>
+    <DESCRIÇÃO>Isoladores de qualquer matéria, para usos elétricos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8547</NCM>
+    <CEST>1200900</CEST>
+    <DESCRIÇÃO>Peças isolantes inteiramente de matérias isolantes, ou com simples peças metálicas de montagem (suportes roscados, por exemplo) incorporadas na massa, para máquinas, aparelhos e instalações elétricas; tubos isoladores e suas peças de ligação, de metais comuns, isolados interiormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300100</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300100</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300101</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300101</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300102</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300102</CEST>
+    <DESCRIÇÃO>Medicamentos de referência – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300200</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300200</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300201</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300201</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300202</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300202</CEST>
+    <DESCRIÇÃO>Medicamentos genérico – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300300</CEST>
+    <DESCRIÇÃO>Medicamentos similar – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300300</CEST>
+    <DESCRIÇÃO>Medicamentos similar – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300301</CEST>
+    <DESCRIÇÃO>Medicamentos similar – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300301</CEST>
+    <DESCRIÇÃO>Medicamentos similar – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300302</CEST>
+    <DESCRIÇÃO>Medicamentos similar – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300302</CEST>
+    <DESCRIÇÃO>Medicamentos similar – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300400</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300400</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – positiva, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300401</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300401</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – negativa, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3003</NCM>
+    <CEST>1300402</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3004</NCM>
+    <CEST>1300402</CEST>
+    <DESCRIÇÃO>Outros tipos de medicamentos – neutra, exceto para uso veterinário</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30066000</NCM>
+    <CEST>1300500</CEST>
+    <DESCRIÇÃO>Preparações químicas contraceptivas à base de hormônios, de outros produtos da posição 29.37 ou de espermicidas – positiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30066000</NCM>
+    <CEST>1300501</CEST>
+    <DESCRIÇÃO>Preparações químicas contraceptivas à base de hormônios, de outros produtos da posição 29.37 ou de espermicidas – negativa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2936</NCM>
+    <CEST>1300600</CEST>
+    <DESCRIÇÃO>Provitaminas e vitaminas, naturais ou reproduzidas por síntese (incluídos os concentrados naturais), bem como os seus derivados utilizados principalmente como vitaminas, misturados ou não entre si, mesmo em quaisquer soluções – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30063</NCM>
+    <CEST>1300700</CEST>
+    <DESCRIÇÃO>Preparações opacificantes (contrastantes) para exames radiográficos e reagentes de diagnóstico concebidos para serem administrados ao paciente – positiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30063</NCM>
+    <CEST>1300701</CEST>
+    <DESCRIÇÃO>Preparações opacificantes (contrastantes) para exames radiográficos e reagentes de diagnóstico concebidos para serem administrados ao paciente – negativa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3002</NCM>
+    <CEST>1300800</CEST>
+    <DESCRIÇÃO>Antissoro, outras frações do sangue, produtos imunológicos modificados, mesmo obtidos por via biotecnológica, exceto para uso veterinário – positiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3002</NCM>
+    <CEST>1300801</CEST>
+    <DESCRIÇÃO>Antissoro, outras frações do sangue, produtos imunológicos modificados, mesmo obtidos por via biotecnológica, exceto para uso veterinário – negativa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3002</NCM>
+    <CEST>1300900</CEST>
+    <DESCRIÇÃO>Vacinas e produtos semelhantes, exceto para uso veterinário – positiva;</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3002</NCM>
+    <CEST>1300901</CEST>
+    <DESCRIÇÃO>Vacinas e produtos semelhantes, exceto para uso veterinário – negativa;</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3005</NCM>
+    <CEST>1301000</CEST>
+    <DESCRIÇÃO>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, impregnados ou recobertos de substâncias farmacêuticas ou acondicionados para venda a retalho para usos medicinais, cirúrgicos ou dentários – positiva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3005</NCM>
+    <CEST>1301001</CEST>
+    <DESCRIÇÃO>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, impregnados ou recobertos de substâncias farmacêuticas ou acondicionados para venda a retalho para usos medicinais, cirúrgicos ou dentários – negativa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30051090</NCM>
+    <CEST>1301100</CEST>
+    <DESCRIÇÃO>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, não impregnados ou recobertos de substâncias farmacêuticas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30051090</NCM>
+    <CEST>1301101</CEST>
+    <DESCRIÇÃO>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, não impregnados ou recobertos de substâncias farmacêuticas ou acondicionados para venda a retalho para usos medicinais, cirúrgicos ou dentários</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40151100</NCM>
+    <CEST>1301200</CEST>
+    <DESCRIÇÃO>Luvas cirúrgicas e luvas de procedimento – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40151900</NCM>
+    <CEST>1301200</CEST>
+    <DESCRIÇÃO>Luvas cirúrgicas e luvas de procedimento – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40141000</NCM>
+    <CEST>1301300</CEST>
+    <DESCRIÇÃO>Preservativo – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>901831</NCM>
+    <CEST>1301400</CEST>
+    <DESCRIÇÃO>Seringas, mesmo com agulhas – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9018321</NCM>
+    <CEST>1301500</CEST>
+    <DESCRIÇÃO>Agulhas para seringas – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39269090</NCM>
+    <CEST>1301600</CEST>
+    <DESCRIÇÃO>Contraceptivos (dispositivos intra-uterinos – DIU) – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90189099</NCM>
+    <CEST>1301600</CEST>
+    <DESCRIÇÃO>Contraceptivos (dispositivos intra-uterinos – DIU) – neutra</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4823209</NCM>
+    <CEST>1400100</CEST>
+    <DESCRIÇÃO>Filtros descartáveis para coar café ou chá</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48236</NCM>
+    <CEST>1400200</CEST>
+    <DESCRIÇÃO>Bandejas, travessas, pratos, xícaras ou chávenas, taças, copos e artigos semelhantes, de papel ou cartão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48131000</NCM>
+    <CEST>1400300</CEST>
+    <DESCRIÇÃO>Papel para cigarro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3919</NCM>
+    <CEST>1500100</CEST>
+    <DESCRIÇÃO>Lonas plásticas, exceto as para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3920</NCM>
+    <CEST>1500100</CEST>
+    <DESCRIÇÃO>Lonas plásticas, exceto as para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3921</NCM>
+    <CEST>1500100</CEST>
+    <DESCRIÇÃO>Lonas plásticas, exceto as para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3924</NCM>
+    <CEST>1500200</CEST>
+    <DESCRIÇÃO>Artefatos de higiene/toucador de plástico, exceto os para uso na construção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39241000</NCM>
+    <CEST>1500300</CEST>
+    <DESCRIÇÃO>Serviços de mesa e outros utensílios de mesa ou de cozinha, de plástico, inclusive os descartáveis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39232</NCM>
+    <CEST>1500400</CEST>
+    <DESCRIÇÃO>Sacos de lixo de conteúdo igual ou inferior a 100 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40111000</NCM>
+    <CEST>1600100</CEST>
+    <DESCRIÇÃO>Pneus novos, dos tipos utilizados em automóveis de passageiros (incluídos os veículos de uso misto – camionetas e os automóveis de corrida)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011</NCM>
+    <CEST>1600200</CEST>
+    <DESCRIÇÃO>Pneus novos, dos tipos utilizados em caminhões (inclusive para os fora-de-estrada), ônibus, aviões, máquinas de terraplenagem, de construção e conservação de estradas, máquinas e tratores agrícolas, pá-carregadeira</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40114000</NCM>
+    <CEST>1600300</CEST>
+    <DESCRIÇÃO>Pneus novos para motocicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011</NCM>
+    <CEST>1600400</CEST>
+    <DESCRIÇÃO>Outros tipos de pneus novos, exceto para bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40115000</NCM>
+    <CEST>1600500</CEST>
+    <DESCRIÇÃO>Pneus novos de borracha dos tipos utilizados em bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40121</NCM>
+    <CEST>1600600</CEST>
+    <DESCRIÇÃO>Pneus recauchutados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40129</NCM>
+    <CEST>1600700</CEST>
+    <DESCRIÇÃO>Protetores de borracha, exceto para bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40129</NCM>
+    <CEST>1600701</CEST>
+    <DESCRIÇÃO>Protetores de borracha para bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4013</NCM>
+    <CEST>1600800</CEST>
+    <DESCRIÇÃO>Câmaras de ar de borracha, exceto para bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40132000</NCM>
+    <CEST>1600900</CEST>
+    <DESCRIÇÃO>Câmaras de ar de borracha dos tipos utilizados em bicicletas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17049010</NCM>
+    <CEST>1700100</CEST>
+    <DESCRIÇÃO>Chocolate branco, em embalagens de conteúdo inferior ou igual a 1 kg, excluídos os ovos de páscoa de chocolate.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063110</NCM>
+    <CEST>1700200</CEST>
+    <DESCRIÇÃO>Chocolates contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063120</NCM>
+    <CEST>1700200</CEST>
+    <DESCRIÇÃO>Chocolates contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063210</NCM>
+    <CEST>1700300</CEST>
+    <DESCRIÇÃO>Chocolate em barras, tabletes ou blocos ou no estado líquido, em pasta, em pó, grânulos ou formas semelhantes, em recipientes ou embalagens imediatas de conteúdo inferior ou igual a 2 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063220</NCM>
+    <CEST>1700300</CEST>
+    <DESCRIÇÃO>Chocolate em barras, tabletes ou blocos ou no estado líquido, em pasta, em pó, grânulos ou formas semelhantes, em recipientes ou embalagens imediatas de conteúdo inferior ou igual a 2 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1700400</CEST>
+    <DESCRIÇÃO>Chocolates e outras preparações alimentícias contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg, excluídos os achocolatados em pó e ovos de páscoa de chocolate.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17049010</NCM>
+    <CEST>1700500</CEST>
+    <DESCRIÇÃO>Ovos de páscoa de chocolate</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1700500</CEST>
+    <DESCRIÇÃO>Ovos de páscoa de chocolate</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1700600</CEST>
+    <DESCRIÇÃO>Achocolatados em pó, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1700700</CEST>
+    <DESCRIÇÃO>Caixas de bombons contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17049090</NCM>
+    <CEST>1700800</CEST>
+    <DESCRIÇÃO>Bombons, inclusive à base de chocolate branco sem cacau</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1700900</CEST>
+    <DESCRIÇÃO>Bombons, balas, caramelos, confeitos, pastilhas e outros produtos de confeitaria, contendo cacau</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2009</NCM>
+    <CEST>1701000</CEST>
+    <DESCRIÇÃO>Sucos de frutas ou de produtos hortícolas; mistura de sucos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20098</NCM>
+    <CEST>1701100</CEST>
+    <DESCRIÇÃO>Água de coco</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4021</NCM>
+    <CEST>1701200</CEST>
+    <DESCRIÇÃO>Leite em pó, blocos ou grânulos, exceto creme de leite</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022</NCM>
+    <CEST>1701200</CEST>
+    <DESCRIÇÃO>Leite em pó, blocos ou grânulos, exceto creme de leite</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4029</NCM>
+    <CEST>1701200</CEST>
+    <DESCRIÇÃO>Leite em pó, blocos ou grânulos, exceto creme de leite</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19011020</NCM>
+    <CEST>1701300</CEST>
+    <DESCRIÇÃO>Farinha láctea</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19011010</NCM>
+    <CEST>1701400</CEST>
+    <DESCRIÇÃO>Leite modificado para alimentação de crianças</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19011090</NCM>
+    <CEST>1701500</CEST>
+    <DESCRIÇÃO>Preparações para alimentação infantil à base de farinhas, grumos, sêmolas ou amidos e outros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19011030</NCM>
+    <CEST>1701500</CEST>
+    <DESCRIÇÃO>Preparações para alimentação infantil à base de farinhas, grumos, sêmolas ou amidos e outros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011010</NCM>
+    <CEST>1701600</CEST>
+    <DESCRIÇÃO>Leite “longa vida” (UHT – “Ultra High Temperature”), em recipiente de conteúdo inferior ou igual a 2 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4012010</NCM>
+    <CEST>1701600</CEST>
+    <DESCRIÇÃO>Leite “longa vida” (UHT – “Ultra High Temperature”), em recipiente de conteúdo inferior ou igual a 2 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011010</NCM>
+    <CEST>1701601</CEST>
+    <DESCRIÇÃO>Leite “longa vida” (UHT – “Ultra High Temperature”), em recipiente de conteúdo superior a 2 litros e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4012010</NCM>
+    <CEST>1701601</CEST>
+    <DESCRIÇÃO>Leite “longa vida” (UHT – “Ultra High Temperature”), em recipiente de conteúdo superior a 2 litros e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4014010</NCM>
+    <CEST>1701700</CEST>
+    <DESCRIÇÃO>Leite em recipiente de conteúdo inferior ou igual a 1 litro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4015010</NCM>
+    <CEST>1701700</CEST>
+    <DESCRIÇÃO>Leite em recipiente de conteúdo inferior ou igual a 1 litro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4014010</NCM>
+    <CEST>1701701</CEST>
+    <DESCRIÇÃO>Leite em recipiente de conteúdo superior a 1 litro e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4015010</NCM>
+    <CEST>1701701</CEST>
+    <DESCRIÇÃO>Leite em recipiente de conteúdo superior a 1 litro e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011090</NCM>
+    <CEST>1701800</CEST>
+    <DESCRIÇÃO>Leite do tipo pasteurizado em recipiente de conteúdo inferior ou igual a 1 litro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4012090</NCM>
+    <CEST>1701800</CEST>
+    <DESCRIÇÃO>Leite do tipo pasteurizado em recipiente de conteúdo inferior ou igual a 1 litro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011090</NCM>
+    <CEST>1701801</CEST>
+    <DESCRIÇÃO>Leite do tipo pasteurizado em recipiente de conteúdo superior a 1 litro e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4012090</NCM>
+    <CEST>1701801</CEST>
+    <DESCRIÇÃO>Leite do tipo pasteurizado em recipiente de conteúdo superior a 1 litro e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>401402</NCM>
+    <CEST>1701900</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022130</NCM>
+    <CEST>1701900</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022930</NCM>
+    <CEST>1701900</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4029</NCM>
+    <CEST>1701900</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>401402</NCM>
+    <CEST>1701901</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022130</NCM>
+    <CEST>1701901</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022930</NCM>
+    <CEST>1701901</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4029</NCM>
+    <CEST>1701901</CEST>
+    <DESCRIÇÃO>Creme de leite, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4011</NCM>
+    <CEST>1701902</CEST>
+    <DESCRIÇÃO>Outros cremes de leite, em recipiente de conteúdo inferior ou igual a 1kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4012</NCM>
+    <CEST>1701902</CEST>
+    <DESCRIÇÃO>Outros cremes de leite, em recipiente de conteúdo inferior ou igual a 1kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4015</NCM>
+    <CEST>1701902</CEST>
+    <DESCRIÇÃO>Outros cremes de leite, em recipiente de conteúdo inferior ou igual a 1kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4021</NCM>
+    <CEST>1701902</CEST>
+    <DESCRIÇÃO>Outros cremes de leite, em recipiente de conteúdo inferior ou igual a 1kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4022920</NCM>
+    <CEST>1701902</CEST>
+    <DESCRIÇÃO>Outros cremes de leite, em recipiente de conteúdo inferior ou igual a 1kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4029</NCM>
+    <CEST>1702000</CEST>
+    <DESCRIÇÃO>Leite condensado, em recipiente de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4029</NCM>
+    <CEST>1702001</CEST>
+    <DESCRIÇÃO>Leite condensado, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>403</NCM>
+    <CEST>1702100</CEST>
+    <DESCRIÇÃO>Iogurte e leite fermentado em recipiente de conteúdo inferior ou igual a 2 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>403</NCM>
+    <CEST>1702101</CEST>
+    <DESCRIÇÃO>Iogurte e leite fermentado em recipiente de conteúdo superior a 2 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4039000</NCM>
+    <CEST>1702200</CEST>
+    <DESCRIÇÃO>Coalhada</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>406</NCM>
+    <CEST>1702300</CEST>
+    <DESCRIÇÃO>Requeijão e similares, em recipiente de conteúdo inferior ou igual a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>406</NCM>
+    <CEST>1702301</CEST>
+    <DESCRIÇÃO>Requeijão e similares, em recipiente de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>406</NCM>
+    <CEST>1702400</CEST>
+    <DESCRIÇÃO>Queijos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4051000</NCM>
+    <CEST>1702500</CEST>
+    <DESCRIÇÃO>Manteiga, em embalagem de conteúdo inferior ou igual a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4051000</NCM>
+    <CEST>1702501</CEST>
+    <DESCRIÇÃO>Manteiga, em embalagem de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15171000</NCM>
+    <CEST>1702600</CEST>
+    <DESCRIÇÃO>Margarina em recipiente de conteúdo inferior ou igual a 500 g, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15171000</NCM>
+    <CEST>1702700</CEST>
+    <DESCRIÇÃO>Margarina, em recipiente de conteúdo superior a 500 g e inferior a 1 kg, creme vegetal em recipiente de conteúdo inferior a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15171000</NCM>
+    <CEST>1702700</CEST>
+    <DESCRIÇÃO>Margarina, em recipiente de conteúdo superior a 500 g e inferior a 1 kg, creme vegetal em recipiente de conteúdo inferior a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15171000</NCM>
+    <CEST>1702701</CEST>
+    <DESCRIÇÃO>Margarina e creme vegetal, em recipiente de conteúdo de 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15171000</NCM>
+    <CEST>1702701</CEST>
+    <DESCRIÇÃO>Margarina e creme vegetal, em recipiente de conteúdo de 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15179</NCM>
+    <CEST>1702702</CEST>
+    <DESCRIÇÃO>Outras margarinas e cremes vegetais em recipiente de conteúdo inferior a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15162000</NCM>
+    <CEST>1702800</CEST>
+    <DESCRIÇÃO>Gorduras e óleos vegetais e respectivas frações, parcial ou totalmente hidrogenados, interesterificados, reesterificados ou elaidinizados, mesmo refinados, mas não preparados de outro modo, em recipiente de conteúdo inferior ou igual a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15162000</NCM>
+    <CEST>1702801</CEST>
+    <DESCRIÇÃO>Gorduras e óleos vegetais e respectivas frações, parcial ou totalmente hidrogenados, interesterificados, reesterificados ou elaidinizados, mesmo refinados, mas não preparados de outro modo, em recipiente de conteúdo superior a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19019020</NCM>
+    <CEST>1702900</CEST>
+    <DESCRIÇÃO>Doces de leite</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19041000</NCM>
+    <CEST>1703000</CEST>
+    <DESCRIÇÃO>Produtos à base de cereais, obtidos por expansão ou torrefação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19049000</NCM>
+    <CEST>1703000</CEST>
+    <DESCRIÇÃO>Produtos à base de cereais, obtidos por expansão ou torrefação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059090</NCM>
+    <CEST>1703100</CEST>
+    <DESCRIÇÃO>Salgadinhos diversos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20052000</NCM>
+    <CEST>1703200</CEST>
+    <DESCRIÇÃO>Batata frita, inhame e mandioca fritos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20059</NCM>
+    <CEST>1703200</CEST>
+    <DESCRIÇÃO>Batata frita, inhame e mandioca fritos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20081</NCM>
+    <CEST>1703300</CEST>
+    <DESCRIÇÃO>Amendoim e castanhas tipo aperitivo, em embalagem de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20081</NCM>
+    <CEST>1703301</CEST>
+    <DESCRIÇÃO>Amendoim e castanhas tipo aperitivo, em embalagem de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21032010</NCM>
+    <CEST>1703400</CEST>
+    <DESCRIÇÃO>Catchup em embalagens imediatas de conteúdo inferior ou igual a 650 g, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21039021</NCM>
+    <CEST>1703500</CEST>
+    <DESCRIÇÃO>Condimentos e temperos compostos, incluindo molho de pimenta e outros molhos, em embalagens imediatas de conteúdo inferior ou igual a 1 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 3 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21039091</NCM>
+    <CEST>1703500</CEST>
+    <DESCRIÇÃO>Condimentos e temperos compostos, incluindo molho de pimenta e outros molhos, em embalagens imediatas de conteúdo inferior ou igual a 1 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 3 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21031010</NCM>
+    <CEST>1703600</CEST>
+    <DESCRIÇÃO>Molhos de soja preparados em embalagens imediatas de conteúdo inferior ou igual a 650 g, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21033010</NCM>
+    <CEST>1703700</CEST>
+    <DESCRIÇÃO>Farinha de mostarda em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21033021</NCM>
+    <CEST>1703800</CEST>
+    <DESCRIÇÃO>Mostarda preparada em embalagens imediatas de conteúdo inferior ou igual a 650 g, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21039011</NCM>
+    <CEST>1703900</CEST>
+    <DESCRIÇÃO>Maionese em embalagens imediatas de conteúdo inferior ou igual a 650 g, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2002</NCM>
+    <CEST>1704000</CEST>
+    <DESCRIÇÃO>Tomates preparados ou conservados, exceto em vinagre ou em ácido acético, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21032010</NCM>
+    <CEST>1704100</CEST>
+    <DESCRIÇÃO>Molhos de tomate em embalagens imediatas de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17049090</NCM>
+    <CEST>1704200</CEST>
+    <DESCRIÇÃO>Barra de cereais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19042000</NCM>
+    <CEST>1704200</CEST>
+    <DESCRIÇÃO>Barra de cereais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19049000</NCM>
+    <CEST>1704200</CEST>
+    <DESCRIÇÃO>Barra de cereais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063120</NCM>
+    <CEST>1704300</CEST>
+    <DESCRIÇÃO>Barra de cereais contendo cacau</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18063220</NCM>
+    <CEST>1704300</CEST>
+    <DESCRIÇÃO>Barra de cereais contendo cacau</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>18069000</NCM>
+    <CEST>1704300</CEST>
+    <DESCRIÇÃO>Barra de cereais contendo cacau</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>11010010</NCM>
+    <CEST>1704400</CEST>
+    <DESCRIÇÃO>Farinha de trigo, em embalagem inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>11010010</NCM>
+    <CEST>1704401</CEST>
+    <DESCRIÇÃO>Farinha de trigo, em embalagem superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>11010020</NCM>
+    <CEST>1704500</CEST>
+    <DESCRIÇÃO>Farinha de mistura de trigo com centeio (méteil)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19012000</NCM>
+    <CEST>1704600</CEST>
+    <DESCRIÇÃO>Misturas e preparações para bolos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19019090</NCM>
+    <CEST>1704600</CEST>
+    <DESCRIÇÃO>Misturas e preparações para bolos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19023000</NCM>
+    <CEST>1704700</CEST>
+    <DESCRIÇÃO>Massas alimentícias tipo instantânea</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1902</NCM>
+    <CEST>1704800</CEST>
+    <DESCRIÇÃO>Massas alimentícias, cozidas ou recheadas (de carne ou de outras substâncias) ou preparadas de outro modo, exceto as massas alimentícias tipo instantânea</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19024000</NCM>
+    <CEST>1704801</CEST>
+    <DESCRIÇÃO>Cuscuz</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19021</NCM>
+    <CEST>1704900</CEST>
+    <DESCRIÇÃO>Massas alimentícias não cozidas, nem recheadas, nem preparadas de outro modo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19052</NCM>
+    <CEST>1705000</CEST>
+    <DESCRIÇÃO>Pães industrializados, inclusive de especiarias, exceto panetones e bolo de forma</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19052090</NCM>
+    <CEST>1705100</CEST>
+    <DESCRIÇÃO>Bolo de forma, inclusive de especiarias</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19052010</NCM>
+    <CEST>1705200</CEST>
+    <DESCRIÇÃO>Panetones</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>190531</NCM>
+    <CEST>1705300</CEST>
+    <DESCRIÇÃO>Biscoitos e bolachas derivados de farinha de trigo; exceto dos tipos “cream cracker”, “água e sal”, “maisena”, “maria” e outros de consumo popular, não adicionados de cacau, nem recheados, cobertos ou amanteigados, independentemente de sua denominação comercial</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>190531</NCM>
+    <CEST>1705400</CEST>
+    <DESCRIÇÃO>Biscoitos e bolachas não derivados de farinha de trigo; exceto dos tipos “cream cracker”, “água e sal”, “maisena” e “maria” e outros de consumo popular, não adicionados de cacau, nem recheados, cobertos ou amanteigados, independentemente de sua denominação comercial</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>190531</NCM>
+    <CEST>1705500</CEST>
+    <DESCRIÇÃO>Biscoitos e bolachas dos tipos “cream cracker”, “água e sal”, “maisena” e “maria” e outros de consumo popular, adicionados de edulcorantes e não adicionados de cacau, nem recheados, cobertos ou amanteigados, independentemente de sua denominação comercial</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059020</NCM>
+    <CEST>1705600</CEST>
+    <DESCRIÇÃO>Biscoitos e bolachas dos tipos “cream cracker”, “água e sal”, “maisena” e “maria” e outros de consumo popular, não adicionados de cacau, nem recheados, cobertos ou amanteigados, independentemente de sua denominação comercial</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>190532</NCM>
+    <CEST>1705700</CEST>
+    <DESCRIÇÃO>“Waffles” e “wafers” – sem cobertura</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>190532</NCM>
+    <CEST>1705800</CEST>
+    <DESCRIÇÃO>“Waffles” e “wafers”- com cobertura</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19054</NCM>
+    <CEST>1705900</CEST>
+    <DESCRIÇÃO>Torradas, pão torrado e produtos semelhantes torrados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059010</NCM>
+    <CEST>1706000</CEST>
+    <DESCRIÇÃO>Outros pães de forma</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059020</NCM>
+    <CEST>1706100</CEST>
+    <DESCRIÇÃO>Outras bolachas, exceto casquinhas para sorvete</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059090</NCM>
+    <CEST>1706200</CEST>
+    <DESCRIÇÃO>Outros pães e bolos industrializados e produtos de panificação não especificados anteriormente; exceto casquinhas para sorvete e pão francês de até 200 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19051000</NCM>
+    <CEST>1706300</CEST>
+    <DESCRIÇÃO>Pão denominado knackebrot</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19059</NCM>
+    <CEST>1706400</CEST>
+    <DESCRIÇÃO>Demais pães industrializados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15079011</NCM>
+    <CEST>1706500</CEST>
+    <DESCRIÇÃO>Óleo de soja refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1508</NCM>
+    <CEST>1706600</CEST>
+    <DESCRIÇÃO>Óleo de amendoim refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1509</NCM>
+    <CEST>1706700</CEST>
+    <DESCRIÇÃO>Azeites de oliva, em recipientes com capacidade inferior ou igual a 2 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1509</NCM>
+    <CEST>1706701</CEST>
+    <DESCRIÇÃO>Azeites de oliva, em recipientes com capacidade superior a 2 litros e inferior ou igual a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1509</NCM>
+    <CEST>1706702</CEST>
+    <DESCRIÇÃO>Azeites de oliva, em recipientes com capacidade superior a 5 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15100000</NCM>
+    <CEST>1706800</CEST>
+    <DESCRIÇÃO>Outros óleos e respectivas frações, obtidos exclusivamente a partir de azeitonas, mesmo refinados, mas não quimicamente modificados, e misturas desses óleos ou frações com óleos ou frações da posição 15.09, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15121911</NCM>
+    <CEST>1706900</CEST>
+    <DESCRIÇÃO>Óleo de girassol ou de algodão refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15122910</NCM>
+    <CEST>1706900</CEST>
+    <DESCRIÇÃO>Óleo de girassol ou de algodão refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15141</NCM>
+    <CEST>1707000</CEST>
+    <DESCRIÇÃO>Óleo de canola, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15151900</NCM>
+    <CEST>1707100</CEST>
+    <DESCRIÇÃO>Óleo de linhaça refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15152910</NCM>
+    <CEST>1707200</CEST>
+    <DESCRIÇÃO>Óleo de milho refinado, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15122990</NCM>
+    <CEST>1707300</CEST>
+    <DESCRIÇÃO>Outros óleos refinados, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15179010</NCM>
+    <CEST>1707400</CEST>
+    <DESCRIÇÃO>Misturas de óleos refinados, para consumo humano, em recipientes com capacidade inferior ou igual a 5 litros, exceto as embalagens individuais de conteúdo inferior ou igual a 15 mililitros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1511</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1513</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1514</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1515</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1516</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1518</NCM>
+    <CEST>1707500</CEST>
+    <DESCRIÇÃO>Outros óleos vegetais comestíveis não especificados anteriormente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>16010000</NCM>
+    <CEST>1707600</CEST>
+    <DESCRIÇÃO>Enchidos (embutidos) e produtos semelhantes, de carne, miudezas ou sangue; exceto salsicha, linguiça e mortadela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>16010000</NCM>
+    <CEST>1707700</CEST>
+    <DESCRIÇÃO>Salsicha e linguiça</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>16010000</NCM>
+    <CEST>1707800</CEST>
+    <DESCRIÇÃO>Mortadela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1602</NCM>
+    <CEST>1707900</CEST>
+    <DESCRIÇÃO>Outras preparações e conservas de carne, miudezas ou de sangue</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1604</NCM>
+    <CEST>1708000</CEST>
+    <DESCRIÇÃO>Preparações e conservas de peixes; caviar e seus sucedâneos preparados a partir de ovas de peixe; exceto sardinha em conserva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1604</NCM>
+    <CEST>1708100</CEST>
+    <DESCRIÇÃO>Sardinha em conserva</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1605</NCM>
+    <CEST>1708200</CEST>
+    <DESCRIÇÃO>Crustáceos, moluscos e outros invertebrados aquáticos, preparados ou em conservas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>206</NCM>
+    <CEST>1708300</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e produtos comestíveis resultantes da matança desse gado submetidos à salga, secagem ou desidratação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2102000</NCM>
+    <CEST>1708300</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e produtos comestíveis resultantes da matança desse gado submetidos à salga, secagem ou desidratação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2109900</NCM>
+    <CEST>1708300</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e produtos comestíveis resultantes da matança desse gado submetidos à salga, secagem ou desidratação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1502</NCM>
+    <CEST>1708300</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e produtos comestíveis resultantes da matança desse gado submetidos à salga, secagem ou desidratação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>201</NCM>
+    <CEST>1708400</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e demais produtos comestíveis resultantes da matança desse gado frescos, refrigerados ou congelados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>202</NCM>
+    <CEST>1708400</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e demais produtos comestíveis resultantes da matança desse gado frescos, refrigerados ou congelados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>204</NCM>
+    <CEST>1708400</CEST>
+    <DESCRIÇÃO>Carne de gado bovino, ovino e bufalino e demais produtos comestíveis resultantes da matança desse gado frescos, refrigerados ou congelados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>204</NCM>
+    <CEST>1708500</CEST>
+    <DESCRIÇÃO>Carnes de animais das espécies caprina, frescas, refrigeradas ou congeladas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2109900</NCM>
+    <CEST>1708600</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados ou salmourados resultantes do abate de caprinos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15021019</NCM>
+    <CEST>1708600</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados ou salmourados resultantes do abate de caprinos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>15029000</NCM>
+    <CEST>1708600</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados ou salmourados resultantes do abate de caprinos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>203</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>206</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>207</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>209</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2101</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2109900</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1501</NCM>
+    <CEST>1708700</CEST>
+    <DESCRIÇÃO>Carnes e demais produtos comestíveis frescos, resfriados, congelados, salgados, em salmoura, simplesmente temperados, secos ou defumados, resultantes do abate de aves e de suínos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>710</NCM>
+    <CEST>1708800</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, cozidos em água ou vapor, congelados, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>710</NCM>
+    <CEST>1708801</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, cozidos em água ou vapor, congelados, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>811</NCM>
+    <CEST>1708900</CEST>
+    <DESCRIÇÃO>Frutas, não cozidas ou cozidas em água ou vapor, congeladas, mesmo adicionadas de açúcar ou de outros edulcorantes, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>811</NCM>
+    <CEST>1708901</CEST>
+    <DESCRIÇÃO>Frutas, não cozidas ou cozidas em água ou vapor, congeladas, mesmo adicionadas de açúcar ou de outros edulcorantes, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2001</NCM>
+    <CEST>1709000</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, frutas e outras partes comestíveis de plantas, preparados ou conservados em vinagre ou em ácido acético, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2001</NCM>
+    <CEST>1709001</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, frutas e outras partes comestíveis de plantas, preparados ou conservados em vinagre ou em ácido acético, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2004</NCM>
+    <CEST>1709100</CEST>
+    <DESCRIÇÃO>Outros produtos hortícolas preparados ou conservados, exceto em vinagre ou em ácido acético, congelados, com exceção dos produtos da posição 20.06, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2004</NCM>
+    <CEST>1709101</CEST>
+    <DESCRIÇÃO>Outros produtos hortícolas preparados ou conservados, exceto em vinagre ou em ácido acético, congelados, com exceção dos produtos da posição 20.06, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2005</NCM>
+    <CEST>1709200</CEST>
+    <DESCRIÇÃO>Outros produtos hortícolas preparados ou conservados, exceto em vinagre ou em ácido acético, não congelados, com exceção dos produtos da posição 20.06, excluídos batata, inhame e mandioca fritos, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2005</NCM>
+    <CEST>1709201</CEST>
+    <DESCRIÇÃO>Outros produtos hortícolas preparados ou conservados, exceto em vinagre ou em ácido acético, não congelados, com exceção dos produtos da posição 20.06, excluídos batata, inhame e mandioca fritos, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20060000</NCM>
+    <CEST>1709300</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, frutas, cascas de frutas e outras partes de plantas, conservados com açúcar (passados por calda, glaceados ou cristalizados), em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20060000</NCM>
+    <CEST>1709301</CEST>
+    <DESCRIÇÃO>Produtos hortícolas, frutas, cascas de frutas e outras partes de plantas, conservados com açúcar (passados por calda, glaceados ou cristalizados), em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2007</NCM>
+    <CEST>1709400</CEST>
+    <DESCRIÇÃO>Doces, geléias, “marmelades”, purês e pastas de frutas, obtidos por cozimento, com ou sem adição de açúcar ou de outros edulcorantes, em embalagens de conteúdo inferior ou igual a 1 kg, exceto as embalagens individuais de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2007</NCM>
+    <CEST>1709401</CEST>
+    <DESCRIÇÃO>Doces, geléias, “marmelades”, purês e pastas de frutas, obtidos por cozimento, com ou sem adição de açúcar ou de outros edulcorantes, em embalagens de conteúdo superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2008</NCM>
+    <CEST>1709500</CEST>
+    <DESCRIÇÃO>Frutas e outras partes comestíveis de plantas, preparadas ou conservadas de outro modo, com ou sem adição de açúcar ou de outros edulcorantes ou de álcool, não especificadas nem compreendidas em outras posições, excluídos os amendoins e castanhas tipo aperitivo, da posição 2008.1, em embalagens de conteúdo inferior ou igual a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2008</NCM>
+    <CEST>1709501</CEST>
+    <DESCRIÇÃO>Frutas e outras partes comestíveis de plantas, preparadas ou conservadas de outro modo, com ou sem adição de açúcar ou de outros edulcorantes ou de álcool, não especificadas nem compreendidas em outras posições, excluídos os amendoins e castanhas tipo aperitivo, da posição 2008.1, em embalagens superior a 1 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>901</NCM>
+    <CEST>1709600</CEST>
+    <DESCRIÇÃO>Café torrado e moído, em embalagens de conteúdo inferior ou igual a 2 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>901</NCM>
+    <CEST>1709601</CEST>
+    <DESCRIÇÃO>Café torrado e moído, em embalagens de conteúdo superior a 2 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>902</NCM>
+    <CEST>1709700</CEST>
+    <DESCRIÇÃO>Chá, mesmo aromatizado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>12119090</NCM>
+    <CEST>1709700</CEST>
+    <DESCRIÇÃO>Chá, mesmo aromatizado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21069090</NCM>
+    <CEST>1709700</CEST>
+    <DESCRIÇÃO>Chá, mesmo aromatizado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>903</NCM>
+    <CEST>1709800</CEST>
+    <DESCRIÇÃO>Mate</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1709900</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1709900</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1709901</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1709901</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1709902</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1709902</CEST>
+    <DESCRIÇÃO>Açúcar refinado, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710000</CEST>
+    <DESCRIÇÃO>Açúcar refinado adicionado de aromatizante ou de corante em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710000</CEST>
+    <DESCRIÇÃO>Açúcar refinado adicionado de aromatizante ou de corante em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710001</CEST>
+    <DESCRIÇÃO>Açúcar refinado adicionado de aromatizante ou de corante em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710002</CEST>
+    <DESCRIÇÃO>Açúcar refinado adicionado de aromatizante ou de corante em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710100</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710100</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710101</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710101</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710102</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710102</CEST>
+    <DESCRIÇÃO>Açúcar cristal, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710200</CEST>
+    <DESCRIÇÃO>Açúcar cristal adicionado de aromatizante ou de corante, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710201</CEST>
+    <DESCRIÇÃO>Açúcar cristal adicionado de aromatizante ou de corante, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>170191</NCM>
+    <CEST>1710202</CEST>
+    <DESCRIÇÃO>Açúcar cristal adicionado de aromatizante ou de corante, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710300</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710300</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710301</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710301</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17011</NCM>
+    <CEST>1710302</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019900</NCM>
+    <CEST>1710302</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710400</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar adicionado de aromatizante ou de corante, em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710401</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar adicionado de aromatizante ou de corante, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>17019100</NCM>
+    <CEST>1710402</CEST>
+    <DESCRIÇÃO>Outros tipos de açúcar adicionado de aromatizante ou de corante, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1702</NCM>
+    <CEST>1710500</CEST>
+    <DESCRIÇÃO>Outros açúcares em embalagens de conteúdo inferior ou igual a 2 kg, exceto as embalagens contendo envelopes individualizados (sachês) de conteúdo inferior ou igual a 10 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1702</NCM>
+    <CEST>1710501</CEST>
+    <DESCRIÇÃO>Outros açúcares, em embalagens de conteúdo superior a 2 kg e inferior ou igual a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1702</NCM>
+    <CEST>1710502</CEST>
+    <DESCRIÇÃO>Outros açúcares, em embalagens de conteúdo superior a 5 kg</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>20081900</NCM>
+    <CEST>1710600</CEST>
+    <DESCRIÇÃO>Milho para pipoca (micro-ondas)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21011</NCM>
+    <CEST>1710700</CEST>
+    <DESCRIÇÃO>Extratos, essências e concentrados de café e preparações à base destes extratos, essências ou concentrados ou à base de café, em embalagens de conteúdo inferior ou igual a 500 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21012</NCM>
+    <CEST>1710800</CEST>
+    <DESCRIÇÃO>Extratos, essências e concentrados de chá ou de mate e preparações à base destes extratos, essências ou concentrados ou à base de chá ou de mate, em embalagens de conteúdo inferior ou igual a 500 g, exceto as bebidas prontas à base de mate ou chá</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>19019090</NCM>
+    <CEST>1710900</CEST>
+    <DESCRIÇÃO>Preparações em pó para cappuccino e similares, em embalagens de conteúdo inferior ou igual a 500 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21011190</NCM>
+    <CEST>1710900</CEST>
+    <DESCRIÇÃO>Preparações em pó para cappuccino e similares, em embalagens de conteúdo inferior ou igual a 500 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>21011200</NCM>
+    <CEST>1710900</CEST>
+    <DESCRIÇÃO>Preparações em pó para cappuccino e similares, em embalagens de conteúdo inferior ou igual a 500 g</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69111010</NCM>
+    <CEST>1800100</CEST>
+    <DESCRIÇÃO>Artigos para serviço de mesa ou de cozinha, de porcelana, inclusive os descartáveis – estojos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69111090</NCM>
+    <CEST>1800200</CEST>
+    <DESCRIÇÃO>Artigos para serviço de mesa ou de cozinha, de porcelana, inclusive os descartáveis – avulsos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69120000</NCM>
+    <CEST>1800300</CEST>
+    <DESCRIÇÃO>Artigos para serviço de mesa ou de cozinha, de cerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>69120000</NCM>
+    <CEST>1800400</CEST>
+    <DESCRIÇÃO>Velas para filtros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>32131000</NCM>
+    <CEST>1900100</CEST>
+    <DESCRIÇÃO>Tinta guache</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39162000</NCM>
+    <CEST>1900200</CEST>
+    <DESCRIÇÃO>Espiral – perfil para encadernação, de plástico e outros materiais classificados nas posições 3901 a 3914</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39161000</NCM>
+    <CEST>1900300</CEST>
+    <DESCRIÇÃO>Outros espirais – perfil para encadernação, de plástico e outros materiais classificados nas posições 3901 a 3914</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39169</NCM>
+    <CEST>1900300</CEST>
+    <DESCRIÇÃO>Outros espirais – perfil para encadernação, de plástico e outros materiais classificados nas posições 3901 a 3914</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39261000</NCM>
+    <CEST>1900400</CEST>
+    <DESCRIÇÃO>Artigos de escritório e artigos escolares de plástico e outros materiais classificados nas posições 3901 a 3914, exceto estojos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>42021</NCM>
+    <CEST>1900500</CEST>
+    <DESCRIÇÃO>Maletas e pastas para documentos e de estudante, e artefatos semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>42029</NCM>
+    <CEST>1900500</CEST>
+    <DESCRIÇÃO>Maletas e pastas para documentos e de estudante, e artefatos semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39269090</NCM>
+    <CEST>1900600</CEST>
+    <DESCRIÇÃO>Prancheta de plástico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48022090</NCM>
+    <CEST>1900700</CEST>
+    <DESCRIÇÃO>Bobina para fax</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48119090</NCM>
+    <CEST>1900700</CEST>
+    <DESCRIÇÃO>Bobina para fax</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4802549</NCM>
+    <CEST>1900800</CEST>
+    <DESCRIÇÃO>Papel seda</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48025499</NCM>
+    <CEST>1900900</CEST>
+    <DESCRIÇÃO>Bobina para máquina de calcular, PDV ou equipamentos similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48025799</NCM>
+    <CEST>1900900</CEST>
+    <DESCRIÇÃO>Bobina para máquina de calcular, PDV ou equipamentos similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48162000</NCM>
+    <CEST>1900900</CEST>
+    <DESCRIÇÃO>Bobina para máquina de calcular, PDV ou equipamentos similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4802569</NCM>
+    <CEST>1901000</CEST>
+    <DESCRIÇÃO>Cartolina escolar e papel cartão, brancos e coloridos; recados auto adesivos (LP note); papéis de presente, todos cortados em tamanho pronto para uso escolar e doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4802579</NCM>
+    <CEST>1901000</CEST>
+    <DESCRIÇÃO>Cartolina escolar e papel cartão, brancos e coloridos; recados auto adesivos (LP note); papéis de presente, todos cortados em tamanho pronto para uso escolar e doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4802589</NCM>
+    <CEST>1901000</CEST>
+    <DESCRIÇÃO>Cartolina escolar e papel cartão, brancos e coloridos; recados auto adesivos (LP note); papéis de presente, todos cortados em tamanho pronto para uso escolar e doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>37031010</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>37031029</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>37032000</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>37039010</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>37040000</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48022000</NCM>
+    <CEST>1901100</CEST>
+    <DESCRIÇÃO>Papel fotográfico, exceto: (i) os papéis fotográficos emulsionados com haleto de prata tipo brilhante, matte ou lustre, em rolo e, com largura igual ou superior a 102 mm e comprimento inferior ou igual a 350 m, (ii) os papéis fotográficos emulsionados com haleto de prata tipo brilhante ou fosco, em folha e com largura igual ou superior a 152 mm e comprimento inferior ou igual a 307 mm, (iii) papel de qualidade fotográfica com tecnologia “Thermo-autochrome”, que submetido a um processo de aquecimento seja capaz de formar imagens por reação química e combinação das camadas cyan, magenta e amarela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48101390</NCM>
+    <CEST>1901200</CEST>
+    <DESCRIÇÃO>Papel almaço</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48169010</NCM>
+    <CEST>1901300</CEST>
+    <DESCRIÇÃO>Papel hectográfico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39202019</NCM>
+    <CEST>1901400</CEST>
+    <DESCRIÇÃO>Papel celofane e tipo celofane</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48062000</NCM>
+    <CEST>1901500</CEST>
+    <DESCRIÇÃO>Papel impermeável</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48081000</NCM>
+    <CEST>1901600</CEST>
+    <DESCRIÇÃO>Papel crepon</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48102290</NCM>
+    <CEST>1901700</CEST>
+    <DESCRIÇÃO>Papel fantasia</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4809</NCM>
+    <CEST>1901800</CEST>
+    <DESCRIÇÃO>Papel-carbono, papel autocopiativo (exceto os vendidos em rolos de diâmetro igual ou superior a 60 cm e os vendidos em folhas de formato igual ou superior a 60 cm de altura e igual ou superior a 90 cm de largura) e outros papéis para cópia ou duplicação (incluídos os papéis para estênceis ou para chapas ofsete), estênceis completos e chapas ofsete, de papel, em folhas, mesmo acondicionados em caixas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4816</NCM>
+    <CEST>1901900</CEST>
+    <DESCRIÇÃO>Envelopes, aerogramas, bilhetes-postais não ilustrados e cartões para correspondência, de papel ou cartão, caixas, sacos e semelhantes, de papel ou cartão, contendo um sortido de artigos para correspondência</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>4817</NCM>
+    <CEST>1901900</CEST>
+    <DESCRIÇÃO>Envelopes, aerogramas, bilhetes-postais não ilustrados e cartões para correspondência, de papel ou cartão, caixas, sacos e semelhantes, de papel ou cartão, contendo um sortido de artigos para correspondência</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48201000</NCM>
+    <CEST>1902000</CEST>
+    <DESCRIÇÃO>Livros de registro e de contabilidade, blocos de notas, de encomendas, de recibos, de apontamentos, de papel para cartas, agendas e artigos semelhantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48202000</NCM>
+    <CEST>1902100</CEST>
+    <DESCRIÇÃO>Cadernos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48203000</NCM>
+    <CEST>1902200</CEST>
+    <DESCRIÇÃO>Classificadores, capas para encadernação (exceto as capas para livros) e capas de processos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48204000</NCM>
+    <CEST>1902300</CEST>
+    <DESCRIÇÃO>Formulários em blocos tipo “manifold”, mesmo com folhas intercaladas de papel-carbono</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48205000</NCM>
+    <CEST>1902400</CEST>
+    <DESCRIÇÃO>Álbuns para amostras ou para coleções</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48209000</NCM>
+    <CEST>1902500</CEST>
+    <DESCRIÇÃO>Pastas para documentos, outros artigos escolares, de escritório ou de papelaria, de papel ou cartão e capas para livros, de papel ou cartão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>49090000</NCM>
+    <CEST>1902600</CEST>
+    <DESCRIÇÃO>Cartões postais impressos ou ilustrados, cartões impressos com votos ou mensagens pessoais, mesmo ilustrados, com ou sem envelopes, guarnições ou aplicações (conhecidos como cartões de expressão social – de época/sentimento)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96081000</NCM>
+    <CEST>1902700</CEST>
+    <DESCRIÇÃO>Canetas esferográficas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96082000</NCM>
+    <CEST>1902800</CEST>
+    <DESCRIÇÃO>Canetas e marcadores, com ponta de feltro ou com outras pontas porosas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96083000</NCM>
+    <CEST>1902900</CEST>
+    <DESCRIÇÃO>Canetas tinteiro</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9608</NCM>
+    <CEST>1903000</CEST>
+    <DESCRIÇÃO>Outras canetas; sortidos de canetas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>480256</NCM>
+    <CEST>1903100</CEST>
+    <DESCRIÇÃO>Papel cortado “cutsize” (tipo A3, A4, ofício I e II, carta e outros)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>52105990</NCM>
+    <CEST>1903200</CEST>
+    <DESCRIÇÃO>Papel camurça</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>76071190</NCM>
+    <CEST>1903300</CEST>
+    <DESCRIÇÃO>Papel laminado e papel espelho</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>12119090</NCM>
+    <CEST>2000100</CEST>
+    <DESCRIÇÃO>Henna (embalagens de conteúdo inferior ou igual a 200 g)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>12119090</NCM>
+    <CEST>2000101</CEST>
+    <DESCRIÇÃO>Henna (embalagens de conteúdo superior a 200 g)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>27121000</NCM>
+    <CEST>2000200</CEST>
+    <DESCRIÇÃO>Vaselina</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>28142000</NCM>
+    <CEST>2000300</CEST>
+    <DESCRIÇÃO>Amoníaco em solução aquosa (amônia)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>28470000</NCM>
+    <CEST>2000400</CEST>
+    <DESCRIÇÃO>Peróxido de hidrogênio, em embalagens de conteúdo inferior ou igual a 500 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>30067000</NCM>
+    <CEST>2000500</CEST>
+    <DESCRIÇÃO>Lubrificação íntima</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3301</NCM>
+    <CEST>2000600</CEST>
+    <DESCRIÇÃO>Óleos essenciais (desterpenados ou não), incluídos os chamados “concretos” ou “absolutos”; resinóides; oleorresinas de extração; soluções concentradas de óleos essenciais em gorduras, em óleos fixos, em ceras ou em matérias análogas, obtidas portratamento de flores através de substâncias gordas ou por maceração; subprodutos terpênicos residuais da desterpenação dos óleos essenciais; águas destiladas aromáticas e soluções aquosas de óleos essenciais, em embalagens de conteúdo inferior ou igual a 500 ml</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33030010</NCM>
+    <CEST>2000700</CEST>
+    <DESCRIÇÃO>Perfumes (extratos)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33030020</NCM>
+    <CEST>2000800</CEST>
+    <DESCRIÇÃO>Águas-de-colônia</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33041000</NCM>
+    <CEST>2000900</CEST>
+    <DESCRIÇÃO>Produtos de maquilagem para os lábios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33042010</NCM>
+    <CEST>2001000</CEST>
+    <DESCRIÇÃO>Sombra, delineador, lápis para sobrancelhas e rímel</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33042090</NCM>
+    <CEST>2001100</CEST>
+    <DESCRIÇÃO>Outros produtos de maquilagem para os olhos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33043000</NCM>
+    <CEST>2001200</CEST>
+    <DESCRIÇÃO>Preparações para manicuros e pedicuros, incluindo removedores de esmalte à base de acetona</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049100</NCM>
+    <CEST>2001300</CEST>
+    <DESCRIÇÃO>Pós, incluídos os compactos, para maquilagem</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049910</NCM>
+    <CEST>2001400</CEST>
+    <DESCRIÇÃO>Cremes de beleza, cremes nutritivos e loções tônicas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049990</NCM>
+    <CEST>2001500</CEST>
+    <DESCRIÇÃO>Outros produtos de beleza ou de maquilagem preparados e preparações para conservação ou cuidados da pele, exceto as preparações solares e antisolares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049990</NCM>
+    <CEST>2001600</CEST>
+    <DESCRIÇÃO>Preparações solares e antisolares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33051000</NCM>
+    <CEST>2001700</CEST>
+    <DESCRIÇÃO>Xampus para o cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33052000</NCM>
+    <CEST>2001800</CEST>
+    <DESCRIÇÃO>Preparações para ondulação ou alisamento, permanentes, dos cabelos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33053000</NCM>
+    <CEST>2001900</CEST>
+    <DESCRIÇÃO>Laquês para o cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33059000</NCM>
+    <CEST>2002000</CEST>
+    <DESCRIÇÃO>Outras preparações capilares, incluindo máscaras e finalizadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33059000</NCM>
+    <CEST>2002100</CEST>
+    <DESCRIÇÃO>Condicionadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33059000</NCM>
+    <CEST>2002200</CEST>
+    <DESCRIÇÃO>Tintura para o cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33061000</NCM>
+    <CEST>2002300</CEST>
+    <DESCRIÇÃO>Dentifrícios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33062000</NCM>
+    <CEST>2002400</CEST>
+    <DESCRIÇÃO>Fios utilizados para limpar os espaços interdentais (fios dentais)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33069000</NCM>
+    <CEST>2002500</CEST>
+    <DESCRIÇÃO>Outras preparações para higiene bucal ou dentária</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33071000</NCM>
+    <CEST>2002600</CEST>
+    <DESCRIÇÃO>Preparações para barbear (antes, durante ou após)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072010</NCM>
+    <CEST>2002700</CEST>
+    <DESCRIÇÃO>Desodorantes (desodorizantes) corporais líquidos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072010</NCM>
+    <CEST>2002800</CEST>
+    <DESCRIÇÃO>Antiperspirantes líquidos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072090</NCM>
+    <CEST>2002900</CEST>
+    <DESCRIÇÃO>Outros desodorantes (desodorizantes) corporais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072090</NCM>
+    <CEST>2003000</CEST>
+    <DESCRIÇÃO>Outros antiperspirantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33073000</NCM>
+    <CEST>2003100</CEST>
+    <DESCRIÇÃO>Sais perfumados e outras preparações para banhos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33079000</NCM>
+    <CEST>2003200</CEST>
+    <DESCRIÇÃO>Outros produtos de perfumaria ou de toucador preparados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33079000</NCM>
+    <CEST>2003300</CEST>
+    <DESCRIÇÃO>Soluções para lentes de contato ou para olhos artificiais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34011190</NCM>
+    <CEST>2003400</CEST>
+    <DESCRIÇÃO>Sabões de toucador em barras, pedaços ou figuras moldados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34011900</NCM>
+    <CEST>2003500</CEST>
+    <DESCRIÇÃO>Outros sabões, produtos e preparações, em barras, pedaços ou figuras moldados, inclusive lenços umedecidos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34012010</NCM>
+    <CEST>2003600</CEST>
+    <DESCRIÇÃO>Sabões de toucador sob outras formas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34013000</NCM>
+    <CEST>2003700</CEST>
+    <DESCRIÇÃO>Produtos e preparações orgânicos tensoativos para lavagem da pele, na forma de líquido ou de creme, acondicionados para venda a retalho, mesmo contendo sabão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40149010</NCM>
+    <CEST>2003800</CEST>
+    <DESCRIÇÃO>Bolsa para gelo ou para água quente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40149090</NCM>
+    <CEST>2003900</CEST>
+    <DESCRIÇÃO>Chupetas e bicos para mamadeiras e para chupetas, de borracha</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39249000 39269040</NCM>
+    <CEST>2004000</CEST>
+    <DESCRIÇÃO>Chupetas e bicos para mamadeiras e para chupetas, de silicone</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39269090</NCM>
+    <CEST>2004000</CEST>
+    <DESCRIÇÃO>Chupetas e bicos para mamadeiras e para chupetas, de silicone</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>42021</NCM>
+    <CEST>2004100</CEST>
+    <DESCRIÇÃO>Malas e maletas de toucador</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48181000</NCM>
+    <CEST>2004200</CEST>
+    <DESCRIÇÃO>Papel higiênico – folha simples</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48181000</NCM>
+    <CEST>2004300</CEST>
+    <DESCRIÇÃO>Papel higiênico – folha dupla e tripla</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48182000</NCM>
+    <CEST>2004400</CEST>
+    <DESCRIÇÃO>Lenços (incluídos os de maquilagem) e toalhas de mão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48182000</NCM>
+    <CEST>2004500</CEST>
+    <DESCRIÇÃO>Papel toalha de uso institucional do tipo comercializado em rolos igual ou superior a 80 metros e do tipo comercializado em folhas intercaladas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48183000</NCM>
+    <CEST>2004600</CEST>
+    <DESCRIÇÃO>Toalhas e guardanapos de mesa</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48189090</NCM>
+    <CEST>2004700</CEST>
+    <DESCRIÇÃO>Toalhas de cozinha (papel toalha de uso doméstico)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96190000</NCM>
+    <CEST>2004800</CEST>
+    <DESCRIÇÃO>Fraldas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96190000</NCM>
+    <CEST>2004900</CEST>
+    <DESCRIÇÃO>Tampões higiênicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96190000</NCM>
+    <CEST>2005000</CEST>
+    <DESCRIÇÃO>Absorventes higiênicos externos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>56012190</NCM>
+    <CEST>2005100</CEST>
+    <DESCRIÇÃO>Hastes flexíveis (uso não medicinal)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>56039290</NCM>
+    <CEST>2005200</CEST>
+    <DESCRIÇÃO>Sutiã descartável, assemelhados e papel para depilação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82032090</NCM>
+    <CEST>2005300</CEST>
+    <DESCRIÇÃO>Pinças para sobrancelhas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82141000</NCM>
+    <CEST>2005400</CEST>
+    <DESCRIÇÃO>Espátulas (artigos de cutelaria)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82142000</NCM>
+    <CEST>2005500</CEST>
+    <DESCRIÇÃO>Utensílios e sortidos de utensílios de manicuros ou de pedicuros (incluídas as limas para unhas)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90251110</NCM>
+    <CEST>2005600</CEST>
+    <DESCRIÇÃO>Termômetros, inclusive o digital</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90251990</NCM>
+    <CEST>2005600</CEST>
+    <DESCRIÇÃO>Termômetros, inclusive o digital</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96032</NCM>
+    <CEST>2005700</CEST>
+    <DESCRIÇÃO>Escovas e pincéis de barba, escovas para cabelos, para cílios ou para unhas e outras escovas de toucador de pessoas, incluídas as que sejam partes de aparelhos, exceto escovas de dentes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96032100</NCM>
+    <CEST>2005800</CEST>
+    <DESCRIÇÃO>Escovas de dentes, incluídas as escovas para dentaduras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96033000</NCM>
+    <CEST>2005900</CEST>
+    <DESCRIÇÃO>Pincéis para aplicação de produtos cosméticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96050000</NCM>
+    <CEST>2006000</CEST>
+    <DESCRIÇÃO>Sortidos de viagem, para toucador de pessoas para costura ou para limpeza de calçado ou de roupas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9615</NCM>
+    <CEST>2006100</CEST>
+    <DESCRIÇÃO>Pentes, travessas para cabelo e artigos semelhantes; grampos (alfinetes) para cabelo; pinças (pinceguiches), onduladores, bobes (rolos) e artefatos semelhantes para penteados, e suas partes, exceto os classificados na posição 8516 e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96162000</NCM>
+    <CEST>2006200</CEST>
+    <DESCRIÇÃO>Borlas ou esponjas para pós ou para aplicação de outros cosméticos ou de produtos de toucador</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39233000</NCM>
+    <CEST>2006300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39249000</NCM>
+    <CEST>2006300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39241000</NCM>
+    <CEST>2006300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40149090 70102000</NCM>
+    <CEST>2006300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82121020 82122010</NCM>
+    <CEST>2006400</CEST>
+    <DESCRIÇÃO>Aparelhos e lâminas de barbear</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73211100</NCM>
+    <CEST>2100100</CEST>
+    <DESCRIÇÃO>Fogões de cozinha de uso doméstico e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>73218100 73219000</NCM>
+    <CEST>2100100</CEST>
+    <DESCRIÇÃO>Fogões de cozinha de uso doméstico e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84181000</NCM>
+    <CEST>2100200</CEST>
+    <DESCRIÇÃO>Combinações de refrigeradores e congeladores (“freezers”), munidos de portas exteriores separadas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84182100</NCM>
+    <CEST>2100300</CEST>
+    <DESCRIÇÃO>Refrigeradores do tipo doméstico, de compressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84182900</NCM>
+    <CEST>2100400</CEST>
+    <DESCRIÇÃO>Outros refrigeradores do tipo doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84183000</NCM>
+    <CEST>2100500</CEST>
+    <DESCRIÇÃO>Congeladores (“freezers”) horizontais tipo arca, de capacidade não superior a 800 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84184000</NCM>
+    <CEST>2100600</CEST>
+    <DESCRIÇÃO>Congeladores (“freezers”) verticais tipo armário, de capacidade não superior a 900 litros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84185</NCM>
+    <CEST>2100700</CEST>
+    <DESCRIÇÃO>Outros móveis (arcas, armários, vitrines, balcões e móveis semelhantes) para a conservação e exposição de produtos, que incorporem um equipamento para a produção de frio</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8418699</NCM>
+    <CEST>2100800</CEST>
+    <DESCRIÇÃO>Mini adega e similares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84186999</NCM>
+    <CEST>2100900</CEST>
+    <DESCRIÇÃO>Máquinas para produção de gelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84189900</NCM>
+    <CEST>2101000</CEST>
+    <DESCRIÇÃO>Partes dos refrigeradores, congeladores, mini adegas e similares, máquinas para produção de gelo e bebedouros descritos nos itens 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0 e 13.0.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>842112</NCM>
+    <CEST>2101100</CEST>
+    <DESCRIÇÃO>Secadoras de roupa de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>842112</NCM>
+    <CEST>2101100</CEST>
+    <DESCRIÇÃO>Secadoras de roupa de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84211990</NCM>
+    <CEST>2101200</CEST>
+    <DESCRIÇÃO>Outras secadoras de roupas e centrífugas de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84186931</NCM>
+    <CEST>2101300</CEST>
+    <DESCRIÇÃO>Bebedouros refrigerados para água</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84219</NCM>
+    <CEST>2101400</CEST>
+    <DESCRIÇÃO>Partes das secadoras de roupas e centrífugas de uso doméstico e dos aparelhos para filtrar ou depurar água, descritos nos itens 11.0 e 12.0 e 98.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84221100 84229010</NCM>
+    <CEST>2101500</CEST>
+    <DESCRIÇÃO>Máquinas de lavar louça do tipo doméstico e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>844331</NCM>
+    <CEST>2101600</CEST>
+    <DESCRIÇÃO>Máquinas que executem pelo menos duas das seguintes funções: impressão, cópia ou transmissão de telecópia (fax), capazes de ser conectadas a uma máquina automática para processamento de dados ou a uma rede</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>844332</NCM>
+    <CEST>2101700</CEST>
+    <DESCRIÇÃO>Outras impressoras, máquinas copiadoras e telecopiadores (fax), mesmo combinados entre si, capazes de ser conectados a uma máquina automática para processamento de dados ou a uma rede</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84439</NCM>
+    <CEST>2101800</CEST>
+    <DESCRIÇÃO>Partes e acessórios de máquinas e aparelhos de impressão por meio de blocos, cilindros e outros elementos de impressão da posição 8442; e de outras impressoras, máquinas copiadoras e telecopiadores (fax), mesmo combinados entre si</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84501100</NCM>
+    <CEST>2101900</CEST>
+    <DESCRIÇÃO>Máquinas de lavar roupa, mesmo com dispositivos de secagem, de uso doméstico, de capacidade não superior a 10 kg, em peso de roupa seca, inteiramente automáticas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84501200</NCM>
+    <CEST>2102000</CEST>
+    <DESCRIÇÃO>Outras máquinas de lavar roupa, mesmo com dispositivos de secagem, de uso doméstico, com secador centrífugo incorporado</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84501900</NCM>
+    <CEST>2102100</CEST>
+    <DESCRIÇÃO>Outras máquinas de lavar roupa, mesmo com dispositivos de secagem, de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84502</NCM>
+    <CEST>2102200</CEST>
+    <DESCRIÇÃO>Máquinas de lavar roupa, mesmo com dispositivos de secagem, de uso doméstico, de capacidade superior a 10 kg, em peso de roupa seca</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84509</NCM>
+    <CEST>2102300</CEST>
+    <DESCRIÇÃO>Partes de máquinas de lavar roupa, mesmo com dispositivos de secagem, de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84512100</NCM>
+    <CEST>2102400</CEST>
+    <DESCRIÇÃO>Máquinas de secar de uso doméstico de capacidade não superior a 10 kg, em peso de roupa seca</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84512990</NCM>
+    <CEST>2102500</CEST>
+    <DESCRIÇÃO>Outras máquinas de secar de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84519</NCM>
+    <CEST>2102600</CEST>
+    <DESCRIÇÃO>Partes de máquinas de secar de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84521000</NCM>
+    <CEST>2102700</CEST>
+    <DESCRIÇÃO>Máquinas de costura de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84713</NCM>
+    <CEST>2102800</CEST>
+    <DESCRIÇÃO>Máquinas automáticas para processamento de dados, portáteis, de peso não superior a 10 kg, contendo pelo menos uma unidade central de processamento, um teclado e uma tela</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84714</NCM>
+    <CEST>2102900</CEST>
+    <DESCRIÇÃO>Outras máquinas automáticas para processamento de dados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84715010</NCM>
+    <CEST>2103000</CEST>
+    <DESCRIÇÃO>Unidades de processamento, de pequena capacidade, exceto as das subposições 8471.41 ou 8471.49, podendo conter, no mesmo corpo, um ou dois dos seguintes tipos de unidades: unidade de memória, unidade de entrada e unidade de saída;baseadas em microprocessadores, com capacidade de instalação, dentro do mesmo gabinete, de unidades de memória da subposição 8471.70, podendo conter múltiplos conectores de expansão (“slots”), e valor FOB inferior ou igual a US$ 12.500,00, por unidade</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8471605</NCM>
+    <CEST>2103100</CEST>
+    <DESCRIÇÃO>Unidades de entrada, exceto as classificadas no código 8471.60.54</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84716090</NCM>
+    <CEST>2103200</CEST>
+    <DESCRIÇÃO>Outras unidades de entrada ou de saída, podendo conter, no mesmo corpo, unidades de memória</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84717</NCM>
+    <CEST>2103300</CEST>
+    <DESCRIÇÃO>Unidades de memória</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84719</NCM>
+    <CEST>2103400</CEST>
+    <DESCRIÇÃO>Outras máquinas automáticas para processamento de dados e suas unidades; leitores magnéticos ou ópticos, máquinas para registrar dados em suporte sob forma codificada, e máquinas para processamento desses dados, não especificadas nem compreendidas em outras posições</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84733</NCM>
+    <CEST>2103500</CEST>
+    <DESCRIÇÃO>Partes e acessórios das máquinas da posição 84.71</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85043</NCM>
+    <CEST>2103600</CEST>
+    <DESCRIÇÃO>Outros transformadores, exceto os classificados nos códigos 8504.33.00 e 8504.34.00</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85044010</NCM>
+    <CEST>2103700</CEST>
+    <DESCRIÇÃO>Carregadores de acumuladores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85044040</NCM>
+    <CEST>2103800</CEST>
+    <DESCRIÇÃO>Equipamentos de alimentação ininterrupta de energia (UPS ou “no break”)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85078000</NCM>
+    <CEST>2103900</CEST>
+    <DESCRIÇÃO>Outros acumuladores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8508</NCM>
+    <CEST>2104000</CEST>
+    <DESCRIÇÃO>Aspiradores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8509</NCM>
+    <CEST>2104100</CEST>
+    <DESCRIÇÃO>Aparelhos eletromecânicos de motor elétrico incorporado, de uso doméstico e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85098010</NCM>
+    <CEST>2104200</CEST>
+    <DESCRIÇÃO>Enceradeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85161000</NCM>
+    <CEST>2104300</CEST>
+    <DESCRIÇÃO>Chaleiras elétricas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85164000</NCM>
+    <CEST>2104400</CEST>
+    <DESCRIÇÃO>Ferros elétricos de passar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85165000</NCM>
+    <CEST>2104500</CEST>
+    <DESCRIÇÃO>Fornos de microondas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85166000</NCM>
+    <CEST>2104600</CEST>
+    <DESCRIÇÃO>Outros fornos; fogareiros (incluídas as chapas de cocção), grelhas e assadeiras, exceto os portáteis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85166000</NCM>
+    <CEST>2104700</CEST>
+    <DESCRIÇÃO>Outros fornos; fogareiros (incluídas as chapas de cocção), grelhas e assadeiras, portáteis</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85167100</NCM>
+    <CEST>2104800</CEST>
+    <DESCRIÇÃO>Outros aparelhos eletrotérmicos de uso doméstico – Cafeteiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85167200</NCM>
+    <CEST>2104900</CEST>
+    <DESCRIÇÃO>Outros aparelhos eletrotérmicos de uso doméstico – Torradeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>851679</NCM>
+    <CEST>2105000</CEST>
+    <DESCRIÇÃO>Outros aparelhos eletrotérmicos de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85169000</NCM>
+    <CEST>2105100</CEST>
+    <DESCRIÇÃO>Partes das chaleiras, ferros, fornos e outros aparelhos eletrotérmicos da posição 85.16, descritos nos itens 43.0, 44.0, 45.0, 46.0, 47.0, 48.0, 49.0 e 50.0</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85171100</NCM>
+    <CEST>2105200</CEST>
+    <DESCRIÇÃO>Aparelhos telefônicos por fio com unidade auscultador – microfone sem fio</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517123</NCM>
+    <CEST>2105300</CEST>
+    <DESCRIÇÃO>Telefones para redes celulares, exceto por satélite e os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>851712</NCM>
+    <CEST>2105400</CEST>
+    <DESCRIÇÃO>Outros telefones para outras redes sem fio, exceto para redes de celulares e os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517189</NCM>
+    <CEST>2105500</CEST>
+    <DESCRIÇÃO>Outros aparelhos telefônicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517625</NCM>
+    <CEST>2105600</CEST>
+    <DESCRIÇÃO>Aparelhos para transmissão ou recepção de voz, imagem ou outros dados em rede com fio, exceto os classificados nos códigos 8517.62.51, 8517.62.52 e 8517.62.53</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8518</NCM>
+    <CEST>2105700</CEST>
+    <DESCRIÇÃO>Microfones e seus suportes; altofalantes, mesmo montados nos seus receptáculos, fones de ouvido (auscultadores), mesmo combinados com microfone e conjuntos ou sortidos constituídos por um microfone e um ou mais alto-falantes, amplificadores elétricos de audiofreqüência, aparelhos elétricos de amplificação de som; suas partes e acessórios; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8519</NCM>
+    <CEST>2105800</CEST>
+    <DESCRIÇÃO>Aparelhos de radiodifusão suscetíveis de funcionarem sem fonte externa de energia. Aparelhos de gravação de som; aparelhos de reprodução de som; aparelhos de gravação e de reprodução de som; partes e acessórios; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8522</NCM>
+    <CEST>2105800</CEST>
+    <DESCRIÇÃO>Aparelhos de radiodifusão suscetíveis de funcionarem sem fonte externa de energia. Aparelhos de gravação de som; aparelhos de reprodução de som; aparelhos de gravação e de reprodução de som; partes e acessórios; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85271</NCM>
+    <CEST>2105800</CEST>
+    <DESCRIÇÃO>Aparelhos de radiodifusão suscetíveis de funcionarem sem fonte externa de energia. Aparelhos de gravação de som; aparelhos de reprodução de som; aparelhos de gravação e de reprodução de som; partes e acessórios; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85198190</NCM>
+    <CEST>2105900</CEST>
+    <DESCRIÇÃO>Outros aparelhos de gravação de som; aparelhos de reprodução de som; aparelhos de gravação e de reprodução de som; partes e acessórios; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85219010</NCM>
+    <CEST>2106000</CEST>
+    <DESCRIÇÃO>Gravador-reprodutor e editor de imagem e som, em discos, por meio magnético, óptico ou optomagnético, exceto de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85219090</NCM>
+    <CEST>2106100</CEST>
+    <DESCRIÇÃO>Outros aparelhos videofônicos de gravação ou reprodução, mesmo incorporando um receptor de sinais videofônicos, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85235110</NCM>
+    <CEST>2106200</CEST>
+    <DESCRIÇÃO>Cartões de memória (“memory cards”)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85235200</NCM>
+    <CEST>2106300</CEST>
+    <DESCRIÇÃO>Cartões inteligentes (“smart cards”)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85235200</NCM>
+    <CEST>2106400</CEST>
+    <DESCRIÇÃO>Cartões inteligentes (“sim cards”)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8525802</NCM>
+    <CEST>2106500</CEST>
+    <DESCRIÇÃO>Câmeras fotográficas digitais e câmeras de vídeo e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85279</NCM>
+    <CEST>2106600</CEST>
+    <DESCRIÇÃO>Outros aparelhos receptores para radiodifusão, mesmo combinados num invólucro, com um aparelho de gravação ou de reprodução de som, ou com um relógio, inclusive caixa acústica para Home Theaters classificados na posição 8518</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85284929</NCM>
+    <CEST>2106700</CEST>
+    <DESCRIÇÃO>Monitores e projetores que não incorporem aparelhos receptores de televisão, policromáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85285920</NCM>
+    <CEST>2106700</CEST>
+    <DESCRIÇÃO>Monitores e projetores que não incorporem aparelhos receptores de televisão, policromáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>852869</NCM>
+    <CEST>2106700</CEST>
+    <DESCRIÇÃO>Monitores e projetores que não incorporem aparelhos receptores de televisão, policromáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85286100</NCM>
+    <CEST>2106700</CEST>
+    <DESCRIÇÃO>Monitores e projetores que não incorporem aparelhos receptores de televisão, policromáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85285120</NCM>
+    <CEST>2106800</CEST>
+    <DESCRIÇÃO>Outros monitores dos tipos utilizados exclusiva ou principalmente com uma máquina automática para processamento de dados da posição 84.71, policromáticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85287</NCM>
+    <CEST>2106900</CEST>
+    <DESCRIÇÃO>Aparelhos receptores de televisão, mesmo que incorporem um aparelho receptor de radiodifusão ou um aparelho de gravação ou reprodução de som ou de imagens – Televisores de CRT (tubo de raios catódicos)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85287</NCM>
+    <CEST>2107000</CEST>
+    <DESCRIÇÃO>Aparelhos receptores de televisão, mesmo que incorporem um aparelho receptor de radiodifusão ou um aparelho de gravação ou reprodução de som ou de imagens – Televisores de LCD (Display de Cristal Líquido)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85287</NCM>
+    <CEST>2107100</CEST>
+    <DESCRIÇÃO>Aparelhos receptores de televisão, mesmo que incorporem um aparelho receptor de radiodifusão ou um aparelho de gravação ou reprodução de som ou de imagens – Televisores de Plasma</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85287</NCM>
+    <CEST>2107200</CEST>
+    <DESCRIÇÃO>Outros aparelhos receptores de televisão não dotados de monitores ou display de vídeo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85287</NCM>
+    <CEST>2107300</CEST>
+    <DESCRIÇÃO>Outros aparelhos receptores de televisão não relacionados em outros itens deste anexo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90061</NCM>
+    <CEST>2107400</CEST>
+    <DESCRIÇÃO>Câmeras fotográficas dos tipos utilizadas para preparação de clichês ou cilindros de impressão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90064000</NCM>
+    <CEST>2107500</CEST>
+    <DESCRIÇÃO>Câmeras fotográficas para filmes de revelação e copiagem instantâneas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90189050</NCM>
+    <CEST>2107600</CEST>
+    <DESCRIÇÃO>Aparelhos de diatermia</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90191000</NCM>
+    <CEST>2107700</CEST>
+    <DESCRIÇÃO>Aparelhos de massagem</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90328911</NCM>
+    <CEST>2107800</CEST>
+    <DESCRIÇÃO>Reguladores de voltagem eletrônicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>95045000</NCM>
+    <CEST>2107900</CEST>
+    <DESCRIÇÃO>Consoles e máquinas de jogos de vídeo, exceto os classificados na subposição 9504.30</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517621</NCM>
+    <CEST>2108000</CEST>
+    <DESCRIÇÃO>Multiplexadores e concentradores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85176222</NCM>
+    <CEST>2108100</CEST>
+    <DESCRIÇÃO>Centrais automáticas privadas, de capacidade inferior ou igual a 25 ramais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85176239</NCM>
+    <CEST>2108200</CEST>
+    <DESCRIÇÃO>Outros aparelhos para comutação</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517624</NCM>
+    <CEST>2108300</CEST>
+    <DESCRIÇÃO>Roteadores digitais, em redes com ou sem fio</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85176262</NCM>
+    <CEST>2108400</CEST>
+    <DESCRIÇÃO>Aparelhos emissores com receptor incorporado de sistema troncalizado (“trunking”), de tecnologia celular</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517629</NCM>
+    <CEST>2108500</CEST>
+    <DESCRIÇÃO>Outros aparelhos de recepção, conversão e transmissão ou regeneração de voz, imagens ou outros dados, incluindo os aparelhos de comutação e roteamento</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85177021</NCM>
+    <CEST>2108600</CEST>
+    <DESCRIÇÃO>Antenas próprias para telefones celulares portáteis, exceto as telescópicas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>821490 8510</NCM>
+    <CEST>2108700</CEST>
+    <DESCRIÇÃO>Aparelhos ou máquinas de barbear, máquinas de cortar o cabelo ou de tosquiar e aparelhos de depilar, e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84145</NCM>
+    <CEST>2108800</CEST>
+    <DESCRIÇÃO>Ventiladores, exceto os de uso agrícola</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84145990</NCM>
+    <CEST>2108900</CEST>
+    <DESCRIÇÃO>Ventiladores de uso agrícola</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84146000</NCM>
+    <CEST>2109000</CEST>
+    <DESCRIÇÃO>Coifas com dimensão horizontal máxima não superior a 120 cm</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84149020</NCM>
+    <CEST>2109100</CEST>
+    <DESCRIÇÃO>Partes de ventiladores ou coifas aspirantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84151</NCM>
+    <CEST>2109200</CEST>
+    <DESCRIÇÃO>Máquinas e aparelhos de ar condicionado contendo um ventilador motorizado e dispositivos próprios para modificar a temperatura e a umidade, incluídos as máquinas e aparelhos em que a umidade não seja regulável separadamente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84158</NCM>
+    <CEST>2109200</CEST>
+    <DESCRIÇÃO>Máquinas e aparelhos de ar condicionado contendo um ventilador motorizado e dispositivos próprios para modificar a temperatura e a umidade, incluídos as máquinas e aparelhos em que a umidade não seja regulável separadamente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84151011</NCM>
+    <CEST>2109300</CEST>
+    <DESCRIÇÃO>Aparelhos de ar-condicionado tipo Split System (sistema com elementos separados) com unidade externa e interna</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84151019</NCM>
+    <CEST>2109400</CEST>
+    <DESCRIÇÃO>Aparelhos de ar-condicionado com capacidade inferior ou igual a 30.000 frigorias/hora</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84151090</NCM>
+    <CEST>2109500</CEST>
+    <DESCRIÇÃO>Aparelhos de ar-condicionado com capacidade acima de 30.000 frigorias/hora</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84159010</NCM>
+    <CEST>2109600</CEST>
+    <DESCRIÇÃO>Unidades evaporadoras (internas) de aparelho de ar-condicionado do tipo Split System (sistema com elementos separados), com capacidade inferior ou igual a 30.000 frigorias/hora</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84159020</NCM>
+    <CEST>2109700</CEST>
+    <DESCRIÇÃO>Unidades condensadoras (externas) de aparelho de ar-condicionado do tipo Split System (sistema com elementos separados), com capacidade inferior ou igual a 30.000 frigorias/hora</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84212100</NCM>
+    <CEST>2109800</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos para filtrar ou depurar água</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84243010</NCM>
+    <CEST>2109900</CEST>
+    <DESCRIÇÃO>Lavadora de alta pressão e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84243090</NCM>
+    <CEST>2109900</CEST>
+    <DESCRIÇÃO>Lavadora de alta pressão e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84249090</NCM>
+    <CEST>2109900</CEST>
+    <DESCRIÇÃO>Lavadora de alta pressão e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84672100</NCM>
+    <CEST>2110000</CEST>
+    <DESCRIÇÃO>Furadeiras elétricas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85162</NCM>
+    <CEST>2110100</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos para aquecimento de ambientes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85163100</NCM>
+    <CEST>2110200</CEST>
+    <DESCRIÇÃO>Secadores de cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85163200</NCM>
+    <CEST>2110300</CEST>
+    <DESCRIÇÃO>Outros aparelhos para arranjos do cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8527</NCM>
+    <CEST>2110400</CEST>
+    <DESCRIÇÃO>Aparelhos receptores para radiodifusão, mesmo combinados num mesmo invólucro, com um aparelho de gravação ou de reprodução de som, ou com um relógio, exceto os classificados na posição 8527.1, 8527.2 e 8527.9 que sejam de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84796000</NCM>
+    <CEST>2110500</CEST>
+    <DESCRIÇÃO>Climatizadores de ar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84159090</NCM>
+    <CEST>2110600</CEST>
+    <DESCRIÇÃO>Outras partes para máquinas e aparelhos de ar-condicionado que contenham um ventilador motorizado e dispositivos próprios para modificar a temperatura e a umidade, incluindo as máquinas e aparelhos em que a umidade não seja regulável separadamente</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85258019</NCM>
+    <CEST>2110700</CEST>
+    <DESCRIÇÃO>Câmeras de televisão e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>84231000</NCM>
+    <CEST>2110800</CEST>
+    <DESCRIÇÃO>Balanças de uso doméstico</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8540</NCM>
+    <CEST>2110900</CEST>
+    <DESCRIÇÃO>Tubos e válvulas, eletrônicos, de cátodo quente, cátodo frio ou fotocátodo (por exemplo, tubos e válvulas, de vácuo, de vapor ou de gás, ampolas retificadoras de vapor de mercúrio, tubos catódicos, tubos e válvulas para câmeras de televisão)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517</NCM>
+    <CEST>2111000</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos para telefonia; outros aparelhos para transmissão ou recepção de voz, imagens ou outros dados, incluídos os aparelhos para comunicação em redes por fio ou redes sem fio (tal como uma rede local (LAN) ou uma rede de área estendida (WAN), incluídas suas partes, exceto os de uso automotivo e os classificados nos códigos 8517.62.51, 8517.62.52 e 8517.62.53</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8517</NCM>
+    <CEST>2111100</CEST>
+    <DESCRIÇÃO>Interfones, seus acessórios, tomadas e “plugs”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8529</NCM>
+    <CEST>2111200</CEST>
+    <DESCRIÇÃO>Partes reconhecíveis como exclusiva ou principalmente destinadas aos aparelhos das posições 8525 a 8528; exceto as de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8531</NCM>
+    <CEST>2111300</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de sinalização acústica ou visual (por exemplo, campainhas, sirenes, quadros indicadores, aparelhos de alarme para proteção contra roubo ou incêndio); exceto os de uso automotivo e os classificados nas posições 8531.10 e 8531.80.00.</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85311</NCM>
+    <CEST>2111400</CEST>
+    <DESCRIÇÃO>Aparelhos elétricos de alarme, para proteção contra roubo ou incêndio e aparelhos semelhantes, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85318000</NCM>
+    <CEST>2111500</CEST>
+    <DESCRIÇÃO>Outros aparelhos de sinalização acústica ou visual, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8534</NCM>
+    <CEST>2111600</CEST>
+    <DESCRIÇÃO>Circuitos impressos, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8534</NCM>
+    <CEST>2111600</CEST>
+    <DESCRIÇÃO>Circuitos impressos, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85414011</NCM>
+    <CEST>2111700</CEST>
+    <DESCRIÇÃO>Diodos emissores de luz (LED), exceto diodos “laser”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85414021</NCM>
+    <CEST>2111700</CEST>
+    <DESCRIÇÃO>Diodos emissores de luz (LED), exceto diodos “laser”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85414022</NCM>
+    <CEST>2111700</CEST>
+    <DESCRIÇÃO>Diodos emissores de luz (LED), exceto diodos “laser”</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85437092</NCM>
+    <CEST>2111800</CEST>
+    <DESCRIÇÃO>Eletrificadores de cercas eletrônicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>85437092</NCM>
+    <CEST>2111800</CEST>
+    <DESCRIÇÃO>Eletrificadores de cercas eletrônicos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>90303</NCM>
+    <CEST>2111900</CEST>
+    <DESCRIÇÃO>Aparelhos e instrumentos para medida ou controle da tensão, intensidade, resistência ou da potência, sem dispositivo registrador; exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>903089</NCM>
+    <CEST>2112000</CEST>
+    <DESCRIÇÃO>Analisadores lógicos de circuitos digitais, de espectro de frequência, frequencímetros, fasímetros, e outros instrumentos e aparelhos de controle de grandezas elétricas e detecção</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9107</NCM>
+    <CEST>2112100</CEST>
+    <DESCRIÇÃO>Interruptores horários e outros aparelhos que permitam acionar um mecanismo em tempo determinado, munidos de maquinismo de aparelhos de relojoaria ou de motor síncrono</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9405</NCM>
+    <CEST>2112200</CEST>
+    <DESCRIÇÃO>Aparelhos de iluminação (incluídos os projetores) e suas partes, não especificados nem compreendidos em outras posições; anúncios, cartazes ou tabuletas e placas indicadoras luminosos, e artigos semelhantes, contendo uma fonte luminosa fixa permanente, e suas partes não especificadas nem compreendidas em outras posições</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2309</NCM>
+    <CEST>2200100</CEST>
+    <DESCRIÇÃO>Ração tipo “pet” para animais domésticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2105</NCM>
+    <CEST>2300100</CEST>
+    <DESCRIÇÃO>Sorvetes de qualquer espécie</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1806</NCM>
+    <CEST>2300200</CEST>
+    <DESCRIÇÃO>Preparados para fabricação de sorvete em máquina</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>1901</NCM>
+    <CEST>2300200</CEST>
+    <DESCRIÇÃO>Preparados para fabricação de sorvete em máquina</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2106</NCM>
+    <CEST>2300200</CEST>
+    <DESCRIÇÃO>Preparados para fabricação de sorvete em máquina</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3208</NCM>
+    <CEST>2400100</CEST>
+    <DESCRIÇÃO>Tintas, vernizes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3209</NCM>
+    <CEST>2400100</CEST>
+    <DESCRIÇÃO>Tintas, vernizes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3210</NCM>
+    <CEST>2400100</CEST>
+    <DESCRIÇÃO>Tintas, vernizes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>2821</NCM>
+    <CEST>2400200</CEST>
+    <DESCRIÇÃO>Xadrez e pós assemelhados, exceto pigmentos à base de dióxido de titânio classificados no código 3206.11.19</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>32041700</NCM>
+    <CEST>2400200</CEST>
+    <DESCRIÇÃO>Xadrez e pós assemelhados, exceto pigmentos à base de dióxido de titânio classificados no código 3206.11.19</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>3206</NCM>
+    <CEST>2400200</CEST>
+    <DESCRIÇÃO>Xadrez e pós assemelhados, exceto pigmentos à base de dióxido de titânio classificados no código 3206.11.19</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>8711</NCM>
+    <CEST>2600100</CEST>
+    <DESCRIÇÃO>Motocicletas (incluídos os ciclomotores) e outros ciclos equipados com motor auxiliar, mesmo com carro lateral; carros laterais</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7009</NCM>
+    <CEST>2700100</CEST>
+    <DESCRIÇÃO>Espelhos de vidro, mesmo emoldurados, exceto os de uso automotivo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>7013</NCM>
+    <CEST>2700200</CEST>
+    <DESCRIÇÃO>Objetos de vidro para serviço de mesa ou de cozinha</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70133700</NCM>
+    <CEST>2700300</CEST>
+    <DESCRIÇÃO>Outros copos, exceto de vitrocerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>70134290</NCM>
+    <CEST>2700400</CEST>
+    <DESCRIÇÃO>Objetos para serviço de mesa (exceto copos) ou de cozinha, exceto de vitrocerâmica</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33030010</NCM>
+    <CEST>2800100</CEST>
+    <DESCRIÇÃO>Perfumes (extratos)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33030020</NCM>
+    <CEST>2800200</CEST>
+    <DESCRIÇÃO>Águas-de-colônia</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33041000</NCM>
+    <CEST>2800300</CEST>
+    <DESCRIÇÃO>Produtos de maquiagem para os lábios</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33042010</NCM>
+    <CEST>2800400</CEST>
+    <DESCRIÇÃO>Sombra, delineador, lápis para sobrancelhas e rímel</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33042090</NCM>
+    <CEST>2800500</CEST>
+    <DESCRIÇÃO>Outros produtos de maquiagem para os olhos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33043000</NCM>
+    <CEST>2800600</CEST>
+    <DESCRIÇÃO>Preparações para manicuros e pedicuros</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049100</NCM>
+    <CEST>2800700</CEST>
+    <DESCRIÇÃO>Pós para maquiagem, incluindo os compactos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049910</NCM>
+    <CEST>2800800</CEST>
+    <DESCRIÇÃO>Cremes de beleza, cremes nutritivos e loções tônicas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049990</NCM>
+    <CEST>2800900</CEST>
+    <DESCRIÇÃO>Outros produtos de beleza ou de maquiagem preparados e preparações para conservação ou cuidados da pele, exceto as preparações antisolares e os bronzeadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33049990</NCM>
+    <CEST>2801000</CEST>
+    <DESCRIÇÃO>Preparações antisolares e os bronzeadores</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33051000</NCM>
+    <CEST>2801100</CEST>
+    <DESCRIÇÃO>Xampus para o cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33052000</NCM>
+    <CEST>2801200</CEST>
+    <DESCRIÇÃO>Preparações para ondulação ou alisamento, permanentes, dos cabelos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33059000</NCM>
+    <CEST>2801300</CEST>
+    <DESCRIÇÃO>Outras preparações capilares</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33059000</NCM>
+    <CEST>2801400</CEST>
+    <DESCRIÇÃO>Tintura para o cabelo</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33071000</NCM>
+    <CEST>2801500</CEST>
+    <DESCRIÇÃO>Preparações para barbear (antes, durante ou após)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072010</NCM>
+    <CEST>2801600</CEST>
+    <DESCRIÇÃO>Desodorantes corporais e antiperspirantes, líquidos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33072090</NCM>
+    <CEST>2801700</CEST>
+    <DESCRIÇÃO>Outros desodorantes corporais e antiperspirantes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33079000</NCM>
+    <CEST>2801800</CEST>
+    <DESCRIÇÃO>Outros produtos de perfumaria ou de toucador preparados</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>33079000</NCM>
+    <CEST>2801900</CEST>
+    <DESCRIÇÃO>Outras preparações cosméticas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34011190</NCM>
+    <CEST>2802000</CEST>
+    <DESCRIÇÃO>Sabões de toucador, em barras, pedaços ou figuras moldadas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34011900</NCM>
+    <CEST>2802100</CEST>
+    <DESCRIÇÃO>Outros sabões, produtos e preparações orgânicos tensoativos, inclusive papel, pastas (ouates), feltros e falsos tecidos, impregnados, revestidos ou recobertos de sabão ou de detergentes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34012010</NCM>
+    <CEST>2802200</CEST>
+    <DESCRIÇÃO>Sabões de toucador sob outras formas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>34013000</NCM>
+    <CEST>2802300</CEST>
+    <DESCRIÇÃO>Produtos e preparações orgânicos tensoativos para lavagem da pele, em forma de líquido ou de creme, acondicionados para venda a retalho, mesmo contendo sabão</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>48182000</NCM>
+    <CEST>2802400</CEST>
+    <DESCRIÇÃO>Lenços de papel, incluindo os de desmaquiar</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82141000</NCM>
+    <CEST>2802500</CEST>
+    <DESCRIÇÃO>Apontadores de lápis para maquiagem</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>82142000</NCM>
+    <CEST>2802600</CEST>
+    <DESCRIÇÃO>Utensílios e sortidos de utensílios de manicuros ou de pedicuros (incluindo as limas para unhas)</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96032900</NCM>
+    <CEST>2802700</CEST>
+    <DESCRIÇÃO>Escovas e pincéis de barba, escovas para cabelos, para cílios ou para unhas e outras escovas de toucador de pessoas</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96033000</NCM>
+    <CEST>2802800</CEST>
+    <DESCRIÇÃO>Pincéis para aplicação de produtos cosméticos</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96161000</NCM>
+    <CEST>2802900</CEST>
+    <DESCRIÇÃO>Vaporizadores de toucador, suas armações e cabeças de armações</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>96162000</NCM>
+    <CEST>2803000</CEST>
+    <DESCRIÇÃO>Borlas ou esponjas para pós ou para aplicação de outros cosméticos ou de produtos de toucador</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>42021</NCM>
+    <CEST>2803100</CEST>
+    <DESCRIÇÃO>Malas e maletas de toucador</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>9615</NCM>
+    <CEST>2803200</CEST>
+    <DESCRIÇÃO>Pentes, travessas para cabelo e artigos semelhantes; grampos (alfinetes) para cabelo; pinças (“pinceguiches”), onduladores, bobs (rolos) e artefatos semelhantes para penteados, e suas partes</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39233000</NCM>
+    <CEST>2803300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39249000</NCM>
+    <CEST>2803300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>39241000</NCM>
+    <CEST>2803300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40149090 70102000</NCM>
+    <CEST>2803300</CEST>
+    <DESCRIÇÃO>Mamadeiras</DESCRIÇÃO>
+  </row>
+  <row>
+    <NCM>40149090</NCM>
+    <CEST>2803400</CEST>
+    <DESCRIÇÃO>Chupetas e bicos para mamadeiras e para chupetas</DESCRIÇÃO>
+  </row>
+</root>
