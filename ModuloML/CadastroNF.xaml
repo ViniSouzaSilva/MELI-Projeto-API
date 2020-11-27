@@ -135,16 +135,7 @@
         <GroupBox Header="Itens da Nota" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="15">
             <DataGrid x:Name="Produ_datagrid" ItemsSource="{Binding}"  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="15" Grid.RowSpan="2" Height="157" Width="936">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Cód Prod"/>
-                    <DataGridTextColumn Header="Descrição" Width="*"/>
-                    <DataGridTextColumn Header="NCM"/>
-                    <DataGridTextColumn Header="CST"/>
-                    <DataGridTextColumn Header="CFOP"/>
-                    <DataGridTextColumn Header="Medi"/>
-                    <DataGridTextColumn Header="Quantidade"/>
-                    <DataGridTextColumn Header="Vlr. Unitário"/>
-                    <DataGridTextColumn Header="Vlr. Desconto"/>
-                    <DataGridTextColumn Header="Vlr. Total"/>
+                    
                     
                 </DataGrid.Columns>
                 <DataGrid.Resources>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModuloML.Objetos
 {
-    class Produtos
+     public class Produtos
     {
         public string CodProdu { get; set; }
         public string Descricao { get; set; }

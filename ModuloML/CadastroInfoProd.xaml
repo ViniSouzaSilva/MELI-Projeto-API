@@ -29,36 +29,36 @@
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <GroupBox Header="Código Produto" Grid.Column="7" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="Cprod_txb"/>
         </GroupBox>
         <GroupBox Header="Código de Barras" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Row="0">
-            <TextBox/>
+            <TextBox x:Name="CEAN_txb" />
         </GroupBox>
 
         <GroupBox Header="Descrição" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="Xprod_txb"/>
         </GroupBox>
         <GroupBox Header="NCM" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="NCM_txb"/>
         </GroupBox>
-        
+
         <GroupBox Header="CFOP" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="CFOP_txb"/>
         </GroupBox>
         <GroupBox Header="Unidade Medida" Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="Ucom_txb"/>
         </GroupBox>
         <GroupBox Header="Quantidade" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="Qcom_txb"/>
         </GroupBox>
         <GroupBox Header="Valor Unitário" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="VUNCOM_txb"/>
         </GroupBox>
         <GroupBox Header="Valor Bruto" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox/>
+            <TextBox x:Name="Vprod_txb"/>
         </GroupBox>
         <GroupBox Header="Origem" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="1">
-            <ComboBox>
+            <ComboBox x:Name="Origem_cxb">
                 <ComboBoxItem Content="0 - Nacional, exceto as indicadas nos códigos 3, 4, 5 e 8"/>
                 <ComboBoxItem Content="1 - Estrangeira - Importação direta, exceto a indicada no código 6"/>
                 <ComboBoxItem Content="2 - Estrangeira - Adquirida no mercado interno, exceto a indicada no código 7"/>
@@ -70,7 +70,37 @@
                 <ComboBoxItem Content="8 - Nacional, mercadoria ou bem com Conteúdo de Importação superior a 70%"/>
             </ComboBox>
         </GroupBox>
-
+        <GroupBox Header="CST" Grid.Column="6" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1">
+            <ComboBox x:Name="CST_cxb">
+                <ComboBoxItem Content="00 - Tributada integralmente"/>
+                <ComboBoxItem Content="10 - Tributada e com cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="20 - Com redução da BC"/>
+                <ComboBoxItem Content="30 - Isenta / não tributada e com cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="40 - Isenta"/>
+                <ComboBoxItem Content="41 - Não tributada"/>
+                <ComboBoxItem Content="50 - Com suspensão"/>
+                <ComboBoxItem Content="51 - Com diferimento"/>
+                <ComboBoxItem Content="60 - ICMS cobrado anteriormente por substituição tributária"/>
+                <ComboBoxItem Content="70 - Com redução da BC e cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="90 - Outras"/>
+            </ComboBox>
+        </GroupBox>
+        <GroupBox Header="CSOSN" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="1">
+            <ComboBox>
+                <ComboBoxItem Content="101 - Tributada pelo Simples Nacional com permissão de crédito"/>
+                <ComboBoxItem Content="102 - Tributada pelo Simples Nacional sem permissão de crédito"/>
+                <ComboBoxItem Content="103 - Isenção do ICMS no Simples Nacional para faixa de receita bruta"/>
+                <ComboBoxItem Content="201 - Tributada pelo Simples Nacional com permissão de crédito e com cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="202 - Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="203 - Isenção do ICMS no Simples Nacional para faixa de receita bruta e com cobrança do ICMS por substituição tributária"/>
+                <ComboBoxItem Content="300 - Imune"/>
+                <ComboBoxItem Content="400 - Não tributada pelo Simples Nacional"/>
+                <ComboBoxItem Content="500 - ICMS cobrado anteriormente por substituição tributária (substituído) ou por antecipação"/>
+                <ComboBoxItem Content="900 - Outros"/>
+            </ComboBox>
+        </GroupBox>
+        <Button x:Name="Salva_btn" Content="Salvar" Grid.Column="7" Grid.Row="7"  d:LayoutOverrides="Height" Click="Salva_btn_Click"/>
+        <Button Content="Voltar" Grid.Column="1" Grid.Row="7"  d:LayoutOverrides="Height"/>
 
 
     </Grid>

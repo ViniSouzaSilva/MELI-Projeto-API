@@ -144,7 +144,7 @@ namespace ModuloML.Telas
 
                         foreach (var a in Resultado.order_items)
                         {
-                            orderItems.Add(new Produtos() { CodProdu = Resultado.order_items[0].item.id, Descricao = Resultado.order_items[0].item.title, NCM = Resultado.order_items[0]. }) ;
+                            orderItems.Add(new Produtos() { CodProdu = Resultado.order_items[0].item.id, Descricao = Resultado.order_items[0].item.title, VlrUni = Resultado.order_items[0].unit_price.ToString(),VlrTotal = Resultado.order_items[0].full_unit_price.ToString(), Quantidade = Resultado.order_items[0].quantity.ToString() }) ;
                            
                         }
 
@@ -452,8 +452,9 @@ namespace ModuloML.Telas
 
         private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
         {
-
-
+            Produtos item = (Produtos) Produ_datagrid.SelectedItem; 
+            CadastroInfoProd tela = new CadastroInfoProd(item);
+            tela.ShowDialog();
         }
     }
 }
