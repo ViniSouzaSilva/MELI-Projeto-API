@@ -154,5 +154,17 @@ namespace ModuloML.Properties {
                 this["IE"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int Auditoria {
+            get {
+                return ((int)(this["Auditoria"]));
+            }
+            set {
+                this["Auditoria"] = value;
+            }
+        }
     }
 }

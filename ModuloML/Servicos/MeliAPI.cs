@@ -41,7 +41,14 @@ namespace ModuloML.Servicos
                 {
                     // Request Access Token
                     Token result = apiInstance.GetToken(grantType, clientId, clientSecret, redirectUri, null, refreshToken);
-                    audit("json", result.ToString());
+                    if (result is null)
+                    {
+                        audit("json", "Verifique sua conexão");
+                    }
+                    else
+                    {
+                        audit("json", result.ToString());
+                    }
                     //token = result.AccessToken;
                     // id_cliente = result.UserId.ToString();
                     File.WriteAllText($@"{AppDomain.CurrentDomain.BaseDirectory}text.txt", result.AccessToken);

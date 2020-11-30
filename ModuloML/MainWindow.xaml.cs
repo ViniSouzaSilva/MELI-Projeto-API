@@ -185,7 +185,7 @@ namespace ModuloML
                 //var a = chrome.Url;
                 RetornaDadosEmitente();
                 VerificaValidadeToken();
-                var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.status=" + Status_cxb.Text + "&sort=date_desc&access_token=" + token);
+                var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.status=paid&sort=date_desc&access_token=" + token);
                 //var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&access_token=" + token);
                 client.Timeout = -1;
                 var request = new RestRequest(Method.GET);
@@ -193,7 +193,8 @@ namespace ModuloML
                 IRestResponse response = client.Execute(request);
                 audit("vendas", response.Content);
                 RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
-                //batatagrid.Items.Add(results);
+            //batatagrid.Items.Add(results);
+                ProcessaVenda(myDeserializedClass);
                 return myDeserializedClass.results;
 
                 //results = myDeserializedClass.results;
@@ -261,6 +262,51 @@ namespace ModuloML
 
                 // batatagrid.Items.Add(results);
             }
+            public void ProcessaVenda(RetornaVendaML vendas) 
+            {
+            try
+            {
+                using (var consulta = new MELIDataSetTableAdapters.TB_VENDASTableAdapter())
+                {
+                    foreach (var a in vendas.results)
+                    {
+                        var ResultConsulta = consulta.ExisteVenda(vendas.results[0].id.ToString());
+                        if (ResultConsulta == 1)
+                        {
+
+                        }
+                        else if (ResultConsulta == 0)
+                        {
+                            consulta.InsereVenda(vendas.results[0].id.ToString(),vendas.results[0].buyer.first_name+" "+vendas.results[0].buyer.last_name, vendas.results[0].buyer.billing_info.doc_number,DateTime.Now,"","0");
+                        }
+                        else 
+                        {
+                            audit("Existe mais de uma venda com o mesmo ID, favor verificar com suporte", vendas.results[0].id.ToString());
+                            MessageBox.Show("Existe mais de uma venda com o mesmo ID, favor verificar com suporte","Atenção",MessageBoxButton.OK,MessageBoxImage.Error);
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex )
+            {
+                audit("Ocorreu um Erro no Metodo ProcessaVenda()",ex.Message);
+
+               
+            }  
+            }
+        public DadosAdicionaisProd.Root RetornaDadosVenda( string ID_anuncio) 
+        {
+            var client = new RestClient("https://api.mercadolibre.com/items/"+ ID_anuncio +"?include_attributes=all");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+            IRestResponse response = client.Execute(request);
+            DadosAdicionaisProd.Root myDeserializedClass = JsonConvert.DeserializeObject<DadosAdicionaisProd.Root>(response.Content.ToString());
+
+            return myDeserializedClass;
+
+        }
             #endregion
             #region Métodos Click
             private void Button_Click(object sender, RoutedEventArgs e)
@@ -303,6 +349,7 @@ namespace ModuloML
 
             private void PuxarVendasfiltradas_btn_Click(object sender, RoutedEventArgs e)
             {
+            //ProcessaVenda(resultsFiltrados);
                 batatagrid.ItemsSource = resultsFiltrados;
                 /// RetornaVendaPorStatusDesc();
             }
@@ -349,12 +396,23 @@ namespace ModuloML
 
                     var IdSeller = id.seller.id;
                     var IdOrder = id.payments[0].id;
+                DadosVerificacao dados = new DadosVerificacao();
+                dados.DescricaoProd = id.order_items[0].item.title;
+                dados.Preco = id.order_items[0].full_unit_price;
+                dados.Quantidade = id.order_items[0].quantity;
+                dados.NumeroAnuncio = id.order_items[0].item.id;
+                DadosAdicionaisProd.Root a = RetornaDadosVenda(dados.NumeroAnuncio);
+                dados.CodBarras = ((a.attributes.Select(x => x).Where(x => x.id.Equals("GTIN")).FirstOrDefault()) ?? (new DadosAdicionaisProd.Attribute())).value_name;
+                dados.NomeComprador = id.buyer.first_name + id.buyer.last_name;
+                dados.CPFcomprador = id.buyer.billing_info.doc_number;
+                dados.IdCompra = id.payments[0].order_id.ToString();
+
                     CadastroNF tela = new CadastroNF(id);
-                    tela.ShowDialog();
+                     tela.ShowDialog();
                     //ConversaoML.Conversao(retorno,DadosEmitente);
                     // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
                     // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);
-                }
+            }
                 // RetornoVendaML.Result a = (RetornoVendaML.RetornaVendaML)id;
 
             }
