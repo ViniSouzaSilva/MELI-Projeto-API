@@ -46,13 +46,16 @@
         <Label Content="TG code" Grid.Column="1" Margin="67,0,5,53" Grid.Row="1" d:LayoutOverrides="Height"/>
         <Button x:Name="PuxarVendas_btn" Content="Puxar Vendas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendas_btn_Click"/>
         <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="6" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
-        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" >
+        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nickname" Width="*" Binding="{Binding Path=seller.nickname}"></DataGridTextColumn>
-                <DataGridTextColumn Header="ID do cliente" Width="*" Binding="{Binding Path=id}"></DataGridTextColumn>
-                <DataGridTextColumn Header="ID anuncio" Width="*" Binding="{Binding Path=payments.order_id }"></DataGridTextColumn>
-                <DataGridTextColumn Header="Quantidade" Width="*" Binding="{ Binding Path=order_items.quantity}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Preço" Width="*" Binding="{ Binding Path=order_items.full_unit_price}"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="Nickname" Width="*" Binding="{Binding ID_VENDA}"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID do cliente" Width="*" Binding="{Binding NOMECOMPRADOR}"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID anuncio" Width="*" Binding="{Binding CPF_COMPRADOR}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Quantidade" Width="*" Binding="{ Binding DATAVENDA}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Preço" Width="*" Binding="{ Binding ATRIBUICAO}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Preço" Width="*" Binding="{ Binding STATUS_ATRIBUICAO}"></DataGridTextColumn>
+
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style TargetType="DataGridRow">

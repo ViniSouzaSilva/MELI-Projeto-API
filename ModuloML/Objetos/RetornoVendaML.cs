@@ -28,14 +28,14 @@ namespace ModuloML.Objetos
             public AlternativePhone alternative_phone { get; set; }
             public string nickname { get; set; }
             public string last_name { get; set; }
-            public int id { get; set; }
+            public string id { get; set; }
             public string first_name { get; set; }
             public string email { get; set; }
         }
 
         public class Collector
         {
-            public int id { get; set; }
+            public string id { get; set; }
         }
 
         public class AtmTransferReference
@@ -48,24 +48,24 @@ namespace ModuloML.Objetos
         {
             public string reason { get; set; }
             public object status_code { get; set; }
-            public int total_paid_amount { get; set; }
+            public string total_paid_amount { get; set; }
             public string operation_type { get; set; }
-            public int transaction_amount { get; set; }
+            public string transaction_amount { get; set; }
             public DateTime date_approved { get; set; }
             public Collector collector { get; set; }
             public object coupon_id { get; set; }
-            public int installments { get; set; }
+            public string installments { get; set; }
             public string authorization_code { get; set; }
-            public int taxes_amount { get; set; }
+            public string taxes_amount { get; set; }
             public object id { get; set; }
             public DateTime date_last_modified { get; set; }
-            public int coupon_amount { get; set; }
+            public string coupon_amount { get; set; }
             public List<string> available_actions { get; set; }
-            public int shipping_cost { get; set; }
-            public int installment_amount { get; set; }
+            public string shipping_cost { get; set; }
+            public string? installment_amount { get; set; }
             public DateTime date_created { get; set; }
             public object activation_uri { get; set; }
-            public int overpaid_amount { get; set; }
+            public string overpaid_amount { get; set; }
             public long? card_id { get; set; }
             public string status_detail { get; set; }
             public string issuer_id { get; set; }
@@ -74,7 +74,7 @@ namespace ModuloML.Objetos
             public object deferred_period { get; set; }
             public AtmTransferReference atm_transfer_reference { get; set; }
             public string site_id { get; set; }
-            public int payer_id { get; set; }
+            public string payer_id { get; set; }
             public object order_id { get; set; }
             public string currency_id { get; set; }
             public string status { get; set; }
@@ -142,17 +142,17 @@ namespace ModuloML.Objetos
         {
             public Item item { get; set; }
             public int quantity { get; set; }
-            public int sale_fee { get; set; }
+            public string sale_fee { get; set; }
             public string listing_type_id { get; set; }
-            public int unit_price { get; set; }
-            public int full_unit_price { get; set; }
+            public string unit_price { get; set; }
+            public double full_unit_price { get; set; }
             public string currency_id { get; set; }
             public object manufacturing_days { get; set; }
         }
 
         public class Coupon
         {
-            public int amount { get; set; }
+            public string amount { get; set; }
             public object id { get; set; }
         }
 
@@ -184,7 +184,7 @@ namespace ModuloML.Objetos
             public AlternativePhone2 alternative_phone { get; set; }
             public string nickname { get; set; }
             public string last_name { get; set; }
-            public int id { get; set; }
+            public string id { get; set; }
             public string first_name { get; set; }
             public string email { get; set; }
         }
@@ -213,8 +213,8 @@ namespace ModuloML.Objetos
             public object status_detail { get; set; }
             public List<string> tags { get; set; }
             public Buyer buyer { get; set; }
-            public int total_amount { get; set; }
-            public int paid_amount { get; set; }
+            public string total_amount { get; set; }
+            public string paid_amount { get; set; }
             public List<object> mediations { get; set; }
             public string currency_id { get; set; }
             public string status { get; set; }
@@ -234,9 +234,9 @@ namespace ModuloML.Objetos
 
         public class Paging
         {
-            public int total { get; set; }
-            public int offset { get; set; }
-            public int limit { get; set; }
+            public string total { get; set; }
+            public string offset { get; set; }
+            public string limit { get; set; }
         }
 
         public class RetornaVendaML

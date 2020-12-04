@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModuloML.Objetos
 {
-    class DadosVerificacao
+    public class DadosVerificacao
     {
         public string DescricaoProd { get; set; }
         public double Preco { get; set; }

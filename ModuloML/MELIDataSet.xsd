@@ -793,6 +793,16 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
+              <DbSource ConnectionRef="localhost (DBMELI)" DbObjectName="TB_VENDAS" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="RetornaVendasNaoAtribuidas" GetMethodModifier="Public" GetMethodName="RetornaVendasNaoAtribuidas" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="RetornaVendasNaoAtribuidas" UserSourceName="RetornaVendasNaoAtribuidas">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STATUS_ATRIBUICAO
+FROM            TB_VENDAS
+WHERE        (ATRIBUICAO = '') AND (STATUS_ATRIBUICAO = '0 ')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
             </Sources>
           </TableAdapter>
         </Tables>

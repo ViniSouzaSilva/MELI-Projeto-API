@@ -10935,7 +10935,7 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[3];
+            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[4];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        TB_VENDAS.*\r\nFROM            TB_VENDAS";
@@ -10994,6 +10994,12 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             param.IsNullable = true;
             param.SourceColumn = "STATUS_ATRIBUICAO";
             this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT        ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STAT" +
+                "US_ATRIBUICAO\r\nFROM            TB_VENDAS\r\nWHERE        (ATRIBUICAO = \'\') AND (ST" +
+                "ATUS_ATRIBUICAO = \'0 \')";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11015,6 +11021,17 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual MELIDataSet.TB_VENDASDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            MELIDataSet.TB_VENDASDataTable dataTable = new MELIDataSet.TB_VENDASDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual MELIDataSet.TB_VENDASDataTable RetornaVendasNaoAtribuidas() {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             MELIDataSet.TB_VENDASDataTable dataTable = new MELIDataSet.TB_VENDASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

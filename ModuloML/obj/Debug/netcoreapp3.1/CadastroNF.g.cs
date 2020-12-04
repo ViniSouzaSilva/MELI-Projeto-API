@@ -237,7 +237,7 @@ namespace ModuloML.Telas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ModuloML_r51srk34_wpftmp;component/cadastronf.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ModuloML;component/cadastronf.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CadastroNF.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
