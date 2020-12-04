@@ -46,15 +46,16 @@
         <Label Content="TG code" Grid.Column="1" Margin="67,0,5,53" Grid.Row="1" d:LayoutOverrides="Height"/>
         <Button x:Name="PuxarVendas_btn" Content="Puxar Vendas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendas_btn_Click"/>
         <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="6" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
-        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" >
+        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" >
             <DataGrid.Columns>
 
-                <DataGridTextColumn Header="Nickname" Width="*" Binding="{Binding ID_VENDA}"></DataGridTextColumn>
-                <DataGridTextColumn Header="ID do cliente" Width="*" Binding="{Binding NOMECOMPRADOR}"></DataGridTextColumn>
-                <DataGridTextColumn Header="ID anuncio" Width="*" Binding="{Binding CPF_COMPRADOR}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Quantidade" Width="*" Binding="{ Binding DATAVENDA}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Preço" Width="*" Binding="{ Binding ATRIBUICAO}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Preço" Width="*" Binding="{ Binding STATUS_ATRIBUICAO}"></DataGridTextColumn>
+                <DataGridTextColumn Header="ID da venda" Width="*" Binding="{Binding ID_VENDA}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Nome do comprador" Width="*" Binding="{Binding NOMECOMPRADOR}"></DataGridTextColumn>
+                <DataGridTextColumn Header="CPF/CNPJ" Width="*" Binding="{Binding CPF_COMPRADOR}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Data da venda" Width="*" Binding="{ Binding DATAVENDA}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Atribuição" Width="*" Binding="{ Binding ATRIBUICAO}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Produto" Width="*" Binding="{ Binding DESCRICAOPROD}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Quantidade" Width="*" Binding="{ Binding QUANTIDADE}"></DataGridTextColumn>
 
             </DataGrid.Columns>
             <DataGrid.Resources>
@@ -73,16 +74,7 @@
             </DataGrid.Resources>
 
         </DataGrid>
-        <ComboBox x:Name="Status_cxb" Grid.Column="8" Margin="5,17,5,16" Grid.ColumnSpan="2" Height="45" Width="230">
-            <ComboBoxItem Content="confirmed"></ComboBoxItem>
-            <ComboBoxItem Content="payment_required"></ComboBoxItem>
-            <ComboBoxItem Content="payment_in_process"></ComboBoxItem>
-            <ComboBoxItem Content="partially_paid"></ComboBoxItem>
-            <ComboBoxItem Content="paid"></ComboBoxItem>
-            <ComboBoxItem Content="cancelled"></ComboBoxItem>
-            <ComboBoxItem Content="invalid"></ComboBoxItem>
-
-        </ComboBox>
+        
         <Button x:Name="Add_btn" Content="Add" Grid.Column="4" Height="50" Margin="35,14,35,14" Width="50" Click="Add_btn_Click"/>
         <ComboBox x:Name="lojas_cxb" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="300" Height="30" Margin="30,63,30,-15" />
 

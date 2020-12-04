@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security.AccessControl;
@@ -56,7 +57,7 @@ namespace ModuloML
         }
         #region Atributos
         public List<Result> results { get { return RetornaVenda(); } }
-        public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
+        //public List<Result> resultsFiltrados { get { return RetornaVendaPorStatusDesc(); } }
         public Collection<DadosVendas> DadosV = new Collection<DadosVendas>();
         public MELIDataSet.TB_VENDASDataTable tB_VENDASRows;
         MELIDataSet.TB_MELIDataTable TB_MELIdatatable;
@@ -174,7 +175,7 @@ namespace ModuloML
                     var request = new RestRequest(Method.GET);
                     request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
                     IRestResponse response = client.Execute(request);
-                    audit("vendas", response.Content);
+                    //audit("vendas", response.Content);
                     RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
                     retorno = myDeserializedClass;
                     //batatagrid.Items.Add(results);
@@ -183,30 +184,30 @@ namespace ModuloML
                 }
             }
         }
-        public List<Result> RetornaVendaPorStatusDesc()
+        public List<Result> RetornaVendaPorStatusDesc(string Id_App)
         {
             try
             {
                 RetornaDadosEmitente();
                 VerificaValidadeToken();
-                if (lojas_cxb.SelectedItem.Equals(""))
+               /* if (lojas_cxb.SelectedItem.Equals(""))
                 {
                     MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
                     return results;
                 }
                 else
-                {
+                {*/
                     using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                     {
                         //var a = chrome.Url;
-                        var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                        var loja = consulta.RetornaInfo(Id_App);
                         var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.status=paid&sort=date_desc&access_token=" + loja[0].TOKEN);
                         //var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&access_token=" + token);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.GET);
                         request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
                         IRestResponse response = client.Execute(request);
-                        audit("vendas", response.Content);
+                        //audit("vendas", response.Content);
                         RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
                         //batatagrid.Items.Add(results);
                         if (myDeserializedClass.results != null)
@@ -220,7 +221,7 @@ namespace ModuloML
                     //results = myDeserializedClass.results;
 
                     // batatagrid.Items.Add(results);
-                }
+                
             }
             catch (Exception ex) 
             {
@@ -230,25 +231,19 @@ namespace ModuloML
             }
 
         }
-        public List<Result> RetornaVendaPorStatusDescClone()
+        public List<Result> RetornaVendaPorStatusDescClone(string Id_App)
         {
             try
             {
                 RetornaDadosEmitente();
                 VerificaValidadeToken();
-                if (lojas_cxb.SelectedItem.Equals(""))
-                {
-                    MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
-                    return results;
-                }
-                else
-                {
+               
                     using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                     {
-                        DateTime Intervalo = DateTime.Now.Date.AddDays(-20);
+                        DateTime Intervalo = DateTime.Now.Date.AddDays(-60);
 
                         //var a = chrome.Url;
-                        var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                        var loja = consulta.RetornaInfo(Id_App);
                         //  var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.status=paid&sort=date_desc&access_token=" + loja[0].TOKEN);
                         //var client = new RestClient("https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&access_token=" + token);
                         var client = new RestClient(" https://api.mercadolibre.com/orders/search?seller=" + id_cliente + "&order.date_created.from=" + Intervalo.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss.fffffffK") + "&order.date_created.to="+DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss.fffffffK") + "&order.status=paid&sort=date_desc&access_token=" + loja[0].TOKEN);
@@ -258,7 +253,7 @@ namespace ModuloML
                         var request = new RestRequest(Method.GET);
                         request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
                         IRestResponse response = client.Execute(request);
-                        audit("vendas", response.Content);
+                        //audit("vendas", response.Content);
                         RetornaVendaML myDeserializedClass = JsonConvert.DeserializeObject<RetornaVendaML>(response.Content.ToString());
                         //batatagrid.Items.Add(results);
                         /* if (myDeserializedClass.results != null)
@@ -272,7 +267,7 @@ namespace ModuloML
                     //results = myDeserializedClass.results;
 
                     // batatagrid.Items.Add(results);
-                }
+                
             }
             catch (Exception ex)
             {
@@ -357,6 +352,8 @@ namespace ModuloML
                 using (var consulta = new MELIDataSetTableAdapters.TB_VENDASTableAdapter())
                 {
                     int count = 0;
+                    string codbarras = String.Empty;
+                    double PrecoCheio = 0;
                     foreach (var a in vendas.results)
                     {
                         var ResultConsulta = consulta.ExisteVenda(vendas.results[count].id.ToString());
@@ -366,7 +363,18 @@ namespace ModuloML
                         }
                         else if (ResultConsulta == 0)
                         {
-                            consulta.InsereVenda(vendas.results[count].id.ToString(),vendas.results[count].buyer.first_name+" "+vendas.results[count].buyer.last_name, vendas.results[count].buyer.billing_info.doc_number,DateTime.Now,"","0");
+                            DadosAdicionaisProd.Root GTIN = RetornaDadosVenda(vendas.results[count].order_items[0].item.id);
+                            codbarras = ((GTIN.attributes.Select(x => x).Where(x => x.id.Equals("GTIN")).FirstOrDefault()) ?? (new DadosAdicionaisProd.Attribute())).value_name;
+                            PrecoCheio = vendas.results[count].order_items[0].quantity * vendas.results[count].order_items[0].full_unit_price;
+                            if (String.IsNullOrEmpty(vendas.results[count].buyer.first_name)) { vendas.results[count].buyer.first_name = "Nenhum nome encontrado"; }
+                            if (String.IsNullOrEmpty(vendas.results[count].buyer.billing_info.doc_number)) { vendas.results[count].buyer.billing_info.doc_number = "";}
+                            if (String.IsNullOrEmpty(vendas.results[count].order_items[0].item.title)) { vendas.results[count].order_items[0].item.title = "Descrição não encontrada"; }
+                            if (String.IsNullOrEmpty(codbarras)) { codbarras = " "; }
+                            if (String.IsNullOrEmpty(vendas.results[count].order_items[0].item.id)) { vendas.results[count].order_items[0].item.id = " "; };
+                            if (PrecoCheio == null) { PrecoCheio = 0; }
+                            if (vendas.results[count].order_items[0].quantity == null) { vendas.results[count].order_items[0].quantity = 0; }
+
+                            consulta.InsereVenda(vendas.results[count].id.ToString(),vendas.results[count].buyer.first_name+" "+vendas.results[count].buyer.last_name, vendas.results[count].buyer.billing_info.doc_number,DateTime.Now,"","0",vendas.results[count].order_items[0].item.title,codbarras,vendas.results[count].order_items[0].quantity,Convert.ToDecimal(PrecoCheio), vendas.results[count].order_items[0].item.id);
                         }
                         else 
                         {
@@ -399,22 +407,31 @@ namespace ModuloML
         public async Task<string> ProcessaAsincronamente(RetornaVendaML vendas)
 
         {
+            int count = 0;
             try
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    
-                   RetornaVendaPorStatusDescClone();
+                    using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+                    {
+                        var AppId = consulta.PegaTodosOsValores();
+                        foreach (var a in AppId.Rows)
+                        {
+                            RetornaVendaPorStatusDescClone(AppId[count].ID_APP);
+                            count++;
+                        }
+                        
 
-                   // ProcessaVenda(vendas);
-                   // RetornaVendaPorStatusDescClone();
-                   // batatagrid.ItemsSource = RetornaVendaPorStatusDescClone();
-                    // MessageBox.Show("OK, funcionou ","Atenção");
-                    await Task.Delay(TimeSpan.FromMilliseconds(20000));
+                        // ProcessaVenda(vendas);
+                        // RetornaVendaPorStatusDescClone();
+                        // batatagrid.ItemsSource = RetornaVendaPorStatusDescClone();
+                        // MessageBox.Show("OK, funcionou ","Atenção");
+                        await Task.Delay(TimeSpan.FromMilliseconds(20000));
 
-                    //900000
-                    //Thread.Sleep(5000);
-                    i--;
+                        //900000
+                        //Thread.Sleep(5000);
+                        i--;
+                    }
                 }
                 return "";
             }
@@ -475,7 +492,30 @@ namespace ModuloML
                     tB_VENDASRows  = consulta.RetornaVendasNaoAtribuidas();
                     foreach (MELIDataSet.TB_VENDASRow row in tB_VENDASRows.Rows) 
                     {
-                        DadosV.Add(new DadosVendas() { ID_VENDA = row.ID_VENDA,NOMECOMPRADOR = row.NOMECOMPRADOR,CPF_COMPRADOR = row.CPF_COMPRADOR,DATAVENDA = row.DATAVENDA,ATRIBUICAO = row.ATRIBUICAO,STATUS_ATRIBUICAO = row.STATUS_ATRIBUICAO });
+                        /*
+                        if (row.ID_VENDA.Equals(DBNull.Value)) { row.ID_VENDA = "";}
+                        if (row.NOMECOMPRADOR.Equals(DBNull.Value)) { row.NOMECOMPRADOR = ""; }
+                        if (row.CPF_COMPRADOR.Equals(DBNull.Value)) { row.CPF_COMPRADOR = ""; }
+                        if (row.DATAVENDA.Equals(DBNull.Value)) { row.DATAVENDA = DateTime.UtcNow;}
+                        if (row.ATRIBUICAO.Equals(DBNull.Value)) { row.ATRIBUICAO = "";}
+                        if (row.STATUS_ATRIBUICAO.Equals(DBNull.Value)) { row.STATUS_ATRIBUICAO = "0"; }
+                        if (row.DESCRICAOPROD.Equals(DBNull.Value)) { row.DESCRICAOPROD = ""; }
+                        if (row.CODBARRAS.Equals(DBNull.Value)) { row.CODBARRAS = ""; }
+                        if (row.QUANTIDADE.Equals(DBNull.Value)) { row.QUANTIDADE = 0; }
+                        if (row.PRECO.Equals(DBNull.Value)) { row.PRECO = 0; }
+                        if (row.ID_ANUNCIO.Equals(DBNull.Value)) { row.ID_ANUNCIO = ""; }*/
+                        DadosV.Add(new DadosVendas() 
+                        {   ID_VENDA = row.ID_VENDA,
+                            NOMECOMPRADOR = row.NOMECOMPRADOR,
+                            CPF_COMPRADOR = row.CPF_COMPRADOR,
+                            DATAVENDA = row.DATAVENDA,
+                            ATRIBUICAO = row.ATRIBUICAO,
+                            STATUS_ATRIBUICAO = row.STATUS_ATRIBUICAO,
+                            DESCRICAOPROD = row.DESCRICAOPROD,
+                            CODBARRAS = row.CODBARRAS,
+                            QUANTIDADE = row.QUANTIDADE,
+                            PRECO = row.PRECO,
+                            ID_ANUNCIO = row.ID_ANUNCIO });
 
 
                     }
@@ -535,9 +575,17 @@ namespace ModuloML
             private void PuxarVendasfiltradas_btn_Click(object sender, RoutedEventArgs e)
             {
             //ProcessaVenda(resultsFiltrados);
-            RetornaVendaPorStatusDesc();
-              //batatagrid.ItemsSource = DadosV;
-            /// RetornaVendaPorStatusDesc();
+            using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+            {
+                int count = 0;
+                var AppId = consulta.PegaTodosOsValores();
+                foreach (var a in AppId.Rows)
+                {
+                    RetornaVendaPorStatusDesc(AppId[count].ID_APP);
+                    count++;
+                }
+                //batatagrid.ItemsSource = DadosV;
+            }/// RetornaVendaPorStatusDesc();
         }
 
             private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -574,13 +622,29 @@ namespace ModuloML
 
             private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
             {
+            try
+            {
+                    using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+                    {
+                        // var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                        DadosVendas id = (DadosVendas)batatagrid.SelectedItem;
 
-                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
-                {
-                    var loja = consulta.RetornaInfo(lojas_cxb.Text);
-                    RetornoVendaML.Result id = (RetornoVendaML.Result)batatagrid.SelectedItem;
-
-                    var IdSeller = id.seller.id;
+                        DadosVerificacao dadosVerificacao = new DadosVerificacao();
+                        dadosVerificacao.DescricaoProd = id.DESCRICAOPROD;
+                        dadosVerificacao.Preco = id.PRECO;
+                        dadosVerificacao.Quantidade = id.QUANTIDADE;
+                        dadosVerificacao.NumeroAnuncio = id.ID_ANUNCIO;
+                        dadosVerificacao.CodBarras = id.CODBARRAS;
+                        dadosVerificacao.NomeComprador = id.NOMECOMPRADOR;
+                        dadosVerificacao.CPFcomprador = id.CPF_COMPRADOR;
+                        dadosVerificacao.IdCompra = id.ID_VENDA;
+                    }  
+            }
+            catch (Exception ex) 
+            {
+                audit("Erro ao selecionar a venda",ex.Message);
+            }
+               /*     var IdSeller = id.seller.id;
                     var IdOrder = id.payments[0].id;
                 DadosVerificacao dados = new DadosVerificacao();
                 dados.DescricaoProd = id.order_items[0].item.title;
@@ -594,11 +658,11 @@ namespace ModuloML
                 dados.IdCompra = id.payments[0].order_id.ToString();
 
                     CadastroNF tela = new CadastroNF(id);
-                     tela.ShowDialog();
+                     tela.ShowDialog();*/
                     //ConversaoML.Conversao(retorno,DadosEmitente);
                     // RetornaInfoVenda(IdSeller.ToString(), IdOrder.ToString(),loja[0].TOKEN);
                     // RetornaXmlVenda(IdSeller.ToString(), IdOrder.ToString(), loja[0].TOKEN);
-            }
+            
                 // RetornoVendaML.Result a = (RetornoVendaML.RetornaVendaML)id;
 
             }

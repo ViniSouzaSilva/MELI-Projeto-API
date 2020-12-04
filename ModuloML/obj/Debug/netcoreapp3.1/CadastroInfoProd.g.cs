@@ -149,7 +149,7 @@ namespace ModuloML {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ModuloML;component/cadastroinfoprod.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ModuloML_cwc4t3xi_wpftmp;component/cadastroinfoprod.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CadastroInfoProd.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

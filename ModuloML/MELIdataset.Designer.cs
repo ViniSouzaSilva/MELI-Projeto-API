@@ -2238,6 +2238,16 @@ namespace ModuloML {
             
             private global::System.Data.DataColumn columnSTATUS_ATRIBUICAO;
             
+            private global::System.Data.DataColumn columnDESCRICAOPROD;
+            
+            private global::System.Data.DataColumn columnCODBARRAS;
+            
+            private global::System.Data.DataColumn columnQUANTIDADE;
+            
+            private global::System.Data.DataColumn columnPRECO;
+            
+            private global::System.Data.DataColumn columnID_ANUNCIO;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TB_VENDASDataTable() {
@@ -2321,6 +2331,46 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn DESCRICAOPRODColumn {
+                get {
+                    return this.columnDESCRICAOPROD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CODBARRASColumn {
+                get {
+                    return this.columnCODBARRAS;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn QUANTIDADEColumn {
+                get {
+                    return this.columnQUANTIDADE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PRECOColumn {
+                get {
+                    return this.columnPRECO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ID_ANUNCIOColumn {
+                get {
+                    return this.columnID_ANUNCIO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2356,7 +2406,7 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TB_VENDASRow AddTB_VENDASRow(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, System.DateTime DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO) {
+            public TB_VENDASRow AddTB_VENDASRow(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, System.DateTime DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, int QUANTIDADE, double PRECO, string ID_ANUNCIO) {
                 TB_VENDASRow rowTB_VENDASRow = ((TB_VENDASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID_VENDA,
@@ -2364,7 +2414,12 @@ namespace ModuloML {
                         CPF_COMPRADOR,
                         DATAVENDA,
                         ATRIBUICAO,
-                        STATUS_ATRIBUICAO};
+                        STATUS_ATRIBUICAO,
+                        DESCRICAOPROD,
+                        CODBARRAS,
+                        QUANTIDADE,
+                        PRECO,
+                        ID_ANUNCIO};
                 rowTB_VENDASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTB_VENDASRow);
                 return rowTB_VENDASRow;
@@ -2393,6 +2448,11 @@ namespace ModuloML {
                 this.columnDATAVENDA = base.Columns["DATAVENDA"];
                 this.columnATRIBUICAO = base.Columns["ATRIBUICAO"];
                 this.columnSTATUS_ATRIBUICAO = base.Columns["STATUS_ATRIBUICAO"];
+                this.columnDESCRICAOPROD = base.Columns["DESCRICAOPROD"];
+                this.columnCODBARRAS = base.Columns["CODBARRAS"];
+                this.columnQUANTIDADE = base.Columns["QUANTIDADE"];
+                this.columnPRECO = base.Columns["PRECO"];
+                this.columnID_ANUNCIO = base.Columns["ID_ANUNCIO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2410,11 +2470,24 @@ namespace ModuloML {
                 base.Columns.Add(this.columnATRIBUICAO);
                 this.columnSTATUS_ATRIBUICAO = new global::System.Data.DataColumn("STATUS_ATRIBUICAO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSTATUS_ATRIBUICAO);
+                this.columnDESCRICAOPROD = new global::System.Data.DataColumn("DESCRICAOPROD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDESCRICAOPROD);
+                this.columnCODBARRAS = new global::System.Data.DataColumn("CODBARRAS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCODBARRAS);
+                this.columnQUANTIDADE = new global::System.Data.DataColumn("QUANTIDADE", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQUANTIDADE);
+                this.columnPRECO = new global::System.Data.DataColumn("PRECO", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRECO);
+                this.columnID_ANUNCIO = new global::System.Data.DataColumn("ID_ANUNCIO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_ANUNCIO);
                 this.columnID_VENDA.MaxLength = 100;
                 this.columnNOMECOMPRADOR.MaxLength = 100;
                 this.columnCPF_COMPRADOR.MaxLength = 100;
                 this.columnATRIBUICAO.MaxLength = 100;
                 this.columnSTATUS_ATRIBUICAO.MaxLength = 100;
+                this.columnDESCRICAOPROD.MaxLength = 500;
+                this.columnCODBARRAS.MaxLength = 200;
+                this.columnID_ANUNCIO.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4151,6 +4224,86 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string DESCRICAOPROD {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_VENDAS.DESCRICAOPRODColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'DESCRICAOPROD\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.DESCRICAOPRODColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CODBARRAS {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_VENDAS.CODBARRASColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'CODBARRAS\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.CODBARRASColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int QUANTIDADE {
+                get {
+                    try {
+                        return ((int)(this[this.tableTB_VENDAS.QUANTIDADEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'QUANTIDADE\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.QUANTIDADEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public double PRECO {
+                get {
+                    try {
+                        return ((double)(this[this.tableTB_VENDAS.PRECOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'PRECO\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.PRECOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ID_ANUNCIO {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_VENDAS.ID_ANUNCIOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ID_ANUNCIO\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.ID_ANUNCIOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsID_VENDANull() {
                 return this.IsNull(this.tableTB_VENDAS.ID_VENDAColumn);
             }
@@ -4219,6 +4372,66 @@ namespace ModuloML {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetSTATUS_ATRIBUICAONull() {
                 this[this.tableTB_VENDAS.STATUS_ATRIBUICAOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsDESCRICAOPRODNull() {
+                return this.IsNull(this.tableTB_VENDAS.DESCRICAOPRODColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetDESCRICAOPRODNull() {
+                this[this.tableTB_VENDAS.DESCRICAOPRODColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCODBARRASNull() {
+                return this.IsNull(this.tableTB_VENDAS.CODBARRASColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCODBARRASNull() {
+                this[this.tableTB_VENDAS.CODBARRASColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsQUANTIDADENull() {
+                return this.IsNull(this.tableTB_VENDAS.QUANTIDADEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetQUANTIDADENull() {
+                this[this.tableTB_VENDAS.QUANTIDADEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPRECONull() {
+                return this.IsNull(this.tableTB_VENDAS.PRECOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPRECONull() {
+                this[this.tableTB_VENDAS.PRECOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsID_ANUNCIONull() {
+                return this.IsNull(this.tableTB_VENDAS.ID_ANUNCIOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetID_ANUNCIONull() {
+                this[this.tableTB_VENDAS.ID_ANUNCIOColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -10878,12 +11091,15 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             tableMapping.ColumnMappings.Add("DATAVENDA", "DATAVENDA");
             tableMapping.ColumnMappings.Add("ATRIBUICAO", "ATRIBUICAO");
             tableMapping.ColumnMappings.Add("STATUS_ATRIBUICAO", "STATUS_ATRIBUICAO");
+            tableMapping.ColumnMappings.Add("DESCRICAOPROD", "DESCRICAOPROD");
+            tableMapping.ColumnMappings.Add("CODBARRAS", "CODBARRAS");
+            tableMapping.ColumnMappings.Add("QUANTIDADE", "QUANTIDADE");
+            tableMapping.ColumnMappings.Add("PRECO", "PRECO");
+            tableMapping.ColumnMappings.Add("ID_ANUNCIO", "ID_ANUNCIO");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO \"TB_VENDAS\" (\"ID_VENDA\", \"NOMECOMPRADOR\", \"CPF_COMPRADOR\", \"DATAVENDA" +
-                "\", \"ATRIBUICAO\", \"STATUS_ATRIBUICAO\") VALUES (@ID_VENDA, @NOMECOMPRADOR, @CPF_CO" +
-                "MPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""TB_VENDAS"" (""ID_VENDA"", ""NOMECOMPRADOR"", ""CPF_COMPRADOR"", ""DATAVENDA"", ""ATRIBUICAO"", ""STATUS_ATRIBUICAO"", ""DESCRICAOPROD"", ""CODBARRAS"", ""QUANTIDADE"", ""PRECO"", ""ID_ANUNCIO"") VALUES (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_ANUNCIO)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_VENDA";
@@ -10922,6 +11138,38 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             param.IsNullable = true;
             param.SourceColumn = "STATUS_ATRIBUICAO";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DESCRICAOPROD";
+            param.Size = 500;
+            param.IsNullable = true;
+            param.SourceColumn = "DESCRICAOPROD";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CODBARRAS";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "CODBARRAS";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@QUANTIDADE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "QUANTIDADE";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@PRECO";
+            param.DbType = global::System.Data.DbType.Double;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "PRECO";
+            this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_ANUNCIO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_ANUNCIO";
+            this._adapter.InsertCommand.Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10938,7 +11186,9 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[4];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        TB_VENDAS.*\r\nFROM            TB_VENDAS";
+            this._commandCollection[0].CommandText = "SELECT        ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STAT" +
+                "US_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO\r\nFROM    " +
+                "        TB_VENDAS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -10953,9 +11203,9 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "INSERT INTO TB_VENDAS\r\n                         (ID_VENDA, NOMECOMPRADOR, CPF_COM" +
-                "PRADOR, DATAVENDA, ATRIBUICAO, STATUS_ATRIBUICAO)\r\nVALUES        (@ID_VENDA, @NO" +
-                "MECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO)";
+            this._commandCollection[2].CommandText = @"INSERT INTO TB_VENDAS
+                         (ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STATUS_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO)
+VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_anuncio)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_VENDA";
@@ -10994,11 +11244,43 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             param.IsNullable = true;
             param.SourceColumn = "STATUS_ATRIBUICAO";
             this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@DESCRICAOPROD";
+            param.Size = 500;
+            param.IsNullable = true;
+            param.SourceColumn = "DESCRICAOPROD";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@CODBARRAS";
+            param.Size = 200;
+            param.IsNullable = true;
+            param.SourceColumn = "CODBARRAS";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@QUANTIDADE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "QUANTIDADE";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@PRECO";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = "PRECO";
+            this._commandCollection[2].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_anuncio";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_ANUNCIO";
+            this._commandCollection[2].Parameters.Add(param);
             this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT        ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STAT" +
-                "US_ATRIBUICAO\r\nFROM            TB_VENDAS\r\nWHERE        (ATRIBUICAO = \'\') AND (ST" +
-                "ATUS_ATRIBUICAO = \'0 \')";
+            this._commandCollection[3].CommandText = "SELECT ATRIBUICAO, CODBARRAS, CPF_COMPRADOR, DATAVENDA, DESCRICAOPROD, ID_ANUNCIO" +
+                ", ID_VENDA, NOMECOMPRADOR, PRECO, QUANTIDADE, STATUS_ATRIBUICAO FROM TB_VENDAS W" +
+                "HERE (ATRIBUICAO = \'\') AND (STATUS_ATRIBUICAO = \'0 \')";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -11070,7 +11352,7 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO) {
+        public virtual int Insert(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<double> PRECO, string ID_ANUNCIO) {
             if ((ID_VENDA == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -11106,6 +11388,36 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             }
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((string)(STATUS_ATRIBUICAO));
+            }
+            if ((DESCRICAOPROD == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(DESCRICAOPROD));
+            }
+            if ((CODBARRAS == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(CODBARRAS));
+            }
+            if ((QUANTIDADE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(QUANTIDADE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((PRECO.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((double)(PRECO.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ID_ANUNCIO == null)) {
+                throw new global::System.ArgumentNullException("ID_ANUNCIO");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(ID_ANUNCIO));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -11161,7 +11473,7 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsereVenda(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO) {
+        public virtual int InsereVenda(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<decimal> PRECO, string ID_anuncio) {
             global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[2];
             if ((ID_VENDA == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
@@ -11198,6 +11510,36 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             }
             else {
                 command.Parameters[5].Value = ((string)(STATUS_ATRIBUICAO));
+            }
+            if ((DESCRICAOPROD == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(DESCRICAOPROD));
+            }
+            if ((CODBARRAS == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(CODBARRAS));
+            }
+            if ((QUANTIDADE.HasValue == true)) {
+                command.Parameters[8].Value = ((int)(QUANTIDADE.Value));
+            }
+            else {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((PRECO.HasValue == true)) {
+                command.Parameters[9].Value = ((decimal)(PRECO.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((ID_anuncio == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(ID_anuncio));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
