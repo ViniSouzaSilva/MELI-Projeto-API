@@ -36,6 +36,9 @@ C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\Modul
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\ModuloML.pdb
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\FirebirdSql.Data.FirebirdClient.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\JsonSubTypes.dll
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\MaterialIcons.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\RestSharp.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\bin\Debug\netcoreapp3.1\WebDriver.dll
@@ -49,13 +52,16 @@ C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\Modul
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\CadastroNF.g.cs
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloBling.g.cs
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\TelaLogin.g.cs
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloML_MarkupCompile.cache
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloML_MarkupCompile.lref
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\CadastroInfoProd.baml
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\CadastroNF.baml
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloBling.baml
+C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\TelaLogin.baml
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloML.g.resources
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloML.AssemblyInfoInputs.cache
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\ModuloML\obj\Debug\netcoreapp3.1\ModuloML.AssemblyInfo.cs

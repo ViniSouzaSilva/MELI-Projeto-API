@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ModuloML"
         mc:Ignorable="d"
         Title="CadastroInfoProd" Height="400" Width="600">
@@ -28,9 +29,10 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <GroupBox Header="Código Produto" Grid.Column="7" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="1">
-            <TextBox x:Name="Cprod_txb"/>
-        </GroupBox>
+        <TextBox x:Name="Cprod_txb" materialDesign:HintAssist.Hint="Floating Hint" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center"  Grid.Column="7" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="1"/>
+
+        
+
         <GroupBox Header="Código de Barras" Grid.Column="5" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Row="0">
             <TextBox x:Name="CEAN_txb" />
         </GroupBox>

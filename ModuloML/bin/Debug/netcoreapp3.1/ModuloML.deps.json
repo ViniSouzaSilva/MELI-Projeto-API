@@ -9,6 +9,9 @@
       "ModuloML/1.0.0": {
         "dependencies": {
           "FirebirdSql.Data.FirebirdClient": "7.5.0",
+          "MaterialDesignColors": "1.2.7",
+          "MaterialDesignThemes": "3.2.0",
+          "MaterialIcons": "1.0.3",
           "MeliLibTools": "1.0.0",
           "Selenium.WebDriver": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "86.0.4240.2200",
@@ -37,6 +40,33 @@
           "lib/netstandard2.0/JsonSubTypes.dll": {
             "assemblyVersion": "1.5.2.0",
             "fileVersion": "1.5.2.0"
+          }
+        }
+      },
+      "MaterialDesignColors/1.2.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/MaterialDesignColors.dll": {
+            "assemblyVersion": "1.2.7.1979",
+            "fileVersion": "1.2.7.1979"
+          }
+        }
+      },
+      "MaterialDesignThemes/3.2.0": {
+        "dependencies": {
+          "MaterialDesignColors": "1.2.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "3.2.0.1979",
+            "fileVersion": "3.2.0.1979"
+          }
+        }
+      },
+      "MaterialIcons/1.0.3": {
+        "runtime": {
+          "lib/MaterialIcons.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -183,6 +213,27 @@
       "sha512": "sha512-Lu1fbpVYMDl45cz8Y0cH7MTjIN0dDhjg2srkbIJ7fjHvGepfzgKCf7WC5qp2vCxVZfNDeAcS1YAJZELhUFVPsw==",
       "path": "jsonsubtypes/1.5.2",
       "hashPath": "jsonsubtypes.1.5.2.nupkg.sha512"
+    },
+    "MaterialDesignColors/1.2.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e+shDlaSAJcuTArqtfWjVUgAOlwQlgWq8akkzCGe1MvfV1ozmOqqXyWxg5w0vC/3/KZ84wnPUJeI1wzEpI0uJQ==",
+      "path": "materialdesigncolors/1.2.7",
+      "hashPath": "materialdesigncolors.1.2.7.nupkg.sha512"
+    },
+    "MaterialDesignThemes/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZQShQuV7sCWOwO98dYz1S4stmIWDBH+Q6KoR3wDiDyuG7twoGnBDzQBhrxuS16I3GQiG5nfvUjEJFVc/zdKg==",
+      "path": "materialdesignthemes/3.2.0",
+      "hashPath": "materialdesignthemes.3.2.0.nupkg.sha512"
+    },
+    "MaterialIcons/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qV5ffWTm3TKhIZBBNDxFjkAS19YR2xXnPQd7l45T5KNcXVrTPQr2MCumV+xMNnMFoGqi8hnJD6hmauOXSHgIVQ==",
+      "path": "materialicons/1.0.3",
+      "hashPath": "materialicons.1.0.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.1": {
       "type": "package",

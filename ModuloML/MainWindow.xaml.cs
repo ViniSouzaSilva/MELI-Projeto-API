@@ -158,7 +158,7 @@ namespace ModuloML
         }
         public List<Result> RetornaVenda()
         {
-            RetornaDadosEmitente();
+           // RetornaDadosEmitente();
             VerificaValidadeToken();
             if (lojas_cxb.SelectedItem.Equals(""))
             {
@@ -188,7 +188,7 @@ namespace ModuloML
         {
             try
             {
-                RetornaDadosEmitente();
+                RetornaDadosEmitente(Id_App);
                 VerificaValidadeToken();
                /* if (lojas_cxb.SelectedItem.Equals(""))
                 {
@@ -235,7 +235,7 @@ namespace ModuloML
         {
             try
             {
-                RetornaDadosEmitente();
+                RetornaDadosEmitente(Id_App);
                 VerificaValidadeToken();
                
                     using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
@@ -306,21 +306,15 @@ namespace ModuloML
 
                 // batatagrid.Items.Add(results);
             }
-            public void RetornaDadosEmitente()
+            public void RetornaDadosEmitente(string Id_App)
             {
             try
             {
                 VerificaValidadeToken();
-                if (lojas_cxb.SelectedItem.Equals("")|| lojas_cxb.SelectedItem.Equals(null))
-                {
-                    MessageBox.Show("Atenção", "Selecione o a conta ML corretamente");
-                    // return results;
-                }
-                else
-                {
+                
                     using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                     {
-                        var loja = consulta.RetornaInfo(lojas_cxb.Text);
+                        var loja = consulta.RetornaInfo(Id_App);
                         var client = new RestClient("https://api.mercadolibre.com/users/me?access_token=" + loja[0].TOKEN);
                         client.Timeout = -1;
                         var request = new RestRequest(Method.GET);
@@ -334,7 +328,7 @@ namespace ModuloML
 
                         //return myDeserializedClass.results;
                     }
-                }
+                
             }
             catch (Exception ex) 
             {

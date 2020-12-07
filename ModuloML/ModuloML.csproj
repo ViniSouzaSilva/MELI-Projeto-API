@@ -12,6 +12,9 @@
 
   <ItemGroup>
     <PackageReference Include="FirebirdSql.Data.FirebirdClient" Version="7.5.0" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="MaterialIcons" Version="1.0.3" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="86.0.4240.2200" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
