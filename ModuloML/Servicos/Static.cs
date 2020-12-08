@@ -24,5 +24,14 @@ namespace ModuloML.Servicos
             }
         }//Escreve no arquivo da auditoria.
     }
+    public static class USER 
+    {
+        public static int ID { get; set; }
+        public static string NOME{ get; set; }
+        public static string LOGIN { get; set; }
+        public static int ACESSO { get; set; }
+
+
+    }
     
 }

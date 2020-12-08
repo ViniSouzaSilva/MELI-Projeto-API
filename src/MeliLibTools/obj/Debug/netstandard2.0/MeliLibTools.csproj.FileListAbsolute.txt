@@ -9,7 +9,6 @@ C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\M
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.deps.json
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\bin\Debug\netstandard2.0\MeliLibTools.pdb
-C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.csprojAssemblyReference.cache
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.dll
 C:\Users\Usuario\Downloads\MELI-Project-API-master\MELI-Project-API-master\src\MeliLibTools\obj\Debug\netstandard2.0\MeliLibTools.pdb

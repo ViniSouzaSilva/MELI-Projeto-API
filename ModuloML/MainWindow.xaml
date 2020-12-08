@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ModuloML"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1200">
-    <Grid>
+    <Grid Background="#FF303030">
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
@@ -46,7 +46,7 @@
         <Label Content="TG code" Grid.Column="1" Margin="67,0,5,53" Grid.Row="1" d:LayoutOverrides="Height"/>
         <Button x:Name="PuxarVendas_btn" Content="Puxar Vendas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendas_btn_Click"/>
         <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="6" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
-        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" >
+        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" Foreground="#FF303030" BorderBrush="{DynamicResource MaterialDesignChipBackground}" Background="#FF303030" >
             <DataGrid.Columns>
 
                 <DataGridTextColumn Header="ID da venda" Width="*" Binding="{Binding ID_VENDA}"></DataGridTextColumn>
@@ -61,7 +61,7 @@
             <DataGrid.Resources>
                 <Style TargetType="DataGridRow">
 
-                   
+
                     <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
                     <Style.Triggers>
 
@@ -74,7 +74,7 @@
             </DataGrid.Resources>
 
         </DataGrid>
-        
+
         <Button x:Name="Add_btn" Content="Add" Grid.Column="4" Height="50" Margin="35,14,35,14" Width="50" Click="Add_btn_Click"/>
         <ComboBox x:Name="lojas_cxb" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="300" Height="30" Margin="30,63,30,-15" />
 

@@ -10,6 +10,9 @@
     <Compile Update="CadastroInfoProd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MessageBoxCustom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ModuloBling.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +33,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBoxCustom.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ModuloBling.xaml">

@@ -1,0 +1,14 @@
+16:11:07.986	Atençao >>	Invalid character set specified
+17:05:21.969	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-120820-1bc50996a637eef58fb5ea8d4e079864-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+17:05:55.597	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+17:34:16.921	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+17:41:06.451	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+17:50:45.567	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

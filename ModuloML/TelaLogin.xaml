@@ -4,8 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:mdix="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:ModuloML"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -14,7 +12,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="TelaLogin" Height="450" Width="800">
+        Title="TelaLogin" Height="450" Width="800" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="5*"/>
@@ -37,18 +35,142 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <materialDesign:PackIcon Kind="User" Grid.Row="3" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Right" Height="50" Width="50" BorderBrush="#FFFBFBFB" Foreground="#FF6411B8" />
-        <TextBox materialDesign:HintAssist.Hint="Login" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.HelperText="Digite seu Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2">
-            
-        </TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="5" FontSize="36" HorizontalAlignment="Right" VerticalAlignment="Stretch" Foreground="#FFDADADA" OpacityMask="#FFDADA08">
+            AMBI
+        </TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="6" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontSize="36" Foreground="#FFF0FB08" OpacityMask="#FF0A0A0A">
+            MELI
+        </TextBlock>
+        <materialDesign:PackIcon Kind="User" Grid.Row="3" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="45" Width="50" BorderBrush="#FFFFEB3B" Foreground="#FFF0FB08" Margin="0,0,0,0" />
+        <TextBox x:Name="User_txb" materialDesign:HintAssist.Hint="Login" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.HelperText="Digite seu Login" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="2">
 
-            <GroupBox Grid.Column="5" Header="Senha" Grid.Row="5" Grid.ColumnSpan="2" BorderBrush="{x:Null}" Grid.RowSpan="2" Margin="0,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{x:Null}" Background="{x:Null}">
-            <TextBox/>
-        </GroupBox>
-        <Button x:Name="Registrar_btn" Content="Registrar-se" Grid.Column="4"  Grid.Row="7" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="45" Click="Registrar_btn_Click" Cursor="Hand" />
-        <Button Content="Entrar" Grid.Column="6"   Grid.Row="7" Grid.ColumnSpan="2" Height="45" />
-       
-        <TextBox x:Name="Cprod_txb" materialDesign:HintAssist.Hint="Floating Hint" Style="{StaticResource MaterialDesignFloatingHintTextBox}" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" Grid.RowSpan="1"/>
+        </TextBox>
+        <materialDesign:PackIcon Kind="Key" Grid.Row="5" Grid.Column="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="45" Width="50" BorderBrush="#FFFBFBFB" Foreground="#FFFFEB3B" Margin="0,0,0,0" />
+
+        <PasswordBox x:Name="UserSenha_txb" materialDesign:HintAssist.Hint="Senha" materialDesign:TextFieldAssist.HasClearButton="True" materialDesign:HintAssist.HelperText="Digite sua senha" Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2"/>
+        <!--<TextBox  materialDesign:HintAssist.Hint="Senha" materialDesign:HintAssist.FloatingScale="1" materialDesign:HintAssist.HelperText="Digite sua senha" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2"/>
+-->
+
+
+        <Button x:Name="EsqueciSenha_btn" Content="Esqueci minha senha " Grid.Column="4"  Grid.Row="8" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Height="45" Click="EsqueciSenha_btn_Click" Cursor="Hand" Width="190" />
+        <Button x:Name="Entrar_btn" Content="Entrar" Grid.Column="6"   Grid.Row="8" Grid.ColumnSpan="2" Height="45" Width="190" Click="Entrar_btn_Click" />
+        <!-- -->
+
+
+        <materialDesign:Flipper Grid.RowSpan="9" Grid.ColumnSpan="3" >
+            <materialDesign:Flipper.FrontContent>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160" />
+                        <RowDefinition
+          Height="*" />
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone
+        Mode="PrimaryMid"
+        VerticalAlignment="Stretch">
+                        <materialDesign:PackIcon
+          Kind="Marketplace"
+          VerticalAlignment="Stretch"
+          HorizontalAlignment="Stretch" Height="150" Width="149" />
+                    </materialDesign:ColorZone>
+                    <StackPanel
+        Grid.Row="1"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+                        <TextBlock FontSize="16">
+        Registrar-se
+                        </TextBlock>
+                        <Button
+          Style="{StaticResource MaterialDesignFlatButton}"
+          Command="{x:Static materialDesign:Flipper.FlipCommand}"
+          Margin="0 0 0 0" Cursor="Hand">
+                            <materialDesign:PackIcon Kind="CursorDefaultClick"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Flipper.FrontContent>
+            <materialDesign:Flipper.BackContent>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+          Height="Auto" />
+                        <RowDefinition
+          Height="*" />
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone
+        Mode="Accent"
+        Padding="6">
+                        <StackPanel
+          Orientation="Horizontal">
+                            <Button
+            Style="{StaticResource MaterialDesignToolForegroundButton}"
+            Command="{x:Static materialDesign:Flipper.FlipCommand}"
+            HorizontalAlignment="Left">
+                                <materialDesign:PackIcon
+              Kind="ArrowLeft"
+              HorizontalAlignment="Right" />
+                            </Button>
+                            <TextBlock
+            Margin="8 0 0 0"
+            VerticalAlignment="Center">
+          INSIRA OS DADOS
+                            </TextBlock>
+                        </StackPanel>
+                    </materialDesign:ColorZone>
+                    <Grid
+        Grid.Row="1"
+        Margin="0 6 0 0"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top"
+        Width="172">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBox x:Name="Login_txb"
+          materialDesign:HintAssist.Hint="Login"
+          materialDesign:HintAssist.IsFloating="True"
+          Margin="0 12 0 0">
+
+                        </TextBox>
+
+                        <TextBox x:Name="Senha_txb"
+          Grid.Row="1"
+          materialDesign:HintAssist.Hint="Senha"
+          materialDesign:HintAssist.IsFloating="True"
+          Margin="0 12 0 0">
+
+                        </TextBox>
+
+                        <TextBox x:Name="ConfirmaSenha_txb"
+          Grid.Row="2"
+          materialDesign:HintAssist.Hint="Confirma Senha"
+          materialDesign:HintAssist.IsFloating="True"
+          Margin="0 12 0 0">
+
+                        </TextBox>
+                        <StackPanel
+          Grid.Row="3"
+          Orientation="Horizontal"
+          Margin="0 12 0 0"
+          HorizontalAlignment="Right">
+                            <Button x:Name="SalvarRegistro_btn" Content="Salvar" Click="SalvarRegistro_btn_Click" Cursor="Hand"/>
+
+                        </StackPanel>
+
+                    </Grid>
+                </Grid>
+            </materialDesign:Flipper.BackContent>
+        </materialDesign:Flipper>
+
+        <Button x:Name="Fechar_btn" Grid.Column="7" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Fechar_btn_Click">
+            <materialDesign:PackIcon Kind="Close" Width="Auto"/>
+        </Button>
+
+
+            
 
     </Grid>
 </Window>
