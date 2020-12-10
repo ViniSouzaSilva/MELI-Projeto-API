@@ -1,0 +1,9 @@
+12:02:00.231	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-121015-1445cc47e383cccfa171949460cc158b-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+

@@ -39,6 +39,8 @@ namespace ModuloML.Servicos
             {
                 using (var seleciona = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
+                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                    var enc1252 = Encoding.GetEncoding(1252);
                     // Request Access Token
                     Token result = apiInstance.GetToken(grantType, clientId, clientSecret, redirectUri, null, refreshToken);
                     if (result is null)
@@ -106,6 +108,8 @@ namespace ModuloML.Servicos
             {
                 using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
                 {
+                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                    var enc1252 = Encoding.GetEncoding(1252);
                     foreach (MELIDataSet.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
                     {
                         if (row.IsREFRESH_TOKENNull())
@@ -131,6 +135,8 @@ namespace ModuloML.Servicos
             bool ExisteTokenVencido = false;
             using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
             {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                var enc1252 = Encoding.GetEncoding(1252);
                 foreach (MELIDataSet.TB_MELIRow row in consulta.PegaTodosOsValores().Rows)
                 {
                     DateTime DateToken = row.DT_TOKEN;

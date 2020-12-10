@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,7 +23,12 @@ namespace ModuloML
         {
             InitializeComponent();
         }
-        
+        private SHA256 SHA = SHA256.Create();
+        public string GetHashSHA256(byte[] senha)
+        {
+          string resultado =  BytesToString(SHA.ComputeHash(senha));
+            return resultado;
+        }
 
         private void SalvarRegistro_btn_Click(object sender, RoutedEventArgs e)
         {
@@ -44,7 +50,9 @@ namespace ModuloML
                         }
                         else
                         {
-                            Consulta.InsereUsuario(1, "", Login_txb.Text, Senha_txb.Text, 0);
+                            var resultado = StringToBytes(Senha_txb.Text);
+                            string senha = GetHashSHA256(resultado);
+                            Consulta.InsereUsuario(1, "", Login_txb.Text, senha, 0);
                             bool? Result = new MessageBoxCustom("Login cadastrado com sucesso!", MessageType.Confirmation, MessageButtons.Ok).ShowDialog();
 
                         }
@@ -85,6 +93,7 @@ namespace ModuloML
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                     var enc1252 = Encoding.GetEncoding(1252);
                     var user = consulta.SelecionaUser(User_txb.Text);
+                    
                     if (user[0].NOME.Equals(""))
                     {
                         bool? Result = new MessageBoxCustom(user[0].LOGIN, MessageType.Dado, MessageButtons.Salvar).ShowDialog();
@@ -101,7 +110,11 @@ namespace ModuloML
 
 
                     }
-                    if (user[0].SENHA.Equals(UserSenha_txb.Password))
+                    
+                   
+                    
+                    
+                    if (user[0].SENHA.Equals(PegaSenhaEncriptada(UserSenha_txb.Password)))
                     {
 
                         MainWindow tela = new MainWindow();
@@ -122,6 +135,16 @@ namespace ModuloML
             { 
             
             }
+        }
+        public string PegaSenhaEncriptada(string frase) 
+        {
+            
+                UTF8Encoding encoder = new UTF8Encoding();
+                SHA256Managed sha256hasher = new SHA256Managed();
+                byte[] hashedDataBytes = sha256hasher.ComputeHash(encoder.GetBytes(frase));
+                return BytesToString(hashedDataBytes);
+            
+
         }
     }
 }

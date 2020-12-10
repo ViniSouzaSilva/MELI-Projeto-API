@@ -1,0 +1,14 @@
+13:45:38.372	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-120916-298481e4b1c3ec6a1ba9aad7c0e01e2e-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+15:00:05.425	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:48:47.799	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:53:43.114	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:55:23.187	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:58:33.491	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

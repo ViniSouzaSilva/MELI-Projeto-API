@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ModuloML"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200">
+        Title="MainWindow" Height="800" Width="1200" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowState="Maximized" KeyDown="Window_KeyDown" >
     <Grid Background="#FF303030">
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
@@ -33,20 +34,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="geraToken_btn" Content="Gerar token" Margin="0,9,0,9" Grid.Row="9" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="0" Grid.ColumnSpan="2" Height="60" Click="geraToken_btn_Click"/>
-        <Button x:Name="RefreshToken_btn" Content="Refresh token" Margin="0,9,0,9" Grid.Row="9" Grid.Column="2"  d:LayoutOverrides="LeftMargin, RightMargin" Height="60" Grid.ColumnSpan="2" Click="RefreshToken_btn_Click"/>
-        <TextBox x:Name="ID_txb" Margin="50,21,50,20" Text="" TextWrapping="Wrap" Width="139" Grid.Row="0" Height="37" d:LayoutOverrides="LeftMargin, RightMargin" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="URL_txb" Margin="51,59,51,-19" Text="" TextWrapping="Wrap" Width="138" Grid.Row="1" Height="39" d:LayoutOverrides="LeftMargin, RightMargin" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="CodTG_txb" Text="" TextWrapping="Wrap" Grid.Row="1" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="AppSecret_txb" Margin="49,19,49,19" Text="" TextWrapping="Wrap" Width="142" Grid.Row="0" Height="40" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <Button x:Name="GerarURL_btn" Content="Gerar" Margin="0,14,0,15" Click="Button_Click" Grid.Row="3" Grid.Column="1" Grid.RowSpan="1" Height="50" Grid.ColumnSpan="2"/>
-        <Label Content="ID App" HorizontalAlignment="Left" Margin="4,21,0,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
-        <Label Content="URL redirect" Margin="50,27,-30,25" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
-        <Label Content="App secret" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.526,0.571" Margin="-23,0,0,0"/>
-        <Label Content="TG code" Grid.Column="1" Margin="67,0,5,53" Grid.Row="1" d:LayoutOverrides="Height"/>
-        <Button x:Name="PuxarVendas_btn" Content="Puxar Vendas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendas_btn_Click"/>
-        <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="6" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
-        <DataGrid x:Name="batatagrid" Grid.Column="5" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="5" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" Foreground="#FF303030" BorderBrush="{DynamicResource MaterialDesignChipBackground}" Background="#FF303030" >
+        <Button x:Name="geraToken_btn" Visibility="Collapsed" Content="Gerar token" Margin="0,9,0,9" Grid.Row="9" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="0" Grid.ColumnSpan="2" Height="60" Click="geraToken_btn_Click"/>
+        <Button x:Name="RefreshToken_btn" Visibility="Collapsed" Content="Refresh token" Margin="0,9,0,9" Grid.Row="9" Grid.Column="2"  d:LayoutOverrides="LeftMargin, RightMargin" Height="60" Grid.ColumnSpan="2" Click="RefreshToken_btn_Click"/>
+        <TextBox x:Name="ID_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="ID App" Margin="0,0,0,0" Text="" TextWrapping="Wrap" Grid.Row="2" Grid.ColumnSpan="2" Foreground="#FFFDF8F8"/>
+        <TextBox x:Name="URL_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="URL redirect" Text="" TextWrapping="Wrap" Grid.Row="3" HorizontalAlignment="Center" Width="230" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="75" Foreground="#FFF5F2F2"/>
+        <TextBox x:Name="CodTG_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="TG code" Text="" TextWrapping="Wrap" Grid.Row="3" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Foreground="#FFFBFBFB"/>
+        <TextBox x:Name="AppSecret_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="App Secret" Margin="0,0,0,0" Text="" TextWrapping="Wrap" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="1" Foreground="White"/>
+        <Button x:Name="GerarURL_btn" Visibility="Collapsed" Content="Gerar" Margin="0,14,0,15" Click="Button_Click" Grid.Row="4" Grid.Column="1" Grid.RowSpan="1" Height="50" Grid.ColumnSpan="2" Cursor="Hand"/>
+        <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
+        <DataGrid x:Name="batatagrid" Grid.Column="0" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="10" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" Foreground="#FF303030" BorderBrush="{DynamicResource MaterialDesignChipBackground}" Background="#FF303030" SelectionChanged="batatagrid_SelectionChanged" >
             <DataGrid.Columns>
 
                 <DataGridTextColumn Header="ID da venda" Width="*" Binding="{Binding ID_VENDA}"></DataGridTextColumn>
@@ -75,8 +71,8 @@
 
         </DataGrid>
 
-        <Button x:Name="Add_btn" Content="Add" Grid.Column="4" Height="50" Margin="35,14,35,14" Width="50" Click="Add_btn_Click"/>
-        <ComboBox x:Name="lojas_cxb" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="300" Height="30" Margin="30,63,30,-15" />
-
+        <Button x:Name="Add_btn" Visibility="Collapsed" Content="Add" Grid.Column="3" Margin="0,0,0,0" Click="Add_btn_Click" Grid.Row="1"/>
+        <!--<ComboBox x:Name="lojas_cxb" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Width="300" Height="30" Margin="30,63,30,-15" />
+            -->
     </Grid>
 </Window>
