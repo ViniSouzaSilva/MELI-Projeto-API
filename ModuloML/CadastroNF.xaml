@@ -3,11 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ModuloML.Telas"
         mc:Ignorable="d"
         Title="CadastroNF" Height="781" Width="1024" HorizontalAlignment="Stretch">
-    <Grid Width="1024" Height="781">
+    <Grid Width="1024" Margin="0,0,0,0" Background="#FF303030">
         <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="12*"/>
             <RowDefinition Height="12*"/>
             <RowDefinition Height="12*"/>
             <RowDefinition Height="12*"/>
@@ -41,98 +49,76 @@
 
 
         </Grid.ColumnDefinitions>
-        <GroupBox Header="Nota Fiscal" Grid.RowSpan="2" Grid.ColumnSpan="15" />
-        <GroupBox Header="Natureza de Operação" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="0,14,0,14" Height="55">
-        <TextBox x:Name="NaturezaOP_txb"/>
-        </GroupBox>
-        <GroupBox Header="Data\Hora Emissão" Grid.Column="5" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,14,0,14" Height="55">
-        <TextBox x:Name="DTEmissao_txb" />
-        </GroupBox>
-        <GroupBox Header="Data\Hora Saída" Grid.Column="9" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1" Height="55" >
-        <TextBox x:Name="DTSaida_txb" />
-        </GroupBox>
-        <GroupBox Header="Regime Tributário" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,13,0,14"/>
+        <GroupBox Header="Nota Fiscal" Grid.RowSpan="4" Grid.ColumnSpan="15" />
+        <TextBox x:Name="NaturezaOP_txb" materialDesign:HintAssist.Hint="Natureza de Operação" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="1" Grid.ColumnSpan="4" Foreground="White" />
 
-        <ComboBox x:Name="RegimeTrb_cxb" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="13,33,14,34">
+        <TextBox x:Name="DTEmissao_txb" materialDesign:HintAssist.Hint="Data\Hora Emissão" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" Foreground="White"/>
+        
+         <TextBox x:Name="DTSaida_txb" materialDesign:HintAssist.Hint="Data\Hora Saída" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="1" Grid.Column="7" Grid.ColumnSpan="3" Foreground="White" />
+
+
+        <ComboBox x:Name="RegimeTrb_cxb" materialDesign:HintAssist.Hint="Regime Tributário" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,0,0,0" VerticalAlignment="Stretch" Foreground="White">
             <ComboBoxItem Content="Simples Nacional"></ComboBoxItem>
             <ComboBoxItem Content="Simples Nacional, excesso sublimite de receita bruta"></ComboBoxItem>
             <ComboBoxItem Content="Regime Normal"></ComboBoxItem>
         </ComboBox>
 
-        <GroupBox Header="Finalidade" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,13,0,14"/>
 
-        <ComboBox x:Name="Finalidade_cxb" Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="13,33,14,34">
+        <ComboBox x:Name="Finalidade_cxb" Grid.Column="4" materialDesign:HintAssist.Hint="Finalidade" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Grid.Row="3" Grid.ColumnSpan="3"  VerticalAlignment="Stretch" Foreground="White">
             <ComboBoxItem Content="NF-e Normal"></ComboBoxItem>
 
         </ComboBox>
 
-        <GroupBox Header="Indicador de Presença" Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,13,0,14">
 
-            <ComboBox x:Name="IndPress_cxb" Grid.Column="8" Height="30" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" Width="175">
+        <ComboBox x:Name="IndPress_cxb" materialDesign:HintAssist.Hint="Indicador de Presença" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Grid.Column="8" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1" VerticalAlignment="Stretch" Foreground="White">
                 <ComboBoxItem Content="2 - Operação Não Presencial, pela Internet"></ComboBoxItem>
 
             </ComboBox>
-        </GroupBox>
+        
 
-        <GroupBox Header="Destinatário" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="15" FontFamily="Arial" FontWeight="Bold" BorderBrush="#FFF0F6F9" Foreground="#FF047CF3"/>
-        <GroupBox Header="Nome do comprador" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="1,22,1,21">
-            <TextBox x:Name="NomeComprador_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
+        <GroupBox Header="Destinatário" Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="15" FontFamily="Arial" FontWeight="Bold" BorderBrush="#FFF0F6F9" Foreground="#FF047CF3"/>
+        <TextBox x:Name="NomeComprador_txb" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Nome do comprador" TextWrapping="Wrap" Grid.Row="5" Grid.ColumnSpan="4" Foreground="#FFFFFDFD" />
 
-        <GroupBox Header="Tipo Pessoa" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1" Margin="0,22,0,21">
 
-            <ComboBox x:Name="TipoPessoa_cxb" Grid.Column="8" Height="30" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1" >
+        <ComboBox x:Name="TipoPessoa_cxb" Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="Tipo Pessoa" Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="3" Grid.RowSpan="1" VerticalAlignment="Stretch" Foreground="White" >
                 <ComboBoxItem Content="Física"></ComboBoxItem>
                 <ComboBoxItem Content="Jurídica"></ComboBoxItem>
                 <ComboBoxItem Content="Estrangeiro"></ComboBoxItem>
 
             </ComboBox>
-        </GroupBox>
 
-        <GroupBox Header="CPF/CNPJ" Grid.Column="5" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1" Margin="0,22,0,21" >
-            <TextBox x:Name="CPF_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Inscrição Estadual" Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1" Margin="0,22,0,21" >
-            <TextBox x:Name="IE_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
 
-        <GroupBox Header="Contribuinte" Grid.Column="9" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="0,22,0,21">
+        <TextBox x:Name="CPF_txb" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="CPF/CNPJ" TextWrapping="Wrap" Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="3" Foreground="White" />
 
-            <ComboBox x:Name="Contribuinte_cxb" Grid.Column="8" Height="30" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="1">
+        <TextBox x:Name="IE_txb" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Inscrição Estadual" TextWrapping="Wrap" Foreground="White" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" />
+
+        <ComboBox x:Name="Contribuinte_cxb" Grid.Column="12" Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="Contribuinte" Grid.Row="5" Grid.ColumnSpan="3" Grid.RowSpan="1" VerticalAlignment="Stretch" Foreground="White">
                 <ComboBoxItem Content="1 - Contribuinte ICMS"></ComboBoxItem>
                 <ComboBoxItem Content="2 - Contribuinte isento de inscrição ICMS"></ComboBoxItem>
                 <ComboBoxItem Content="9 - Não contribuinte, que pode ou não possuir IE"></ComboBoxItem>
 
             </ComboBox>
-        </GroupBox>
-        <GroupBox Header="CEP" Grid.Column="12" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1" Margin="0,22,0,21" >
-            <TextBox x:Name="CEP_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <Button x:Name="BuscaCEP_btn" Content="🌎" Grid.Column="14"  Grid.Row="2" FontSize="24" Margin="0,22,0,21"/>
 
-        <GroupBox Header="Endereço" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="1,21,1,22">
-            <TextBox x:Name="Endereco_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Número" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" Margin="0,21,0,22">
-            <TextBox x:Name="Numero_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Complemento" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Column="4" Margin="0,21,0,22">
-            <TextBox x:Name="Complemento_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Bairro" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Column="6" Margin="0,21,0,22">
-            <TextBox x:Name="Bairro_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Município" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="8" Margin="0,21,0,22">
-            <TextBox x:Name="Municipio_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="UF" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="11" Margin="0,21,0,22">
-            <TextBox x:Name="UF_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
-        <GroupBox Header="Telefone" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1" Margin="1,21,1,22" Grid.Column="12">
-            <TextBox x:Name="Telefone_txb" TextWrapping="Wrap" Height="30" />
-        </GroupBox>
+        <TextBox x:Name="CEP_txb" materialDesign:HintAssist.Hint="CEP" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Foreground="White" Grid.Row="6" Grid.Column="14" />
+        
+        <Button x:Name="BuscaCEP_btn" Content="🌎" Grid.Column="14"  Grid.Row="4" FontSize="24" Margin="0,22,0,21" Grid.RowSpan="2"/>
 
-        <GroupBox Header="Itens da Nota" Grid.Row="4" Grid.RowSpan="2" Grid.ColumnSpan="15">
+        <TextBox x:Name="Endereco_txb" materialDesign:HintAssist.Hint="Endereço" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Grid.Row="6" Grid.ColumnSpan="3" Height="51" Foreground="White" />
+
+        <TextBox x:Name="Numero_txb" materialDesign:HintAssist.Hint="Número" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Column="3" TextWrapping="Wrap" Grid.Row="6" Foreground="White" />
+
+        <TextBox x:Name="Complemento_txb" materialDesign:HintAssist.Hint="Complemento" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Foreground="White" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="2" />
+
+        <TextBox x:Name="Bairro_txb" materialDesign:HintAssist.Hint="Bairro" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Background="{x:Null}" Foreground="White" Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="2" />
+
+        <TextBox x:Name="Municipio_txb" materialDesign:HintAssist.Hint="Município" TextWrapping="Wrap" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Foreground="White" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="3" Width="188" />
+
+        <TextBox x:Name="UF_txb" materialDesign:HintAssist.Hint="UF" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Grid.Row="6" Grid.Column="11" Foreground="White" />
+
+        <TextBox x:Name="Telefone_txb" materialDesign:HintAssist.Hint="Telefone" Style="{StaticResource MaterialDesignFloatingHintTextBox}" TextWrapping="Wrap" Foreground="White" Grid.Row="6" Grid.Column="12" Grid.ColumnSpan="2" />
+        
+
+        <GroupBox Header="Itens da Nota" Grid.Row="8" Grid.RowSpan="4" Grid.ColumnSpan="15">
             <DataGrid x:Name="Produ_datagrid" ItemsSource="{Binding}"  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="15" Grid.RowSpan="2" Height="157" Width="936">
                 <DataGrid.Columns>
                     
@@ -157,10 +143,11 @@
 
 
 
-        <Button x:Name="Salvar_btn" Content="Salvar" Grid.Row="7" Grid.Column="12" Grid.RowSpan="1" Grid.ColumnSpan="2" Height="55" Click="Salvar_btn_Click" />
-        <Button x:Name="Cancelar_btn" Content="Fechar" Grid.Row="7" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Height="55" />
-        <ScrollBar Grid.Column="15" Grid.Row="0" Orientation="Vertical" d:LayoutOverrides="TopMargin, BottomMargin" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="9" Width="20"/>
-        
+        <Button x:Name="Salvar_btn" Content="Salvar" Grid.Row="14" Grid.Column="12" Grid.RowSpan="1" Grid.ColumnSpan="2" Height="55" Click="Salvar_btn_Click" />
+        <Button x:Name="Cancelar_btn" Content="Fechar" Grid.Row="14" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Height="55" />
+        <ScrollBar Grid.Column="15" Grid.Row="0" Orientation="Vertical" d:LayoutOverrides="TopMargin, BottomMargin" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="16" Width="20"/>
+        <TextBox x:Name="InfoComplementar_txb" Grid.ColumnSpan="7"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Column="9" Margin="0,0,0,0" Grid.Row="12" materialDesign:HintAssist.Hint="Informações Complementáres Editáveis" TextWrapping="Wrap" Foreground="White" Grid.RowSpan="2"/>
+
     </Grid>
     
 </Window>

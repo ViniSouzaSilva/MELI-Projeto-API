@@ -7,3 +7,8 @@
   RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
 }
 
+15:23:27.608	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:23:39.423	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:34:10.482	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:44:05.937	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:48:24.639	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

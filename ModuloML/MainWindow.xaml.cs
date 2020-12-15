@@ -381,8 +381,8 @@ namespace ModuloML
                             if (String.IsNullOrEmpty(vendas.results[count].order_items[0].item.id)) { vendas.results[count].order_items[0].item.id = " "; };
                             if (PrecoCheio == null) { PrecoCheio = 0; }
                             if (vendas.results[count].order_items[0].quantity == null) { vendas.results[count].order_items[0].quantity = 0; }
-
-                            consulta.InsereVenda(vendas.results[count].id.ToString(), vendas.results[count].buyer.first_name + " " + vendas.results[count].buyer.last_name, vendas.results[count].buyer.billing_info.doc_number, DateTime.Now, "", "0", vendas.results[count].order_items[0].item.title, codbarras, vendas.results[count].order_items[0].quantity, Convert.ToDecimal(PrecoCheio), vendas.results[count].order_items[0].item.id);
+                            if (vendas.results[count].shipping.id is null) { vendas.results[count].shipping.id = ""; }
+                            consulta.InsereVenda(vendas.results[count].id.ToString(), vendas.results[count].buyer.first_name + " " + vendas.results[count].buyer.last_name, vendas.results[count].buyer.billing_info.doc_number, DateTime.Now, "", "0", vendas.results[count].order_items[0].item.title, codbarras, vendas.results[count].order_items[0].quantity, Convert.ToDecimal(PrecoCheio), vendas.results[count].order_items[0].item.id,vendas.results[count].shipping.id.ToString());
                         }
                         else
                         {
@@ -528,7 +528,9 @@ namespace ModuloML
                             CODBARRAS = row.CODBARRAS,
                             QUANTIDADE = row.QUANTIDADE,
                             PRECO = row.PRECO,
-                            ID_ANUNCIO = row.ID_ANUNCIO
+                            ID_ANUNCIO = row.ID_ANUNCIO,
+                            ID_SHIPMENT = row.ID_SHIPMENT
+                            
                         });
 
 
@@ -639,22 +641,37 @@ namespace ModuloML
         {
             try
             {
-                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+                using (var consulta = new MELIDataSetTableAdapters.TB_VENDASTableAdapter())
                 {
+                    
                     Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                     var enc1252 = Encoding.GetEncoding(1252);
                     // var loja = consulta.RetornaInfo(lojas_cxb.Text);
                     DadosVendas id = (DadosVendas)batatagrid.SelectedItem;
+                   // var result = (Result)batatagrid.SelectedItem;
+                    var existe = consulta.ExisteAtribuicao(id.ID_VENDA);
+                    if (existe[0].ATRIBUICAO.Equals("")&& existe[0].STATUS_ATRIBUICAO.Equals("0")) 
+                    {
+                        DadosVerificacao dadosVerificacao = new DadosVerificacao();
+                        dadosVerificacao.DescricaoProd = id.DESCRICAOPROD;
+                        dadosVerificacao.Preco = id.PRECO;
+                        dadosVerificacao.Quantidade = id.QUANTIDADE;
+                        dadosVerificacao.NumeroAnuncio = id.ID_ANUNCIO;
+                        dadosVerificacao.CodBarras = id.CODBARRAS;
+                        dadosVerificacao.NomeComprador = id.NOMECOMPRADOR;
+                        dadosVerificacao.CPFcomprador = id.CPF_COMPRADOR;
+                        dadosVerificacao.IdCompra = id.ID_VENDA;
+                        consulta.AtribuiVenda(ModuloML.Servicos.USER.LOGIN, id.ID_VENDA);
 
-                    DadosVerificacao dadosVerificacao = new DadosVerificacao();
-                    dadosVerificacao.DescricaoProd = id.DESCRICAOPROD;
-                    dadosVerificacao.Preco = id.PRECO;
-                    dadosVerificacao.Quantidade = id.QUANTIDADE;
-                    dadosVerificacao.NumeroAnuncio = id.ID_ANUNCIO;
-                    dadosVerificacao.CodBarras = id.CODBARRAS;
-                    dadosVerificacao.NomeComprador = id.NOMECOMPRADOR;
-                    dadosVerificacao.CPFcomprador = id.CPF_COMPRADOR;
-                    dadosVerificacao.IdCompra = id.ID_VENDA;
+                        batatagrid.Items.Refresh();
+                        bool? Result = new MessageBoxCustom("Venda atribuída !", MessageType.Success, MessageButtons.Ok).ShowDialog();
+                        CadastroNF tela = new CadastroNF(id.ID_VENDA,id.ID_SHIPMENT);
+                        tela.ShowDialog();
+
+
+                    }
+
+
                 }
             }
             catch (Exception ex)

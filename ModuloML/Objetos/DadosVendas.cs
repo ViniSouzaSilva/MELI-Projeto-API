@@ -17,6 +17,7 @@ namespace ModuloML.Objetos
         public int QUANTIDADE { get; set; }
         public double PRECO { get; set; }
         public string ID_ANUNCIO { get; set; }
+        public string ID_SHIPMENT { get; set; }
 
     }
 }

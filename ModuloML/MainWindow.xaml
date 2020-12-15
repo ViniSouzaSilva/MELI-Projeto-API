@@ -41,7 +41,7 @@
         <TextBox x:Name="CodTG_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="TG code" Text="" TextWrapping="Wrap" Grid.Row="3" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="2" Foreground="#FFFBFBFB"/>
         <TextBox x:Name="AppSecret_txb" Visibility="Collapsed" materialDesign:HintAssist.Hint="App Secret" Margin="0,0,0,0" Text="" TextWrapping="Wrap" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="1" Foreground="White"/>
         <Button x:Name="GerarURL_btn" Visibility="Collapsed" Content="Gerar" Margin="0,14,0,15" Click="Button_Click" Grid.Row="4" Grid.Column="1" Grid.RowSpan="1" Height="50" Grid.ColumnSpan="2" Cursor="Hand"/>
-        <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
+        <Button x:Name="PuxarVendasfiltradas_btn" Content="Puxar Vendas filtradas" Grid.Column="5" HorizontalAlignment="Left" Margin="0,0,0,28" VerticalAlignment="Bottom" Width="110" Height="50" Click="PuxarVendasfiltradas_btn_Click"/>
         <DataGrid x:Name="batatagrid" Grid.Column="0" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="10" AutoGenerateColumns="False" ItemsSource="{Binding}" IsReadOnly="True" Foreground="#FF303030" BorderBrush="{DynamicResource MaterialDesignChipBackground}" Background="#FF303030" SelectionChanged="batatagrid_SelectionChanged" >
             <DataGrid.Columns>
 

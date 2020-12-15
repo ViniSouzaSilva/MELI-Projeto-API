@@ -1,0 +1,10 @@
+10:10:20.684	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-121513-afec1234f6483b9daecfd26f12943225-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+10:11:10.425	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

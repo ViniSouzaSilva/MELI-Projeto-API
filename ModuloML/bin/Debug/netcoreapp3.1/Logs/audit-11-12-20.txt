@@ -1,0 +1,11 @@
+16:12:46.499	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-121119-4486e8b005dff820686d39c2b66161b8-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+16:12:51.715	Erro ao selecionar a venda >>	Unable to cast object of type 'ModuloML.Objetos.DadosVendas' to type 'Result'.
+16:13:09.474	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

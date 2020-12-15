@@ -2283,6 +2283,8 @@ namespace ModuloML {
             
             private global::System.Data.DataColumn columnID_ANUNCIO;
             
+            private global::System.Data.DataColumn columnID_SHIPMENT;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TB_VENDASDataTable() {
@@ -2406,6 +2408,14 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ID_SHIPMENTColumn {
+                get {
+                    return this.columnID_SHIPMENT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2441,7 +2451,7 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TB_VENDASRow AddTB_VENDASRow(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, System.DateTime DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, int QUANTIDADE, double PRECO, string ID_ANUNCIO) {
+            public TB_VENDASRow AddTB_VENDASRow(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, System.DateTime DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, int QUANTIDADE, double PRECO, string ID_ANUNCIO, string ID_SHIPMENT) {
                 TB_VENDASRow rowTB_VENDASRow = ((TB_VENDASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID_VENDA,
@@ -2454,7 +2464,8 @@ namespace ModuloML {
                         CODBARRAS,
                         QUANTIDADE,
                         PRECO,
-                        ID_ANUNCIO};
+                        ID_ANUNCIO,
+                        ID_SHIPMENT};
                 rowTB_VENDASRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTB_VENDASRow);
                 return rowTB_VENDASRow;
@@ -2488,6 +2499,7 @@ namespace ModuloML {
                 this.columnQUANTIDADE = base.Columns["QUANTIDADE"];
                 this.columnPRECO = base.Columns["PRECO"];
                 this.columnID_ANUNCIO = base.Columns["ID_ANUNCIO"];
+                this.columnID_SHIPMENT = base.Columns["ID_SHIPMENT"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2515,14 +2527,17 @@ namespace ModuloML {
                 base.Columns.Add(this.columnPRECO);
                 this.columnID_ANUNCIO = new global::System.Data.DataColumn("ID_ANUNCIO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_ANUNCIO);
+                this.columnID_SHIPMENT = new global::System.Data.DataColumn("ID_SHIPMENT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_SHIPMENT);
                 this.columnID_VENDA.MaxLength = 100;
                 this.columnNOMECOMPRADOR.MaxLength = 100;
                 this.columnCPF_COMPRADOR.MaxLength = 100;
                 this.columnATRIBUICAO.MaxLength = 100;
-                this.columnSTATUS_ATRIBUICAO.MaxLength = 100;
+                this.columnSTATUS_ATRIBUICAO.MaxLength = 1;
                 this.columnDESCRICAOPROD.MaxLength = 500;
                 this.columnCODBARRAS.MaxLength = 200;
                 this.columnID_ANUNCIO.MaxLength = 100;
+                this.columnID_SHIPMENT.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4656,6 +4671,22 @@ namespace ModuloML {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ID_SHIPMENT {
+                get {
+                    try {
+                        return ((string)(this[this.tableTB_VENDAS.ID_SHIPMENTColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ID_SHIPMENT\' na tabela \'TB_VENDAS\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTB_VENDAS.ID_SHIPMENTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsID_VENDANull() {
                 return this.IsNull(this.tableTB_VENDAS.ID_VENDAColumn);
             }
@@ -4784,6 +4815,18 @@ namespace ModuloML {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetID_ANUNCIONull() {
                 this[this.tableTB_VENDAS.ID_ANUNCIOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsID_SHIPMENTNull() {
+                return this.IsNull(this.tableTB_VENDAS.ID_SHIPMENTColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetID_SHIPMENTNull() {
+                this[this.tableTB_VENDAS.ID_SHIPMENTColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -5171,7 +5214,7 @@ namespace ModuloML.MELIDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
+        public global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
             get {
                 if ((this._connection == null)) {
                     this.InitConnection();
@@ -5547,7 +5590,7 @@ namespace ModuloML.MELIDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
+        public global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
             get {
                 if ((this._connection == null)) {
                     this.InitConnection();
@@ -6617,7 +6660,7 @@ namespace ModuloML.MELIDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
+        public global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
             get {
                 if ((this._connection == null)) {
                     this.InitConnection();
@@ -9799,7 +9842,7 @@ WHERE        (CPROD = @CPROD)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
+        public global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
             get {
                 if ((this._connection == null)) {
                     this.InitConnection();
@@ -11554,7 +11597,7 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
+        public global::FirebirdSql.Data.FirebirdClient.FbConnection Connection {
             get {
                 if ((this._connection == null)) {
                     this.InitConnection();
@@ -11620,10 +11663,11 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             tableMapping.ColumnMappings.Add("QUANTIDADE", "QUANTIDADE");
             tableMapping.ColumnMappings.Add("PRECO", "PRECO");
             tableMapping.ColumnMappings.Add("ID_ANUNCIO", "ID_ANUNCIO");
+            tableMapping.ColumnMappings.Add("ID_SHIPMENT", "ID_SHIPMENT");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""TB_VENDAS"" (""ID_VENDA"", ""NOMECOMPRADOR"", ""CPF_COMPRADOR"", ""DATAVENDA"", ""ATRIBUICAO"", ""STATUS_ATRIBUICAO"", ""DESCRICAOPROD"", ""CODBARRAS"", ""QUANTIDADE"", ""PRECO"", ""ID_ANUNCIO"") VALUES (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_ANUNCIO)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""TB_VENDAS"" (""ID_VENDA"", ""NOMECOMPRADOR"", ""CPF_COMPRADOR"", ""DATAVENDA"", ""ATRIBUICAO"", ""STATUS_ATRIBUICAO"", ""DESCRICAOPROD"", ""CODBARRAS"", ""QUANTIDADE"", ""PRECO"", ""ID_ANUNCIO"", ""ID_SHIPMENT"") VALUES (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_ANUNCIO, @ID_SHIPMENT)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_VENDA";
@@ -11658,7 +11702,7 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@STATUS_ATRIBUICAO";
-            param.Size = 100;
+            param.Size = 1;
             param.IsNullable = true;
             param.SourceColumn = "STATUS_ATRIBUICAO";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -11694,6 +11738,12 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
             param.IsNullable = true;
             param.SourceColumn = "ID_ANUNCIO";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_SHIPMENT";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_SHIPMENT";
+            this._adapter.InsertCommand.Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11707,29 +11757,36 @@ WHERE        (CPF_CNPJ = @CPF_CNPJ)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[4];
+            this._commandCollection = new global::FirebirdSql.Data.FirebirdClient.FbCommand[6];
             this._commandCollection[0] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STAT" +
-                "US_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO\r\nFROM    " +
-                "        TB_VENDAS";
+                "US_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO, ID_SHIPM" +
+                "ENT\r\nFROM            TB_VENDAS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        COUNT(*) AS Expr1\r\nFROM            TB_VENDAS\r\nWHERE        (ID_VEND" +
-                "A = @ID_VENDA)";
+            this._commandCollection[1].CommandText = "UPDATE       TB_VENDAS\r\nSET                ATRIBUICAO = @ATRIBUICAO, STATUS_ATRIB" +
+                "UICAO = \'1\'\r\nWHERE        (ID_VENDA = @ID_VENDA)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             global::FirebirdSql.Data.FirebirdClient.FbParameter param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ATRIBUICAO";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ATRIBUICAO";
+            this._commandCollection[1].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_VENDA";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "ID_VENDA";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._commandCollection[1].Parameters.Add(param);
             this._commandCollection[2] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"INSERT INTO TB_VENDAS
-                         (ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STATUS_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO)
-VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_anuncio)";
+            this._commandCollection[2].CommandText = "SELECT ATRIBUICAO, CODBARRAS, CPF_COMPRADOR, DATAVENDA, DESCRICAOPROD, ID_ANUNCIO" +
+                ", ID_SHIPMENT, ID_VENDA, NOMECOMPRADOR, PRECO, QUANTIDADE, STATUS_ATRIBUICAO FRO" +
+                "M TB_VENDAS WHERE (ID_VENDA = @ID_VENDA)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_VENDA";
@@ -11737,75 +11794,104 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
             param.IsNullable = true;
             param.SourceColumn = "ID_VENDA";
             this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT        COUNT(*) AS Expr1\r\nFROM            TB_VENDAS\r\nWHERE        (ID_VEND" +
+                "A = @ID_VENDA)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_VENDA";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_VENDA";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = @"INSERT INTO TB_VENDAS
+                         (ID_VENDA, NOMECOMPRADOR, CPF_COMPRADOR, DATAVENDA, ATRIBUICAO, STATUS_ATRIBUICAO, DESCRICAOPROD, CODBARRAS, QUANTIDADE, PRECO, ID_ANUNCIO, ID_SHIPMENT)
+VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICAO, @STATUS_ATRIBUICAO, @DESCRICAOPROD, @CODBARRAS, @QUANTIDADE, @PRECO, @ID_anuncio, @ID_SHIPMENT)";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_VENDA";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_VENDA";
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@NOMECOMPRADOR";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "NOMECOMPRADOR";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@CPF_COMPRADOR";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "CPF_COMPRADOR";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@DATAVENDA";
             param.DbType = global::System.Data.DbType.DateTime;
             param.Size = 8;
             param.IsNullable = true;
             param.SourceColumn = "DATAVENDA";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ATRIBUICAO";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "ATRIBUICAO";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@STATUS_ATRIBUICAO";
-            param.Size = 100;
+            param.Size = 1;
             param.IsNullable = true;
             param.SourceColumn = "STATUS_ATRIBUICAO";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@DESCRICAOPROD";
             param.Size = 500;
             param.IsNullable = true;
             param.SourceColumn = "DESCRICAOPROD";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@CODBARRAS";
             param.Size = 200;
             param.IsNullable = true;
             param.SourceColumn = "CODBARRAS";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@QUANTIDADE";
             param.DbType = global::System.Data.DbType.Int32;
             param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = "QUANTIDADE";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@PRECO";
             param.DbType = global::System.Data.DbType.Decimal;
             param.Size = 8;
             param.IsNullable = true;
             param.SourceColumn = "PRECO";
-            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[4].Parameters.Add(param);
             param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
             param.ParameterName = "@ID_anuncio";
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = "ID_ANUNCIO";
-            this._commandCollection[2].Parameters.Add(param);
-            this._commandCollection[3] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
-            this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT ATRIBUICAO, CODBARRAS, CPF_COMPRADOR, DATAVENDA, DESCRICAOPROD, ID_ANUNCIO" +
-                ", ID_VENDA, NOMECOMPRADOR, PRECO, QUANTIDADE, STATUS_ATRIBUICAO FROM TB_VENDAS W" +
-                "HERE (ATRIBUICAO = \'\') AND (STATUS_ATRIBUICAO = \'0 \')";
-            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(param);
+            param = new global::FirebirdSql.Data.FirebirdClient.FbParameter();
+            param.ParameterName = "@ID_SHIPMENT";
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "ID_SHIPMENT";
+            this._commandCollection[4].Parameters.Add(param);
+            this._commandCollection[5] = new global::FirebirdSql.Data.FirebirdClient.FbCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "SELECT ATRIBUICAO, CODBARRAS, CPF_COMPRADOR, DATAVENDA, DESCRICAOPROD, ID_ANUNCIO" +
+                ", ID_SHIPMENT, ID_VENDA, NOMECOMPRADOR, PRECO, QUANTIDADE, STATUS_ATRIBUICAO FRO" +
+                "M TB_VENDAS WHERE (ATRIBUICAO = \'\') AND (STATUS_ATRIBUICAO = \'0 \')";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11836,8 +11922,25 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual MELIDataSet.TB_VENDASDataTable ExisteAtribuicao(string ID_VENDA) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((ID_VENDA == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(ID_VENDA));
+            }
+            MELIDataSet.TB_VENDASDataTable dataTable = new MELIDataSet.TB_VENDASDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual MELIDataSet.TB_VENDASDataTable RetornaVendasNaoAtribuidas() {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[5];
             MELIDataSet.TB_VENDASDataTable dataTable = new MELIDataSet.TB_VENDASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -11876,7 +11979,7 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<double> PRECO, string ID_ANUNCIO) {
+        public virtual int Insert(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<double> PRECO, string ID_ANUNCIO, string ID_SHIPMENT) {
             if ((ID_VENDA == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -11938,10 +12041,16 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((ID_ANUNCIO == null)) {
-                throw new global::System.ArgumentNullException("ID_ANUNCIO");
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(ID_ANUNCIO));
+            }
+            if ((ID_SHIPMENT == null)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(ID_SHIPMENT));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -11962,8 +12071,43 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual global::System.Nullable<int> ExisteVenda(string ID_VENDA) {
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int AtribuiVenda(string ATRIBUICAO, string ID_VENDA) {
             global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[1];
+            if ((ATRIBUICAO == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(ATRIBUICAO));
+            }
+            if ((ID_VENDA == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(ID_VENDA));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> ExisteVenda(string ID_VENDA) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[3];
             if ((ID_VENDA == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -11997,8 +12141,8 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsereVenda(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<decimal> PRECO, string ID_anuncio) {
-            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[2];
+        public virtual int InsereVenda(string ID_VENDA, string NOMECOMPRADOR, string CPF_COMPRADOR, global::System.Nullable<global::System.DateTime> DATAVENDA, string ATRIBUICAO, string STATUS_ATRIBUICAO, string DESCRICAOPROD, string CODBARRAS, global::System.Nullable<int> QUANTIDADE, global::System.Nullable<decimal> PRECO, string ID_anuncio, string ID_SHIPMENT) {
+            global::FirebirdSql.Data.FirebirdClient.FbCommand command = this.CommandCollection[4];
             if ((ID_VENDA == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -12064,6 +12208,12 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
             }
             else {
                 command.Parameters[10].Value = ((string)(ID_anuncio));
+            }
+            if ((ID_SHIPMENT == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(ID_SHIPMENT));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12412,7 +12562,7 @@ VALUES        (@ID_VENDA, @NOMECOMPRADOR, @CPF_COMPRADOR, @DATAVENDA, @ATRIBUICA
         private void InitConnection() {
             this._connection = new global::FirebirdSql.Data.FirebirdClient.FbConnection();
             this._connection.ConnectionString = "character set=WIN1252;initial catalog=C:\\Users\\Usuario\\Desktop\\DBMELI.FDB;data so" +
-                "urce=localhost;user id=sysdba;Password=masterkey";
+                "urce=localhost;user id=sysdba;password=masterkey";
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -135,7 +135,7 @@ namespace ModuloML {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ModuloML_zji4gqs4_wpftmp;component/messageboxcustom.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ModuloML_r51srk34_wpftmp;component/messageboxcustom.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MessageBoxCustom.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

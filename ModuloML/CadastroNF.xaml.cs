@@ -1,5 +1,7 @@
 ﻿using ModuloML.Objetos;
 using ModuloML.Properties;
+using Newtonsoft.Json;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,64 +24,116 @@ namespace ModuloML.Telas
     /// </summary>
     public partial class CadastroNF : Window
     {
-        public CadastroNF(RetornoVendaML.Result retorno)
+        string id_shipment;
+        public CadastroNF(string id_venda, string ID_SHIPMENT)
         {
             InitializeComponent();
-            VisualizaDados(retorno);
+            id_shipment = ID_SHIPMENT;
+            VisualizaDados(id_venda);
 
+        }
+
+        public Endereco.Root ConsultaEndereco(string id_shipment) 
+        {
+            try
+            { using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+
+                {
+                    var appid = consulta.PegaTodosOsValores();
+                    var client = new RestClient("https://api.mercadolibre.com/shipments/" + id_shipment + "?access_token=" + appid[0].TOKEN);
+                    client.Timeout = -1;
+                    var request = new RestRequest(Method.GET);
+                    request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                    IRestResponse response = client.Execute(request);
+                    Endereco.Root myDeserializedClass = JsonConvert.DeserializeObject<Endereco.Root>(response.Content.ToString());
+                    return myDeserializedClass;
+                    
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
+
+        }
+
+        public DadosEspecificosVenda.Root PesquisaDadosVenda(string ID_VENDA) 
+        {
+            try
+            {
+                using (var consulta = new MELIDataSetTableAdapters.TB_MELITableAdapter())
+                {
+                    var appid = consulta.PegaTodosOsValores();
+                    var client = new RestClient("https://api.mercadolibre.com/orders/" + ID_VENDA + "?access_token=" + appid[0].TOKEN);
+                    client.Timeout = -1;
+                    var request = new RestRequest(Method.GET);
+                    request.AddHeader("x-format-new", "true");
+                    request.AddHeader("Cookie", "_d2id=c289e63e-d0d7-467c-8630-a8cfdba640d3-n");
+                    IRestResponse response = client.Execute(request);
+                    DadosEspecificosVenda.Root myDeserializedClass = JsonConvert.DeserializeObject<DadosEspecificosVenda.Root>(response.Content);
+                    return myDeserializedClass;
+                }
+            }
+            catch (Exception ex) 
+            {
+                throw;
+            }
         }
 
 
 
-        public void VisualizaDados(RetornoVendaML.Result Resultado)
+
+
+
+        public void VisualizaDados(string ID_VENDA)//RetornoVendaML.Result Resultado
         {
             using (var produ = new MELIDataSetTableAdapters.TB_PRODUTOSTableAdapter())
             using (var consulta = new MELIDataSetTableAdapters.TB_CLIENTESTableAdapter())
             {
-                try {
-                    int existe = (int)consulta.ExisteCliente(Resultado.buyer.billing_info.doc_number);
-                    if (existe == 0)
-                    {
-                        NomeComprador_txb.Text = Resultado.buyer.first_name + " " + Resultado.buyer.last_name;
-                        if (Resultado.buyer.billing_info.doc_number is null)
+                try
+                {
+                    // int existe = (int)consulta.ExisteCliente(Resultado.buyer.billing_info.doc_number);
+                    //  if (existe == 0)
+                    var Resultado = PesquisaDadosVenda(ID_VENDA);
+                    NomeComprador_txb.Text = Resultado.buyer.first_name + " " + Resultado.buyer.last_name;
+                   
+                    
+                    
+                        if (Resultado.buyer.billing_info.doc_number.Length == 11)
                         {
-                            MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção", MessageBoxButton.OK, MessageBoxImage.Information);
+                            TipoPessoa_cxb.SelectedItem = "Física";
+                            TipoPessoa_cxb.IsReadOnly = true;
+
+                        }
+                        else
+                        if (Resultado.buyer.billing_info.doc_number.Length == 14)
+                        {
+                            TipoPessoa_cxb.SelectedItem = "Jurídica";
+                            TipoPessoa_cxb.IsReadOnly = true;
+
                         }
                         else
                         {
-                            if (Resultado.buyer.billing_info.doc_number.Length == 11)
-                            {
-                                TipoPessoa_cxb.SelectedItem = "Física";
-                                TipoPessoa_cxb.IsReadOnly = true;
-
-                            }
-                            else
-                            if (Resultado.buyer.billing_info.doc_number.Length == 14)
-                            {
-                                TipoPessoa_cxb.SelectedItem = "Jurídica";
-                                TipoPessoa_cxb.IsReadOnly = true;
-
-                            }
-                            else
-                            {
-                                TipoPessoa_cxb.SelectedItem = "Estrangeiro";
-                                TipoPessoa_cxb.IsReadOnly = true;
-                            }
+                            TipoPessoa_cxb.SelectedItem = "Estrangeiro";
+                            TipoPessoa_cxb.IsReadOnly = true;
                         }
-                        CPF_txb.Text = Resultado.buyer.billing_info.doc_number;
-                        CPF_txb.IsReadOnly = true;
-                        List<RetornoVendaML.OrderItem> orderItems = new List<RetornoVendaML.OrderItem>();
-                        foreach (var a in Resultado.order_items)
-                        {
-                            orderItems.Add(new RetornoVendaML.OrderItem() { item = Resultado.order_items[0].item });
-
-                        }
-
-                        Produ_datagrid.ItemsSource = orderItems;
-                       // MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
+                    
+                    CPF_txb.Text = Resultado.buyer.billing_info.doc_number;
+                    CPF_txb.IsReadOnly = true;
+                    List<DadosEspecificosVenda.OrderItem> orderItems = new List<DadosEspecificosVenda.OrderItem>();
+                    foreach (var a in Resultado.order_items)
+                    {
+                        orderItems.Add(new DadosEspecificosVenda.OrderItem() { item = Resultado.order_items[0].item });
 
                     }
-                    else if (existe == 1)
+
+                    Produ_datagrid.ItemsSource = orderItems;
+                    // MessageBox.Show("Usuário não cadastrado, preencha os dados", "Atenção",MessageBoxButton.OK,MessageBoxImage.Information);
+
+
+                    //else if (existe == 1)
                     {
                         var result = consulta.RetornaInfoCliente(Resultado.buyer.billing_info.doc_number);
 
@@ -126,26 +180,26 @@ namespace ModuloML.Telas
                                 Contribuinte_cxb.IsReadOnly = true;
                                 break;
                         }
-
-                        CEP_txb.Text = result[0].CEP;
+                        var endereco = ConsultaEndereco(id_shipment);
+                        CEP_txb.Text = endereco.receiver_address.zip_code;
                         CEP_txb.IsReadOnly = true;
 
-                        Endereco_txb.Text = result[0].LOGRADOURO;
+                        Endereco_txb.Text = endereco.receiver_address.street_name;
 
-                        Numero_txb.Text = result[0].NUMERO;
-                        Complemento_txb.Text = result[0].COMPLEMENTO;
-                        Bairro_txb.Text = result[0].BAIRRO;
-                        Municipio_txb.Text = result[0].NOME_MUNICIPIO;
-                        UF_txb.Text = result[0].UF;
-                        Telefone_txb.Text = result[0].TELEFONE;
+                        Numero_txb.Text = endereco.receiver_address.street_number;
+                        Complemento_txb.Text = endereco.receiver_address.comment;
+                        Bairro_txb.Text = endereco.receiver_address.neighborhood.name;
+                        Municipio_txb.Text = endereco.receiver_address.city.name;
+                        UF_txb.Text = endereco.receiver_address.state.id.Substring(2, 2);
+                        Telefone_txb.Text = endereco.receiver_address.receiver_phone;
                         // inicio do processamento dos produtos
 
-                        List<Produtos> orderItems = new List<Produtos>();
+                        List<Produtos> ordItems = new List<Produtos>();
 
                         foreach (var a in Resultado.order_items)
                         {
-                            orderItems.Add(new Produtos() { CodProdu = Resultado.order_items[0].item.id, Descricao = Resultado.order_items[0].item.title, VlrUni = Resultado.order_items[0].unit_price.ToString(),VlrTotal = Resultado.order_items[0].full_unit_price.ToString(), Quantidade = Resultado.order_items[0].quantity.ToString() }) ;
-                           
+                            ordItems.Add(new Produtos() { CodProdu = Resultado.order_items[0].item.id, Descricao = Resultado.order_items[0].item.title, VlrUni = Resultado.order_items[0].unit_price.ToString(), VlrTotal = Resultado.order_items[0].full_unit_price.ToString(), Quantidade = Resultado.order_items[0].quantity.ToString() });
+
                         }
 
                         Produ_datagrid.ItemsSource = orderItems;
@@ -177,17 +231,18 @@ namespace ModuloML.Telas
                         CPF_txb.Text = Resultado.results[0].buyer.billing_info.doc_number;
                         CPF_txb.IsReadOnly = true;*/
 
-                    }
-                    else 
-                    {
-                        MessageBox.Show("Mais de um usuário cadastrado com mesmo CPF", "Atenção");
+                        // }
+                        /* else 
+                        {
+                              MessageBox.Show("Mais de um usuário cadastrado com mesmo CPF", "Atenção");
+
+                          }*/
 
                     }
-
                 }
-                catch (Exception ex) 
+                catch (Exception ex)
                 {
-                
+
                 }
              }
         }
