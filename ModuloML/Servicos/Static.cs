@@ -26,6 +26,19 @@ namespace ModuloML.Servicos
             }
         }//Escreve no arquivo da auditoria.
 
+        public static string SeNulo(string texto)
+        {
+            if (String.IsNullOrEmpty(texto)|| DBNull.Value.Equals(texto))
+            {
+                texto = "";
+                return texto;
+            }
+            else 
+            {
+                return texto;
+            }
+
+        }
         public static string BytesToString(byte[] bytes)
         {
             string resultado = "";

@@ -58,7 +58,7 @@ namespace ModuloML.Objetos
 
         public class SenderAddress
         {
-            public int id { get; set; }
+            public string id { get; set; }
             public string address_line { get; set; }
             public string street_name { get; set; }
             public string street_number { get; set; }
@@ -71,8 +71,8 @@ namespace ModuloML.Objetos
             public Municipality municipality { get; set; }
             public object agency { get; set; }
             public List<string> types { get; set; }
-            public int latitude { get; set; }
-            public int longitude { get; set; }
+            public string latitude { get; set; }
+            public string longitude { get; set; }
             public string geolocation_type { get; set; }
             public DateTime geolocation_last_updated { get; set; }
             public string geolocation_source { get; set; }
@@ -110,7 +110,7 @@ namespace ModuloML.Objetos
 
         public class ReceiverAddress
         {
-            public int id { get; set; }
+            public string id { get; set; }
             public string address_line { get; set; }
             public string street_name { get; set; }
             public string street_number { get; set; }
@@ -123,8 +123,8 @@ namespace ModuloML.Objetos
             public Municipality2 municipality { get; set; }
             public object agency { get; set; }
             public List<string> types { get; set; }
-            public double latitude { get; set; }
-            public double longitude { get; set; }
+            public string latitude { get; set; }
+            public string longitude { get; set; }
             public string geolocation_type { get; set; }
             public DateTime geolocation_last_updated { get; set; }
             public string geolocation_source { get; set; }
@@ -143,7 +143,7 @@ namespace ModuloML.Objetos
         {
             public string id { get; set; }
             public string description { get; set; }
-            public int quantity { get; set; }
+            public string quantity { get; set; }
             public string dimensions { get; set; }
             public DimensionsSource dimensions_source { get; set; }
         }
@@ -161,7 +161,7 @@ namespace ModuloML.Objetos
         public class Offset
         {
             public DateTime date { get; set; }
-            public int shipping { get; set; }
+            public string shipping { get; set; }
         }
 
         public class TimeFrame
@@ -178,27 +178,27 @@ namespace ModuloML.Objetos
             public Offset offset { get; set; }
             public TimeFrame time_frame { get; set; }
             public object pay_before { get; set; }
-            public int shipping { get; set; }
-            public int handling { get; set; }
+            public string shipping { get; set; }
+            public string handling { get; set; }
             public object schedule { get; set; }
         }
 
         public class EstimatedDeliveryLimit
         {
             public DateTime date { get; set; }
-            public int offset { get; set; }
+            public string offset { get; set; }
         }
 
         public class EstimatedDeliveryFinal
         {
             public DateTime date { get; set; }
-            public int offset { get; set; }
+            public string offset { get; set; }
         }
 
         public class EstimatedDeliveryExtended
         {
             public DateTime date { get; set; }
-            public int offset { get; set; }
+            public string offset { get; set; }
         }
 
         public class EstimatedHandlingLimit
@@ -208,12 +208,12 @@ namespace ModuloML.Objetos
 
         public class ShippingOption
         {
-            public long id { get; set; }
-            public int shipping_method_id { get; set; }
+            public string id { get; set; }
+            public string shipping_method_id { get; set; }
             public string name { get; set; }
             public string currency_id { get; set; }
-            public double list_cost { get; set; }
-            public int cost { get; set; }
+            public string list_cost { get; set; }
+            public string cost { get; set; }
             public string delivery_type { get; set; }
             public EstimatedScheduleLimit estimated_schedule_limit { get; set; }
             public Buffering buffering { get; set; }
@@ -226,21 +226,21 @@ namespace ModuloML.Objetos
 
         public class CostComponents
         {
-            public int special_discount { get; set; }
-            public int loyal_discount { get; set; }
-            public int compensation { get; set; }
-            public int gap_discount { get; set; }
-            public double ratio { get; set; }
+            public string special_discount { get; set; }
+            public string loyal_discount { get; set; }
+            public string compensation { get; set; }
+            public string gap_discount { get; set; }
+            public string ratio { get; set; }
         }
 
         public class Root
         {
-            public long id { get; set; }
+            public string id { get; set; }
             public string mode { get; set; }
             public string created_by { get; set; }
-            public long order_id { get; set; }
-            public int order_cost { get; set; }
-            public double base_cost { get; set; }
+            public string order_id { get; set; }
+            public string? order_cost { get; set; }
+            public string base_cost { get; set; }
             public string site_id { get; set; }
             public string status { get; set; }
             public string substatus { get; set; }
@@ -252,9 +252,9 @@ namespace ModuloML.Objetos
             public object tracking_method { get; set; }
             public object service_id { get; set; }
             public object carrier_info { get; set; }
-            public int sender_id { get; set; }
+            public string sender_id { get; set; }
             public SenderAddress sender_address { get; set; }
-            public int receiver_id { get; set; }
+            public string receiver_id { get; set; }
             public ReceiverAddress receiver_address { get; set; }
             public List<ShippingItem> shipping_items { get; set; }
             public ShippingOption shipping_option { get; set; }

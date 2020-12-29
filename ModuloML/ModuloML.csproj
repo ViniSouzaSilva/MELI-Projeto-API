@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="munseed_temp.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <Content Include="munseed_temp.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

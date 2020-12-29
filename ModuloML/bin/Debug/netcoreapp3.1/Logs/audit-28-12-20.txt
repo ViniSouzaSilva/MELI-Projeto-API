@@ -1,0 +1,34 @@
+11:05:54.124	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-122814-89a0435ac56c9971af679f145b9008f9-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+12:02:40.153	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+12:03:00.234	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+14:53:28.125	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+14:53:48.259	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:02:38.732	Erro ao selecionar a venda >>	Unable to cast object of type 'ModuloML.Objetos.DadosProduNota' to type 'ModuloML.Objetos.Produtos'.
+15:10:18.994	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+15:12:10.252	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+15:14:22.267	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+16:50:36.366	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-122819-c46a0e6265db8f4220c741ba6cdcacdf-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+16:50:49.713	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+16:53:20.976	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+16:53:41.166	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+16:56:50.245	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+17:38:19.135	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+17:39:06.243	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+17:52:17.636	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+17:53:08.180	Ocorreu um Erro no Metodo ProcessaVenda() >>	Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')

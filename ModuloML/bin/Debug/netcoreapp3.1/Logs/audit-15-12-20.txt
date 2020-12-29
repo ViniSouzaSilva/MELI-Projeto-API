@@ -8,3 +8,6 @@
 }
 
 10:11:10.425	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:13:10.171	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:13:29.886	Erro ao selecionar a venda >>	Unable to cast object of type 'OrderItem' to type 'ModuloML.Objetos.Produtos'.
+14:28:09.014	Problema no método ProcessaAssincronamente >>	There is no row at position 1.

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModuloML.Objetos
 {
-    class CodIBGEMunicipio
+   public class CodIBGEMunicipio
     {
 
         // OBSERVAÇÃO: o código gerado pode exigir pelo menos .NET Framework 4.5 ou .NET Core/Standard 2.0.
@@ -12,7 +12,7 @@ namespace ModuloML.Objetos
         [System.SerializableAttribute()]
         [System.ComponentModel.DesignerCategoryAttribute("code")]
         [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-        [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
+        [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)] 
         public partial class municipios
         {
 

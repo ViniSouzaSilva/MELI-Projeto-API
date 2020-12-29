@@ -22,7 +22,7 @@ namespace ModuloML.Objetos
         public class Coupon
         {
             public object id { get; set; }
-            public int amount { get; set; }
+            public string amount { get; set; }
         }
 
         public class VariationAttribute
@@ -50,18 +50,18 @@ namespace ModuloML.Objetos
         public class OrderItem
         {
             public Item item { get; set; }
-            public int quantity { get; set; }
-            public int unit_price { get; set; }
-            public int full_unit_price { get; set; }
+            public string quantity { get; set; }
+            public string unit_price { get; set; }
+            public string full_unit_price { get; set; }
             public string currency_id { get; set; }
             public object manufacturing_days { get; set; }
-            public double sale_fee { get; set; }
+            public string sale_fee { get; set; }
             public string listing_type_id { get; set; }
         }
 
         public class Collector
         {
-            public int id { get; set; }
+            public string id { get; set; }
         }
 
         public class AtmTransferReference
@@ -74,14 +74,14 @@ namespace ModuloML.Objetos
         {
             public string id { get; set; }
             public string order_id { get; set; }
-            public int payer_id { get; set; }
+            public string payer_id { get; set; }
             public Collector collector { get; set; }
             public object card_id { get; set; }
             public string site_id { get; set; }
             public string reason { get; set; }
             public string payment_method_id { get; set; }
             public string currency_id { get; set; }
-            public int installments { get; set; }
+            public string installments { get; set; }
             public object issuer_id { get; set; }
             public AtmTransferReference atm_transfer_reference { get; set; }
             public object coupon_id { get; set; }
@@ -92,12 +92,12 @@ namespace ModuloML.Objetos
             public string status { get; set; }
             public object status_code { get; set; }
             public string status_detail { get; set; }
-            public int transaction_amount { get; set; }
-            public int taxes_amount { get; set; }
-            public int shipping_cost { get; set; }
-            public int coupon_amount { get; set; }
-            public int overpaid_amount { get; set; }
-            public int total_paid_amount { get; set; }
+            public string transaction_amount { get; set; }
+            public string taxes_amount { get; set; }
+            public string shipping_cost { get; set; }
+            public string coupon_amount { get; set; }
+            public string overpaid_amount { get; set; }
+            public string total_paid_amount { get; set; }
             public object installment_amount { get; set; }
             public object deferred_period { get; set; }
             public DateTime date_approved { get; set; }
@@ -120,7 +120,7 @@ namespace ModuloML.Objetos
 
         public class Buyer
         {
-            public int id { get; set; }
+            public string id { get; set; }
             public string nickname { get; set; }
             public string email { get; set; }
             public string first_name { get; set; }
@@ -145,7 +145,7 @@ namespace ModuloML.Objetos
 
         public class Seller
         {
-            public int id { get; set; }
+            public string id { get; set; }
             public string nickname { get; set; }
             public string email { get; set; }
             public string first_name { get; set; }
@@ -174,8 +174,8 @@ namespace ModuloML.Objetos
             public object pickup_id { get; set; }
             public OrderRequest order_request { get; set; }
             public object fulfilled { get; set; }
-            public int total_amount { get; set; }
-            public int paid_amount { get; set; }
+            public string total_amount { get; set; }
+            public string paid_amount { get; set; }
             public Coupon coupon { get; set; }
             public DateTime expiration_date { get; set; }
             public List<OrderItem> order_items { get; set; }

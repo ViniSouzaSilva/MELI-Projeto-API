@@ -373,6 +373,10 @@ namespace ModuloML
                         {
                             DadosAdicionaisProd.Root GTIN = RetornaDadosVenda(vendas.results[count].order_items[0].item.id);
                             codbarras = ((GTIN.attributes.Select(x => x).Where(x => x.id.Equals("GTIN")).FirstOrDefault()) ?? (new DadosAdicionaisProd.Attribute())).value_name;
+                            if (codbarras is null) 
+                            {
+                                codbarras = ((GTIN.variations[0].attributes.Select(x => x).Where(x => x.id.Equals("GTIN")).FirstOrDefault()) ?? (new DadosAdicionaisProd.Attribute())).value_name;
+                            }
                             PrecoCheio = vendas.results[count].order_items[0].quantity * vendas.results[count].order_items[0].full_unit_price;
                             if (String.IsNullOrEmpty(vendas.results[count].buyer.first_name)) { vendas.results[count].buyer.first_name = "Nenhum nome encontrado"; }
                             if (String.IsNullOrEmpty(vendas.results[count].buyer.billing_info.doc_number)) { vendas.results[count].buyer.billing_info.doc_number = ""; }

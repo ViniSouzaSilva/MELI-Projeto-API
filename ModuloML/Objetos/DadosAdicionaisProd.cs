@@ -7,6 +7,27 @@ namespace ModuloML.Objetos
    public  class DadosAdicionaisProd
     {
         // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+        public class AttributeCombination
+        {
+            public string id { get; set; }
+            public string name { get; set; }
+            public string value_id { get; set; }
+            public string value_name { get; set; }
+            public object value_struct { get; set; }
+            public List<Value> values { get; set; }
+        }
+        public class variations
+        {
+            public string id { get; set; }
+            public string price { get; set; }
+            public List<AttributeCombination> attribute_combinations { get; set; }
+            public string available_quantity { get; set; }
+            public string sold_quantity { get; set; }
+            public List<object> sale_terms { get; set; }
+            public List<string> picture_ids { get; set; }
+            public object catalog_product_id { get; set; }
+            public List<Attribute> attributes { get; set; }
+        }
         public class Value
         {
             public string id { get; set; }
@@ -114,7 +135,7 @@ namespace ModuloML.Objetos
             public List<Attribute> attributes { get; set; }
             public List<object> warnings { get; set; }
             public string listing_source { get; set; }
-            public List<object> variations { get; set; }
+            public List<variations> variations { get; set; }
             public string status { get; set; }
             public List<object> sub_status { get; set; }
             public List<string> tags { get; set; }

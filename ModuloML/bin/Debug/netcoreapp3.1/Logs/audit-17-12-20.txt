@@ -1,0 +1,22 @@
+10:15:48.988	json >>	class Token {
+  AccessToken: APP_USR-8858081937589207-121713-4dba6c10f5fefb39432ba5f5356736c0-664147756
+  TokenType: bearer
+  ExpiresIn: 21600
+  Scope: offline_access read write
+  UserId: 664147756
+  RefreshToken: TG-5fa465d61ec42a00097e41d1-664147756
+}
+
+10:20:13.882	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:01:39.678	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:05:46.662	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:09:00.355	Erro ao selecionar a venda >>	Unable to cast object of type 'ModuloML.Objetos.DadosProduNota' to type 'ModuloML.Objetos.Produtos'.
+11:25:13.017	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:28:07.022	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:43:20.934	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:43:26.442	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:45:42.330	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:47:16.580	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+11:51:35.536	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+14:01:59.851	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
+14:06:03.575	Problema no método ProcessaAssincronamente >>	There is no row at position 1.
